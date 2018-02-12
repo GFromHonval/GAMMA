@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a5070397-31a2-4fe0-ad29-daf970b7b9b0" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="PhotonNetworkManager.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/TutoPhoton/PhotonNetworkManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="627">
+              <caret line="33" column="8" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+              <folding>
+                <marker date="1518266941957" expanded="true" signature="6:100" ph="..." />
+                <marker date="1518266941957" expanded="true" signature="158:1022" ph="{...}" />
+                <marker date="1518266941957" expanded="true" signature="397:448" ph="{...}" />
+                <marker date="1518266941957" expanded="true" signature="479:678" ph="{...}" />
+                <marker date="1518266941957" expanded="true" signature="529:618" ph="/* RoomOptions pour changer les options de la room ... */" />
+                <marker date="1518266941957" expanded="true" signature="715:889" ph="{...}" />
+                <marker date="1518266941957" expanded="true" signature="942:1020" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerNetwork.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/TutoPhoton/PlayerNetwork.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+              <folding>
+                <marker date="1518284851829" expanded="false" signature="6:78" ph="..." />
+                <marker date="1518284851829" expanded="true" signature="129:883" ph="{...}" />
+                <marker date="1518284851829" expanded="true" signature="380:516" ph="{...}" />
+                <marker date="1518284851829" expanded="true" signature="547:881" ph="{...}" />
+                <marker date="1518284851829" expanded="true" signature="584:617" ph="{...}" />
+                <marker date="1518284851829" expanded="true" signature="664:875" ph="{...}" />
+                <marker date="1518284851829" expanded="true" signature="802:865" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoldPickUp.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GoldBAr/GoldPickUp.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1518284851902" expanded="false" signature="6:78" ph="..." />
+                <marker date="1518284851902" expanded="true" signature="119:547" ph="{...}" />
+                <marker date="1518284851902" expanded="true" signature="208:215" ph="{...}" />
+                <marker date="1518284851902" expanded="true" signature="270:277" ph="{...}" />
+                <marker date="1518284851902" expanded="true" signature="394:545" ph="{...}" />
+                <marker date="1518284851902" expanded="true" signature="426:542" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QUIT.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/QUIT.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+              <folding>
+                <marker date="1518458125743" expanded="true" signature="6:97" ph="..." />
+                <marker date="1518458125743" expanded="true" signature="133:241" ph="{...}" />
+                <marker date="1518458125743" expanded="true" signature="160:239" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/_CUSTOM/Photon Unity Networking/Demos/DemoWorker/Scripts/Game/Player/ThirdPersonController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonCharacter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonUserControl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TutoPhoton/PlayerNetwork.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TutoPhoton/PhotonNetworkManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GoldBAr/GoldPickUp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/QUIT.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerControler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Billboard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Health.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TestPhoton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TutoPhoton/PhotonNetworkManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TutoPhoton/PlayerNetwork.cs" />
+        <option value="$PROJECT_DIR$/Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonCharacter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonUserControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/QUIT.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="952" />
+    <option name="width" value="976" />
+    <option name="height" value="1038" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="First Projet 1 (4 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Unity Debug.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a5070397-31a2-4fe0-ad29-daf970b7b9b0" name="Default" comment="" />
+      <created>1518030851028</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1518030851028</updated>
+      <workItem from="1518030854239" duration="7924000" />
+      <workItem from="1518038805815" duration="8575000" />
+      <workItem from="1518083165407" duration="2880000" />
+      <workItem from="1518200753555" duration="635000" />
+      <workItem from="1518258611385" duration="13000" />
+      <workItem from="1518260631036" duration="14063000" />
+      <workItem from="1518284818303" duration="329000" />
+      <workItem from="1518457722178" duration="405000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="34824000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18259935" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TutoPhoton/PhotonNetworkManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="33" column="8" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+          <folding>
+            <marker date="1518266941957" expanded="true" signature="6:100" ph="..." />
+            <marker date="1518266941957" expanded="true" signature="158:1022" ph="{...}" />
+            <marker date="1518266941957" expanded="true" signature="397:448" ph="{...}" />
+            <marker date="1518266941957" expanded="true" signature="479:678" ph="{...}" />
+            <marker date="1518266941957" expanded="true" signature="529:618" ph="/* RoomOptions pour changer les options de la room ... */" />
+            <marker date="1518266941957" expanded="true" signature="715:889" ph="{...}" />
+            <marker date="1518266941957" expanded="true" signature="942:1020" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TutoPhoton/PlayerNetwork.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+          <folding>
+            <marker date="1518284851829" expanded="false" signature="6:78" ph="..." />
+            <marker date="1518284851829" expanded="true" signature="129:883" ph="{...}" />
+            <marker date="1518284851829" expanded="true" signature="380:516" ph="{...}" />
+            <marker date="1518284851829" expanded="true" signature="547:881" ph="{...}" />
+            <marker date="1518284851829" expanded="true" signature="584:617" ph="{...}" />
+            <marker date="1518284851829" expanded="true" signature="664:875" ph="{...}" />
+            <marker date="1518284851829" expanded="true" signature="802:865" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GoldBAr/GoldPickUp.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1518284851902" expanded="false" signature="6:78" ph="..." />
+            <marker date="1518284851902" expanded="true" signature="119:547" ph="{...}" />
+            <marker date="1518284851902" expanded="true" signature="208:215" ph="{...}" />
+            <marker date="1518284851902" expanded="true" signature="270:277" ph="{...}" />
+            <marker date="1518284851902" expanded="true" signature="394:545" ph="{...}" />
+            <marker date="1518284851902" expanded="true" signature="426:542" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/QUIT.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+          <folding>
+            <marker date="1518458125743" expanded="true" signature="6:97" ph="..." />
+            <marker date="1518458125743" expanded="true" signature="133:241" ph="{...}" />
+            <marker date="1518458125743" expanded="true" signature="160:239" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TutoPhoton/PhotonNetworkManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1518266941957" expanded="true" signature="6:100" ph="..." />
+            <marker date="1518266941957" expanded="true" signature="158:1022" ph="{...}" />
+            <marker date="1518266941957" expanded="true" signature="397:448" ph="{...}" />
+            <marker date="1518266941957" expanded="true" signature="479:678" ph="{...}" />
+            <marker date="1518266941957" expanded="true" signature="529:618" ph="/* RoomOptions pour changer les options de la room ... */" />
+            <marker date="1518266941957" expanded="true" signature="715:889" ph="{...}" />
+            <marker date="1518266941957" expanded="true" signature="942:1020" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TutoPhoton/PlayerNetwork.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+          <folding>
+            <marker date="1518284851829" expanded="false" signature="6:78" ph="..." />
+            <marker date="1518284851829" expanded="true" signature="129:883" ph="{...}" />
+            <marker date="1518284851829" expanded="true" signature="380:516" ph="{...}" />
+            <marker date="1518284851829" expanded="true" signature="547:881" ph="{...}" />
+            <marker date="1518284851829" expanded="true" signature="584:617" ph="{...}" />
+            <marker date="1518284851829" expanded="true" signature="664:875" ph="{...}" />
+            <marker date="1518284851829" expanded="true" signature="802:865" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TutoPhoton/PhotonNetworkManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1518266941957" expanded="true" signature="6:100" ph="..." />
+            <marker date="1518266941957" expanded="true" signature="158:1022" ph="{...}" />
+            <marker date="1518266941957" expanded="true" signature="397:448" ph="{...}" />
+            <marker date="1518266941957" expanded="true" signature="479:678" ph="{...}" />
+            <marker date="1518266941957" expanded="true" signature="529:618" ph="/* RoomOptions pour changer les options de la room ... */" />
+            <marker date="1518266941957" expanded="true" signature="715:889" ph="{...}" />
+            <marker date="1518266941957" expanded="true" signature="942:1020" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Billboard.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Health.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Billboard.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Health.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Billboard.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Health.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerControler.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Billboard.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TestPhoton.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Health.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/_CUSTOM/Photon Unity Networking/Demos/DemoWorker/Scripts/Game/Player/ThirdPersonController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-99">
+          <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TutoPhoton/PhotonNetworkManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="33" column="8" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+          <folding>
+            <marker date="1518266941957" expanded="true" signature="6:100" ph="..." />
+            <marker date="1518266941957" expanded="true" signature="158:1022" ph="{...}" />
+            <marker date="1518266941957" expanded="true" signature="397:448" ph="{...}" />
+            <marker date="1518266941957" expanded="true" signature="479:678" ph="{...}" />
+            <marker date="1518266941957" expanded="true" signature="529:618" ph="/* RoomOptions pour changer les options de la room ... */" />
+            <marker date="1518266941957" expanded="true" signature="715:889" ph="{...}" />
+            <marker date="1518266941957" expanded="true" signature="942:1020" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonUserControl.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="26" column="59" lean-forward="false" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonCharacter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="54" column="37" lean-forward="false" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TutoPhoton/PlayerNetwork.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+          <folding>
+            <marker date="1518284851829" expanded="false" signature="6:78" ph="..." />
+            <marker date="1518284851829" expanded="true" signature="129:883" ph="{...}" />
+            <marker date="1518284851829" expanded="true" signature="380:516" ph="{...}" />
+            <marker date="1518284851829" expanded="true" signature="547:881" ph="{...}" />
+            <marker date="1518284851829" expanded="true" signature="584:617" ph="{...}" />
+            <marker date="1518284851829" expanded="true" signature="664:875" ph="{...}" />
+            <marker date="1518284851829" expanded="true" signature="802:865" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GoldBAr/GoldPickUp.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1518284851902" expanded="false" signature="6:78" ph="..." />
+            <marker date="1518284851902" expanded="true" signature="119:547" ph="{...}" />
+            <marker date="1518284851902" expanded="true" signature="208:215" ph="{...}" />
+            <marker date="1518284851902" expanded="true" signature="270:277" ph="{...}" />
+            <marker date="1518284851902" expanded="true" signature="394:545" ph="{...}" />
+            <marker date="1518284851902" expanded="true" signature="426:542" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
