@@ -1,10 +1,27 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 8b4495132444bd145bde741dc5b67dd9
 timeCreated: 1519977716
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName: {}
+=======
+guid: 7b0ad465fb2893946981c0fa00da8d62
+timeCreated: 1519059535
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    400000: //RootNode
+    2100000: unnamed
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Cube
+    7400000: Default Take
+    9500000: //RootNode
+>>>>>>> edb5c1539c3f2137c8cfc701ec62d9cbeafb9816
   externalObjects: {}
   materials:
     importMaterials: 1
