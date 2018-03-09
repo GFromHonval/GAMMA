@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Le Louoïgat\.Rider2017.3\system\resharper-host\local\Transient\ReSharperHost\v11\SolutionCaches\_First Projet 1.1926544426.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Le Louoïgat\Documents\GitHub\GAMMA\Projet\First Projet 1" t="IncludeRecursive">
+    <e p="C:\Users\Gaël Gautier\.Rider2017.3\system\resharper-host\local\Transient\ReSharperHost\v11\SolutionCaches\_First Projet 1.1958921951.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Gaël Gautier\Documents\GitHub\GAMMA\Projet\First Projet 1" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
@@ -271,6 +271,7 @@
             <e p="ChatUserStatus.cs" t="Include" />
             <e p="IChatClientListener.cs" t="Include" />
           </e>
+          <e p="plateforme move.cs" t="Include" />
           <e p="Plugins" t="Include">
             <e p="Editor" t="Include">
               <e p="JetBrains" t="Include">
@@ -284,6 +285,7 @@
             </e>
           </e>
         </e>
+        <e p="NewBehaviourScript.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="FirstTuto" t="Include">
             <e p="Billboard.cs" t="Include" />
