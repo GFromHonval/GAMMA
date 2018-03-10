@@ -17,7 +17,7 @@ public class teleport : MonoBehaviour
 			destination = GameObject.Find(("Portail1")).transform.position;
 		}
 
-		col.transform.position = destination - Vector3.forward * 2;
+		col.transform.position = destination - Vector3.forward ;
 		col.transform.Rotate(Vector3.up * 180);
 	}
 }
