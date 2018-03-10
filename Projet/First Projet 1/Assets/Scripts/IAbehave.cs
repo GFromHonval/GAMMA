@@ -23,8 +23,8 @@ public class IAbehave : Photon.MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		players = GameObject.FindGameObjectsWithTag("Player");
-		Player = players[0].transform;
+		//players = GameObject.FindGameObjectsWithTag("Player");
+		//Player = players[0].transform;
 		
 		if (Vector3.Distance(Player.position , this.transform.position) < 10)
 		{
