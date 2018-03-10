@@ -287,6 +287,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="AIBehave.cs" t="Include" />
           <e p="FirstTuto" t="Include">
             <e p="Billboard.cs" t="Include" />
             <e p="Bullet.cs" t="Include" />
@@ -300,7 +301,6 @@
           <e p="GoldBAr" t="Include">
             <e p="GoldPickUp.cs" t="Include" />
           </e>
-          <e p="IAbehave.cs" t="Include" />
           <e p="QUIT.cs" t="Include" />
           <e p="TutoPhoton" t="Include">
             <e p="PhotonNetworkManager.cs" t="Include" />
