@@ -301,6 +301,7 @@
           <e p="GoldBAr" t="Include">
             <e p="GoldPickUp.cs" t="Include" />
           </e>
+          <e p="MenuActions.cs" t="Include" />
           <e p="QUIT.cs" t="Include" />
           <e p="TutoPhoton" t="Include">
             <e p="PhotonNetworkManager.cs" t="Include" />
