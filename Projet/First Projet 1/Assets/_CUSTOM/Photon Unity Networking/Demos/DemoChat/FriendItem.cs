@@ -10,7 +10,7 @@ using UnityEngine.UI;
 /// </summary>
 public class FriendItem : MonoBehaviour {
 
-	[HideInInspector]
+	//[HideInInspector]
 	public string FriendId
 	{
 		set{
