@@ -1,27 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class GoldPickUp : MonoBehaviour
+namespace GoldBAr
 {
-	public int value; //Valeur d'un Coin
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-	private void OnTriggerEnter(Collider other) //Tester si le joueur est sur un coin et lui ajouter la valeur du coin
+	public class GoldPickUp : MonoBehaviour
 	{
-		if (other.tag == "Player")
+		public int NoteValue = 1000; //Valeur d'un Coin
+	
+		private void OnTriggerEnter(Collider other) //Tester si le joueur est sur un coin et lui ajouter la valeur du coin
 		{
-			FindObjectOfType<GameManager>().AddGold(value);
-			
+			if (!other.CompareTag("Player")) return;
+			FindObjectOfType<GameManager>().AddGold(NoteValue);
+			ScoreMaster.CurrentScoreNotes += NoteValue;
 			Destroy(gameObject); //enlever le coin du terrain
 		}
 	}
