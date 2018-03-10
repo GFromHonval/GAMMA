@@ -286,6 +286,7 @@
             </e>
           </e>
         </e>
+        <e p="End_Restart.cs" t="Include" />
         <e p="ScoreMaster.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="AIBehave.cs" t="Include" />
@@ -335,6 +336,7 @@
                 <e p="TMP_DigitValidator.cs" t="Include" />
                 <e p="TMP_ExampleScript_01.cs" t="Include" />
                 <e p="TMP_FrameRateCounter.cs" t="Include" />
+                <e p="TMP_PhoneNumberValidator.cs" t="Include" />
                 <e p="TMP_TextEventCheck.cs" t="Include" />
                 <e p="TMP_TextEventHandler.cs" t="Include" />
                 <e p="TMP_TextInfoDebugTool.cs" t="Include" />
@@ -461,7 +463,9 @@
       <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
-      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
     </e>
   </component>
 </project>

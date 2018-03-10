@@ -1,16 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using NUnit.Framework;
 using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
 	private float timer = 180.0f;
-
-
-	private static void EndGame()
-	{
-		Debug.Log("GAME OVER");
-	}
+	private bool HasEnded = false;
+	
 
 	private void Update ()
 	{
@@ -19,7 +16,7 @@ public class Timer : MonoBehaviour
 		{
 			timer = 0;
 			GetComponent<PlayerController>().enabled = false;
-			EndGame();
+			End_Restart.EndGame();
 		}
 
 	}
