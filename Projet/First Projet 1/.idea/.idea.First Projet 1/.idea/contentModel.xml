@@ -297,6 +297,9 @@
             <e p="Health.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
           </e>
+          <e p="GameManager" t="Include">
+            <e p="GameManager.cs" t="Include" />
+          </e>
           <e p="GoldBAr" t="Include">
             <e p="GoldPickUp.cs" t="Include" />
           </e>
