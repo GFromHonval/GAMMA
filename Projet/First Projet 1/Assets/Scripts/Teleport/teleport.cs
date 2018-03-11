@@ -5,16 +5,19 @@ using UnityEngine;
 public class teleport : MonoBehaviour
 {
 	private Vector3 destination;
+	public GameObject VersPortail1;
+	public GameObject VersPortail2;
 	// Update is called once per frame
 	private void OnCollisionEnter(Collision col)
 	{
+
 		if (this.name == "Portail1")
 		{
-			destination = GameObject.Find(("Portail2")).transform.position;
+			destination = VersPortail2.transform.position;
 		}
 		else
 		{
-			destination = GameObject.Find(("Portail1")).transform.position;
+			destination = VersPortail1.transform.position;
 		}
 
 		col.transform.position = destination - Vector3.forward ;
