@@ -287,7 +287,6 @@
           </e>
         </e>
         <e p="End_Restart.cs" t="Include" />
-        <e p="Goto.cs" t="Include" />
         <e p="ScoreMaster.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="AIBehave.cs" t="Include" />
@@ -457,7 +456,6 @@
           </e>
         </e>
         <e p="Timer.cs" t="Include" />
-        <e p="Togg.cs" t="Include" />
         <e p="VolumeBar.cs" t="Include" />
       </e>
       <e p="First Projet 1.sln" t="IncludeFlat" />
