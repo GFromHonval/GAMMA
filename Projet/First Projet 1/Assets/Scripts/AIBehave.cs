@@ -46,18 +46,21 @@ public class AIBehave : MonoBehaviour {
 			transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction),rotSpeed*Time.deltaTime);
 			transform.Translate(0,0,Time.deltaTime * speed);
 		}
+		
+		
+		
+		
+		
+		
+		if (Vector3.Distance(Player.position , this.transform.position) < DistanceDeDetection)
+		{
+			this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), 0.1f);
+			Head.GetComponent<Renderer>().material = ColorAttack;
+		}
 		else
 		{
-			if (Vector3.Distance(Player.position, this.transform.position) < DistanceDeDetection)
-			{
-				this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), 0.1f);
-				Head.GetComponent<Renderer>().material = ColorAttack;
-			}
-			else
-			{
-				this.transform.position = StartPos;
-				Head.GetComponent<Renderer>().material = ColorInnofensif;
-			}
+			this.transform.position = StartPos;
+			Head.GetComponent<Renderer>().material = ColorInnofensif;
 		}
 	}
 }
