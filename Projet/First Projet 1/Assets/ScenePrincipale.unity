@@ -1021,7 +1021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ConnectText: {fileID: 1748987489}
-  Player: {fileID: 1073722298401662, guid: f33bec2dc9a5a564685a1b66d8a74a2c, type: 2}
+  Player: {fileID: 1836096919002726, guid: 1b68148bc8f3cb84f84b27dc81ba1ec6, type: 2}
   SpawnPoint: {fileID: 1296824917}
   LobbyCamera: {fileID: 1606570994}
 --- !u!4 &140962245
@@ -2041,48 +2041,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 364071119}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &366617100
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400000, guid: 18ffb4d3bed236e4da540b4227296d33, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 18ffb4d3bed236e4da540b4227296d33, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 18ffb4d3bed236e4da540b4227296d33, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 18ffb4d3bed236e4da540b4227296d33, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 18ffb4d3bed236e4da540b4227296d33, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 18ffb4d3bed236e4da540b4227296d33, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 18ffb4d3bed236e4da540b4227296d33, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 18ffb4d3bed236e4da540b4227296d33, type: 3}
-      propertyPath: m_RootOrder
-      value: 15
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 18ffb4d3bed236e4da540b4227296d33, type: 3}
-  m_IsPrefabParent: 0
 --- !u!1 &404335992
 GameObject:
   m_ObjectHideFlags: 0
