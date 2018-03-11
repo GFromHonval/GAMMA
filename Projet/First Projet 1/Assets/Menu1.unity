@@ -1362,7 +1362,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 980448706}
-  - component: {fileID: 980448708}
   - component: {fileID: 980448707}
   m_Layer: 5
   m_Name: Toggle Boy
@@ -1446,17 +1445,6 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 1
---- !u!114 &980448708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 980448705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea4dedaf0349ad142b86f361199e38f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &982924145
 GameObject:
   m_ObjectHideFlags: 0
