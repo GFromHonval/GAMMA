@@ -10,11 +10,11 @@ public class teleport : MonoBehaviour
 	{
 		if (this.name == "Portail1")
 		{
-			destination = GameObject.Find(("Portail2")).transform.position;
+			destination = GameObject.Find("Portail2").transform.position;
 		}
 		else
 		{
-			destination = GameObject.Find(("Portail1")).transform.position;
+			destination = GameObject.Find("Portail1").transform.position;
 		}
 
 		col.transform.position = destination - Vector3.forward ;
