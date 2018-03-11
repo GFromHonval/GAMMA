@@ -28,7 +28,7 @@ public class PlayerMove : MonoBehaviour {
 
 			if (Input.GetButtonDown("Jump"))
 			{
-				moveDir.y = jumpForce;
+				moveDir.z = jumpForce;
 			}
 		}
 
