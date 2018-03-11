@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\rom99\.Rider2017.3\system\resharper-host\local\Transient\ReSharperHost\v11\SolutionCaches\_First Projet 1.-680809472.00" t="ExcludeRecursive" />
-    <e p="C:\Users\rom99\Documents\GitHub\GAMMA\GAMMA\Projet\First Projet 1" t="IncludeRecursive">
+    <e p="C:\Users\laure\.Rider2017.3\system\resharper-host\local\Transient\ReSharperHost\v11\SolutionCaches\_First Projet 1.-547733426.00" t="ExcludeRecursive" />
+    <e p="C:\Users\laure\Documents\GitHub\GAMMA\Projet\First Projet 1" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
@@ -296,9 +296,6 @@
             <e p="EnemySpawner.cs" t="Include" />
             <e p="Health.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
-          </e>
-          <e p="GameManager" t="Include">
-            <e p="GameManager.cs" t="Include" />
           </e>
           <e p="GoldBAr" t="Include">
             <e p="GoldPickUp.cs" t="Include" />
