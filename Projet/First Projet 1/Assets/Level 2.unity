@@ -10087,11 +10087,6 @@ Prefab:
       propertyPath: LobbyCamera
       value: 
       objectReference: {fileID: 1747100008}
-    - target: {fileID: 114288777014025848, guid: 64959c4680d76d5478645ece61867788,
-        type: 2}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64959c4680d76d5478645ece61867788, type: 2}
   m_IsPrefabParent: 0
