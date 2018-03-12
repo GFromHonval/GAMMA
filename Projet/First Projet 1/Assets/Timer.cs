@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
-    private float timer = 180.0f;
+    [SerializeField] private float timer = 180.0f;
     private bool HasEnded = false;
-	
+    [SerializeField] private GameObject GameOver;
+    
 
     private void Update ()
     {
@@ -14,7 +15,8 @@ public class Timer : MonoBehaviour
         if (timer <= 0)
         {
             timer = 0;
-            GetComponent<PlayerController>().enabled = false;
+            GameOver.SetActive(true);
+            //GetComponent<PlayerController>().enabled = false;
             End_Restart.EndGame();
         }
 

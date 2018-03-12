@@ -1008,6 +1008,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d701c794ed8bef242964f7c790456576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: 10
+  GameOver: {fileID: 842052121}
 --- !u!114 &140962244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4129,6 +4131,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 819605756}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &842052121 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1875722638554622, guid: 16647253627273346a2a9122325799c7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1554256470}
 --- !u!1 &858068470
 GameObject:
   m_ObjectHideFlags: 0
@@ -9081,12 +9088,12 @@ Prefab:
     - target: {fileID: 114807526280437128, guid: 16647253627273346a2a9122325799c7,
         type: 2}
       propertyPath: m_havePropertiesChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114807526280437128, guid: 16647253627273346a2a9122325799c7,
         type: 2}
       propertyPath: m_isInputParsingRequired
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114972228197962792, guid: 16647253627273346a2a9122325799c7,
         type: 2}
