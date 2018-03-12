@@ -701,6 +701,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 19.643002, y: 0, z: 0}
+--- !u!1001 &331990053
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4373603019795168, guid: 16647253627273346a2a9122325799c7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373603019795168, guid: 16647253627273346a2a9122325799c7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373603019795168, guid: 16647253627273346a2a9122325799c7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373603019795168, guid: 16647253627273346a2a9122325799c7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373603019795168, guid: 16647253627273346a2a9122325799c7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373603019795168, guid: 16647253627273346a2a9122325799c7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373603019795168, guid: 16647253627273346a2a9122325799c7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373603019795168, guid: 16647253627273346a2a9122325799c7, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 114807526280437128, guid: 16647253627273346a2a9122325799c7,
+        type: 2}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114807526280437128, guid: 16647253627273346a2a9122325799c7,
+        type: 2}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114972228197962792, guid: 16647253627273346a2a9122325799c7,
+        type: 2}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 550456214}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 16647253627273346a2a9122325799c7, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &381315214
 GameObject:
   m_ObjectHideFlags: 0
@@ -943,8 +1000,6 @@ MonoBehaviour:
     - m_Text: Level 1
       m_Image: {fileID: 0}
     - m_Text: Level 2
-      m_Image: {fileID: 0}
-    - m_Text: Level 3
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
