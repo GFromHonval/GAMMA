@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc />
+    <lastmod>2018-03-12</lastmod>
+  </url>
+  <url oeid="a22c01c7-f741-42a3-8b73-d94dec611af5" oelang="DEFAULT">
+    <loc>index.htm</loc>
+    <lastmod>2018-03-12</lastmod>
+  </url>
+  <url oeid="bf495c6a-4399-4279-ad58-cc22de77604e" oelang="DEFAULT">
+    <loc>SAMPLE.htm</loc>
+    <lastmod>2018-03-12</lastmod>
+  </url>
+  <url oeid="f346e280-5380-488c-98e9-61c8468e1448" oelang="DEFAULT">
+    <loc>Histoire de Gamma.htm</loc>
+    <lastmod>2018-03-12</lastmod>
+  </url>
+</urlset>
