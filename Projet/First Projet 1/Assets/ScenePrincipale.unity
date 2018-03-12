@@ -9100,6 +9100,10 @@ Prefab:
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 1296824917}
+    - target: {fileID: 1875722638554622, guid: 16647253627273346a2a9122325799c7, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 16647253627273346a2a9122325799c7, type: 2}
   m_IsPrefabParent: 0
