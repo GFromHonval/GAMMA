@@ -14,8 +14,9 @@ public class AIBehave : MonoBehaviour {
 	private Vector3 StartPos;
 	public GameObject[] waypoints;
 	private int currentWP;
-	private float rotSpeed = 0.02f;
+	private float rotSpeed = 10f;
 	private float speed = 1.5f;
+	private float accuracyWP = 0.5f;
 	//private GameObject[] players;
 
 	// Use this for initialization
@@ -29,11 +30,12 @@ public class AIBehave : MonoBehaviour {
 	{
 		//players = GameObject.FindGameObjectsWithTag("Player");
 		//Player = players[0].transform;
-		Vector3 direction = Player.position - this.transform.position;
-
+		Vector3 direction = Player.position - transform.position;
+		direction.y = 0;
 		if (waypoints.Length > 0)
 		{
-			if (waypoints[currentWP].transform.position == transform.position)
+			Debug.Log(currentWP);
+			if (Vector3.Distance(waypoints[currentWP].transform.position, transform.position) < accuracyWP)
 			{
 				currentWP++;
 				if (currentWP >= waypoints.Length)
