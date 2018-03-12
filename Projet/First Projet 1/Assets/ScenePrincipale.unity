@@ -1021,7 +1021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ConnectText: {fileID: 1748987489}
-  Player: {fileID: 1836096919002726, guid: 1b68148bc8f3cb84f84b27dc81ba1ec6, type: 2}
+  Player: {fileID: 1073722298401662, guid: f33bec2dc9a5a564685a1b66d8a74a2c, type: 2}
   SpawnPoint: {fileID: 1296824917}
   LobbyCamera: {fileID: 1606570994}
 --- !u!4 &140962245

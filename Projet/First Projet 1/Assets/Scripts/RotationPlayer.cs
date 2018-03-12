@@ -11,8 +11,6 @@ public class RotationPlayer : MonoBehaviour {
    
 	void Update () {
 		
-		IsJumping = OnCollisionEnter(IsJumping);
-		
 		if(Input.GetKey(KeyCode.UpArrow))
 			transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
         
@@ -27,13 +25,9 @@ public class RotationPlayer : MonoBehaviour {
 
 		if (Input.GetKey(KeyCode.Space) && !IsJumping)
 		{
-			IsJumping = true;	
+			//IsJumping = true;	
 			transform.Translate(Vector3.up* jumpPower * Time.deltaTime);
 		}
 	}
 
-	private bool OnCollisionEnter(bool jump)
-	{
-		return jump = !jump;
-	}
 }
