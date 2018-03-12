@@ -16,7 +16,7 @@ public class PlayerMov : MonoBehaviour
 
         if (controller.isGrounded)
         {
-            moveDir = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+            moveDir = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
 
             moveDir = transform.TransformDirection(moveDir);
 
