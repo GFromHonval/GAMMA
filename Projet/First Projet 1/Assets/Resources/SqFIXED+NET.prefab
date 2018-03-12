@@ -48,6 +48,7 @@ GameObject:
   - component: {fileID: 114959958815072438}
   - component: {fileID: 114344956271892798}
   - component: {fileID: 114526446439570746}
+  - component: {fileID: 114917974818529558}
   m_Layer: 0
   m_Name: SqFIXED+NET
   m_TagString: Player
@@ -283,13 +284,13 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1836096919002726}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fbccde3a50befba42ba5ea00a140403e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  jumpForce: 8
+  speed: 2
+  jumpForce: 9
   gravity: 30
   moveDir: {x: 0, y: 0, z: 0}
 --- !u!114 &114621480166121372
@@ -318,6 +319,20 @@ MonoBehaviour:
   instantiationId: -1
   currentMasterID: -1
   isRuntimeInstantiated: 0
+--- !u!114 &114917974818529558
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1836096919002726}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87a29548078bf7b4ea54837d7deaa460, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 2
+  turnSpeed: 30
+  jumpPower: 6
 --- !u!114 &114959958815072438
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -372,7 +387,7 @@ CharacterController:
   m_GameObject: {fileID: 1836096919002726}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Height: 0.16
   m_Radius: 0.03
