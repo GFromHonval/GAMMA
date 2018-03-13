@@ -23,9 +23,8 @@ public class teleport : MonoBehaviour
 		col.transform.position = destination.position;
 		col.transform.rotation = destination.rotation;
 		
-		/*Je pense plus nécessaire
+		/*Je pense plus nécessaire, en tout cas tant qu'il n'y a pas d'animations
 			col.transform.position = destination - Vector3.forward ;
-			col.transform.Rotate(Vector3.up * 180);
 		*/
 	}
 }

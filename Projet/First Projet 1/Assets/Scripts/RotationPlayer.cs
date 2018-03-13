@@ -76,4 +76,11 @@ public class RotationPlayer : MonoBehaviour
 		
 	}
 
+	/*private void OnCollisionEnter(Collision other)
+	{
+		if (!IsJumping)
+		{
+			if ()
+		}
+	}*/
 }
