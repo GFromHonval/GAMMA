@@ -4,23 +4,28 @@ using UnityEngine;
 
 public class teleport : MonoBehaviour
 {
-	private Vector3 destination;
+	private Transform destination;
 	public GameObject VersPortail1;
 	public GameObject VersPortail2;
 	// Update is called once per frame
 	private void OnCollisionEnter(Collision col)
 	{
 
-		if (this.name == "Portail1")
+		if (name == "Portail1")
 		{
-			destination = VersPortail2.transform.position;
+			destination = VersPortail2.transform;
 		}
 		else
 		{
-			destination = VersPortail1.transform.position;
+			destination = VersPortail1.transform;
 		}
 
-		col.transform.position = destination - Vector3.forward ;
-		col.transform.Rotate(Vector3.up * 180);
+		col.transform.position = destination.position;
+		col.transform.rotation = destination.rotation;
+		
+		/*Je pense plus nécessaire
+			col.transform.position = destination - Vector3.forward ;
+			col.transform.Rotate(Vector3.up * 180);
+		*/
 	}
 }
