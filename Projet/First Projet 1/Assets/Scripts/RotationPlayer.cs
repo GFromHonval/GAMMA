@@ -4,7 +4,7 @@ using JetBrains.Annotations;
 using UnityEditor;
 using UnityEngine;
 
-public class RotationPlayer : MonoBehaviour
+public class RotationPlayer : Photon.MonoBehaviour
 {
 	private float Life;
     private float Damage;
@@ -53,7 +53,7 @@ public class RotationPlayer : MonoBehaviour
 			}
 		}
 
-		if (Life > 0)
+		if (Life > 0 && photonView.isMine)
 		{
 			if (Input.GetKey(KeyCode.UpArrow))
 				transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
@@ -72,6 +72,14 @@ public class RotationPlayer : MonoBehaviour
 				//IsJumping = true;	
 				transform.Translate(Vector3.up * jumpPower * Time.deltaTime);
 			}
+			/*else
+			{
+				Debug.Log("zojfbsjdfksjdfjjjjjjjjjjjjjjjjjjjjjj");
+				GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+				GetComponent<Rigidbody>().velocity = Vector3.zero;
+			}*/
+			
+			
 		}
 		
 	}
