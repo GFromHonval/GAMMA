@@ -12,6 +12,7 @@ public class RotationPlayer : Photon.MonoBehaviour
 	private GameObject LePlusB;
 	private Transform RespawnP;
 	private GameObject GameO;
+	float GroundDistance;
 	
 	public float moveSpeed = 10f;
 	public float turnSpeed = 50f;
@@ -31,6 +32,10 @@ public class RotationPlayer : Photon.MonoBehaviour
 
 
 	void Update () {
+		
+		
+		Debug.Log(GroundDistance);
+		
 		
 		if (transform.position.y < LePlusB.transform.position.y)
 		{
@@ -67,17 +72,41 @@ public class RotationPlayer : Photon.MonoBehaviour
 			if (Input.GetKey(KeyCode.RightArrow))
 				transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
 
-			if (Input.GetKey(KeyCode.Space) && !IsJumping)
+			if (!IsJumping)
 			{
-				//IsJumping = true;	
-				transform.Translate(Vector3.up * jumpPower * Time.deltaTime);
+				RaycastHit hit;
+				Vector3 GroundPosition;
+				if (Physics.Raycast(transform.position, Vector3.down, out hit))
+				{
+					GroundPosition = new Vector3(hit.point.x, hit.point.y, hit.point.z);
+					GroundDistance = Vector3.Distance(transform.position, GroundPosition);
+					Debug.Log("set distance sol");
+				}
+				
+				if (Input.GetKey(KeyCode.Space))
+				{
+					Debug.Log("Appuies sur espace");
+					IsJumping = true;
+					transform.Translate(Vector3.up * jumpPower * Time.deltaTime);
+				}
 			}
-			/*else
+			else
 			{
-				Debug.Log("zojfbsjdfksjdfjjjjjjjjjjjjjjjjjjjjjj");
+				RaycastHit hit;
+				if (Physics.Raycast(transform.position, Vector3.down, out hit))
+				{
+					Debug.Log("test quand tu sautes pas");
+
+					if (Vector3.Distance(transform.position, hit.transform.position) < GroundDistance + 0.1f )
+					{
+						IsJumping = false;
+						Debug.Log("test pour mettre jump faux");
+					}
+				}
+				
 				GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
 				GetComponent<Rigidbody>().velocity = Vector3.zero;
-			}*/
+			}
 			
 			
 		}

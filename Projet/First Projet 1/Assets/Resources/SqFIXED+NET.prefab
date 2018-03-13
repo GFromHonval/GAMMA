@@ -43,11 +43,11 @@ GameObject:
   - component: {fileID: 54898980574263394}
   - component: {fileID: 136465535232543446}
   - component: {fileID: 95817455333120112}
-  - component: {fileID: 143290693668212006}
   - component: {fileID: 114263493388621638}
   - component: {fileID: 114959958815072438}
   - component: {fileID: 114344956271892798}
   - component: {fileID: 114917974818529558}
+  - component: {fileID: 65489800570793730}
   m_Layer: 0
   m_Name: SqFIXED+NET
   m_TagString: Player
@@ -62,7 +62,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1836096919002726}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.339, y: 1, z: 1.929}
+  m_LocalPosition: {x: 2.339, y: 0.837, z: -0.188}
   m_LocalScale: {x: 10.5, y: 10.5, z: 10.5}
   m_Children:
   - {fileID: 4671430421772914}
@@ -174,6 +174,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!65 &65489800570793730
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1836096919002726}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 0.0223943, y: 0.0028145371, z: 0.015400461}
+  m_Center: {x: -0.00074233045, y: -0.0938, z: -0.0010642182}
 --- !u!81 &81037812222630172
 AudioListener:
   m_ObjectHideFlags: 1
@@ -316,7 +328,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 2
   turnSpeed: 100
-  jumpPower: 6
+  jumpPower: 84556
 --- !u!114 &114959958815072438
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -363,20 +375,3 @@ CapsuleCollider:
   m_Height: 0.17
   m_Direction: 1
   m_Center: {x: 0, y: -0.0103, z: 0}
---- !u!143 &143290693668212006
-CharacterController:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1836096919002726}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Height: 0.16
-  m_Radius: 0.03
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.0001
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: -0.012, z: 0}

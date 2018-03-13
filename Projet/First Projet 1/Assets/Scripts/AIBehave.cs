@@ -33,7 +33,6 @@ public class AIBehave : MonoBehaviour {
 		direction.y = 0;
 		if (waypoints.Length > 0)
 		{
-			Debug.Log(currentWP);
 			if (Vector3.Distance(waypoints[currentWP].transform.position, transform.position) < accuracyWP)
 			{
 				currentWP++;
