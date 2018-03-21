@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using JetBrains.Annotations;
 using UnityEditor;
 using UnityEngine;
+using Debug = UnityEngine.Debug;
 
-public class RotationPlayer : Photon.MonoBehaviour
+public class RotationPlayer : MonoBehaviour
 {
 	private float Life;
     private float Damage;
@@ -34,9 +36,6 @@ public class RotationPlayer : Photon.MonoBehaviour
 	void Update () {
 		
 		
-		Debug.Log(GroundDistance);
-		
-		
 		if (transform.position.y < LePlusB.transform.position.y)
 		{
 			if (Life <= Damage)
@@ -58,7 +57,7 @@ public class RotationPlayer : Photon.MonoBehaviour
 			}
 		}
 
-		if (Life > 0 && photonView.isMine)
+		if (Life > 0 )
 		{
 			if (Input.GetKey(KeyCode.UpArrow))
 				transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
@@ -80,44 +79,35 @@ public class RotationPlayer : Photon.MonoBehaviour
 				{
 					GroundPosition = new Vector3(hit.point.x, hit.point.y, hit.point.z);
 					GroundDistance = Vector3.Distance(transform.position, GroundPosition);
-					Debug.Log("set distance sol");
 				}
 				
-				if (Input.GetKey(KeyCode.Space))
+				if (Input.GetKeyDown(KeyCode.Space))
 				{
-					Debug.Log("Appuies sur espace");
 					IsJumping = true;
-					transform.Translate(Vector3.up * jumpPower * Time.deltaTime);
+					transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.up * jumpPower, 0.5f * Time.deltaTime);
 				}
 			}
 			else
 			{
-				RaycastHit hit;
-				if (Physics.Raycast(transform.position, Vector3.down, out hit))
+				if (Input.GetKey(KeyCode.Space))
 				{
-					Debug.Log("test quand tu sautes pas");
-
-					if (Vector3.Distance(transform.position, hit.transform.position) < GroundDistance + 0.1f )
+					
+				}
+				else
+				{
+					RaycastHit hit;
+					if (Physics.Raycast(transform.position, Vector3.down, out hit))
 					{
-						IsJumping = false;
-						Debug.Log("test pour mettre jump faux");
+						if (Vector3.Distance(transform.position, hit.transform.position) < GroundDistance + 1f)
+						{
+							IsJumping = false;
+						}
+						Debug.DrawLine(transform.position, transform.position + Vector3.down * 20, Color.green);
+						Debug.DrawLine(hit.point, hit.point + Vector3.left * 5, Color.red);
 					}
 				}
-				
-				GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
-				GetComponent<Rigidbody>().velocity = Vector3.zero;
-			}
-			
-			
-		}
-		
-	}
 
-	/*private void OnCollisionEnter(Collision other)
-	{
-		if (!IsJumping)
-		{
-			if ()
+			}
 		}
-	}*/
+	}
 }
