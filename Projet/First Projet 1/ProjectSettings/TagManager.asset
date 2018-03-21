@@ -44,6 +44,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Activator
+    uniqueID: 2147226801
+    locked: 0
   - name: Note
     uniqueID: 944985589
     locked: 0
