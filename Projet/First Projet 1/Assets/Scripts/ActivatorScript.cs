@@ -10,6 +10,9 @@ public class ActivatorScript : MonoBehaviour
 	private SpriteRenderer sr;
 	Color old ;
 	public float sec;
+	public bool createMode;
+	public GameObject n;
+		 
 
 	private GameObject note;
 	// Use this for initialization
@@ -25,13 +28,23 @@ public class ActivatorScript : MonoBehaviour
 
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown(key))
-			StartCoroutine(Pressed());
-		if (Input.GetKeyDown(key) && active)
+		if (createMode )
 		{
-			Destroy(note);
-			AddScore();
-			active = false;
+			if (Input.GetKeyDown(key))
+				Instantiate(n, transform.position , Quaternion.identity);
+		}
+		else
+		{
+
+
+			if (Input.GetKeyDown(key))
+				StartCoroutine(Pressed());
+			if (Input.GetKeyDown(key) && active)
+			{
+				Destroy(note);
+				AddScore();
+				active = false;
+			}
 		}
 	}
 
