@@ -289,6 +289,7 @@
         <e p="Scripts" t="Include">
           <e p="ActivatorScript.cs" t="Include" />
           <e p="AIBehave.cs" t="Include" />
+          <e p="BoutonEtPlateforme.cs" t="Include" />
           <e p="End_Restart.cs" t="Include" />
           <e p="FirstTuto" t="Include">
             <e p="Billboard.cs" t="Include" />
