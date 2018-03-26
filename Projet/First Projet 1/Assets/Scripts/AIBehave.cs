@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AIBehave : MonoBehaviour {
+public class AIBehave : Photon.MonoBehaviour {
 
 	//https://www.youtube.com/watch?v=OmoKw1ikAi8&t=23s
 	public Transform Player;
@@ -16,7 +16,7 @@ public class AIBehave : MonoBehaviour {
 	private float rotSpeed = 10f;
 	private float speed = 1.5f;
 	private float accuracyWP = 0.5f;
-	//private GameObject[] players;
+	private GameObject[] players;
 
 	// Use this for initialization
 	void Start ()
@@ -27,28 +27,28 @@ public class AIBehave : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		//players = GameObject.FindGameObjectsWithTag("Player");
-		//Player = players[0].transform;
-		Vector3 direction = Player.position - transform.position;
-		direction.y = 0;
-		if (waypoints.Length > 0)
+		players = GameObject.FindGameObjectsWithTag("Player");
+		foreach (GameObject P in players)
 		{
-			if (Vector3.Distance(waypoints[currentWP].transform.position, transform.position) < accuracyWP)
+			Vector3 direction = P.transform.position - transform.position;
+			direction.y = 0;
+			if (waypoints.Length > 0)
 			{
-				currentWP++;
-				if (currentWP >= waypoints.Length)
+				if (Vector3.Distance(waypoints[currentWP].transform.position, transform.position) < accuracyWP)
 				{
-					currentWP = 0;
+					currentWP++;
+					if (currentWP >= waypoints.Length)
+					{
+						currentWP = 0;
+					}
 				}
+	
+				direction = waypoints[currentWP].transform.position - transform.position;
+				transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction),rotSpeed*Time.deltaTime);
+				transform.Translate(0,0,Time.deltaTime * speed);
 			}
 
-			direction = waypoints[currentWP].transform.position - transform.position;
-			transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction),rotSpeed*Time.deltaTime);
-			transform.Translate(0,0,Time.deltaTime * speed);
-		}
-		else
-		{
-			if (Vector3.Distance(Player.position, this.transform.position) < DistanceDeDetection)
+			if (Vector3.Distance(P.transform.position, this.transform.position) < DistanceDeDetection)
 			{
 				this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), 0.1f);
 				Head.GetComponent<Renderer>().material = ColorAttack;
