@@ -5,7 +5,6 @@ using UnityEngine;
 public class AIBehave : Photon.MonoBehaviour {
 
 	//https://www.youtube.com/watch?v=OmoKw1ikAi8&t=23s
-	public Transform Player;
 	public int DistanceDeDetection;
 	public GameObject Head;
 	public Material ColorInnofensif;
@@ -23,11 +22,15 @@ public class AIBehave : Photon.MonoBehaviour {
 	{
 		StartPos = this.transform;
 	}
-	
+
+	private void FixedUpdate()
+	{
+		players = GameObject.FindGameObjectsWithTag("Player");
+	}
+
 	// Update is called once per frame
 	void Update ()
 	{
-		players = GameObject.FindGameObjectsWithTag("Player");
 		foreach (GameObject P in players)
 		{
 			Vector3 direction = P.transform.position - transform.position;

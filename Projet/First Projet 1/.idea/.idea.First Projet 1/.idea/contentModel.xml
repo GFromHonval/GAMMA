@@ -286,6 +286,9 @@
             </e>
           </e>
         </e>
+        <e p="Cartoon Temple Building Kit" t="Include">
+          <e p="readme.txt" t="Include" />
+        </e>
         <e p="Scripts" t="Include">
           <e p="ActivatorScript.cs" t="Include" />
           <e p="AIBehave.cs" t="Include" />
@@ -302,10 +305,7 @@
             <e p="GoldPickUp.cs" t="Include" />
           </e>
           <e p="MenuActions.cs" t="Include" />
-          <e p="move.cs" t="Include" />
           <e p="Note.cs" t="Include" />
-          <e p="PlayerMouvement.cs" t="Include" />
-          <e p="PlayerMove.cs" t="Include" />
           <e p="PPTex.cs" t="Include" />
           <e p="RespawnQuandOnTombe.cs" t="Include" />
           <e p="RotationPlayer.cs" t="Include" />

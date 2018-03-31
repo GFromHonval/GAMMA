@@ -102,8 +102,8 @@ public class RotationPlayer : MonoBehaviour
 						{
 							IsJumping = false;
 						}
-						Debug.DrawLine(transform.position, transform.position + Vector3.down * 20, Color.green);
-						Debug.DrawLine(hit.point, hit.point + Vector3.left * 5, Color.red);
+						//Debug.DrawLine(transform.position, transform.position + Vector3.down * 20, Color.green);
+						//Debug.DrawLine(hit.point, hit.point + Vector3.left * 5, Color.red);
 					}
 				}
 
