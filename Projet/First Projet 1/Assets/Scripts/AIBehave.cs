@@ -66,9 +66,6 @@ public class AIBehave : Photon.MonoBehaviour {
 					Head.GetComponent<Renderer>().material = ColorInnofensif;
 				}
 			}
-			
-			
-
 		}
 	}
 }

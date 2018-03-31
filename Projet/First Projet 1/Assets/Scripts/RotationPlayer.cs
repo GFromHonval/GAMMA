@@ -35,7 +35,6 @@ public class RotationPlayer : MonoBehaviour
 
 	void Update () {
 		
-		
 		if (transform.position.y < LePlusB.transform.position.y)
 		{
 			if (Life <= Damage)
@@ -106,7 +105,6 @@ public class RotationPlayer : MonoBehaviour
 						//Debug.DrawLine(hit.point, hit.point + Vector3.left * 5, Color.red);
 					}
 				}
-
 			}
 		}
 	}
