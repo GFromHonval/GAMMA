@@ -12,13 +12,14 @@ public class ActivatorScript : MonoBehaviour
 	public float sec;
 	public bool createMode;
 	public GameObject n;
-		 
-
-	private GameObject note;
+	private GameObject note,gm;
+	
+	
 	// Use this for initialization
 	void Start ()
 	{
 		old = sr.color;
+		gm = GameObject.Find("GameManagerMusic");
 	}
 
 	private void Awake()
@@ -42,8 +43,13 @@ public class ActivatorScript : MonoBehaviour
 			if (Input.GetKeyDown(key) && active)
 			{
 				Destroy(note);
+				gm.GetComponent<GameManagerMusic>().AddStreak();
 				AddScore();
 				active = false;
+			}
+			else if (Input.GetKeyDown(key) && !active)
+			{
+				gm.GetComponent<GameManagerMusic>().ResetStreak();
 			}
 		}
 	}
@@ -61,11 +67,12 @@ public class ActivatorScript : MonoBehaviour
 	private void OnTriggerExit2D(Collider2D col)
 	{
 		active = false;
+		//gm.GetComponent<GameManagerMusic>().ResetStreak();
 	}
 
 	void AddScore()
 	{
-		PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score") + 100);
+		PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score") + gm.GetComponent<GameManagerMusic>().GetScore());
 	}
 
 	IEnumerator Pressed()
