@@ -289,11 +289,11 @@
         <e p="Cartoon Temple Building Kit" t="Include">
           <e p="readme.txt" t="Include" />
         </e>
-        <e p="Destroy.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="ActivatorScript.cs" t="Include" />
           <e p="AIBehave.cs" t="Include" />
           <e p="BoutonEtPlateforme.cs" t="Include" />
+          <e p="Destroy.cs" t="Include" />
           <e p="End_Restart.cs" t="Include" />
           <e p="FirstTuto" t="Include">
             <e p="Billboard.cs" t="Include" />
@@ -385,7 +385,6 @@
             <e p="PhotonNetworkManager.cs" t="Include" />
             <e p="PlayerNetwork.cs" t="Include" />
           </e>
-          <e p="VolumeMenu.cs" t="Include" />
         </e>
         <e p="Standard Assets" t="Include">
           <e p="Characters" t="Include">
@@ -464,7 +463,6 @@
             <e p="WaypointProgressTracker.cs" t="Include" />
           </e>
         </e>
-        <e p="VolumeBar.cs" t="Include" />
       </e>
       <e p="First Projet 1.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />

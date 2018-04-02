@@ -31,10 +31,10 @@ public class BoutonEtPlateforme : MonoBehaviour
 	{
 		BassePose = new Vector3(transform.position.x, BassePosition.position.y, transform.position.z);
 		HautePose = transform.position;
-		Area.x = transform.position.z - GetComponent<BoxCollider>().size.z * transform.localScale.z /2;
-		Area.y = transform.position.z + GetComponent<BoxCollider>().size.z * transform.localScale.z /2;
-		Area.z = transform.position.x - GetComponent<BoxCollider>().size.x * transform.localScale.x /2;
-		Area.w = transform.position.x + GetComponent<BoxCollider>().size.x * transform.localScale.x /2;
+		Area.x = transform.position.z - GetComponent<BoxCollider>().size.z * transform.localScale.z /2 - 0.2f;
+		Area.y = transform.position.z + GetComponent<BoxCollider>().size.z * transform.localScale.z /2 + 0.2f;
+		Area.z = transform.position.x - GetComponent<BoxCollider>().size.x * transform.localScale.x /2 - 0.2f; 
+		Area.w = transform.position.x + GetComponent<BoxCollider>().size.x * transform.localScale.x /2 + 0.2f;
 		StartPlateforme = new Vector3 (Plateforme.transform.position.x, Plateforme.transform.position.y, Plateforme.transform.position.z);
 		PlateformeState = "Monte";
 	}
