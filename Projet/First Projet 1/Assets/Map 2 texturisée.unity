@@ -1673,6 +1673,23 @@ Prefab:
       propertyPath: LobbyCamera
       value: 
       objectReference: {fileID: 1527718774}
+    - target: {fileID: 4385465423069262, guid: cbcd4a2ba2a595f4c8394939a6f52160, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -109.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385465423069262, guid: cbcd4a2ba2a595f4c8394939a6f52160, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -3.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385465423069262, guid: cbcd4a2ba2a595f4c8394939a6f52160, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -56.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114777517022206690, guid: cbcd4a2ba2a595f4c8394939a6f52160,
+        type: 2}
+      propertyPath: LifeInThisLevel
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cbcd4a2ba2a595f4c8394939a6f52160, type: 2}
   m_IsPrefabParent: 0
