@@ -374,6 +374,70 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0e2068a5c7772c940b8250627261894e, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &40129625 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1073722298401662, guid: f33bec2dc9a5a564685a1b66d8a74a2c,
+    type: 2}
+  m_PrefabInternal: {fileID: 34499123}
+--- !u!114 &40129626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 40129625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fa59bc4ec2d9be439038d09bfab853c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpeedMovement: 0
+  SpeedRotation: 0
+  SpeedBullet: 0
+  BulletPrefab: {fileID: 0}
+  BulletSpawn: {fileID: 0}
+--- !u!114 &40129627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 40129625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 243
+    i1: 59
+    i2: 236
+    i3: 45
+    i4: 201
+    i5: 165
+    i6: 165
+    i7: 100
+    i8: 104
+    i9: 90
+    i10: 27
+    i11: 102
+    i12: 216
+    i13: 167
+    i14: 74
+    i15: 44
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
+--- !u!114 &40129630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 40129625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c59ba0703a79d54c93a0e9991174504, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &45695225
 Prefab:
   m_ObjectHideFlags: 0
@@ -2751,6 +2815,26 @@ Prefab:
     - target: {fileID: 1183415353586596, guid: cbcd4a2ba2a595f4c8394939a6f52160, type: 2}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 114777517022206690, guid: cbcd4a2ba2a595f4c8394939a6f52160,
+        type: 2}
+      propertyPath: RespawnPoint
+      value: 
+      objectReference: {fileID: 1163163206}
+    - target: {fileID: 114335607876368244, guid: cbcd4a2ba2a595f4c8394939a6f52160,
+        type: 2}
+      propertyPath: SpawnPoint
+      value: 
+      objectReference: {fileID: 1163163206}
+    - target: {fileID: 114335607876368244, guid: cbcd4a2ba2a595f4c8394939a6f52160,
+        type: 2}
+      propertyPath: LobbyCamera
+      value: 
+      objectReference: {fileID: 1527718774}
+    - target: {fileID: 114777517022206690, guid: cbcd4a2ba2a595f4c8394939a6f52160,
+        type: 2}
+      propertyPath: LifeInThisLevel
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cbcd4a2ba2a595f4c8394939a6f52160, type: 2}
