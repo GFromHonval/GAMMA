@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManagerMusic : MonoBehaviour
 {
@@ -13,7 +14,10 @@ public class GameManagerMusic : MonoBehaviour
 
 	// Use this for initialization
 	void Start () {
-		
+		PlayerPrefs.SetInt("Score", 0);
+		PlayerPrefs.SetInt("Streak", 0);
+		PlayerPrefs.SetInt("Mult", 1);
+		PlayerPrefs.SetInt("Note Touch", 0);
 	}
 	
 	// Update is called once per frame
@@ -35,18 +39,13 @@ public class GameManagerMusic : MonoBehaviour
 	{
 		streak++;
 		if (streak >= valuetogetstreak1)
-		{
 			multiplier = 2;
-		}
 		if (streak >= valuetogetstreak2)
-		{
 			multiplier = 4;
-		}
 		if (streak >= valuetogetstreak3)
-		{
 			multiplier = 8;
-		}
 		
+		PlayerPrefs.SetInt("Note Touch", PlayerPrefs.GetInt("Note Touch")+1);
 		UptadeGUI();
 	}
 
@@ -57,10 +56,17 @@ public class GameManagerMusic : MonoBehaviour
 		UptadeGUI();
 	}
 
+	public void Win()
+	{
+		SceneManager.GetSceneByName("SceneMusicalWIn");
+	}
+
 	void UptadeGUI()
 	{
 		PlayerPrefs.SetInt("Streak", streak);
 		PlayerPrefs.SetInt("Mult", multiplier);
+		PlayerPrefs.SetInt("Mult", 1);
+		
 	}
 	
 }

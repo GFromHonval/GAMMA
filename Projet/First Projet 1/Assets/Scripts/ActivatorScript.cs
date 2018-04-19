@@ -15,6 +15,7 @@ public class ActivatorScript : MonoBehaviour
 	private GameObject note,gm;
 	
 	
+	
 	// Use this for initialization
 	void Start ()
 	{
@@ -45,6 +46,7 @@ public class ActivatorScript : MonoBehaviour
 				Destroy(note);
 				gm.GetComponent<GameManagerMusic>().AddStreak();
 				AddScore();
+				
 				active = false;
 			}
 			else if (Input.GetKeyDown(key) && !active)
