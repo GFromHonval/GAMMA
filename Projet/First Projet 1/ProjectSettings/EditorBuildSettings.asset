@@ -5,12 +5,18 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Menu1.unity
-    guid: 637412221f7d1ba49a8b0a50acc54ee7
-  - enabled: 1
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: Assets/ScenePrincipale.unity
     guid: c9bd3b17758ed81429f397b1278f8d4c
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Level 2.unity
-    guid: 8457e7115942fe34fabafcf7c8487162
+    path: Assets/Niveau musical.unity
+    guid: d818f743167b55b4986766d6d13e79cb
+  - enabled: 0
+    path: Assets/WinMusic.unity
+    guid: f37e37ea0dffec041aebc176a41d5ce0
