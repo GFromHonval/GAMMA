@@ -22,6 +22,7 @@ public class MenuActions : MonoBehaviour {
         int Choice = LvlChoice.value + 1;
         if (ScenesBuild.Contains(Choice))
         {
+            PhotonNetwork.room.open = false;
             SceneManager.LoadScene(Choice);
         }
     }

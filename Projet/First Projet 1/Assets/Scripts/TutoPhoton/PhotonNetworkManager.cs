@@ -8,14 +8,23 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 
 	[SerializeField] private Text ConnectText;
 	[SerializeField] private GameObject Player;
-	[SerializeField] private Transform SpawnPoint;
+	[SerializeField] private Transform SpawnPoint1;
+	[SerializeField] private Transform SpawnPoint2;
 	[SerializeField] private GameObject LobbyCamera;
 	[SerializeField] private List<string> Joueurs;
 	
 	// Use this for initialization
 	void Start ()
 	{
-		PhotonNetwork.ConnectUsingSettings("0.1");
+		if (!PhotonNetwork.connected)
+		{
+			PhotonNetwork.ConnectUsingSettings("0.1");
+		}
+		else
+		{
+			Debug.Log("Joined second scene");
+			PhotonNetwork.Instantiate(Player.name,SpawnPoint1.position, SpawnPoint1.rotation, 0);
+		}
 	}
 
 	private void OnJoinedLobby()
@@ -41,7 +50,11 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 	public virtual void OnJoinedRoom()
 	{
 		//spawn the player
-		PhotonNetwork.Instantiate(Player.name,SpawnPoint.position, SpawnPoint.rotation, 0);
+		Debug.Log(PhotonNetwork.countOfPlayersOnMaster);
+		PhotonNetwork.Instantiate(Player.name,SpawnPoint1.position, SpawnPoint1.rotation, 0);
+		Debug.Log(PhotonNetwork.countOfPlayersOnMaster);
+		Player.tag = "Player." + PhotonNetwork.countOfPlayersOnMaster;
+		Debug.Log(Player.tag);
 		//disable the lobby camera
 		LobbyCamera.SetActive(false);
 	}
@@ -49,7 +62,6 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-
 		ConnectText.text = PhotonNetwork.connectionStateDetailed.ToString();
 	}
 }
