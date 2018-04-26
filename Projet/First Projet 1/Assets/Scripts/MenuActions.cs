@@ -22,7 +22,10 @@ public class MenuActions : MonoBehaviour {
         int Choice = LvlChoice.value + 1;
         if (ScenesBuild.Contains(Choice))
         {
-            PhotonNetwork.room.open = false;
+<<<<<<< HEAD
+            PhotonNetwork.room.IsOpen = false;
+=======
+>>>>>>> parent of 11bcff5... spawn
             SceneManager.LoadScene(Choice);
         }
     }
