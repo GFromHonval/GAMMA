@@ -50,7 +50,7 @@ GameObject:
   - component: {fileID: 65280102609350380}
   m_Layer: 0
   m_Name: SqFIXED+NET
-  m_TagString: Player.1
+  m_TagString: Player.0
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

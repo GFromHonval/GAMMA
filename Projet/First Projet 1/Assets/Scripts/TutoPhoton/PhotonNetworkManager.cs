@@ -42,7 +42,7 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 
 	public virtual void OnJoinedRoom()
 	{
-		if (PhotonNetwork.playerList.Length == 2)
+		if (CanvasToDisable != null && PhotonNetwork.playerList.Length == 1)
 		{
 			//differencier menu des autres scenes
 			//trouver un moyen de garder les choix des joueurs en chargeant les scenes
@@ -51,7 +51,8 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 		//spawn the player
 
 		PhotonNetwork.Instantiate(Player.name,SpawnPoint1.position, SpawnPoint1.rotation, 0);
-		Player.tag = "Player." + PhotonNetwork.countOfPlayersInRooms  ;
+		//if (photonView.isMine)
+			Player.tag = "Player." + PhotonNetwork.countOfPlayersInRooms;
 		Debug.Log(Player.tag);
 
 		//disable the lobby camera
