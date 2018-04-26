@@ -7,16 +7,20 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 {
 
 	[SerializeField] private Text ConnectText;
-	[SerializeField] private GameObject Player;
+	[SerializeField] private PlayerClass Player;
 	[SerializeField] private Transform SpawnPoint1;
 	[SerializeField] private Transform SpawnPoint2;
 	[SerializeField] private GameObject LobbyCamera;
-	[SerializeField] private List<string> Joueurs;
-	[SerializeField] private Canvas CanvasToDisable;
+	[SerializeField] private Canvas CanvasForMaster;
+	[SerializeField] private Canvas CanvasForSecond;
 	
 	// Use this for initialization
 	void Start ()
 	{
+		if (CanvasForMaster != null)
+			CanvasForMaster.enabled = false;
+		if (CanvasForSecond != null)
+			CanvasForSecond.enabled = false;
 		PhotonNetwork.automaticallySyncScene = true;
 		if (!PhotonNetwork.connected)
 		{
@@ -25,7 +29,7 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 		else
 		{
 			Debug.Log("Joined second scene");
-			PhotonNetwork.Instantiate(Player.name,SpawnPoint1.position, SpawnPoint1.rotation, 0);
+			PhotonNetwork.Instantiate(Player.GetPlayerPrefab,SpawnPoint1.position, SpawnPoint1.rotation, 0);
 		}
 	}
 
@@ -42,19 +46,24 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 
 	public virtual void OnJoinedRoom()
 	{
-		if (CanvasToDisable != null && PhotonNetwork.playerList.Length == 1)
+		//differencier menu des autres scenes
+		//trouver un moyen de garder les choix des joueurs en chargeant les scenes
+		if (PhotonNetwork.playerList.Length == 2)
 		{
-			//differencier menu des autres scenes
-			//trouver un moyen de garder les choix des joueurs en chargeant les scenes
-			CanvasToDisable.enabled = false;
+			if (CanvasForSecond!= null)
+				CanvasForSecond.enabled = true;
+			PhotonNetwork.Instantiate(Player.GetPlayerPrefab,SpawnPoint2.position, SpawnPoint2.rotation, 0);
+			Player.GetComponent<PlayerClass>().GetPlayerName = "Player Two";
 		}
-		//spawn the player
+		else
+		{
+			if (CanvasForMaster != null)
+				CanvasForMaster.enabled = true;
+			PhotonNetwork.Instantiate(Player.GetPlayerPrefab,SpawnPoint1.position, SpawnPoint1.rotation, 0);
+			Player.GetComponent<PlayerClass>().GetPlayerName = "Player One";
+		}
 
-		PhotonNetwork.Instantiate(Player.name,SpawnPoint1.position, SpawnPoint1.rotation, 0);
-		//if (photonView.isMine)
-			Player.tag = "Player." + PhotonNetwork.countOfPlayersInRooms;
-		Debug.Log(Player.tag);
-
+		Debug.Log(Player.name);
 		//disable the lobby camera
 		LobbyCamera.SetActive(false);
 	}

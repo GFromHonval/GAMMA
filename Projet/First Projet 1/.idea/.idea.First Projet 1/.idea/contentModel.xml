@@ -308,6 +308,7 @@
           </e>
           <e p="MenuActions.cs" t="Include" />
           <e p="Note.cs" t="Include" />
+          <e p="PlayerClass.cs" t="Include" />
           <e p="PPTex.cs" t="Include" />
           <e p="RespawnQuandOnTombe.cs" t="Include" />
           <e p="RotationPlayer.cs" t="Include" />
