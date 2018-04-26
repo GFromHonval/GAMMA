@@ -9,14 +9,14 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 
 	[SerializeField] private Text ConnectText;
 	[SerializeField] private GameObject Player;
-	[SerializeField] private Transform SpawnPoint;
+	[SerializeField] private Transform SpawnPoint1;
+	[SerializeField] private Transform SpawnPoint2;
 	[SerializeField] private GameObject LobbyCamera;
 	[SerializeField] private List<string> Joueurs;
 	
 	// Use this for initialization
 	void Start ()
 	{
-<<<<<<< HEAD
 		PhotonNetwork.automaticallySyncScene = true;
 		if (!PhotonNetwork.connected)
 		{
@@ -27,10 +27,8 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 			Debug.Log("Joined second scene");
 			PhotonNetwork.Instantiate(Player.name,SpawnPoint1.position, SpawnPoint1.rotation, 0);
 		}
-=======
 		PhotonNetwork.ConnectUsingSettings("0.1");
->>>>>>> parent of 11bcff5... spawn
-	}
+		}
 
 	private void OnJoinedLobby()
 	{
@@ -56,13 +54,9 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 			Debug.Log("canvas disabled");
 		}
 		//spawn the player
-<<<<<<< HEAD
-		PhotonNetwork.Instantiate(Player.name,SpawnPoint1.position, SpawnPoint1.rotation, 0);
 		Player.tag = "Player." + PhotonNetwork.countOfPlayersInRooms  ;
 		Debug.Log(Player.tag);
-=======
-		PhotonNetwork.Instantiate(Player.name,SpawnPoint.position, SpawnPoint.rotation, 0);
->>>>>>> parent of 11bcff5... spawn
+		PhotonNetwork.Instantiate(Player.name,SpawnPoint1.position, SpawnPoint1.rotation, 0);
 		//disable the lobby camera
 		LobbyCamera.SetActive(false);
 	}

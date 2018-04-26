@@ -4,8 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - TagBoy
-  - TagGirl
+  - TBOY
+  - TGIRL
+  - Note
   - Player.1
   - Player.2
   - Player.0
