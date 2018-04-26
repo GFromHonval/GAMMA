@@ -22,8 +22,12 @@ public class MenuActions : MonoBehaviour {
         int Choice = LvlChoice.value + 1;
         if (ScenesBuild.Contains(Choice))
         {
+<<<<<<< HEAD
 
             PhotonNetwork.room.IsOpen = false;
+=======
+            PhotonNetwork.room.open = false;
+>>>>>>> parent of 3bb08cf... build
             SceneManager.LoadScene(Choice);
         }
     }
