@@ -23,41 +23,9 @@ public class MenuActions : Photon.MonoBehaviour {
         }
         int Choice = LvlChoice.value + 1;
 
-        //if (photonView.isMine && IsABoy.isOn)
-          //  GetComponent<PlayerClass>().GetPlayerPrefab = GetComponent<>()
-        
-        /*foreach (GameObject player in GameObject.FindGameObjectsWithTag("Player"))
-        {
-            if (player.GetComponent<PlayerClass>().GetPlayerName == "Player One")
-            {
-                if (IsABoy.isOn)
-                {
-                    player.GetComponent<PlayerClass>().GetPlayerName = "TheBoy";
-                    player.GetComponent<PlayerClass>().GetPlayerPrefab = player.GetComponent<PlayerClass>().GetPrefabBoyName;
-                }
-                else
-                {
-                    player.GetComponent<PlayerClass>().GetPlayerName = "TheGirl";
-                    player.GetComponent<PlayerClass>().GetPlayerPrefab = player.GetComponent<PlayerClass>().GetPrefabGirlName;
-                }
-            }
-            else
-            {
-                if (IsABoy.isOn)
-                {
-                    player.GetComponent<PlayerClass>().GetPlayerName = "TheGirl";
-                    player.GetComponent<PlayerClass>().GetPlayerPrefab = player.GetComponent<PlayerClass>().GetPrefabGirlName;
-                }
-                else
-                {
-                    player.GetComponent<PlayerClass>().GetPlayerName = "TheBoy";
-                    player.GetComponent<PlayerClass>().GetPlayerPrefab = player.GetComponent<PlayerClass>().GetPrefabBoyName;
-                }
-            }
-        }*/
         foreach (PlayerClass player in FindObjectsOfType<PlayerClass>())
         {
-            if (player.GetPlayerName == "Player One")
+            if (player.GetPlayerName == "PlayerOne")
             {
                 if (IsABoy.isOn)
                 {

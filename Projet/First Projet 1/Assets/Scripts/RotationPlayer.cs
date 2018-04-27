@@ -22,13 +22,17 @@ public class RotationPlayer : Photon.MonoBehaviour
 
 	void Start()
 	{
-		GameL = GameObject.Find("GameLogic");
-		RespawnQuandOnTombe RespawnScript = GameL.GetComponent<RespawnQuandOnTombe>();
-		LePlusB = RespawnScript.LePlusBas;
-		RespawnP = RespawnScript.RespawnPoint;
-		GameO = RespawnScript.GameOver;
-		Life = RespawnScript.LifeInThisLevel;
-		Damage = RespawnScript.DamageFallOfThisLevel;
+		GameParameters gameParameters = GameObject.Find("GameParameters").GetComponent<GameParameters>();
+		LePlusB = gameParameters.LePlusBas;
+		GameO = gameParameters.GameOver;
+		Life = gameParameters.LifeInThisLevel;
+		Damage = gameParameters.DamageFallOfThisLevel;
+		Debug.Log(Life);
+		PlayerClass Player = GameObject.Find("GameLogic").GetComponent<PlayerClass>();
+		if (Player.GetPlayerName == "TheGirl")
+			RespawnP = gameParameters.RespawnPoint1;
+		else
+			RespawnP = gameParameters.RespawnPoint2;
 	}
 
 
@@ -54,6 +58,7 @@ public class RotationPlayer : Photon.MonoBehaviour
 					GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
 					GetComponent<Rigidbody>().velocity = Vector3.zero;
 					Life -= Damage;
+					Debug.Log(Life);
 				}
 			}
 

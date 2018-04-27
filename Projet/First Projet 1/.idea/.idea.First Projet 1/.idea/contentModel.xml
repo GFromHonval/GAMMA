@@ -303,6 +303,7 @@
             <e p="PlayerController.cs" t="Include" />
           </e>
           <e p="GameManagerMusic.cs" t="Include" />
+          <e p="GameParameters.cs" t="Include" />
           <e p="GoldBAr" t="Include">
             <e p="GoldPickUp.cs" t="Include" />
           </e>

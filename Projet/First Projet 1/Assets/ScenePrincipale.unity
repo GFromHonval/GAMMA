@@ -7212,6 +7212,10 @@ Prefab:
       propertyPath: LifeInThisLevel
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 1097352879634344, guid: cbcd4a2ba2a595f4c8394939a6f52160, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cbcd4a2ba2a595f4c8394939a6f52160, type: 2}
   m_IsPrefabParent: 0

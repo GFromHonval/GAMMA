@@ -4,13 +4,13 @@ using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PlayerClass : MonoBehaviour
+public  class PlayerClass : MonoBehaviour
 {
 
-	private string PlayerNameInMine;
-	private string PlayerPrefab;
-	private string PrefabBoyName;
-	private string PrefabGirlName;
+	private static string PlayerNameInMine;
+	private static string PlayerPrefab;
+	private static string PrefabBoyName;
+	private static string PrefabGirlName;
 	[SerializeField] public GameObject PlayerBoy;
 	[SerializeField] public GameObject PlayerGirl;
 
@@ -47,8 +47,8 @@ public class PlayerClass : MonoBehaviour
 		PrefabGirlName = PlayerGirl.name;
 		PrefabBoyName = PlayerBoy.name;
 		PlayerPrefab = PrefabBoyName;
-		
 	}
+
 	// Update is called once per frame
 	void Update () {
 		

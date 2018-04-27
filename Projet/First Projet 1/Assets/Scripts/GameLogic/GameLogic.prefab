@@ -54,7 +54,6 @@ GameObject:
   - component: {fileID: 4085250740393188}
   - component: {fileID: 114335607876368244}
   - component: {fileID: 114126556865559330}
-  - component: {fileID: 114777517022206690}
   m_Layer: 0
   m_Name: GameLogic
   m_TagString: Untagged
@@ -171,9 +170,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ConnectText: {fileID: 114427309818451620}
-  Player: {fileID: 1836096919002726, guid: 1b68148bc8f3cb84f84b27dc81ba1ec6, type: 2}
-  SpawnPoint: {fileID: 0}
+  Player: {fileID: 0}
+  SpawnPoint1: {fileID: 0}
+  SpawnPoint2: {fileID: 0}
   LobbyCamera: {fileID: 0}
+  CanvasForMaster: {fileID: 0}
+  CanvasForSecond: {fileID: 0}
 --- !u!114 &114417123743259950
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -223,20 +225,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: New Text
---- !u!114 &114777517022206690
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1183415353586596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f791a4e6dde146f4ab8e1265c5bdf4e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LePlusBas: {fileID: 1005496040913368}
-  RespawnPoint: {fileID: 0}
-  GameOver: {fileID: 1097352879634344}
 --- !u!114 &114792503766258592
 MonoBehaviour:
   m_ObjectHideFlags: 1
