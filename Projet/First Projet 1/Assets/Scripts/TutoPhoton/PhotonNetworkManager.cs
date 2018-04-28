@@ -97,7 +97,6 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 		{
 			list.Add(player);
 		}
-		Debug.Log(list.Count);
 
 		ConnectText.text = PhotonNetwork.connectionStateDetailed.ToString();
 	}

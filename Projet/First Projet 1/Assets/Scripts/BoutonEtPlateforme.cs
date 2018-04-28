@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.Serialization.Formatters;
 using System.Text;
+using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Analytics;
@@ -23,10 +24,13 @@ public class BoutonEtPlateforme : MonoBehaviour
 	private string PlayerTag = "";
 	private Vector4 Area;
 	private string PlateformeState;
-	// Update is called once per frame
-
+	public bool StayPressedButton;
+	private bool HasExitTheArea;
+	
 	private void Start()
 	{
+		HasExitTheArea = true;
+		PlayerTag = "Player";
 		BassePose = new Vector3(transform.position.x, BassePosition.position.y, transform.position.z);
 		HautePose = transform.position;
 		Area.x = transform.position.z - GetComponent<BoxCollider>().size.z * transform.localScale.z /2 - 0.2f;
@@ -40,7 +44,9 @@ public class BoutonEtPlateforme : MonoBehaviour
 	private void Update()
 	{
 		if (IsPressing)
+		{
 			ToDo();
+		}
 		if (IsPressing && transform.position.y >= BassePose.y)
 		{
 			transform.position = Vector3.MoveTowards(transform.position, BassePose, Time.deltaTime);
@@ -49,13 +55,14 @@ public class BoutonEtPlateforme : MonoBehaviour
 		if (!IsPressing && transform.position.y < HautePose.y)
 		{
 			transform.position = Vector3.MoveTowards(transform.position, HautePose, Time.deltaTime);
-			PlayerTag = "";
+			PlayerTag = "Player";
 		}
+		if (StayPressedButton && !HasExitTheArea)
+			IsInArea();
 	}
 
 	private void ToDo()
 	{
-		Debug.Log(PlateformeState);
 		if (PlateformeState == "Monte")
 		{
 			Plateforme.transform.position = Vector3.MoveTowards(Plateforme.transform.position, EndPlateforme.transform.position, Time.deltaTime);
@@ -79,29 +86,37 @@ public class BoutonEtPlateforme : MonoBehaviour
 	
 	private void IsInArea()
 	{
-		if (PlayerTag != "" && GameObject.FindGameObjectWithTag(PlayerTag).transform.position.z < Area.x
-		    || GameObject.FindGameObjectWithTag(PlayerTag).transform.position.z > Area.y
-		    || GameObject.FindGameObjectWithTag(PlayerTag).transform.position.x < Area.z
-		    || GameObject.FindGameObjectWithTag(PlayerTag).transform.position.x > Area.w)
+	
+		if (GameObject.FindGameObjectWithTag(PlayerTag).transform.position.z < Area.x
+			|| GameObject.FindGameObjectWithTag(PlayerTag).transform.position.z > Area.y
+			|| GameObject.FindGameObjectWithTag(PlayerTag).transform.position.x < Area.z
+			|| GameObject.FindGameObjectWithTag(PlayerTag).transform.position.x > Area.w)
 		{
-			IsPressing = false;
+			if (!StayPressedButton)
+				IsPressing = false;
+			else
+			{
+				HasExitTheArea = true;
+			}
 		}
 		else
 		{
-			IsPressing = true;
+			if (!StayPressedButton)
+				IsPressing = true;
+			else
+			{
+				if (HasExitTheArea)
+				{
+					IsPressing = !IsPressing;
+					HasExitTheArea = false;
+				}
+			}
 		}
+		
 	}
 	
 	private void OnCollisionEnter(Collision other)
 	{
-		//FirstTry
-		/*float high = GetComponent<BoxCollider>().size.y * transform.localScale.y / 2;
-		Vector3 contact = other.contacts[0].point;
-		PlayerTag = other.gameObject.tag;
-		if (contact.y >= transform.position.y + high)
-		{
-			IsPressing = true;
-		}*/
 		PlayerTag = other.gameObject.tag;
 		IsInArea();
 	}
