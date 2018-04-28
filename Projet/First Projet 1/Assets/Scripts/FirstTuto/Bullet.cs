@@ -9,7 +9,12 @@ public class Bullet : MonoBehaviour {
         GameObject hit = collision.gameObject; //Creer l'objet hit qui refere a l'objet touche
 
         if (hit != null && hit.CompareTag("Player"))
-            hit.GetComponent<RotationPlayer>().GetLife -= GameObject.Find("GameParameters").GetComponent<GameParameters>().DamageAttackedThisLevel;
+        {
+            if (hit.GetComponent<RotationPlayer>().GetLife < GameObject.Find("GameParameters").GetComponent<GameParameters>().DamageAttackedThisLevel)
+                hit.GetComponent<RotationPlayer>().GetLife = 0;
+            else
+                hit.GetComponent<RotationPlayer>().GetLife -= GameObject.Find("GameParameters").GetComponent<GameParameters>().DamageAttackedThisLevel;
+        }
         
         Destroy(gameObject);
     }

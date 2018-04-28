@@ -33,7 +33,6 @@ public class RotationPlayer : Photon.MonoBehaviour
 		GameO = gameParameters.GameOver;
 		Life = gameParameters.LifeInThisLevel;
 		Damage = gameParameters.DamageFallOfThisLevel;
-		Debug.Log(Life);
 		PlayerClass Player = GameObject.Find("GameLogic").GetComponent<PlayerClass>();
 		if (Player.GetPlayerName == "TheGirl")
 			RespawnP = gameParameters.RespawnPoint1;
@@ -44,7 +43,6 @@ public class RotationPlayer : Photon.MonoBehaviour
 
 	void Update () {
 
-		Debug.Log(Life);
 		if (photonView.isMine)
 		{
 			if (Life <= 0 || transform.position.y < LePlusB.transform.position.y)
