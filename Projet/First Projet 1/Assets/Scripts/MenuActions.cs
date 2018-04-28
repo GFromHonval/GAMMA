@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.SymbolStore;
+using ExitGames.Demos.DemoAnimator;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -22,7 +23,7 @@ public class MenuActions : Photon.MonoBehaviour {
             ScenesBuild.Add(i);
         }
         int Choice = LvlChoice.value + 1;
-
+        
         foreach (PlayerClass player in FindObjectsOfType<PlayerClass>())
         {
             if (player.GetPlayerName == "PlayerOne")
@@ -54,8 +55,8 @@ public class MenuActions : Photon.MonoBehaviour {
         }
         if (ScenesBuild.Contains(Choice))
         {
-            PhotonNetwork.room.IsOpen = false;
-            SceneManager.LoadScene(Choice);
+            //PhotonNetwork.room.IsOpen = false;
+            PhotonNetwork.LoadLevel(Choice);
         }
     }
     

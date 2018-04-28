@@ -1,7 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
-using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -29,6 +27,7 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 		if (CanvasForSecond != null)
 			CanvasForSecond.enabled = false;
 		PhotonNetwork.automaticallySyncScene = true;
+		PhotonNetwork.autoCleanUpPlayerObjects = false;
 		if (!PhotonNetwork.connected)
 		{
 			PhotonNetwork.ConnectUsingSettings("0.1");
@@ -93,6 +92,13 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
+		List<PlayerClass> list = new List<PlayerClass>();
+		foreach (PlayerClass player in FindObjectsOfType<PlayerClass>())
+		{
+			list.Add(player);
+		}
+		Debug.Log(list.Count);
+
 		ConnectText.text = PhotonNetwork.connectionStateDetailed.ToString();
 	}
 }
