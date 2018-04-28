@@ -20,6 +20,12 @@ public class RotationPlayer : Photon.MonoBehaviour
 	public float jumpPower;
 	private bool IsJumping = false;
 
+	public float GetLife
+	{
+		get { return Life; }
+		set { Life = value; }
+	}
+	
 	void Start()
 	{
 		GameParameters gameParameters = GameObject.Find("GameParameters").GetComponent<GameParameters>();
@@ -38,9 +44,10 @@ public class RotationPlayer : Photon.MonoBehaviour
 
 	void Update () {
 
+		Debug.Log(Life);
 		if (photonView.isMine)
 		{
-			if (transform.position.y < LePlusB.transform.position.y)
+			if (Life <= 0 || transform.position.y < LePlusB.transform.position.y)
 			{
 				if (Life <= Damage)
 				{
@@ -58,7 +65,6 @@ public class RotationPlayer : Photon.MonoBehaviour
 					GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
 					GetComponent<Rigidbody>().velocity = Vector3.zero;
 					Life -= Damage;
-					Debug.Log(Life);
 				}
 			}
 

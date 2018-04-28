@@ -14,6 +14,7 @@ public class GameParameters : MonoBehaviour
 	public GameObject GameOver;
 	public float LifeInThisLevel;
 	public float DamageFallOfThisLevel;
+	public float DamageAttackedThisLevel;
 	
 	private void Start()
 	{

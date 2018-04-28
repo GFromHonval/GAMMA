@@ -6,6 +6,8 @@ public class AIBehave : Photon.MonoBehaviour {
 
 	//https://www.youtube.com/watch?v=OmoKw1ikAi8&t=23s
 	public int DistanceDeDetection;
+	public GameObject BulletPrefab;
+	public Transform BulletSpawn;
 	public GameObject Head;
 	public Material ColorInnofensif;
 	public Material ColorAttack;
@@ -16,11 +18,15 @@ public class AIBehave : Photon.MonoBehaviour {
 	private float speed = 1.5f;
 	private float accuracyWP = 0.5f;
 	private GameObject[] players;
-
+	private string State;
+	private float SpeedBullet = 2f;
+	private float Timer;
+	
 	// Use this for initialization
 	void Start ()
 	{
-		StartPos = this.transform;
+		StartPos = transform;
+		Timer = 1f;
 	}
 
 	private void FixedUpdate()
@@ -31,6 +37,7 @@ public class AIBehave : Photon.MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
+		
 		foreach (GameObject P in players)
 		{
 			Vector3 direction = P.transform.position - transform.position;
@@ -38,14 +45,16 @@ public class AIBehave : Photon.MonoBehaviour {
 			
 			if (Vector3.Distance(P.transform.position, this.transform.position) < DistanceDeDetection)
 			{
-				this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), 0.1f);
-				Head.GetComponent<Renderer>().material = ColorAttack;
+				//Head.GetComponent<Renderer>().material = ColorAttack;
+				State = "Attack";
+				Attack(direction);
 			}
 			else
 			{
 				if (waypoints.Length > 0)
 				{
-					Head.GetComponent<Renderer>().material = ColorInnofensif;
+					State = "Patrol";
+					//Head.GetComponent<Renderer>().material = ColorInnofensif;
 					if (Vector3.Distance(waypoints[currentWP].transform.position, transform.position) < accuracyWP)
 					{
 						currentWP++;
@@ -67,5 +76,24 @@ public class AIBehave : Photon.MonoBehaviour {
 				}
 			}
 		}
+	}
+
+	void Attack(Vector3 direction)
+	{
+		transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), 0.1f);
+		Timer -= Time.deltaTime;
+		if (Timer <= 0)
+		{
+			//Creer la balle
+			GameObject bullet = PhotonNetwork.Instantiate(BulletPrefab.name, BulletSpawn.position, BulletSpawn.rotation, 0);
+
+			//Fait bouger la balle
+			bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * SpeedBullet;
+
+			//Detruit la balle apres 2 sec
+			Destroy(bullet, 2);
+			Timer = 1f;
+		}
+		
 	}
 }
