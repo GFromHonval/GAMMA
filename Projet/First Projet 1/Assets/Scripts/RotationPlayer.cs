@@ -42,7 +42,8 @@ public class RotationPlayer : Photon.MonoBehaviour
 		else
 			RespawnP = gameParameters.RespawnPoint2;
 		EscapeCanvas = GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().EscapeCanvas;
-		EscapeCanvas.enabled = false;
+		if (EscapeCanvas != null)
+			EscapeCanvas.enabled = false;
 	}
 
 
@@ -50,13 +51,14 @@ public class RotationPlayer : Photon.MonoBehaviour
 
 		if (photonView.isMine)
 		{
-			if (SceneManager.GetActiveScene().buildIndex != 0 && Input.GetKey(KeyCode.Escape))
+			if (SceneManager.GetActiveScene().buildIndex != 0 && Input.GetKey(KeyCode.Escape) && EscapeCanvas != null)
 			{
 				EscapeCanvas.enabled = true;
 			}
 			else
 			{
-				EscapeCanvas.enabled = false;
+				if (EscapeCanvas != null)
+					EscapeCanvas.enabled = false;
 				if (Life <= 0 || transform.position.y < LePlusB.transform.position.y)
 				{
 					if (Life <= Damage)

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.Serialization.Formatters;
 using System.Text;
+using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Analytics;
@@ -13,16 +14,12 @@ public class BoutonEtPlateforme : MonoBehaviour
 {
 
 	public Transform BassePosition;
-	public GameObject Plateforme;
-	private Vector3 StartPlateforme;
-	public GameObject EndPlateforme;
-	private Vector3 MouvementDirection;
+	public PlateformeClass[] Plateformes;
 	private Vector3 BassePose;
 	private Vector3 HautePose;
 	private bool IsPressing;
 	private string PlayerTag = "";
 	private Vector4 Area;
-	private string PlateformeState;
 	public bool StayPressedButton;
 	private bool HasExitTheArea;
 	
@@ -36,8 +33,6 @@ public class BoutonEtPlateforme : MonoBehaviour
 		Area.y = transform.position.z + GetComponent<BoxCollider>().size.z * transform.localScale.z /2 + 0.2f;
 		Area.z = transform.position.x - GetComponent<BoxCollider>().size.x * transform.localScale.x /2 - 0.2f; 
 		Area.w = transform.position.x + GetComponent<BoxCollider>().size.x * transform.localScale.x /2 + 0.2f;
-		StartPlateforme = new Vector3 (Plateforme.transform.position.x, Plateforme.transform.position.y, Plateforme.transform.position.z);
-		PlateformeState = "Monte";
 	}
 
 	private void Update()
@@ -62,27 +57,22 @@ public class BoutonEtPlateforme : MonoBehaviour
 
 	private void ToDo()
 	{
-		if (PlateformeState == "Monte")
+		foreach (PlateformeClass plat in Plateformes)
 		{
-			Plateforme.transform.position = Vector3.MoveTowards(Plateforme.transform.position, EndPlateforme.transform.position, Time.deltaTime);
-			if (Plateforme.transform.position.y >= EndPlateforme.transform.position.y)
+		
+			if (plat.GetState == "Monte")
 			{
-				PlateformeState = "Descend";
+				plat.Monte();
 			}
-		}
-		else
-		{
-			if (PlateformeState == "Descend")
+			else
 			{
-				Plateforme.transform.position = Vector3.MoveTowards(Plateforme.transform.position, StartPlateforme, Time.deltaTime);
-				if (Plateforme.transform.position.y <= StartPlateforme.y)
-				{
-					PlateformeState = "Monte";
-				}
+				if (plat.GetState == "Descend")
+					plat.Descend();
 			}
 		}
 	}
 	
+		
 	private void IsInArea()
 	{
 	
