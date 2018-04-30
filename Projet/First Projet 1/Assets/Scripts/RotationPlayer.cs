@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using JetBrains.Annotations;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Debug = UnityEngine.Debug;
 
 public class RotationPlayer : Photon.MonoBehaviour
@@ -19,7 +20,8 @@ public class RotationPlayer : Photon.MonoBehaviour
 	public float turnSpeed = 50f;
 	public float jumpPower;
 	private bool IsJumping = false;
-
+	private Canvas EscapeCanvas;
+	
 	public float GetLife
 	{
 		get { return Life; }
@@ -31,6 +33,7 @@ public class RotationPlayer : Photon.MonoBehaviour
 		GameParameters gameParameters = GameObject.Find("GameParameters").GetComponent<GameParameters>();
 		LePlusB = gameParameters.LePlusBas;
 		GameO = gameParameters.GameOver;
+		GameO.SetActive(false);
 		Life = gameParameters.LifeInThisLevel;
 		Damage = gameParameters.DamageFallOfThisLevel;
 		PlayerClass Player = GameObject.Find("GameLogic").GetComponent<PlayerClass>();
@@ -38,6 +41,8 @@ public class RotationPlayer : Photon.MonoBehaviour
 			RespawnP = gameParameters.RespawnPoint1;
 		else
 			RespawnP = gameParameters.RespawnPoint2;
+		EscapeCanvas = GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().EscapeCanvas;
+		EscapeCanvas.enabled = false;
 	}
 
 
@@ -45,78 +50,87 @@ public class RotationPlayer : Photon.MonoBehaviour
 
 		if (photonView.isMine)
 		{
-			if (Life <= 0 || transform.position.y < LePlusB.transform.position.y)
+			if (SceneManager.GetActiveScene().buildIndex != 0 && Input.GetKey(KeyCode.Escape))
 			{
-				if (Life <= Damage)
-				{
-					GameO.SetActive(true);
-					transform.position = RespawnP.transform.position;
-					transform.rotation = RespawnP.transform.rotation;
-					GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
-					GetComponent<Rigidbody>().velocity = Vector3.zero;
-					Life = 0;
-				}
-				else
-				{
-					transform.position = RespawnP.transform.position;
-					transform.rotation = RespawnP.transform.rotation;
-					GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
-					GetComponent<Rigidbody>().velocity = Vector3.zero;
-					Life -= Damage;
-				}
+				EscapeCanvas.enabled = true;
 			}
-
-			if (Life > 0)
+			else
 			{
-				if (Input.GetKey(KeyCode.UpArrow))
-					transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
-
-				if (Input.GetKey(KeyCode.DownArrow))
-					transform.Translate(-Vector3.forward * moveSpeed * Time.deltaTime);
-
-				if (Input.GetKey(KeyCode.LeftArrow))
-					transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime);
-
-				if (Input.GetKey(KeyCode.RightArrow))
-					transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
-
-				if (!IsJumping)
+				EscapeCanvas.enabled = false;
+				if (Life <= 0 || transform.position.y < LePlusB.transform.position.y)
 				{
-					RaycastHit hit;
-					Vector3 GroundPosition;
-					if (Physics.Raycast(transform.position, Vector3.down, out hit))
+					if (Life <= Damage)
 					{
-						GroundPosition = new Vector3(hit.point.x, hit.point.y, hit.point.z);
-						GroundDistance = Vector3.Distance(transform.position, GroundPosition);
-					}
-
-					if (Input.GetKeyDown(KeyCode.Space))
-					{
-						IsJumping = true;
-						transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.up * jumpPower,
-							0.5f * Time.deltaTime);
-					}
-				}
-				else
-				{
-					if (Input.GetKey(KeyCode.Space))
-					{
-
+						GameO.SetActive(true);
+						transform.position = RespawnP.transform.position;
+						transform.rotation = RespawnP.transform.rotation;
+						GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+						GetComponent<Rigidbody>().velocity = Vector3.zero;
+						Life = 0;
 					}
 					else
 					{
+						transform.position = RespawnP.transform.position;
+						transform.rotation = RespawnP.transform.rotation;
+						GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+						GetComponent<Rigidbody>().velocity = Vector3.zero;
+						Life -= Damage;
+					}
+				}
+
+				if (Life > 0)
+				{
+					if (Input.GetKey(KeyCode.UpArrow))
+						transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
+
+					if (Input.GetKey(KeyCode.DownArrow))
+						transform.Translate(-Vector3.forward * moveSpeed * Time.deltaTime);
+
+					if (Input.GetKey(KeyCode.LeftArrow))
+						transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime);
+
+					if (Input.GetKey(KeyCode.RightArrow))
+						transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
+
+					if (!IsJumping)
+					{
 						RaycastHit hit;
+						Vector3 GroundPosition;
 						if (Physics.Raycast(transform.position, Vector3.down, out hit))
 						{
-							if (Vector3.Distance(transform.position, hit.transform.position) < GroundDistance + 1f)
-							{
-								IsJumping = false;
-							}
+							GroundPosition = new Vector3(hit.point.x, hit.point.y, hit.point.z);
+							GroundDistance = Vector3.Distance(transform.position, GroundPosition);
+						}
 
-							//Debug.DrawLine(transform.position, transform.position + Vector3.down * 20, Color.green);
-							//Debug.DrawLine(hit.point, hit.point + Vector3.left * 5, Color.red);
+						if (Input.GetKeyDown(KeyCode.Space))
+						{
+							IsJumping = true;
+							transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.up * jumpPower,
+								0.5f * Time.deltaTime);
 						}
 					}
+					else
+					{
+						if (Input.GetKey(KeyCode.Space))
+						{
+
+						}
+						else
+						{
+							RaycastHit hit;
+							if (Physics.Raycast(transform.position, Vector3.down, out hit))
+							{
+								if (Vector3.Distance(transform.position, hit.transform.position) < GroundDistance + 1f)
+								{
+									IsJumping = false;
+								}
+
+								//Debug.DrawLine(transform.position, transform.position + Vector3.down * 20, Color.green);
+								//Debug.DrawLine(hit.point, hit.point + Vector3.left * 5, Color.red);
+							}
+						}
+					}
+
 				}
 			}
 		}

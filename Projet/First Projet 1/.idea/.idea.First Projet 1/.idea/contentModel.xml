@@ -289,7 +289,6 @@
         <e p="Cartoon Temple Building Kit" t="Include">
           <e p="readme.txt" t="Include" />
         </e>
-        <e p="HealthPoints.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="ActivatorScript.cs" t="Include" />
           <e p="AIBehave.cs" t="Include" />
@@ -308,6 +307,7 @@
           <e p="GoldBAr" t="Include">
             <e p="GoldPickUp.cs" t="Include" />
           </e>
+          <e p="HealthPoints.cs" t="Include" />
           <e p="MenuActions.cs" t="Include" />
           <e p="Note.cs" t="Include" />
           <e p="PlayerClass.cs" t="Include" />

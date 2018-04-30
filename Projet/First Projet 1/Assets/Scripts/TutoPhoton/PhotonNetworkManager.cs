@@ -14,6 +14,7 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 	private GameObject LobbyCamera;
 	[SerializeField] private Canvas CanvasForMaster;
 	[SerializeField] private Canvas CanvasForSecond;
+	public Canvas EscapeCanvas;
 	
 	// Use this for initialization
 	void Start ()
@@ -27,7 +28,7 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 		if (CanvasForSecond != null)
 			CanvasForSecond.enabled = false;
 		PhotonNetwork.automaticallySyncScene = true;
-		PhotonNetwork.autoCleanUpPlayerObjects = false;
+		//PhotonNetwork.autoCleanUpPlayerObjects = false;
 		if (!PhotonNetwork.connected)
 		{
 			PhotonNetwork.ConnectUsingSettings("0.1");
