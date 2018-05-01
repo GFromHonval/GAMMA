@@ -44,20 +44,6 @@ public class RotationPlayer : Photon.MonoBehaviour
 		EscapeCanvas = GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().EscapeCanvas;
 		if (EscapeCanvas != null)
 			EscapeCanvas.enabled = false;
-		
-		SceneManager.activeSceneChanged += OnLoadScenePlayer;
-	}
-
-	private void OnLoadScenePlayer(Scene previousScene, Scene newScene)
-	{
-		GameParameters gameParameters = GameObject.Find("GameParameters").GetComponent<GameParameters>();
-		LePlusB = gameParameters.LePlusBas;
-		GameO = gameParameters.GameOver;
-		GameO.SetActive(false);
-		Life = gameParameters.LifeInThisLevel;
-		Damage = gameParameters.DamageFallOfThisLevel;
-		RespawnP = gameParameters.RespawnPoint1;
-		transform.position = RespawnP.position;
 	}
 
 

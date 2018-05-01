@@ -3592,6 +3592,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f08117ff5db2e144b8491ea9ec4ae781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ToggleBoy: {fileID: 0}
+  ToggleGirl: {fileID: 0}
 --- !u!1001 &1864933016
 Prefab:
   m_ObjectHideFlags: 0
@@ -3651,31 +3653,9 @@ Prefab:
       propertyPath: CanvasForSecond
       value: 
       objectReference: {fileID: 1897954834}
-    - target: {fileID: 114335607876368244, guid: cbcd4a2ba2a595f4c8394939a6f52160,
-        type: 2}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 1836096919002726, guid: aa62fcdebdbcff349819b280f279ca12,
-        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cbcd4a2ba2a595f4c8394939a6f52160, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1864933017 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1183415353586596, guid: cbcd4a2ba2a595f4c8394939a6f52160,
-    type: 2}
-  m_PrefabInternal: {fileID: 1864933016}
---- !u!114 &1864933018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1864933017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 214b961f130690d4a8e3948aea848938, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1878222285
 GameObject:
   m_ObjectHideFlags: 0

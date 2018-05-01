@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 124129587318641926}
   - component: {fileID: 81037812222630172}
   - component: {fileID: 114621480166121372}
-  - component: {fileID: 114556358649380274}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -50,7 +49,6 @@ GameObject:
   - component: {fileID: 114917974818529558}
   - component: {fileID: 65280102609350380}
   - component: {fileID: 114672765310643980}
-  - component: {fileID: 114940933463406572}
   m_Layer: 0
   m_Name: SqueFixedGirl
   m_TagString: Player
@@ -225,6 +223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerCamera: {fileID: 1580261321237240}
+  PlayerControlScripts: []
   playeranimation: {fileID: 0}
 --- !u!114 &114344956271892798
 MonoBehaviour:
@@ -291,17 +290,6 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
---- !u!114 &114556358649380274
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1580261321237240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 214b961f130690d4a8e3948aea848938, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114621480166121372
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -353,17 +341,6 @@ MonoBehaviour:
   moveSpeed: 2
   turnSpeed: 100
   jumpPower: 30
---- !u!114 &114940933463406572
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1836096919002726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 214b961f130690d4a8e3948aea848938, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114959958815072438
 MonoBehaviour:
   m_ObjectHideFlags: 1
