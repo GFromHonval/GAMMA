@@ -8,7 +8,7 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 {
 
 	[SerializeField] private Text ConnectText;
-	[SerializeField] private PlayerClass Player;
+	[SerializeField] private GameObject Player;
 	[SerializeField] private Canvas CanvasForMaster;
 	[SerializeField] private Canvas CanvasForSecond;
 	public Canvas EscapeCanvas;
@@ -29,7 +29,6 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 		if (CanvasForSecond != null)
 			CanvasForSecond.enabled = false;
 		PhotonNetwork.automaticallySyncScene = true;
-		//PhotonNetwork.autoCleanUpPlayerObjects = false;
 		if (!PhotonNetwork.connected)
 		{
 			PhotonNetwork.ConnectUsingSettings("0.1");
@@ -48,22 +47,8 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 
 		Debug.Log("T'as change de scene");
 		Debug.Log(PhotonNetwork.playerName);
-
-		if (Player.GetPlayerName == "TheGirl")
-			PhotonNetwork.Instantiate(Player.GetPlayerPrefab, SpawnPoint1.position, SpawnPoint1.rotation, 0);
-		else
-			PhotonNetwork.Instantiate(Player.GetPlayerPrefab, SpawnPoint2.position, SpawnPoint1.rotation, 0);
+			
 	}
-
-	/*private void OnConnectedToMaster()
-	{
-		Debug.Log("connected to master");
-		if (PhotonNetwork.playerList.Length == 2)
-			PhotonNetwork.playerName = "PlayerTwo";
-		else
-			PhotonNetwork.playerName = "PlayerOne";
-		Debug.Log(PhotonNetwork.playerName);
-	}*/
 
 
 	private void OnJoinedLobby()
@@ -90,14 +75,14 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 		{
 			if (CanvasForSecond != null)
 				CanvasForSecond.enabled = true;
-			PhotonNetwork.Instantiate(Player.GetPlayerPrefab, SpawnPoint2.position, SpawnPoint2.rotation, 0);
+			PhotonNetwork.Instantiate(Player.name, SpawnPoint2.position, SpawnPoint2.rotation, 0);
 			//Player.GetComponent<PlayerClass>().GetPlayerName = "PlayerTwo";
 		}
 		else
 		{
 			if (CanvasForMaster != null)
 				CanvasForMaster.enabled = true;
-			PhotonNetwork.Instantiate(Player.GetPlayerPrefab, SpawnPoint1.position, SpawnPoint1.rotation, 0);
+			PhotonNetwork.Instantiate(Player.name, SpawnPoint1.position, SpawnPoint1.rotation, 0);
 			//Player.GetComponent<PlayerClass>().GetPlayerName = "PlayerOne";
 		}
 
