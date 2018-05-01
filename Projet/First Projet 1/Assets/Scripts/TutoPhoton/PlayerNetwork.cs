@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerNetwork : Photon.MonoBehaviour
 {
@@ -10,14 +11,7 @@ public class PlayerNetwork : Photon.MonoBehaviour
     [SerializeField] private Animation playeranimation;
     
     private PhotonView PhotonView;
-    private int IsInScene;
 
-    public int GetIsInScene
-    {
-        get { return IsInScene; }
-        set { IsInScene = value; }
-    }
-    
     private void Start()
     {
         PhotonView = GetComponent<PhotonView>();
