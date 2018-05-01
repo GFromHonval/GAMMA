@@ -49,8 +49,4 @@ public  class PlayerClass : MonoBehaviour
 		PlayerPrefab = PrefabBoyName;
 	}
 
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }

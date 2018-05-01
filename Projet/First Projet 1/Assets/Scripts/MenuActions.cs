@@ -11,6 +11,7 @@ public class MenuActions : Photon.MonoBehaviour {
     public Dropdown LvlChoice;
     private List<int> ScenesBuild;
     [SerializeField] private Toggle IsABoy;
+    private int Choice;
 	
     public void GotoLvL()
     {
@@ -22,7 +23,8 @@ public class MenuActions : Photon.MonoBehaviour {
             //int lastSlash = scenePath.LastIndexOf("/");
             ScenesBuild.Add(i);
         }
-        int Choice = LvlChoice.value + 1;
+        
+        Choice = LvlChoice.value + 1;
         
         foreach (PlayerClass player in FindObjectsOfType<PlayerClass>())
         {
@@ -55,8 +57,7 @@ public class MenuActions : Photon.MonoBehaviour {
         }
         if (ScenesBuild.Contains(Choice))
         {
-            //PhotonNetwork.room.IsOpen = false;
-            PhotonNetwork.LoadLevel(Choice);
+           PhotonNetwork.LoadLevel(Choice);
         }
     }
     

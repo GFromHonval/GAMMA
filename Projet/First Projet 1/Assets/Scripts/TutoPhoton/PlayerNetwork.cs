@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,11 +7,16 @@ public class PlayerNetwork : Photon.MonoBehaviour
 {
 
     [SerializeField] private GameObject PlayerCamera;
-    [SerializeField] private MonoBehaviour[] PlayerControlScripts;
     [SerializeField] private Animation playeranimation;
     
-
     private PhotonView PhotonView;
+    private int IsInScene;
+
+    public int GetIsInScene
+    {
+        get { return IsInScene; }
+        set { IsInScene = value; }
+    }
     
     private void Start()
     {
@@ -30,10 +36,6 @@ public class PlayerNetwork : Photon.MonoBehaviour
         {
             //camera 
             PlayerCamera.SetActive(false);
-            foreach (MonoBehaviour m  in PlayerControlScripts)
-            {
-                m.enabled = false;
-            }
         }
     }
 } 
