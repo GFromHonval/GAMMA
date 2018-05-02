@@ -478,8 +478,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   turnSpeed: 100
+<<<<<<< HEAD
   jumpPower: 250
   TimeOnAir: 0
+=======
+  jumpPower: 270
+>>>>>>> 1946d9ab62de0b92b4e3b325d4db622ce5100d50
 --- !u!114 &114183819677734188
 MonoBehaviour:
   m_ObjectHideFlags: 1
