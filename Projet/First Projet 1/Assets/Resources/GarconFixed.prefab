@@ -523,7 +523,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   turnSpeed: 100
-  jumpPower: 30
+  jumpPower: 270
 --- !u!114 &114899665689721028
 MonoBehaviour:
   m_ObjectHideFlags: 1
