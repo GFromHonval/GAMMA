@@ -557,9 +557,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  turnSpeed: 50
-  jumpPower: 0
-  TimeOnAir: 0
+  turnSpeed: 100
+  jumpPower: 10
+  TimeOnAir: 1
 --- !u!114 &114731925000662186
 MonoBehaviour:
   m_ObjectHideFlags: 1

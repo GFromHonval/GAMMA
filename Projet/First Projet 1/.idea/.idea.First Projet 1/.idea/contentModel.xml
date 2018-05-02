@@ -311,7 +311,7 @@
           <e p="HealthPoints.cs" t="Include" />
           <e p="MenuActions.cs" t="Include" />
           <e p="Note.cs" t="Include" />
-          <e p="PlateformeClass.cs" t="Include" />
+          <e p="PlateformeAuto.cs" t="Include" />
           <e p="PlateformeFall.cs" t="Include" />
           <e p="PlayerClass.cs" t="Include" />
           <e p="PPTex.cs" t="Include" />
@@ -319,6 +319,7 @@
           <e p="RotationPlayer.cs" t="Include" />
           <e p="ScoreMaster.cs" t="Include" />
           <e p="Teleport" t="Include">
+            <e p="PlateformeClass.cs" t="Include" />
             <e p="teleport.cs" t="Include" />
           </e>
           <e p="TextMesh Pro" t="Include">
