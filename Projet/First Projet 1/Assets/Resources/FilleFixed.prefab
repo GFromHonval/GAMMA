@@ -479,6 +479,7 @@ MonoBehaviour:
   moveSpeed: 10
   turnSpeed: 100
   jumpPower: 250
+  TimeOnAir: 0
 --- !u!114 &114183819677734188
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -13,6 +13,7 @@ public class RotationPlayer : Photon.MonoBehaviour
 	public float moveSpeed = 10f;
 	public float turnSpeed = 50f;
 	public float jumpPower;
+	public float TimeOnAir;
 	
 	//Hidden Variables
 	private float Life;
@@ -23,6 +24,7 @@ public class RotationPlayer : Photon.MonoBehaviour
 	private Transform RespawnP;
 	private bool IsJumping = false;
 	float GroundDistance;
+	private float TimeJump;
 	
 	//Canvas
 	private GameObject EscapeCanvas;
@@ -36,6 +38,8 @@ public class RotationPlayer : Photon.MonoBehaviour
 	
 	void Start()
 	{
+		TimeJump = TimeOnAir;
+		
 		GameOverCanvas = GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().GetGameOverCanvas;
 		EscapeCanvas = GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().GetEscapeCanvas;
 		
@@ -139,6 +143,26 @@ public class RotationPlayer : Photon.MonoBehaviour
 
 					if (!IsJumping)
 					{
+						if (Input.GetKeyDown(KeyCode.Space))
+						{
+							IsJumping = true;
+							transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.up * jumpPower,
+								0.5f * Time.deltaTime);
+						}
+					}
+					else
+					{
+						TimeJump -= Time.deltaTime;
+						if (TimeJump <= 0)
+						{
+							IsJumping = false;
+							TimeJump = TimeOnAir;
+						}
+					}
+					
+					
+					/*if (!IsJumping)
+					{
 						RaycastHit hit;
 						Vector3 GroundPosition;
 						if (Physics.Raycast(transform.position, Vector3.down, out hit))
@@ -165,13 +189,13 @@ public class RotationPlayer : Photon.MonoBehaviour
 							RaycastHit hit;
 							if (Physics.Raycast(transform.position, Vector3.down, out hit))
 							{
-								if (Vector3.Distance(transform.position, hit.transform.position) < GroundDistance + 1f)
+								if (Vector3.Distance(transform.position, hit.transform.position) < GroundDistance)// + 1f)
 								{
 									IsJumping = false;
 								}
 							}
 						}
-					}
+					}*/
 
 				}
 			}

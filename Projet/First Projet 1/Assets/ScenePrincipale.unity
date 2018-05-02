@@ -11595,8 +11595,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a881b5602ae305419f87a138370a891, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PrefabGirl: {fileID: 1496138750613270, guid: d246b2e90e60dc84c8578f000418f80f, type: 2}
-  PrefabBoy: {fileID: 1589351395258052, guid: a8b8ee308c8ab414cad4afb8e7b286b0, type: 2}
+  PrefabGirl: {fileID: 1836096919002726, guid: 1b68148bc8f3cb84f84b27dc81ba1ec6, type: 2}
+  PrefabBoy: {fileID: 1836096919002726, guid: aa62fcdebdbcff349819b280f279ca12, type: 2}
 --- !u!4 &1820765682
 Transform:
   m_ObjectHideFlags: 0
