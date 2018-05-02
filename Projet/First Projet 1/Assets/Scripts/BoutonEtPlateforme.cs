@@ -7,19 +7,26 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Analytics;
+using UnityEngine.Experimental.UIElements;
 using Debug = UnityEngine.Debug;
 
 public class BoutonEtPlateforme : MonoBehaviour
 {
-
+	
+	//Public Variables
 	public Transform BassePosition;
 	public PlateformeClass[] Plateformes;
+	
+	//Choice Button
+	public bool StayPressedButton;
+	public bool EvaporingButton;
+	
+	//Physics Variables
 	private Vector3 BassePose;
 	private Vector3 HautePose;
 	private bool IsPressing;
 	private string PlayerTag = "";
 	private Vector4 Area;
-	public bool StayPressedButton;
 	private bool HasExitTheArea;
 	
 	private void Start()
@@ -38,7 +45,10 @@ public class BoutonEtPlateforme : MonoBehaviour
 	{
 		if (IsPressing)
 		{
-			ToDo();
+			if (!EvaporingButton)
+				ToDo();
+			else 
+				ToEvapore();
 		}
 		if (IsPressing && transform.position.y >= BassePose.y)
 		{
@@ -54,6 +64,14 @@ public class BoutonEtPlateforme : MonoBehaviour
 			IsInArea();
 	}
 
+	private void ToEvapore()
+	{
+		foreach (PlateformeClass plat in Plateformes)
+		{
+			Destroy(plat.Plateforme);
+		}
+	}
+	
 	private void ToDo()
 	{
 		foreach (PlateformeClass plat in Plateformes)
