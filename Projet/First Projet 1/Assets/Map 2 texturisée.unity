@@ -1057,6 +1057,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014131466504, guid: 0e2068a5c7772c940b8250627261894e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0e2068a5c7772c940b8250627261894e, type: 2}
   m_IsPrefabParent: 0
@@ -2516,6 +2520,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 2.5368347
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011717122646, guid: b53f6f2fb4ee6ce459481fcf3fe082dd, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b53f6f2fb4ee6ce459481fcf3fe082dd, type: 2}
   m_IsPrefabParent: 0
@@ -3854,6 +3862,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 2.536837
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011717122646, guid: b53f6f2fb4ee6ce459481fcf3fe082dd, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b53f6f2fb4ee6ce459481fcf3fe082dd, type: 2}
   m_IsPrefabParent: 0
@@ -3913,6 +3925,10 @@ Prefab:
     - target: {fileID: 1000010619226596, guid: c92c2aca1ed8a484490ad5b376619e03, type: 2}
       propertyPath: m_Name
       value: BOUTON (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010619226596, guid: c92c2aca1ed8a484490ad5b376619e03, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92c2aca1ed8a484490ad5b376619e03, type: 2}
@@ -5301,6 +5317,15 @@ Prefab:
       propertyPath: m_Name
       value: BOUTON
       objectReference: {fileID: 0}
+    - target: {fileID: 23000011154790682, guid: c92c2aca1ed8a484490ad5b376619e03,
+        type: 2}
+      propertyPath: m_ProbeAnchor
+      value: 
+      objectReference: {fileID: 672295903}
+    - target: {fileID: 1000010619226596, guid: c92c2aca1ed8a484490ad5b376619e03, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92c2aca1ed8a484490ad5b376619e03, type: 2}
   m_IsPrefabParent: 0
@@ -5794,7 +5819,7 @@ MeshCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 719006821}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 3
   m_Convex: 1
@@ -7923,7 +7948,8 @@ MonoBehaviour:
   EndPlateforme: {fileID: 1811415171}
   StartPlateforme: {fileID: 790363906}
   Unidirectionnel: 1
-  VaADroite: 0
+  VaADroite: 1
+  Vitesse: 5
 --- !u!114 &962593548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7936,7 +7962,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BassePosition: {fileID: 2137127406}
-  Plateformes: []
+  Plateformes:
+  - {fileID: 962593547}
   StayPressedButton: 0
   EvaporingButton: 0
 --- !u!64 &962593549
@@ -7963,8 +7990,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.9788437, y: 2.0480933, z: 4.1006784}
+  m_Center: {x: -0.028533936, y: 0.9790343, z: 0.026894579}
 --- !u!1001 &970027019
 Prefab:
   m_ObjectHideFlags: 0
@@ -9595,6 +9622,15 @@ Prefab:
     - target: {fileID: 4000011401319922, guid: 0e2068a5c7772c940b8250627261894e, type: 2}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23000010848223066, guid: 0e2068a5c7772c940b8250627261894e,
+        type: 2}
+      propertyPath: m_ProbeAnchor
+      value: 
+      objectReference: {fileID: 1124228496}
+    - target: {fileID: 1000014131466504, guid: 0e2068a5c7772c940b8250627261894e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0e2068a5c7772c940b8250627261894e, type: 2}
@@ -11914,7 +11950,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BassePosition: {fileID: 1609543205}
-  Plateformes: []
+  Plateformes:
+  - {fileID: 1450905967}
   StayPressedButton: 0
   EvaporingButton: 0
 --- !u!114 &1450905967
@@ -11933,6 +11970,7 @@ MonoBehaviour:
   StartPlateforme: {fileID: 422957710}
   Unidirectionnel: 0
   VaADroite: 0
+  Vitesse: 10
 --- !u!65 &1450905968
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11943,8 +11981,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 4.0329742, y: 2.0094368, z: 4.0063057}
+  m_Center: {x: 0.017250061, y: 0.9786838, z: 0.01394559}
 --- !u!64 &1450905969
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12885,6 +12923,15 @@ Prefab:
       propertyPath: m_Name
       value: BOUTON (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 23000011154790682, guid: c92c2aca1ed8a484490ad5b376619e03,
+        type: 2}
+      propertyPath: m_ProbeAnchor
+      value: 
+      objectReference: {fileID: 1523337550}
+    - target: {fileID: 1000010619226596, guid: c92c2aca1ed8a484490ad5b376619e03, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92c2aca1ed8a484490ad5b376619e03, type: 2}
   m_IsPrefabParent: 0
@@ -13542,6 +13589,7 @@ MonoBehaviour:
   StartPlateforme: {fileID: 2023405828}
   Unidirectionnel: 0
   VaADroite: 0
+  Vitesse: 1
 --- !u!114 &1595179445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13554,7 +13602,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BassePosition: {fileID: 250250762}
-  Plateformes: []
+  Plateformes:
+  - {fileID: 1595179444}
   StayPressedButton: 0
   EvaporingButton: 1
 --- !u!65 &1595179446
@@ -13567,8 +13616,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 4.0628967, y: 2.1045117, z: 4.101284}
+  m_Center: {x: 0.014907837, y: 1.0102103, z: 0.02119566}
 --- !u!64 &1595179447
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14191,6 +14240,10 @@ Prefab:
     - target: {fileID: 1000010619226596, guid: c92c2aca1ed8a484490ad5b376619e03, type: 2}
       propertyPath: m_Name
       value: BOUTON (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010619226596, guid: c92c2aca1ed8a484490ad5b376619e03, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c92c2aca1ed8a484490ad5b376619e03, type: 2}
@@ -16661,7 +16714,8 @@ MonoBehaviour:
   EndPlateforme: {fileID: 1811415171}
   StartPlateforme: {fileID: 790363906}
   Unidirectionnel: 1
-  VaADroite: 1
+  VaADroite: 0
+  Vitesse: 1
 --- !u!114 &1968599597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16674,7 +16728,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BassePosition: {fileID: 566667641}
-  Plateformes: []
+  Plateformes:
+  - {fileID: 1968599596}
   StayPressedButton: 0
   EvaporingButton: 0
 --- !u!64 &1968599598
@@ -16701,8 +16756,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.971878, y: 1.8485692, z: 4.091794}
+  m_Center: {x: 0.022521973, y: 1.0449468, z: 0.030151378}
 --- !u!1001 &1968807297
 Prefab:
   m_ObjectHideFlags: 0

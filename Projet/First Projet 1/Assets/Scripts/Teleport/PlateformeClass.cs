@@ -13,6 +13,7 @@ public class PlateformeClass : MonoBehaviour
 	public GameObject StartPlateforme;
 	public bool Unidirectionnel;
 	public bool VaADroite;
+	public float Vitesse = 1;
 
 	public string GetState
 	{
@@ -40,7 +41,7 @@ public class PlateformeClass : MonoBehaviour
 
 	public void Monte()
 	{
-		Plateforme.transform.position = Vector3.MoveTowards(Plateforme.transform.position, EndPlateforme.transform.position, Time.deltaTime);
+		Plateforme.transform.position = Vector3.MoveTowards(Plateforme.transform.position, EndPlateforme.transform.position, Time.deltaTime * Vitesse);
 		if (!Unidirectionnel && Plateforme.transform.position == EndPlateforme.transform.position)
 		{
 			State = "Descend";
@@ -49,7 +50,7 @@ public class PlateformeClass : MonoBehaviour
 
 	public void Descend()
 	{
-		Plateforme.transform.position = Vector3.MoveTowards(Plateforme.transform.position, VStartPlateforme, Time.deltaTime);
+		Plateforme.transform.position = Vector3.MoveTowards(Plateforme.transform.position, VStartPlateforme, Time.deltaTime * Vitesse);
 		if (!Unidirectionnel && Plateforme.transform.position == VStartPlateforme)
 		{
 			State = "Monte";
