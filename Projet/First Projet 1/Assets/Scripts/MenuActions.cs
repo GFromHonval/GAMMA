@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.SymbolStore;
 using ExitGames.Demos.DemoAnimator;
@@ -25,36 +26,13 @@ public class MenuActions : Photon.MonoBehaviour {
         }
         
         Choice = LvlChoice.value + 1;
+
+        if (IsABoy.isOn)
+            GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().GetPrefabFirstPlayer = "PrefabBoy";
+        else
+            GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().GetPrefabFirstPlayer = "PrefabGirl";
+            
         
-        foreach (PlayerClass player in FindObjectsOfType<PlayerClass>())
-        {
-            if (player.GetPlayerName == "PlayerOne")
-            {
-                if (IsABoy.isOn)
-                {
-                    player.GetPlayerName = "TheBoy";
-                    player.GetPlayerPrefab = player.GetPrefabBoyName;
-                }
-                else
-                {
-                    player.GetPlayerName = "TheGirl";
-                    player.GetPlayerPrefab = player.GetPrefabGirlName;
-                }
-            }
-            else
-            {
-                if (IsABoy.isOn)
-                {
-                    player.GetPlayerName = "TheGirl";
-                    player.GetPlayerPrefab = player.GetPrefabGirlName;
-                }
-                else
-                {
-                    player.GetPlayerName = "TheBoy";
-                    player.GetPlayerPrefab = player.GetPrefabBoyName;
-                }
-            }
-        }
         if (ScenesBuild.Contains(Choice))
         {
            PhotonNetwork.LoadLevel(Choice);

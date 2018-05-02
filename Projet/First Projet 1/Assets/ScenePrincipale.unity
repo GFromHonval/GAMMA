@@ -7723,7 +7723,20 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114335607876368244, guid: cbcd4a2ba2a595f4c8394939a6f52160,
+        type: 2}
+      propertyPath: PrefabBoy
+      value: 
+      objectReference: {fileID: 1836096919002726, guid: aa62fcdebdbcff349819b280f279ca12,
+        type: 2}
+    - target: {fileID: 114335607876368244, guid: cbcd4a2ba2a595f4c8394939a6f52160,
+        type: 2}
+      propertyPath: PrefabGirl
+      value: 
+      objectReference: {fileID: 1836096919002726, guid: 1b68148bc8f3cb84f84b27dc81ba1ec6,
+        type: 2}
+    m_RemovedComponents:
+    - {fileID: 114735189748296962, guid: cbcd4a2ba2a595f4c8394939a6f52160, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: cbcd4a2ba2a595f4c8394939a6f52160, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1374142341

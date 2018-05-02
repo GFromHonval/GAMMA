@@ -49,6 +49,7 @@ GameObject:
   - component: {fileID: 114917974818529558}
   - component: {fileID: 65280102609350380}
   - component: {fileID: 114951767918124716}
+  - component: {fileID: 114475875117290682}
   m_Layer: 0
   m_Name: SqueFixedBoy
   m_TagString: Player
@@ -223,7 +224,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerCamera: {fileID: 1580261321237240}
-  PlayerControlScripts: []
   playeranimation: {fileID: 0}
 --- !u!114 &114344956271892798
 MonoBehaviour:
@@ -290,6 +290,17 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &114475875117290682
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1836096919002726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 261530a3e63ed4047abf3a83d1296b62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114621480166121372
 MonoBehaviour:
   m_ObjectHideFlags: 1
