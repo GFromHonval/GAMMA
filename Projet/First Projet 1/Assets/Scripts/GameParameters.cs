@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class GameParameters : MonoBehaviour
 {
-
-	public int ScaleX;
-	public int ScaleY;
-	public int ScaleZ;
 	public GameObject LePlusBas;
 	public Transform RespawnPoint1;
 	public Transform RespawnPoint2;

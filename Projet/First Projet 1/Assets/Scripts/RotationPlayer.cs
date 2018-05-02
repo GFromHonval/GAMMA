@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using JetBrains.Annotations;
@@ -8,19 +9,24 @@ using Debug = UnityEngine.Debug;
 
 public class RotationPlayer : Photon.MonoBehaviour
 {
-	private float Life;
-    private float Damage;
-	private GameObject GameL;
-	private GameObject LePlusB;
-	private Transform RespawnP;
-	private GameObject GameO;
-	float GroundDistance;
-	
+	//Deplacement Variables
 	public float moveSpeed = 10f;
 	public float turnSpeed = 50f;
 	public float jumpPower;
+	
+	//Hidden Variables
+	private float Life;
+    private float Damage;
+	
+	//Physics Variables
+	private GameObject LePlusB;
+	private Transform RespawnP;
 	private bool IsJumping = false;
-	private Canvas EscapeCanvas;
+	float GroundDistance;
+	
+	//Canvas
+	private GameObject EscapeCanvas;
+	private GameObject GameOverCanvas; 
 	
 	public float GetLife
 	{
@@ -30,40 +36,77 @@ public class RotationPlayer : Photon.MonoBehaviour
 	
 	void Start()
 	{
+		GameOverCanvas = GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().GetGameOverCanvas;
+		EscapeCanvas = GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().GetEscapeCanvas;
+		
 		GameParameters gameParameters = GameObject.Find("GameParameters").GetComponent<GameParameters>();
 		LePlusB = gameParameters.LePlusBas;
-		GameO = gameParameters.GameOver;
-		GameO.SetActive(false);
 		Life = gameParameters.LifeInThisLevel;
 		Damage = gameParameters.DamageFallOfThisLevel;
-		PlayerClass Player = GameObject.Find("GameLogic").GetComponent<PlayerClass>();
-		if (Player.GetPlayerName == "TheGirl")
+		if (photonView.name == "FirstPlayer")
 			RespawnP = gameParameters.RespawnPoint1;
 		else
 			RespawnP = gameParameters.RespawnPoint2;
-		EscapeCanvas = GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().EscapeCanvas;
-		if (EscapeCanvas != null)
-			EscapeCanvas.enabled = false;
+		
+		SceneManager.activeSceneChanged += OnLoadScenePlayer;
 	}
 
 
-	void Update () {
+	private void OnLoadScenePlayer(Scene preScene, Scene nextScene)
+	{
+		GameParameters gameParameters = GameObject.Find("GameParameters").GetComponent<GameParameters>();
+		LePlusB = gameParameters.LePlusBas;
+		Life = gameParameters.LifeInThisLevel;
+		Damage = gameParameters.DamageFallOfThisLevel;
 
+		PhotonNetworkManager gameLogic = GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>();
+		
+		if (PhotonNetwork.playerName == "FirstPlayer")
+		{
+			RespawnP = gameParameters.RespawnPoint1;
+			if (photonView.isMine && gameLogic.GetPrefabFirstPlayer == "PrefabBoy")
+			{
+				PhotonNetwork.Instantiate(gameLogic.GetPrefabBoy.name, RespawnP.position, RespawnP.rotation, 0);
+				PhotonNetwork.Destroy(gameObject);
+				return;
+			}
+		}
+		else
+		{
+			if (photonView.isMine && PhotonNetwork.playerName == "SecondPlayer")
+			{
+				print("okok");
+				RespawnP = gameParameters.RespawnPoint2;
+				if (gameLogic.GetPrefabFirstPlayer == "PrefabGirl")
+				{
+					print("Should be fine");
+					PhotonNetwork.Destroy(gameObject);
+					PhotonNetwork.Instantiate(gameLogic.GetPrefabBoy.name, RespawnP.position, RespawnP.rotation, 0);
+					return;
+				}
+			}
+		}
+
+		transform.position = RespawnP.position;
+		transform.rotation = RespawnP.rotation;
+	}
+
+	void Update () {
+		
 		if (photonView.isMine)
 		{
-			if (SceneManager.GetActiveScene().buildIndex != 0 && Input.GetKey(KeyCode.Escape) && EscapeCanvas != null)
+			if (SceneManager.GetActiveScene().buildIndex != 0 && Input.GetKey(KeyCode.Escape))
 			{
-				EscapeCanvas.enabled = true;
+				EscapeCanvas.SetActive(true);
 			}
 			else
 			{
-				if (EscapeCanvas != null)
-					EscapeCanvas.enabled = false;
+				EscapeCanvas.SetActive(false);
 				if (Life <= 0 || transform.position.y < LePlusB.transform.position.y)
 				{
 					if (Life <= Damage)
 					{
-						GameO.SetActive(true);
+						GameOverCanvas.SetActive(true);
 						transform.position = RespawnP.transform.position;
 						transform.rotation = RespawnP.transform.rotation;
 						GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
@@ -126,9 +169,6 @@ public class RotationPlayer : Photon.MonoBehaviour
 								{
 									IsJumping = false;
 								}
-
-								//Debug.DrawLine(transform.position, transform.position + Vector3.down * 20, Color.green);
-								//Debug.DrawLine(hit.point, hit.point + Vector3.left * 5, Color.red);
 							}
 						}
 					}

@@ -293,6 +293,7 @@
           <e p="ActivatorScript.cs" t="Include" />
           <e p="AIBehave.cs" t="Include" />
           <e p="BoutonEtPlateforme.cs" t="Include" />
+          <e p="DDOL.cs" t="Include" />
           <e p="Destroy.cs" t="Include" />
           <e p="End_Restart.cs" t="Include" />
           <e p="FirstTuto" t="Include">
@@ -311,6 +312,7 @@
           <e p="MenuActions.cs" t="Include" />
           <e p="Note.cs" t="Include" />
           <e p="PlateformeClass.cs" t="Include" />
+          <e p="PlateformeFall.cs" t="Include" />
           <e p="PlayerClass.cs" t="Include" />
           <e p="PPTex.cs" t="Include" />
           <e p="RespawnQuandOnTombe.cs" t="Include" />

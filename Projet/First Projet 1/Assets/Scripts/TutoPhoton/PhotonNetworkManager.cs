@@ -1,39 +1,76 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Serialization.Formatters;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngineInternal;
 
 public class PhotonNetworkManager : Photon.MonoBehaviour
 {
 
-	[SerializeField] private Text ConnectText;
-	[SerializeField] private PlayerClass Player;
-	[SerializeField] private Canvas CanvasForMaster;
-	[SerializeField] private Canvas CanvasForSecond;
-	public Canvas EscapeCanvas;
-
+	//Prefabs
+	[SerializeField] private GameObject PrefabGirl;
+	[SerializeField] private GameObject PrefabBoy;
+	
+	//Physics Variables
 	private Transform SpawnPoint1;
 	private Transform SpawnPoint2;
 	private GameObject LobbyCamera;
 	
-	// Use this for initialization
-	public void Start()
+	//Canvas
+	private GameObject GameOverCanvas;
+	private GameObject EscapeCanvas;
+	
+	//Prefab Choice
+	private string PrefabFirstPlayer;
+
+	public GameObject GetPrefabBoy
 	{
-		SpawnPoint1 = GameObject.Find("GameParameters").GetComponent<GameParameters>().RespawnPoint1;
-		SpawnPoint2 = GameObject.Find("GameParameters").GetComponent<GameParameters>().RespawnPoint2;
-		LobbyCamera = GameObject.Find("Main Camera");
-		//DontDestroyOnLoad(gameObject);
-		if (CanvasForMaster != null)
-			CanvasForMaster.enabled = false;
-		if (CanvasForSecond != null)
-			CanvasForSecond.enabled = false;
+		get { return PrefabBoy; }
+	}
+
+	public GameObject GetPrefabGirl
+	{
+		get { return PrefabGirl; }
+	}
+
+	public string GetPrefabFirstPlayer
+	{
+		get { return PrefabFirstPlayer; }
+		set { PrefabFirstPlayer = value; }
+	}
+
+	public GameObject GetGameOverCanvas
+	{
+		get { return GameOverCanvas; }
+		set { GameOverCanvas = value; }
+	}
+	
+	public GameObject GetEscapeCanvas
+	{
+		get { return EscapeCanvas; }
+		set { EscapeCanvas = value; }
+	}
+	
+	public void Awake()
+	{
+		GameOverCanvas = GameObject.Find("GameLogic/GameOverCanvas");
+		EscapeCanvas = GameObject.Find("GameLogic/EscapeCanvas");
+		LobbyCamera = GameObject.Find("LobbyCamera");
+		
+		GameOverCanvas.SetActive(false);
+		EscapeCanvas.SetActive(false);		
+		
+		GameParameters gameParameters = GameObject.Find("GameParameters").GetComponent<GameParameters>();
+		SpawnPoint1 = gameParameters.RespawnPoint1;
+		SpawnPoint2 = gameParameters.RespawnPoint2;
+		
 		PhotonNetwork.automaticallySyncScene = true;
-		//PhotonNetwork.autoCleanUpPlayerObjects = false;
+
 		if (!PhotonNetwork.connected)
 		{
 			PhotonNetwork.ConnectUsingSettings("0.1");
-
 		}
 
 		SceneManager.activeSceneChanged += OnLoadScene;
@@ -44,36 +81,12 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 		GameParameters gameParameters = GameObject.Find("GameParameters").GetComponent<GameParameters>();
 		SpawnPoint1 = gameParameters.RespawnPoint1;
 		SpawnPoint2 = gameParameters.RespawnPoint2;
-		LobbyCamera = GameObject.Find("Main Camera");
-
-		Debug.Log("T'as change de scene");
-		Debug.Log(PhotonNetwork.playerName);
-
-		if (Player.GetPlayerName == "TheGirl")
-			PhotonNetwork.Instantiate(Player.GetPlayerPrefab, SpawnPoint1.position, SpawnPoint1.rotation, 0);
-		else
-			PhotonNetwork.Instantiate(Player.GetPlayerPrefab, SpawnPoint2.position, SpawnPoint1.rotation, 0);
+		LobbyCamera = GameObject.Find("LobbyCamera");
 	}
 
-	/*private void OnConnectedToMaster()
+
+	public void OnJoinedLobby()
 	{
-		Debug.Log("connected to master");
-		if (PhotonNetwork.playerList.Length == 2)
-			PhotonNetwork.playerName = "PlayerTwo";
-		else
-			PhotonNetwork.playerName = "PlayerOne";
-		Debug.Log(PhotonNetwork.playerName);
-	}*/
-
-
-	private void OnJoinedLobby()
-	{
-		Debug.Log("You are now in the lobby");
-		RoomInfo[] room = PhotonNetwork.GetRoomList();
-		Debug.Log(room.Length);
-
-		//RoomOptions pour changer les options de la room
-		//Join room if it exist or create one
 		RoomOptions roomOptions = new RoomOptions();
 		roomOptions.MaxPlayers = 2;
 		PhotonNetwork.JoinOrCreateRoom("Gamma", roomOptions, null);
@@ -81,36 +94,33 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 
 	public virtual void OnJoinedRoom()
 	{
-		Debug.Log("Joined room");
-		Debug.Log(PhotonNetwork.room.Name);
-
-		//differencier menu des autres scenes
-		//trouver un moyen de garder les choix des joueurs en chargeant les scenes
 		if (PhotonNetwork.playerList.Length == 2)
 		{
-			if (CanvasForSecond != null)
-				CanvasForSecond.enabled = true;
-			PhotonNetwork.Instantiate(Player.GetPlayerPrefab, SpawnPoint2.position, SpawnPoint2.rotation, 0);
-			//Player.GetComponent<PlayerClass>().GetPlayerName = "PlayerTwo";
+			GameObject.Find("CanvasSecondPlayer").SetActive(true);
+			GameObject.Find("CanvasFirstPlayer").SetActive(false);
+			PhotonNetwork.Instantiate(PrefabGirl.name, SpawnPoint2.position, SpawnPoint2.rotation, 0);
+			PhotonNetwork.playerName = "SecondPlayer";
 		}
 		else
 		{
-			if (CanvasForMaster != null)
-				CanvasForMaster.enabled = true;
-			PhotonNetwork.Instantiate(Player.GetPlayerPrefab, SpawnPoint1.position, SpawnPoint1.rotation, 0);
-			//Player.GetComponent<PlayerClass>().GetPlayerName = "PlayerOne";
+			GameObject.Find("CanvasFirstPlayer").SetActive(true);
+			GameObject.Find("CanvasSecondPlayer").SetActive(false);
+			PhotonNetwork.Instantiate(PrefabGirl.name, SpawnPoint1.position, SpawnPoint1.rotation, 0);
+			PhotonNetwork.playerName = "FirstPlayer";
 		}
 
-		//disable the lobby camera
 		LobbyCamera.SetActive(false);
 	}
 
+	private void OnGUI()
+	{
+		GUILayout.Label(PhotonNetwork.playerName);
+	}
 
-	// Update is called once per frame
+
 	void Update()
 	{
 		
-		ConnectText.text = PhotonNetwork.connectionStateDetailed.ToString();
 	}
 
 }

@@ -10,14 +10,7 @@ public class PlayerNetwork : Photon.MonoBehaviour
     [SerializeField] private Animation playeranimation;
     
     private PhotonView PhotonView;
-    private int IsInScene;
 
-    public int GetIsInScene
-    {
-        get { return IsInScene; }
-        set { IsInScene = value; }
-    }
-    
     private void Start()
     {
         PhotonView = GetComponent<PhotonView>();
