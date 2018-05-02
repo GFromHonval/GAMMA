@@ -1,1 +1,0 @@
-var OEConfWEVideo = {"WE99dd1fc18e":{"ExportValues":"Ce lecteur Flash fonctionnera après <b>LA MISE EN LIGNE du site</b><br/><b><u>(les vidéos locales</u></b> ne se chargent pas Flash)##ERREUR: PAS DE VIDEO SOUTENUE","Links":[{"Target":null,"Links":{"Items":{"DEFAULT":"Files/Video/Organic_Lines_4K_Motion_Background_Loop.mp4"}}},null,null]}}
