@@ -521,10 +521,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87a29548078bf7b4ea54837d7deaa460, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
+  moveSpeed: 20
   turnSpeed: 100
-  jumpPower: 270
-  TimeOnAir: 2
+  jumpPower: 600
+  TimeOnAir: 0.65
 --- !u!114 &114899665689721028
 MonoBehaviour:
   m_ObjectHideFlags: 1

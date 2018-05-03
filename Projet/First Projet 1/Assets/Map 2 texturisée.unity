@@ -5819,7 +5819,7 @@ MeshCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 719006821}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Convex: 1
@@ -11952,7 +11952,7 @@ MonoBehaviour:
   BassePosition: {fileID: 1609543205}
   Plateformes:
   - {fileID: 1450905967}
-  StayPressedButton: 0
+  StayPressedButton: 1
   EvaporingButton: 0
 --- !u!114 &1450905967
 MonoBehaviour:
