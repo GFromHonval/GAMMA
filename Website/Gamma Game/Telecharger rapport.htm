@@ -5,9 +5,9 @@
   <meta name="generator" content="openElement (1.57.9)" />
   <title>T&#233;l&#233;charger le Rapport</title>
   <link id="openElement" rel="stylesheet" type="text/css" href="WEFiles/Css/v02/openElement.css?v=63629943612" />
-  <link id="siteFonts" rel="stylesheet" type="text/css" href="Files/Fonts/Fonts.css?v=63658268962" />
-  <link id="OETemplate1" rel="stylesheet" type="text/css" href="Templates/Base_Scripts.css?v=63660691757" />
-  <link id="OETemplate2" rel="stylesheet" type="text/css" href="Templates/Base_MenuRetractable.css?v=63660903942" />
+  <link id="siteFonts" rel="stylesheet" type="text/css" href="Files/Fonts/Fonts.css?v=63656453080" />
+  <link id="OETemplate1" rel="stylesheet" type="text/css" href="Templates/Base_Scripts.css?v=63660778208" />
+  <link id="OETemplate2" rel="stylesheet" type="text/css" href="Templates/Base_MenuRetractable.css?v=63660943468" />
   <link id="OEBase" rel="stylesheet" type="text/css" href="Telecharger%20rapport.css?v=50491126800" />
   <!--[if lte IE 7]>
   <link rel="stylesheet" type="text/css" href="WEFiles/Css/ie7.css?v=63614056866" />
@@ -18,6 +18,9 @@
   <script type="text/javascript" src="WEFiles/Client/jQuery/1.10.2.js?v=63614056866"></script>
   <script type="text/javascript" src="WEFiles/Client/jQuery/migrate.js?v=63614056866"></script>
   <script type="text/javascript" src="WEFiles/Client/Common/oe.min.js?v=63629943594"></script>
+  <script type="text/javascript" src="Telecharger%20rapport(var).js?v=50491126800"></script>
+  <script type="text/javascript" src="WEFiles/Client/WEXBodyAutoHeight-v22.js?v=63660938365"></script>
+  <script type="text/javascript" src="WEFiles/Client/WEVideo-v21.js?v=63660778208"></script>
   <style id="OEScriptManager" type="text/css">
    .responsiveSection,.respSectContent{position:relative!important;left:auto!important;top:auto!important}
    .responsiveSection{height:auto!important;display:block!important;margin-left:auto;margin-right:auto}
@@ -28,6 +31,11 @@
    .autoMenu{width:100%!important;left:0!important;display:none}
    .navigArrow,.navigArrow2{position:fixed!important;z-index:100000!important}
    .navigArrow2.naUp{top:80px!important}
+   #XBody, #XBody .OESZ_DivContent, #XBody .OESZ_XBodyContent, #XBody .OESZ_XBodyFooter {
+     width:			100% !important;
+     margin-left:		auto; 
+     margin-right: 	auto;
+   }
   </style>
   <script type="text/javascript">
    $(function(){WECB_Cent01_General.Init();WECB_Cent01_TopContainer.Init()});var WECB_Cent01_General={Init:function(){this.fixIFramOE();this.findElements();this.fixAndRedimension()},_IEVers:function(){var e=navigator.userAgent.toLowerCase();return e.indexOf("msie")!=-1?parseInt(e.split("msie")[1]):false},fixIFramOE:function(){var e=$("iframe").filter(function(){var e=$(this),t=e.attr("src");return t&&t.indexOf("headerModels.htm")>0});if(e.length){if(e.position().top===0&&$(".panelTopSub").length){$("<div>").css("height",parseInt($(".panelTopSub").height())+"px").insertBefore(e)}}},findElements:function(){this.$allSections=$(".responsiveSection");this.InitOk=true},fixAndRedimension:function(){$(".height_minus8").each(function(){$(this).height(parseInt($(this).height())-8)});$(".top_minus8").each(function(){$(this).css("top",parseInt($(this).css("top"))-8+"px")});$(".top_plus40").each(function(){$(this).css("top",parseInt($(this).css("top"))+40+"px")});$(".leftAuto").each(function(){$(this).css("left","auto")});this.anchorMinY=1e6;this.anchorMaxY=-100;this.$anchorFirst=null;this.$anchorLast=null;var e=0;this.$anchors=$("a").filter(function(){var t=$(this);var n=t.attr("href"),r=t.attr("id"),i=t.attr("name");if(!n&&r&&r===i){var s=t.offset().top;if(s<WECB_Cent01_General.anchorMinY){WECB_Cent01_General.anchorMinY=s;WECB_Cent01_General.$anchorFirst=t}if(s>WECB_Cent01_General.anchorMaxY){WECB_Cent01_General.anchorMaxY=s;WECB_Cent01_General.$anchorLast=t}e++;if(i>="a1"&&(i<="a99"||i==="ax")){t.attr("id","a"+e).attr("name","a"+e)}return true}else return false});var t=this._IEVers();if(t&&t<=9){$(".textShadowIE").find(".ContentBox").css("filter","progid:DXImageTransform.Microsoft.Shadow(Color=#000000,Direction=135,Strength=2)")}},updateAnchorsMinMaxY:function(){if(this.$anchorFirst!==null){this.anchorMinY=this.$anchorFirst.offset().top;this.anchorMaxY=this.$anchorLast.offset().top}},resizeSectionContainers:function(){var e=this.displayHeight;this.$allSections.each(function(){var t=this;if(!t.sub){t.sub=$(t).find(".respSectContent");t.sub.margin1=parseInt(t.sub.css("margin-top"));t.sub.margin2=parseInt(t.sub.css("margin-bottom"))}if(!t.sub.length)return true;var n=parseInt(t.sub.height());var r=(e-n)/2|0;t.sub.css({"margin-top":(r>t.sub.margin1?r:t.sub.margin1)+"px","margin-bottom":(r>t.sub.margin2?r:t.sub.margin2)+"px"})})},smoothScrollTo:function(e){$("html, body").animate({scrollTop:e},500)},changeVisibility:function(e,t,n){if(t!=n){e.toggle(n)}return n}};var WECB_Cent01_TopContainer={Init:function(){this.findElements();this.fixAndRedimension();this.topMenuInit();this.eventHandlers();this.buttons()},findElements:function(){this.$panelTopMain=$(".topMainContainer");this.$panelTopSub=$(".panelTopSub");this.$topMenuSubContainer=$(".topMenuSub");this.$topMenuLinks=$(".topMenuLink");this.$btRetract=$(".btRetract");this.$logoBig=$(".logoBig");this.$logoSmall=$(".logoSmall");this.$miniMenuButton=$(".miniMenuButton");this.$navArrowUp=$(".navigArrow.naUp");this.$navArrowDown=$(".navigArrow.naDown");this.$navArrowUpCent=$(".navigArrow2.naUp");this.$navArrowDownCent=$(".navigArrow2.naDown");this.navArrowUpVisible=false;this.navArrowDownVisible=false;this.navArrowUpCentVisible=false;this.navArrowDownCentVisible=false;this.$autoMenu=$(".autoMenu");this.autoMenuVisible=false;this.autoMenuHeight=0;this.$allSections=WECB_Cent01_General.$allSections;this.alwaysMinimizeMenu=this.$panelTopSub.hasClass("topMinimize");this.topMenuAlignRight=this.$topMenuSubContainer.hasClass("modeAlignRight");this.InitOk=true},fixAndRedimension:function(){var e=!!this.$btRetract.length;this.panelTopSubHeight=parseInt(this.$panelTopSub.height());this.retractButtonY=e?parseInt(this.$btRetract.css("top")):this.panelTopSubHeight;this.topMenuWidth=parseInt(this.$topMenuSubContainer.width());this.logoSmallWidth=this.$logoSmall.length?parseInt(this.$logoSmall.offset().left)+parseInt(this.$logoSmall.width()):0;this.miniMenuButton_origX=parseInt(this.$miniMenuButton.css("left"));this.topMenuY=this.$topMenuSubContainer.length?this.$topMenuSubContainer.position().top:0;this.panelTopMain_Minimized=this.alwaysMinimizeMenu;if(this.alwaysMinimizeMenu){this.retractContainer(true,false,true)}},topMenuInit:function(){this.$autoMenu.find(".BaseDiv").attr("onclick","");var e=this.$autoMenu.find(".BaseDiv.OEWELink").children("div");if(e.length===1){var t=e.attr("id"),n=0;this.$topMenuLinks.find("a").each(function(){n+=1;var t=$(this).attr("href"),r=$(this).html();var i=e.clone();i.css("white-space","nowrap").find("a").attr("href",t).html(r);i.appendTo(e.parent());i.hover(function(){$(this).addClass("OE_Over")},function(){$(this).removeClass("OE_Over")})});e.remove()}this.autoMenuHeight=this.$autoMenu.height()},eventHandlers:function(){$(window).bind("load resize",function(){WECB_Cent01_TopContainer.onResizeWindow()}).trigger("resize");this.smallLogoVisibility();this.onScrollWindow();$(window).scroll(function(){WECB_Cent01_TopContainer.onScrollWindow()});$("a").click(function(){if(WECB_Cent01_TopContainer.autoMenuVisible){WECB_Cent01_TopContainer.openAutoMenu(false)}var e=$(this).attr("href");if(e&&e.indexOf("#")===0&&e.length>=2&&$(e).length){WECB_Cent01_General.smoothScrollTo($(e).offset().top);return false}})},buttons:function(){if(this.$btRetract.length){this.$btRetract.find("a").attr("href","").css("display","none");this.$btRetract.click(function(){if(WECB_Cent01_TopContainer.autoMenuVisible)WECB_Cent01_TopContainer.openAutoMenu(false);else WECB_Cent01_TopContainer.retractContainer(!WECB_Cent01_TopContainer.panelTopMain_Minimized)})}this.$miniMenuButton.click(function(){if(!WECB_Cent01_TopContainer.autoMenuVisible)WECB_Cent01_TopContainer.openAutoMenu(true);return false});$(".closeMenu").click(function(){if(WECB_Cent01_TopContainer.autoMenuVisible)WECB_Cent01_TopContainer.openAutoMenu(false);return false});$(".navigArrow, .navigArrow2").click(function(){var e=parseInt($(document).scrollTop());var t=$(this).hasClass("naUp");var n=e;WECB_Cent01_General.$anchors.each(function(){var r=$(this).offset().top;if(!t){if(r>e+40&&(n===e||n>r)){n=r}}else{if(r<e&&(n===e||n<r)){n=r}}});if(n!=e)WECB_Cent01_General.smoothScrollTo(n)})},openAutoMenu:function(e){var t=this.$autoMenu;var n=this.$panelTopMain;if(e!==true){t.hide(500);this.autoMenuVisible=false}else{t.show(500);this.autoMenuVisible=true}this.retractContainer();this.menuModeControl()},retractContainer:function(e,t,n){if(e===undefined)e=this.panelTopMain_Minimized;if(this.alwaysMinimizeMenu)e=true;if(t===undefined)t=this.autoMenuVisible;var r=this.$panelTopMain;var i=e?-this.topMenuY:0;var s=parseInt(r.css("top"));if(!this.alwaysMinimizeMenu){var o=e&&!t?"center bottom":"center top";this.$btRetract.css("background-position",o)}if(!t){if(s>0){r.stop().css("top",0)}}else{var u=this.$autoMenu;var a=this.autoMenuHeight?this.autoMenuHeight:parseInt(u.height());var f=this.retractButtonY-a;u.css("top",f+"px");i=-f}this.panelTopMain_Minimized=e;r.stop().animate({top:i},n?0:500,function(){WECB_Cent01_TopContainer.smallLogoVisibility()});if(!e)this.smallLogoVisibility()},smallLogoVisibility:function(){if(!this.InitOk)return;this.$logoSmall.toggle(this.panelTopMain_Minimized);this.$logoBig.toggle(!this.panelTopMain_Minimized&&!this.autoMenuVisible);this.menuModeControl()},menuModeControl:function(){if(this.autoMenuVisible){this.$topMenuSubContainer.hide();this.$miniMenuButton.hide();return}var e=parseInt(this.$panelTopMain.width());if(this.panelTopMain_Minimized)e-=this.logoSmallWidth*(this.topMenuAlignRight?1:2);var t=e<this.topMenuWidth+8;if(t){this.$topMenuSubContainer.hide();this.$miniMenuButton.show()}else{this.$topMenuSubContainer.show();this.$miniMenuButton.hide()}},onScrollWindow:function(){if(!this.InitOk)return;var e=parseInt($(document).scrollTop());var t=e>0;var n=this.panelTopMain_Minimized;if(t!==n){this.retractContainer(!n)}var r=e-40<WECB_Cent01_General.anchorMinY||WECB_Cent01_General.anchorMaxY<0;var i=e-80+WECB_Cent01_General.displayHeight>WECB_Cent01_General.anchorMaxY||WECB_Cent01_General.anchorMaxY<0;this.navArrowUpCentVisible=WECB_Cent01_General.changeVisibility(this.$navArrowUpCent,this.navArrowUpCentVisible,!r&&!this.disableCenterArrows);this.navArrowUpVisible=WECB_Cent01_General.changeVisibility(this.$navArrowUp,this.navArrowUpVisible,!r);this.navArrowDownCentVisible=WECB_Cent01_General.changeVisibility(this.$navArrowDownCent,this.navArrowDownCentVisible,!i&&!this.disableCenterArrows);this.navArrowDownVisible=WECB_Cent01_General.changeVisibility(this.$navArrowDown,this.navArrowDownVisible,!i)},onResizeWindow:function(){WECB_Cent01_General.displayHeight=$(window).height();if(!this.InitOk)return;this.disableCenterArrows=WECB_Cent01_General.displayHeight<640;this.menuModeControl();var e=parseInt($(document).scrollTop());var t=$(document).height();WECB_Cent01_General.resizeSectionContainers();var n=parseInt($(document).scrollTop());if(n==e){var r=$(document).height();if(t&&r&&r!=t){var i=r/t;n=parseInt(n+n/r*(r-t)*40)}}WECB_Cent01_General.updateAnchorsMinMaxY();this.onScrollWindow()}};
@@ -126,9 +134,9 @@
                 <a class="OESZ OESZ_Link OESZG_WE54975c6eb4 ContentBox" data-cd="PageLink" href="Createurs%20de%20Gamma.htm">Créateurs de Gamma<br /></a>
                </div>
               </div>
-              <div id="WE4a1bc01c2f" class="BaseDiv RWidth OEWELink OESK_WELink_Default  topMenuLink" style="z-index:1003" onclick="return OE.Navigate.open(event,'#a3',1)">
+              <div id="WE4a1bc01c2f" class="BaseDiv RWidth OEWELink OESK_WELink_Default  topMenuLink" style="z-index:1003" onclick="return OE.Navigate.open(event,'Espace%20des%20gammarois.htm',1)">
                <div class="OESZ OESZ_DivContent OESZG_WE4a1bc01c2f">
-                <a class="OESZ OESZ_Link OESZG_WE4a1bc01c2f ContentBox" data-cd="PageLink" href="#a3">Espace des Gammarois<br /></a>
+                <a class="OESZ OESZ_Link OESZG_WE4a1bc01c2f ContentBox" data-cd="PageLink" href="Espace%20des%20gammarois.htm">Espace des Gammarois<br /></a>
                </div>
               </div>
               <div id="WE538848f149" class="BaseDiv RWidth OEWELink OESK_WELink_Default  topMenuLink" style="z-index:1004" onclick="return OE.Navigate.open(event,'#a4',1)">
@@ -165,7 +173,24 @@
        </div>
       </div>
      </div>
-     <div id="WEffe04f115a" class="BaseDiv RNone OEWELabel OESK_WELabel_e1662b56" style="z-index:2001">
+     <div id="WEceb44064d7" class="BaseDiv RNone OEWEVideo OESK_WEVideoHTML5_Default" style="z-index:2001">
+      <div class="OESZ OESZ_DivContent OESZG_WEceb44064d7">
+       <div class="ContainerVideoHTML5" style="width:100%; height:100%;">
+        <video preload="none" class="TagVideoHTML5" style="width:100%; height:100%;" src="Files/Video/Hello-World.mp4" autoplay="autoplay" loop="loop" muted="muted" data-swfplayer="WEFiles/Client/gddflvplayer-v21.swf">
+         <table style="width:100%; height:100%;">
+          <tr>
+           <td style="text-align:center; vertical-align:middle; background-color: black; color: #FF8800; font-size:10px;">
+            <div class="NoPluginMsgVideoHTML5" style="width:100%; height:100%; display:none;">Pour regarder cette vidéo, il faut télécharger ou activer:<br/><a href='http://get.adobe.com/flashplayer/' target='_blank'><u style='color:#FF0000;'><b>Flash</b> (télécharger)</u></a>
+<span class='VidHTML5NotIE' data-note='This span will be hidden in IE'> ou 
+<a href='http://www.apple.com/quicktime/download/' target='_blank'><u style='color:#FF0000;'><b>QuickTime</b> (télécharger)</u></a></span></div>
+           </td>
+          </tr>
+         </table>
+        </video>
+       </div>
+      </div>
+     </div>
+     <div id="WEffe04f115a" class="BaseDiv RWidth OEWELabel OESK_WELabel_e1662b56 OECenterAH" style="z-index:2002">
       <div class="OESZ OESZ_DivContent OESZG_WEffe04f115a">
        <span class="OESZ OESZ_Text OESZG_WEffe04f115a ContentBox">Le Rapport de projet<br /></span>
       </div>
@@ -175,17 +200,17 @@
        <span class="ContentBox">Pour modifier l'affichage, éditez les styles des éléments correspondants (normalement la Zone "Cadre Principale"). <br /><br />Pour modifier les liens du menu, éditez, copiez-collez ou supprimez les éléments-liens dedans.<br /><br />Pour cacher un élément sans le supprimer, utilisez sa propriété <span style="font-style:italic;">Visible</span>.<br /></span>
       </div>
      </div>
-     <div id="WEbc8870ecc8" class="BaseDiv RWidth OEWEText OESK_WEText_Default" style="z-index:2002">
+     <div id="WEbc8870ecc8" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterAH" style="z-index:2003">
       <div class="OESZ OESZ_DivContent OESZG_WEbc8870ecc8">
        <span class="ContentBox"><span style="color:rgb(165, 165, 165);">Le rapport en lien ci-dessous décrit l'avancé du projet point par point. Il contient aussi les explications concernant certains détail du projet. Vous pouvez aussi télécharger le cahier des charges &nbsp;élaborer au début du projet afin de pourvoir constater l'évolution entre l'idée originelle et le rendu actuel.&nbsp;</span><br /></span>
       </div>
      </div>
-     <div id="WEf3bbcf2be5" class="BaseDiv RNone OEWEDownloadFiles OESK_WEDownloadFiles_Default" style="z-index:2003">
+     <div id="WEf3bbcf2be5" class="BaseDiv RWidth OEWEDownloadFiles OESK_WEDownloadFiles_Default OECenterAH" style="z-index:2004">
       <div class="OESZ OESZ_DivContent OESZG_WEf3bbcf2be5">
        <a href="Files/Other/cahier-des-charges.pdf" onclick="return OE.Navigate.blank(event,this.href)" class="ContentBox"><span style="color:rgb(227, 108, 9);">Cahier des Charges&nbsp;</span></a>
       </div>
      </div>
-     <div id="WE2bf898438c" class="BaseDiv RNone OEWEDownloadFiles OESK_WEDownloadFiles_Default" style="z-index:2004">
+     <div id="WE2bf898438c" class="BaseDiv RWidth OEWEDownloadFiles OESK_WEDownloadFiles_Default OECenterAH" style="z-index:2005">
       <div class="OESZ OESZ_DivContent OESZG_WE2bf898438c">
        <a href="Files/Other/Rapport%20de%20Soutenance%201.pdf" onclick="return OE.Navigate.blank(event,this.href)" class="ContentBox"><span style="color:rgb(227, 108, 9);">Rapport de Soutenance N°1</span></a>
       </div>
@@ -217,6 +242,7 @@
    </div>
   </div>
   <script type="text/javascript">
+   var WEXBodyAutoHeightTree = {"WEf0a32b4d5c":{"B":15,"H":15,"I":"WEceb44064d7"},"WEcb80535e28":{"B":304,"H":60,"I":"WEbc8870ecc8"},"WEffe04f115a":{"B":326,"H":96,"I":"WEbc8870ecc8"},"WEbc8870ecc8":{"B":426,"H":76,"I":"WEf3bbcf2be5"},"WEf3bbcf2be5":{"B":529,"H":19,"I":"WE2bf898438c"},"WE2bf898438c":{"B":579,"H":19,"I":"WEa1a952818f"},"WE587e579642":{"B":787,"H":19,"I":""},"WEc59b38a324":{"B":747,"H":19,"I":""},"WEceb44064d7":{"B":989,"H":849,"I":""},"WE068f04de65":{"B":711,"H":15,"I":""}};
    $(["Files/Image/barre%20menu.png","WEFiles/Image/Skin/0db815a6.png","WEFiles/Image/Skin/962e1fc1.png","WEFiles/Image/Skin/00bff3bd.png","WEFiles/Image/Skin/1ccc25ab.png"]).preloadImg();
   </script>
  </body>
