@@ -551,7 +551,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 20
   turnSpeed: 100
-  jumpPower: 50
+  jumpPower: 40
   TimeOnAir: 0.65
   GravityMultiplier: 10
   CharacterBaseObject: {fileID: 1472865944977766}

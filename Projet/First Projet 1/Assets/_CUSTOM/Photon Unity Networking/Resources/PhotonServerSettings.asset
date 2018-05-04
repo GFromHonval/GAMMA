@@ -42,4 +42,10 @@ MonoBehaviour:
   - RequestForPickupItems
   - RequestForPickupTimes
   - TaggedPlayer
+  - OnGUI
+  - OnLoadScene
+  - IsInArea
+  - OnCollisionEnter
+  - ToEvapore
+  - Update
   DisableAutoOpenWizard: 1

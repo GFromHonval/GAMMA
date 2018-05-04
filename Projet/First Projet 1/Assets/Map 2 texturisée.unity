@@ -8032,6 +8032,8 @@ MonoBehaviour:
   - {fileID: 962593547}
   StayPressedButton: 0
   EvaporingButton: 0
+  OnlyGirl: 0
+  OnlyBoy: 1
 --- !u!64 &962593549
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12083,6 +12085,8 @@ MonoBehaviour:
   - {fileID: 1450905967}
   StayPressedButton: 1
   EvaporingButton: 0
+  OnlyGirl: 1
+  OnlyBoy: 0
 --- !u!114 &1450905967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13829,6 +13833,8 @@ MonoBehaviour:
   - {fileID: 1595179448}
   StayPressedButton: 0
   EvaporingButton: 1
+  OnlyGirl: 0
+  OnlyBoy: 0
 --- !u!65 &1595179446
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16973,6 +16979,8 @@ MonoBehaviour:
   - {fileID: 1968599596}
   StayPressedButton: 0
   EvaporingButton: 0
+  OnlyGirl: 0
+  OnlyBoy: 1
 --- !u!64 &1968599598
 MeshCollider:
   m_ObjectHideFlags: 0

@@ -56,6 +56,7 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 		SceneManager.activeSceneChanged += OnLoadScene;
 	}
 	
+	[PunRPC]
 	private void OnLoadScene(Scene previousScene, Scene newScene)
 	{
 		GameParameters gameParameters = GameObject.Find("GameParameters").GetComponent<GameParameters>();
@@ -72,18 +73,6 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 			}
 		}
 
-		/*GameObject[] ToDestroy1 = GameObject.FindGameObjectsWithTag("PlayerBoy");
-		foreach (GameObject player in ToDestroy1)
-		{
-			if (player.GetComponent<RotationPlayer>().GetDestroy)
-				PhotonNetwork.Destroy(player);
-		}
-		GameObject[] ToDestroy2 = GameObject.FindGameObjectsWithTag("PlayerGirl");
-		foreach (GameObject player in ToDestroy2)
-		{
-			if (player.GetComponent<RotationPlayer>().GetDestroy)
-				PhotonNetwork.Destroy(player);
-		}*/
 		GameObject ToDestroy1 = GameObject.FindGameObjectWithTag("PlayerBoy");
 		if (ToDestroy1 != null)
 			PhotonNetwork.Destroy(ToDestroy1);
@@ -151,6 +140,7 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 		LobbyCamera.SetActive(false);
 	}
 
+	[PunRPC]
 	private void OnGUI()
 	{
 		if (PhotonNetwork.connected)
@@ -176,8 +166,6 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 			{
 				MyLife = GameObject.FindGameObjectWithTag("PlayerBoy").GetComponent<RotationPlayer>().GetLife;
 				OtherLife = GameObject.FindGameObjectWithTag("PlayerGirl").GetComponent<RotationPlayer>().GetLife;
-				print(MyLife);
-				print(OtherLife);
 			}
 			else
 			{

@@ -20,19 +20,25 @@ public class BoutonEtPlateforme : MonoBehaviour
 	//Choice Button
 	public bool StayPressedButton;
 	public bool EvaporingButton;
+	public bool OnlyGirl;
+	public bool OnlyBoy;
+	
+	//Hiden Variables
+	private bool AllPlayers;
 	
 	//Physics Variables
 	private Vector3 BassePose;
 	private Vector3 HautePose;
 	private bool IsPressing;
-	private string PlayerTag = "";
 	private Vector4 Area;
 	private bool HasExitTheArea;
 	
 	private void Start()
 	{
 		HasExitTheArea = true;
-		PlayerTag = "Player";
+		
+		AllPlayers = !(OnlyBoy || OnlyGirl);
+		
 		BassePose = new Vector3(transform.position.x, BassePosition.position.y, transform.position.z);
 		HautePose = transform.position;
 		Area.x = transform.position.z - GetComponent<BoxCollider>().size.z * transform.localScale.z /2 - 0.2f;
@@ -41,6 +47,7 @@ public class BoutonEtPlateforme : MonoBehaviour
 		Area.w = transform.position.x + GetComponent<BoxCollider>().size.x * transform.localScale.x /2 + 0.2f;
 	}
 
+	[PunRPC]
 	private void Update()
 	{
 		if (IsPressing)
@@ -58,12 +65,12 @@ public class BoutonEtPlateforme : MonoBehaviour
 		if (!IsPressing && transform.position.y < HautePose.y)
 		{
 			transform.position = Vector3.MoveTowards(transform.position, HautePose, Time.deltaTime);
-			PlayerTag = "Player";
 		}
 		if (StayPressedButton && !HasExitTheArea)
 			IsInArea();
 	}
 
+	[PunRPC]
 	private void ToEvapore()
 	{
 		foreach (PlateformeClass plat in Plateformes)
@@ -89,41 +96,72 @@ public class BoutonEtPlateforme : MonoBehaviour
 		}
 	}
 	
-		
+	[PunRPC]
 	private void IsInArea()
 	{
-	
-		if (GameObject.FindGameObjectWithTag(PlayerTag).transform.position.z < Area.x
-			|| GameObject.FindGameObjectWithTag(PlayerTag).transform.position.z > Area.y
-			|| GameObject.FindGameObjectWithTag(PlayerTag).transform.position.x < Area.z
-			|| GameObject.FindGameObjectWithTag(PlayerTag).transform.position.x > Area.w)
+
+		if (AllPlayers || OnlyBoy)
 		{
-			if (!StayPressedButton)
-				IsPressing = false;
-			else
+			if (GameObject.FindGameObjectWithTag("PlayerBoy").transform.position.z < Area.x
+			    || GameObject.FindGameObjectWithTag("PlayerBoy").transform.position.z > Area.y
+			    || GameObject.FindGameObjectWithTag("PlayerBoy").transform.position.x < Area.z
+			    || GameObject.FindGameObjectWithTag("PlayerBoy").transform.position.x > Area.w)
 			{
-				HasExitTheArea = true;
-			}
-		}
-		else
-		{
-			if (!StayPressedButton)
-				IsPressing = true;
-			else
-			{
-				if (HasExitTheArea)
+				if (!StayPressedButton)
+					IsPressing = false;
+				else
 				{
-					IsPressing = !IsPressing;
-					HasExitTheArea = false;
+					HasExitTheArea = true;
+				}
+			}
+			else
+			{
+				if (!StayPressedButton)
+					IsPressing = true;
+				else
+				{
+					if (HasExitTheArea)
+					{
+						IsPressing = !IsPressing;
+						HasExitTheArea = false;
+					}
 				}
 			}
 		}
-		
+
+		if (AllPlayers || OnlyGirl)
+		{
+			if (GameObject.FindGameObjectWithTag("PlayerGirl").transform.position.z < Area.x
+			    || GameObject.FindGameObjectWithTag("PlayerGirl").transform.position.z > Area.y
+			    || GameObject.FindGameObjectWithTag("PlayerGirl").transform.position.x < Area.z
+			    || GameObject.FindGameObjectWithTag("PlayerGirl").transform.position.x > Area.w)
+			{
+				if (!StayPressedButton)
+					IsPressing = false;
+				else
+				{
+					HasExitTheArea = true;
+				}
+			}
+			else
+			{
+				if (!StayPressedButton)
+					IsPressing = true;
+				else
+				{
+					if (HasExitTheArea)
+					{
+						IsPressing = !IsPressing;
+						HasExitTheArea = false;
+					}
+				}
+			}
+		}
 	}
 	
+	[PunRPC]
 	private void OnCollisionEnter(Collision other)
 	{
-		PlayerTag = other.gameObject.tag;
 		IsInArea();
 	}
 }
