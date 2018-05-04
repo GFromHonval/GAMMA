@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Remoting.Lifetime;
 using System.Runtime.Serialization.Formatters;
 using UnityEngine;
+using UnityEngine.Analytics;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngineInternal;
@@ -22,25 +24,11 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 	private GameObject GameOverCanvas;
 	private GameObject EscapeCanvas;
 	
-	//Prefab Choice
-	private string PrefabFirstPlayer;
-
-	public GameObject GetPrefabBoy
-	{
-		get { return PrefabBoy; }
-	}
-
-	public GameObject GetPrefabGirl
-	{
-		get { return PrefabGirl; }
-	}
-
-	public string GetPrefabFirstPlayer
-	{
-		get { return PrefabFirstPlayer; }
-		set { PrefabFirstPlayer = value; }
-	}
-
+	//Game Parameters
+	private string NameSecondPlayer = "";
+	private float MyLife;
+	private float OtherLife;
+	
 	public GameObject GetGameOverCanvas
 	{
 		get { return GameOverCanvas; }
@@ -57,14 +45,6 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 	{
 		GameOverCanvas = GameObject.Find("GameLogic/GameOverCanvas");
 		EscapeCanvas = GameObject.Find("GameLogic/EscapeCanvas");
-		LobbyCamera = GameObject.Find("LobbyCamera");
-		
-		GameOverCanvas.SetActive(false);
-		EscapeCanvas.SetActive(false);		
-		
-		GameParameters gameParameters = GameObject.Find("GameParameters").GetComponent<GameParameters>();
-		SpawnPoint1 = gameParameters.RespawnPoint1;
-		SpawnPoint2 = gameParameters.RespawnPoint2;
 		
 		PhotonNetwork.automaticallySyncScene = true;
 
@@ -82,6 +62,44 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 		SpawnPoint1 = gameParameters.RespawnPoint1;
 		SpawnPoint2 = gameParameters.RespawnPoint2;
 		LobbyCamera = GameObject.Find("LobbyCamera");
+
+		string MasterName = "";
+		foreach (PhotonPlayer player in PhotonNetwork.playerList)
+		{
+			if (player.IsMasterClient)
+			{
+				MasterName = player.NickName;
+			}
+		}
+
+		if (PhotonNetwork.player.IsMasterClient)
+		{
+			if (PhotonNetwork.player.NickName == "FirstPlayerGirl")
+				PhotonNetwork.Instantiate(PrefabGirl.name, SpawnPoint1.position, SpawnPoint1.rotation, 0);
+			else
+			{
+				if (PhotonNetwork.player.NickName == "FirstPlayerBoy")
+					PhotonNetwork.Instantiate(PrefabBoy.name, SpawnPoint1.position, SpawnPoint1.rotation, 0);
+			}
+		}
+		else
+		{
+			if (MasterName == "FirstPlayerGirl")
+			{
+				PhotonNetwork.Instantiate(PrefabBoy.name, SpawnPoint2.position, SpawnPoint2.rotation, 0);
+				NameSecondPlayer = "FirstPlayerGirl";
+				PhotonNetwork.player.NickName = "SecondPlayerBoy";
+			}
+			else
+			{
+				if (MasterName == "FirstPlayerBoy")
+				{
+					PhotonNetwork.Instantiate(PrefabGirl.name, SpawnPoint2.position, SpawnPoint2.rotation, 0);
+					NameSecondPlayer = "FirstPlayerBoy";
+					PhotonNetwork.player.NickName = "SecondPlayerGirl";
+				}
+			}
+		}
 	}
 
 
@@ -95,16 +113,14 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 	public virtual void OnJoinedRoom()
 	{
 		if (PhotonNetwork.playerList.Length == 2)
-		{
-			GameObject.Find("CanvasSecondPlayer").SetActive(true);
-			GameObject.Find("CanvasFirstPlayer").SetActive(false);
-			PhotonNetwork.Instantiate(PrefabGirl.name, SpawnPoint2.position, SpawnPoint2.rotation, 0);
+		{		
+			GameObject.Find("CanvasSecondPlayer").GetComponent<Canvas>().enabled = true;
+			PhotonNetwork.Instantiate(PrefabBoy.name, SpawnPoint2.position, SpawnPoint2.rotation, 0);
 			PhotonNetwork.playerName = "SecondPlayer";
 		}
 		else
 		{
-			GameObject.Find("CanvasFirstPlayer").SetActive(true);
-			GameObject.Find("CanvasSecondPlayer").SetActive(false);
+			GameObject.Find("CanvasFirstPlayer").GetComponent<Canvas>().enabled = true;
 			PhotonNetwork.Instantiate(PrefabGirl.name, SpawnPoint1.position, SpawnPoint1.rotation, 0);
 			PhotonNetwork.playerName = "FirstPlayer";
 		}
@@ -114,13 +130,37 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 
 	private void OnGUI()
 	{
-		GUILayout.Label(PhotonNetwork.playerName);
-	}
+		if (PhotonNetwork.connected)
+		{
+			GUILayout.Label(PhotonNetwork.playerName);
 
+			GUILayout.Label(PhotonNetwork.player.isMasterClient.ToString());
+			
+			GUILayout.Label(MyLife.ToString());
+			
+			GUILayout.Label(OtherLife.ToString());
+		}
+	}
 
 	void Update()
 	{
-		
-	}
+		if (PhotonNetwork.playerList.Length == 2)
+		{
+			GameObject PlayerBoy = GameObject.FindGameObjectWithTag("PlayerBoy");
+			GameObject PlayerGirl = GameObject.FindGameObjectWithTag("PlayerGirl");
 
+			if (PhotonNetwork.player.NickName == "FirstPlayerBoy" || PhotonNetwork.player.NickName == "SecondPlayerBoy")
+			{
+				MyLife = GameObject.FindGameObjectWithTag("PlayerBoy").GetComponent<RotationPlayer>().GetLife;
+				OtherLife = GameObject.FindGameObjectWithTag("PlayerGirl").GetComponent<RotationPlayer>().GetLife;
+				print(MyLife);
+				print(OtherLife);
+			}
+			else
+			{
+				MyLife = GameObject.FindGameObjectWithTag("PlayerGirl").GetComponent<RotationPlayer>().GetLife;
+				OtherLife = GameObject.FindGameObjectWithTag("PlayerBoy").GetComponent<RotationPlayer>().GetLife;
+			}
+		}
+	}
 }

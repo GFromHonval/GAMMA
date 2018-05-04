@@ -4,13 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - TagBoy
-  - TagGirl
-  - Player.1
-  - Player.2
-  - Player.0
-  - TGIRL
-  - TBOY
+  - PlayerGirl
+  - PlayerBoy
   layers:
   - Default
   - TransparentFX

@@ -27,8 +27,8 @@ public class RotationPlayer : Photon.MonoBehaviour
 	private float TimeJump;
 	
 	//Canvas
-	private GameObject EscapeCanvas;
-	private GameObject GameOverCanvas; 
+	private Canvas EscapeCanvas;
+	private Canvas GameOverCanvas; 
 	
 	public float GetLife
 	{
@@ -38,19 +38,21 @@ public class RotationPlayer : Photon.MonoBehaviour
 	
 	void Start()
 	{
+	
 		TimeJump = TimeOnAir;
 		
-		GameOverCanvas = GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().GetGameOverCanvas;
-		EscapeCanvas = GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().GetEscapeCanvas;
+		GameOverCanvas = GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().GetGameOverCanvas.GetComponent<Canvas>();
+		EscapeCanvas = GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().GetEscapeCanvas.GetComponent<Canvas>();
 		
 		GameParameters gameParameters = GameObject.Find("GameParameters").GetComponent<GameParameters>();
 		LePlusB = gameParameters.LePlusBas;
 		Life = gameParameters.LifeInThisLevel;
 		Damage = gameParameters.DamageFallOfThisLevel;
-		if (photonView.name == "FirstPlayer")
-			RespawnP = gameParameters.RespawnPoint1;
-		else
+		
+		if (photonView.name == "SecondPlayerGirl" || photonView.name == "SecondPlayerBoy" || photonView.name == "SecondPlayer")
 			RespawnP = gameParameters.RespawnPoint2;
+		else
+			RespawnP = gameParameters.RespawnPoint1;
 		
 		SceneManager.activeSceneChanged += OnLoadScenePlayer;
 	}
@@ -58,69 +60,34 @@ public class RotationPlayer : Photon.MonoBehaviour
 
 	private void OnLoadScenePlayer(Scene preScene, Scene nextScene)
 	{
-		GameParameters gameParameters = GameObject.Find("GameParameters").GetComponent<GameParameters>();
-		LePlusB = gameParameters.LePlusBas;
-		Life = gameParameters.LifeInThisLevel;
-		Damage = gameParameters.DamageFallOfThisLevel;
-
-		PhotonNetworkManager gameLogic = GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>();
 		
-		if (PhotonNetwork.playerName == "FirstPlayer")
-		{
-			RespawnP = gameParameters.RespawnPoint1;
-			if (photonView.isMine && gameLogic.GetPrefabFirstPlayer == "PrefabBoy")
-			{
-				PhotonNetwork.Instantiate(gameLogic.GetPrefabBoy.name, RespawnP.position, RespawnP.rotation, 0);
-				PhotonNetwork.Destroy(gameObject);
-				return;
-			}
-		}
-		else
-		{
-			if (photonView.isMine && PhotonNetwork.playerName == "SecondPlayer")
-			{
-				print("okok");
-				RespawnP = gameParameters.RespawnPoint2;
-				if (gameLogic.GetPrefabFirstPlayer == "PrefabGirl")
-				{
-					print("Should be fine");
-					PhotonNetwork.Destroy(gameObject);
-					PhotonNetwork.Instantiate(gameLogic.GetPrefabBoy.name, RespawnP.position, RespawnP.rotation, 0);
-					return;
-				}
-			}
-		}
-
-		transform.position = RespawnP.position;
-		transform.rotation = RespawnP.rotation;
 	}
 
 	void Update () {
-		
 		if (photonView.isMine)
 		{
 			if (SceneManager.GetActiveScene().buildIndex != 0 && Input.GetKey(KeyCode.Escape))
 			{
-				EscapeCanvas.SetActive(true);
+				EscapeCanvas.enabled = true;
 			}
 			else
 			{
-				EscapeCanvas.SetActive(false);
-				if (Life <= 0 || transform.position.y < LePlusB.transform.position.y)
+				EscapeCanvas.enabled = false;
+				if (Life <= 0 || this.transform.position.y < LePlusB.transform.position.y)
 				{
 					if (Life <= Damage)
 					{
-						GameOverCanvas.SetActive(true);
-						transform.position = RespawnP.transform.position;
-						transform.rotation = RespawnP.transform.rotation;
+						GameOverCanvas.enabled = true;
+						this.transform.position = RespawnP.transform.position;
+						this.transform.rotation = RespawnP.transform.rotation;
 						GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
 						GetComponent<Rigidbody>().velocity = Vector3.zero;
 						Life = 0;
 					}
 					else
 					{
-						transform.position = RespawnP.transform.position;
-						transform.rotation = RespawnP.transform.rotation;
+						this.transform.position = RespawnP.transform.position;
+						this.transform.rotation = RespawnP.transform.rotation;
 						GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
 						GetComponent<Rigidbody>().velocity = Vector3.zero;
 						Life -= Damage;
@@ -130,23 +97,23 @@ public class RotationPlayer : Photon.MonoBehaviour
 				if (Life > 0)
 				{
 					if (Input.GetKey(KeyCode.UpArrow))
-						transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
+						this.transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
 
 					if (Input.GetKey(KeyCode.DownArrow))
-						transform.Translate(-Vector3.forward * moveSpeed * Time.deltaTime);
+						this.transform.Translate(-Vector3.forward * moveSpeed * Time.deltaTime);
 
 					if (Input.GetKey(KeyCode.LeftArrow))
-						transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime);
+						this.transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime);
 
 					if (Input.GetKey(KeyCode.RightArrow))
-						transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
+						this.transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
 
 					if (!IsJumping)
 					{
 						if (Input.GetKeyDown(KeyCode.Space))
 						{
 							IsJumping = true;
-							transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.up * jumpPower,
+							this.transform.position = Vector3.Lerp(this.transform.position, this.transform.position + Vector3.up * jumpPower,
 								0.5f * Time.deltaTime);
 						}
 					}

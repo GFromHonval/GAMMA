@@ -26,12 +26,20 @@ public class MenuActions : Photon.MonoBehaviour {
         }
         
         Choice = LvlChoice.value + 1;
+        foreach (PhotonPlayer player in PhotonNetwork.playerList)
+        {
+            if (player.IsMasterClient)
+            {
+                if (IsABoy.isOn)
+                {
+                    player.NickName += "Boy";
+                }
+                else
+                    player.NickName += "Girl";
 
-        if (IsABoy.isOn)
-            GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().GetPrefabFirstPlayer = "PrefabBoy";
-        else
-            GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().GetPrefabFirstPlayer = "PrefabGirl";
-            
+                print(player.NickName);
+            }
+        }
         
         if (ScenesBuild.Contains(Choice))
         {

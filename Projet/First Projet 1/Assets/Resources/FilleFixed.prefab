@@ -43,11 +43,10 @@ GameObject:
   - component: {fileID: 114889770174995608}
   - component: {fileID: 114639075522853038}
   - component: {fileID: 65674277721671480}
-  - component: {fileID: 114840827021796742}
-  - component: {fileID: 114382262026242584}
+  - component: {fileID: 114232419675395276}
   m_Layer: 0
   m_Name: FilleFixed
-  m_TagString: Player
+  m_TagString: PlayerGirl
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -467,7 +466,7 @@ MonoBehaviour:
   instantiationId: -1
   currentMasterID: -1
   isRuntimeInstantiated: 0
---- !u!114 &114382262026242584
+--- !u!114 &114232419675395276
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -506,17 +505,6 @@ MonoBehaviour:
   turnSpeed: 100
   jumpPower: 600
   TimeOnAir: 0.65
---- !u!114 &114840827021796742
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1492353495525220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffebbd84861b9704586f8cf0dfe3a053, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114889770174995608
 MonoBehaviour:
   m_ObjectHideFlags: 1
