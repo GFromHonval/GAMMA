@@ -28,6 +28,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1390952165408680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4528586099992436}
+  m_Layer: 0
+  m_Name: CharacterBase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1492353495525220
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,6 +149,19 @@ Transform:
   m_Father: {fileID: 4712939373084290}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4528586099992436
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1390952165408680}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -8.826, z: 0.73}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4712939373084290}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4588345347465504
 Transform:
   m_ObjectHideFlags: 1
@@ -193,7 +221,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1492353495525220}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -23.23, y: 9.45, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4588345347465504}
@@ -201,6 +229,7 @@ Transform:
   - {fileID: 4688238135533260}
   - {fileID: 4604013374088232}
   - {fileID: 4679133194263750}
+  - {fileID: 4528586099992436}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -429,7 +458,7 @@ BoxCollider:
   m_GameObject: {fileID: 1492353495525220}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 2.9830487, y: 0.7008087, z: 2.2885787}
   m_Center: {x: 0.017702438, y: -8.5, z: -0.101579405}
@@ -503,8 +532,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 20
   turnSpeed: 100
-  jumpPower: 600
+  jumpPower: 50
   TimeOnAir: 0.65
+  GravityMultiplier: 10
+  CharacterBaseObject: {fileID: 1390952165408680}
 --- !u!114 &114889770174995608
 MonoBehaviour:
   m_ObjectHideFlags: 1

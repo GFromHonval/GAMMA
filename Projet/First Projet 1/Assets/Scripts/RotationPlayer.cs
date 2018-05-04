@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Text.RegularExpressions;
 using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -14,6 +15,7 @@ public class RotationPlayer : Photon.MonoBehaviour
 	public float turnSpeed = 50f;
 	public float jumpPower;
 	public float TimeOnAir;
+	public float GravityMultiplier;
 	
 	//Hidden Variables
 	private float Life;
@@ -22,9 +24,14 @@ public class RotationPlayer : Photon.MonoBehaviour
 	//Physics Variables
 	private GameObject LePlusB;
 	private Transform RespawnP;
-	private bool IsJumping = false;
-	float GroundDistance;
-	private float TimeJump;
+	private bool IsJumping;
+	private float GroundDistance;
+	private float GroundDistanceReference;
+	private Rigidbody ThisRigidbody;
+	private float CoeffPuissance;
+	
+	//Physics Objects\
+	public GameObject CharacterBaseObject;
 	
 	//Canvas
 	private Canvas EscapeCanvas;
@@ -38,8 +45,8 @@ public class RotationPlayer : Photon.MonoBehaviour
 	
 	void Start()
 	{
-	
-		TimeJump = TimeOnAir;
+		GroundDistanceReference = (transform.position - CharacterBaseObject.transform.position).y + 0.1f;
+		ThisRigidbody = GetComponent<Rigidbody>();
 		
 		GameOverCanvas = GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().GetGameOverCanvas.GetComponent<Canvas>();
 		EscapeCanvas = GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().GetEscapeCanvas.GetComponent<Canvas>();
@@ -97,10 +104,10 @@ public class RotationPlayer : Photon.MonoBehaviour
 				if (Life > 0)
 				{
 					if (Input.GetKey(KeyCode.UpArrow))
-						this.transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
-
+						this.transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime * CoeffPuissance);
+						
 					if (Input.GetKey(KeyCode.DownArrow))
-						this.transform.Translate(-Vector3.forward * moveSpeed * Time.deltaTime);
+						this.transform.Translate(-Vector3.forward * moveSpeed * Time.deltaTime * CoeffPuissance);
 
 					if (Input.GetKey(KeyCode.LeftArrow))
 						this.transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime);
@@ -108,64 +115,39 @@ public class RotationPlayer : Photon.MonoBehaviour
 					if (Input.GetKey(KeyCode.RightArrow))
 						this.transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
 
+					CheckGroundStatue();
+					
 					if (!IsJumping)
 					{
+						CoeffPuissance = 1f;
 						if (Input.GetKeyDown(KeyCode.Space))
 						{
 							IsJumping = true;
-							this.transform.position = Vector3.Lerp(this.transform.position, this.transform.position + Vector3.up * jumpPower,
-								0.5f * Time.deltaTime);
+							ThisRigidbody.velocity = new Vector3(ThisRigidbody.velocity.x, jumpPower, ThisRigidbody.velocity.z);
+							CoeffPuissance = 0.5f;
 						}
 					}
 					else
 					{
-						TimeJump -= Time.deltaTime;
-						if (TimeJump <= 0)
-						{
-							IsJumping = false;
-							TimeJump = TimeOnAir;
-						}
+						
+						Vector3 extraGravity = (Physics.gravity * GravityMultiplier) - Physics.gravity;
+						ThisRigidbody.AddForce(extraGravity);
 					}
-					
-					
-					/*if (!IsJumping)
-					{
-						RaycastHit hit;
-						Vector3 GroundPosition;
-						if (Physics.Raycast(transform.position, Vector3.down, out hit))
-						{
-							GroundPosition = new Vector3(hit.point.x, hit.point.y, hit.point.z);
-							GroundDistance = Vector3.Distance(transform.position, GroundPosition);
-						}
-
-						if (Input.GetKeyDown(KeyCode.Space))
-						{
-							IsJumping = true;
-							transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.up * jumpPower,
-								0.5f * Time.deltaTime);
-						}
-					}
-					else
-					{
-						if (Input.GetKey(KeyCode.Space))
-						{
-
-						}
-						else
-						{
-							RaycastHit hit;
-							if (Physics.Raycast(transform.position, Vector3.down, out hit))
-							{
-								if (Vector3.Distance(transform.position, hit.transform.position) < GroundDistance)// + 1f)
-								{
-									IsJumping = false;
-								}
-							}
-						}
-					}*/
-
 				}
 			}
 		}
 	}
+
+	private void CheckGroundStatue()
+	{
+		RaycastHit hit;
+		if (Physics.Raycast(transform.position, Vector3.down, out hit))
+		{
+			Vector3 v = transform.position;
+			v.y -= hit.distance;
+			GroundDistance = hit.distance;
+			IsJumping = GroundDistance > GroundDistanceReference;
+		}
+	}
+
 }
