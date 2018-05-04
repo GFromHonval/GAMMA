@@ -84,11 +84,15 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 			if (player.GetComponent<RotationPlayer>().GetDestroy)
 				PhotonNetwork.Destroy(player);
 		}*/
+		GameObject ToDestroy1 = GameObject.FindGameObjectWithTag("PlayerBoy");
+		if (ToDestroy1 != null)
+			PhotonNetwork.Destroy(ToDestroy1);
+		GameObject ToDestroy2 = GameObject.FindGameObjectWithTag("PlayerGirl");
+		if (ToDestroy2 != null)
+			PhotonNetwork.Destroy(ToDestroy2);
 		
 		if (PhotonNetwork.player.IsMasterClient)
 		{
-			GameObject ToDestroy = GameObject.FindGameObjectWithTag("PlayerGirl");
-			PhotonNetwork.Destroy(ToDestroy);
 			if (PhotonNetwork.player.NickName == "FirstPlayerGirl")
 			{
 				PhotonNetwork.Instantiate(PrefabGirl.name, SpawnPoint1.position, SpawnPoint1.rotation, 0);
@@ -105,9 +109,6 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 		{
 			if (MasterName == "FirstPlayerGirl")
 			{
-				GameObject ToDestroy = GameObject.FindGameObjectWithTag("PlayerBoy");
-				PhotonNetwork.Destroy(ToDestroy);
-				
 				PhotonNetwork.Instantiate(PrefabBoy.name, SpawnPoint2.position, SpawnPoint2.rotation, 0);
 				NameSecondPlayer = "FirstPlayerGirl";
 				PhotonNetwork.player.NickName = "SecondPlayerBoy";
@@ -116,9 +117,6 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 			{
 				if (MasterName == "FirstPlayerBoy")
 				{
-					GameObject ToDestroy = GameObject.FindGameObjectWithTag("PlayerGirl");
-					PhotonNetwork.Destroy(ToDestroy);
-					
 					PhotonNetwork.Instantiate(PrefabGirl.name, SpawnPoint2.position, SpawnPoint2.rotation, 0);
 					NameSecondPlayer = "FirstPlayerBoy";
 					PhotonNetwork.player.NickName = "SecondPlayerGirl";
