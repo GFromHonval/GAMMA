@@ -20,6 +20,7 @@ public class RotationPlayer : Photon.MonoBehaviour
 	//Hidden Variables
 	private float Life;
     private float Damage;
+	private bool Destroy;
 	
 	//Physics Variables
 	private GameObject LePlusB;
@@ -41,6 +42,11 @@ public class RotationPlayer : Photon.MonoBehaviour
 	{
 		get { return Life; }
 		set { Life = value; }
+	}
+
+	public bool GetDestroy
+	{
+		get { return Destroy; }
 	}
 	
 	void Start()
@@ -67,10 +73,11 @@ public class RotationPlayer : Photon.MonoBehaviour
 
 	private void OnLoadScenePlayer(Scene preScene, Scene nextScene)
 	{
-		
+		Destroy = true;
 	}
 
-	void Update () {
+	void Update () 
+	{
 		if (photonView.isMine)
 		{
 			if (SceneManager.GetActiveScene().buildIndex != 0 && Input.GetKey(KeyCode.Escape))

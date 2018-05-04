@@ -36,8 +36,6 @@ public class MenuActions : Photon.MonoBehaviour {
                 }
                 else
                     player.NickName += "Girl";
-
-                print(player.NickName);
             }
         }
         
