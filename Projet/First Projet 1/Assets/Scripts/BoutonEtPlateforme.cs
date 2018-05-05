@@ -25,7 +25,7 @@ public class BoutonEtPlateforme : MonoBehaviour
 	
 	//Hiden Variables
 	private bool AllPlayers;
-	
+		
 	//Physics Variables
 	private Vector3 BassePose;
 	private Vector3 HautePose;
@@ -36,7 +36,6 @@ public class BoutonEtPlateforme : MonoBehaviour
 	private void Start()
 	{
 		HasExitTheArea = true;
-		
 		AllPlayers = !(OnlyBoy || OnlyGirl);
 		
 		BassePose = new Vector3(transform.position.x, BassePosition.position.y, transform.position.z);
@@ -60,17 +59,13 @@ public class BoutonEtPlateforme : MonoBehaviour
 		if (IsPressing && transform.position.y >= BassePose.y)
 		{
 			transform.position = Vector3.MoveTowards(transform.position, BassePose, Time.deltaTime);
-			IsInArea();	
 		}
 		if (!IsPressing && transform.position.y < HautePose.y)
 		{
 			transform.position = Vector3.MoveTowards(transform.position, HautePose, Time.deltaTime);
 		}
-		if (StayPressedButton && !HasExitTheArea)
-			IsInArea();
 	}
 
-	[PunRPC]
 	private void ToEvapore()
 	{
 		foreach (PlateformeClass plat in Plateformes)
@@ -96,11 +91,21 @@ public class BoutonEtPlateforme : MonoBehaviour
 		}
 	}
 	
-	[PunRPC]
-	private void IsInArea()
+	private bool NeedToBePressed(Collider Player)
 	{
+		if (Player.tag == "PlayerBoy")
+		{
+			return (AllPlayers || OnlyBoy);
+		}
+		else
+		{
+			return (AllPlayers || OnlyGirl);
+		}
+	}
 
-		if (AllPlayers || OnlyBoy)
+	private void ExitTheArea()
+	{
+		/*if (AllPlayers || OnlyBoy)
 		{
 			if (GameObject.FindGameObjectWithTag("PlayerBoy").transform.position.z < Area.x
 			    || GameObject.FindGameObjectWithTag("PlayerBoy").transform.position.z > Area.y
@@ -156,12 +161,30 @@ public class BoutonEtPlateforme : MonoBehaviour
 					}
 				}
 			}
+		}*/
+	}
+
+	private void OnTriggerStay(Collider other)
+	{
+		if(!StayPressedButton && NeedToBePressed(other))
+		{
+			IsPressing = true;
 		}
 	}
-	
-	[PunRPC]
-	private void OnCollisionEnter(Collision other)
+
+	private void OnTriggerExit(Collider other)
 	{
-		IsInArea();
+		if (!StayPressedButton && NeedToBePressed(other))
+		{
+			IsPressing = false;
+		}
+	}
+
+	private void OnTriggerEnter(Collider other)
+	{
+		if(StayPressedButton && NeedToBePressed(other))
+		{
+			IsPressing = !IsPressing;
+		}
 	}
 }

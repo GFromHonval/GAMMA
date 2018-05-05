@@ -3450,13 +3450,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 484057146}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -0, y: 0, z: -5.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2002080508}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &487559402
 GameObject:
   m_ObjectHideFlags: 0
@@ -3505,7 +3505,7 @@ MonoBehaviour:
   RespawnPoint1: {fileID: 1163163206}
   RespawnPoint2: {fileID: 1647794215}
   LifeInThisLevel: 30
-  DamageFallOfThisLevel: 10
+  DamageFallOfThisLevel: 0
   DamageAttackedThisLevel: 0
 --- !u!1001 &496964090
 Prefab:
@@ -5547,6 +5547,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VersPortail1: {fileID: 853910798}
   VersPortail2: {fileID: 50543904}
+  OnlyBoy: 0
+  OnlyGirl: 0
 --- !u!23 &699125905
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7977,6 +7979,7 @@ GameObject:
   - component: {fileID: 962593547}
   - component: {fileID: 962593549}
   - component: {fileID: 962593550}
+  - component: {fileID: 962593551}
   m_Layer: 0
   m_Name: BOUTON GAUCHE
   m_TagString: Untagged
@@ -8060,6 +8063,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.9788437, y: 2.0480933, z: 4.1006784}
   m_Center: {x: -0.028533936, y: 0.9790343, z: 0.026894579}
+--- !u!65 &962593551
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 962593545}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.5, z: 1}
+  m_Center: {x: 0, y: 2.2, z: 0}
 --- !u!1001 &970027019
 Prefab:
   m_ObjectHideFlags: 0
@@ -12130,6 +12145,18 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 122089aa6f199db4e970a0a3f2d624a1, type: 3}
+--- !u!65 &1450905970
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1450905965}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.5, z: 1}
+  m_Center: {x: 0, y: 2.2, z: 0}
 --- !u!1 &1452882012 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000012823727576, guid: 607314d96864be34ab86da1f60d6a2df,
@@ -13878,6 +13905,18 @@ MonoBehaviour:
   Unidirectionnel: 0
   VaADroite: 0
   Vitesse: 1
+--- !u!65 &1595179449
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1595179443}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.5, z: 1}
+  m_Center: {x: 0, y: 2.2, z: 0}
 --- !u!1 &1609384302 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000014131466504, guid: 0e2068a5c7772c940b8250627261894e,
@@ -16657,7 +16696,7 @@ GameObject:
   - component: {fileID: 1948015789}
   m_Layer: 0
   m_Name: PORTAIL 2
-  m_TagString: Untagged
+  m_TagString: Portail2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -16744,6 +16783,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VersPortail1: {fileID: 484057146}
   VersPortail2: {fileID: 2134006675}
+  OnlyBoy: 0
+  OnlyGirl: 0
 --- !u!1001 &1948993368
 Prefab:
   m_ObjectHideFlags: 0
@@ -16924,6 +16965,7 @@ GameObject:
   - component: {fileID: 1968599596}
   - component: {fileID: 1968599598}
   - component: {fileID: 1968599599}
+  - component: {fileID: 1968599600}
   m_Layer: 0
   m_Name: BOUTON DROITE
   m_TagString: Untagged
@@ -17007,6 +17049,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.971878, y: 1.8485692, z: 4.091794}
   m_Center: {x: 0.022521973, y: 1.0449468, z: 0.030151378}
+--- !u!65 &1968599600
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1968599594}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.5, z: 1}
+  m_Center: {x: 0, y: 2.2, z: 0}
 --- !u!1001 &1968807297
 Prefab:
   m_ObjectHideFlags: 0
@@ -17635,7 +17689,7 @@ GameObject:
   - component: {fileID: 2002080504}
   m_Layer: 0
   m_Name: portail 1
-  m_TagString: Untagged
+  m_TagString: Portail1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -17651,8 +17705,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c49b82aa4f86d4f9bb4e9f7e83635b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VersPortail1: {fileID: 2134006675}
-  VersPortail2: {fileID: 484057146}
+  VersPortail1: {fileID: 484057146}
+  VersPortail2: {fileID: 2134006675}
+  OnlyBoy: 0
+  OnlyGirl: 0
 --- !u!23 &2002080505
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17768,6 +17824,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VersPortail1: {fileID: 50543904}
   VersPortail2: {fileID: 853910798}
+  OnlyBoy: 0
+  OnlyGirl: 0
 --- !u!23 &2002764901
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19115,13 +19173,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2134006675}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -0, y: 0, z: -5.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1948015788}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1001 &2134675976
 Prefab:
   m_ObjectHideFlags: 0
