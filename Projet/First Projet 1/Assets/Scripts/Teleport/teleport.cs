@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class teleport : MonoBehaviour
@@ -13,7 +14,7 @@ public class teleport : MonoBehaviour
 	
 	//Hidden Variables
 	private bool AllPlayers;
-
+	
 	private void Start()
 	{
 		AllPlayers = !(OnlyBoy || OnlyGirl);
@@ -21,7 +22,18 @@ public class teleport : MonoBehaviour
 
 	private void OnCollisionEnter(Collision col)
 	{
-		Teleportation(col);
+		if (AllPlayers)
+			Teleportation(col);
+		else
+		{
+			if (OnlyBoy && col.gameObject.tag == "PlayerBoy")
+				Teleportation(col);
+			else
+			{
+				if (OnlyGirl && col.gameObject.tag == "PlayerGirl")
+					Teleportation(col);
+			}
+		}
 		
 		/*Je pense plus nécessaire, en tout cas tant qu'il n'y a pas d'animations
 			col.transform.position = destination - Vector3.forward ;

@@ -30,7 +30,7 @@ public class BoutonEtPlateforme : MonoBehaviour
 	private Vector3 BassePose;
 	private Vector3 HautePose;
 	private bool IsPressing;
-	private Vector4 Area;
+	//private Vector4 Area;
 	private bool HasExitTheArea;
 	
 	private void Start()
@@ -40,10 +40,10 @@ public class BoutonEtPlateforme : MonoBehaviour
 		
 		BassePose = new Vector3(transform.position.x, BassePosition.position.y, transform.position.z);
 		HautePose = transform.position;
-		Area.x = transform.position.z - GetComponent<BoxCollider>().size.z * transform.localScale.z /2 - 0.2f;
+		/*Area.x = transform.position.z - GetComponent<BoxCollider>().size.z * transform.localScale.z /2 - 0.2f;
 		Area.y = transform.position.z + GetComponent<BoxCollider>().size.z * transform.localScale.z /2 + 0.2f;
 		Area.z = transform.position.x - GetComponent<BoxCollider>().size.x * transform.localScale.x /2 - 0.2f; 
-		Area.w = transform.position.x + GetComponent<BoxCollider>().size.x * transform.localScale.x /2 + 0.2f;
+		Area.w = transform.position.x + GetComponent<BoxCollider>().size.x * transform.localScale.x /2 + 0.2f;*/
 	}
 
 	[PunRPC]

@@ -7,6 +7,7 @@ public class PlateformeAuto : MonoBehaviour {
 	private string State;
 	private Vector3 VStartPlateforme;
 	public GameObject EndPlateforme;
+	public float Vitesse = 1;
 	
 	// Use this for initialization
 	void Start ()
@@ -16,7 +17,8 @@ public class PlateformeAuto : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
 		if (State == "Monte")
 		{
 			Monte();
@@ -26,12 +28,21 @@ public class PlateformeAuto : MonoBehaviour {
 			if (State == "Descend")
 				Descend();
 		}
-		
 	}
 	
 	public void Monte()
 	{
-		transform.position = Vector3.MoveTowards(transform.position, EndPlateforme.transform.position, Time.deltaTime);
+		Vector3 BeforeMove = transform.position;
+		transform.position = Vector3.MoveTowards(transform.position, EndPlateforme.transform.position, Time.deltaTime * Vitesse);
+		Vector3 AfterMove = transform.position;
+		
+		List<GameObject> ToMove = GetComponent<OnMoveTakeAll>().GetContacts;
+		
+		foreach (GameObject player in ToMove)
+		{
+			Vector3 ToAdd = AfterMove - BeforeMove;
+			player.transform.position += ToAdd;
+		}
 		if (transform.position == EndPlateforme.transform.position)
 		{
 			State = "Descend";
@@ -40,7 +51,17 @@ public class PlateformeAuto : MonoBehaviour {
 
 	public void Descend()
 	{
-		transform.position = Vector3.MoveTowards(transform.position, VStartPlateforme, Time.deltaTime);
+		Vector3 BeforeMove = transform.position;
+		transform.position = Vector3.MoveTowards(transform.position, VStartPlateforme, Time.deltaTime * Vitesse);
+		Vector3 AfterMove = transform.position;
+		
+		List<GameObject> ToMove = GetComponent<OnMoveTakeAll>().GetContacts;
+		
+		foreach (GameObject player in ToMove)
+		{
+			Vector3 ToAdd = AfterMove - BeforeMove;
+			player.transform.position += ToAdd;
+		}
 		if (transform.position == VStartPlateforme)
 		{
 			State = "Monte";

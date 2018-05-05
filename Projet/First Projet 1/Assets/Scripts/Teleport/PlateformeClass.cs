@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
+using ExitGames.UtilityScripts;
 using UnityEngine;
 
 public class PlateformeClass : MonoBehaviour
@@ -22,8 +24,8 @@ public class PlateformeClass : MonoBehaviour
 	}
 
 	// Use this for initialization
-	void Start () {
-
+	void Start () 
+	{
 		VStartPlateforme = new Vector3 (StartPlateforme.transform.position.x, StartPlateforme.transform.position.y, StartPlateforme.transform.position.z);
 		if (Unidirectionnel)
 		{
@@ -36,12 +38,22 @@ public class PlateformeClass : MonoBehaviour
 		{
 			State = "Monte";
 		}
-		
 	}
 
 	public void Monte()
 	{
+		Vector3 BeforeMove = Plateforme.transform.position;
 		Plateforme.transform.position = Vector3.MoveTowards(Plateforme.transform.position, EndPlateforme.transform.position, Time.deltaTime * Vitesse);
+		Vector3 AfterMove = Plateforme.transform.position;
+		Vector3 ToAdd = AfterMove - BeforeMove;
+		
+		List<GameObject> ToMove = Plateforme.GetComponent<OnMoveTakeAll>().GetContacts;
+		
+		foreach (GameObject player in ToMove)
+		{
+			player.transform.position += ToAdd;
+		}
+		
 		if (!Unidirectionnel && Plateforme.transform.position == EndPlateforme.transform.position)
 		{
 			State = "Descend";
@@ -50,7 +62,17 @@ public class PlateformeClass : MonoBehaviour
 
 	public void Descend()
 	{
+		Vector3 BeforeMove = Plateforme.transform.position;
 		Plateforme.transform.position = Vector3.MoveTowards(Plateforme.transform.position, VStartPlateforme, Time.deltaTime * Vitesse);
+		Vector3 AfterMove = Plateforme.transform.position;
+		Vector3 ToAdd = AfterMove - BeforeMove;
+		
+		List<GameObject> ToMove = Plateforme.GetComponent<OnMoveTakeAll>().GetContacts;
+		
+		foreach (GameObject player in ToMove)
+		{
+			player.transform.position += ToAdd;
+		}
 		if (!Unidirectionnel && Plateforme.transform.position == VStartPlateforme)
 		{
 			State = "Monte";
