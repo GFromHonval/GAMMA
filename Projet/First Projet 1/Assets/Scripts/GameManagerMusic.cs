@@ -12,7 +12,10 @@ public class GameManagerMusic : MonoBehaviour
 	public int valuetogetstreak2;
 	public int valuetogetstreak3;
 	public int nombredenotes;
-	
+
+	private int Notes;
+	private Canvas CanvasWin;
+	private Canvas CanvasLose;
 	
 
 	// Use this for initialization
@@ -22,11 +25,33 @@ public class GameManagerMusic : MonoBehaviour
 		PlayerPrefs.SetInt("Mult", 1);
 		PlayerPrefs.SetInt("Note Touch", 0);
 		PlayerPrefs.SetInt("RockMeter", 30);
+
+		CanvasWin = GameObject.Find("MessageFin").GetComponent<MessageMusique>().Win;
+		CanvasLose = GameObject.Find("MessageFin").GetComponent<MessageMusique>().Lose;
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+	{
+		ActivatorScript[] Childrens = GameObject.Find("Active").GetComponentsInChildren<ActivatorScript>();
+		int NotesValided = 0;
 		
+		foreach (var c in Childrens)
+		{
+			NotesValided += c.GetCountActivated;
+		}
+
+		print(NotesValided);
+		Notes = GameObject.Find("Destroyer").GetComponent<Destroy>().GetCountDestroyed + NotesValided;
+
+		
+		if (Notes == 83)
+		{
+			if (NotesValided >= 50)
+				Win();
+			else
+				Lose();
+		}
 	}
 
 	private void OnTriggerEnter2D(Collider2D col)
@@ -42,7 +67,7 @@ public class GameManagerMusic : MonoBehaviour
 	public void AddStreak()
 	{
 		if (PlayerPrefs.GetInt("Note Touch") == 1)
-			Win();
+			//Win();
 		streak++;
 		if (streak >= valuetogetstreak1)
 			multiplier = 2;
@@ -59,7 +84,7 @@ public class GameManagerMusic : MonoBehaviour
 	{
 		PlayerPrefs.SetInt("RockMeter", PlayerPrefs.GetInt("RockMeter" )-2);
 		if ( PlayerPrefs.GetInt("RockMeter" )< 0)
-			Lose();
+			//Lose();
 		streak = 0;
 		multiplier = 1;
 		UptadeGUI();
@@ -67,13 +92,14 @@ public class GameManagerMusic : MonoBehaviour
 
 	public void Win()
 	{
-		Console.WriteLine("ca marche");
+		CanvasWin.enabled = true;
+		//Console.WriteLine("ca marche");
 		//SceneManager.GetSceneByName("WinMusic");
 	}
 
 	public void Lose()
 	{
-		SceneManager.GetSceneByName("SceneMusicalLoose");
+		CanvasLose.enabled = true;
 	}
 
 	void UptadeGUI()

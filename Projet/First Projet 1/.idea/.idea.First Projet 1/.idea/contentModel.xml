@@ -289,6 +289,7 @@
         <e p="Cartoon Temple Building Kit" t="Include">
           <e p="readme.txt" t="Include" />
         </e>
+        <e p="MessageMusique.cs" t="Include" />
         <e p="OnMoveTakeAll.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="ActivatorScript.cs" t="Include" />

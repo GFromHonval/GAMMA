@@ -13,12 +13,17 @@ public class ActivatorScript : MonoBehaviour
 	public bool createMode;
 	public GameObject n;
 	private GameObject note,gm;
-	
-	
+	private int CountActivated;
+
+	public int GetCountActivated
+	{
+		get { return CountActivated; }
+	}
 	
 	// Use this for initialization
 	void Start ()
 	{
+		CountActivated = 0;
 		old = sr.color;
 		gm = GameObject.Find("GameManagerMusic");
 	}
@@ -44,6 +49,7 @@ public class ActivatorScript : MonoBehaviour
 			if (Input.GetKeyDown(key) && active)
 			{
 				Destroy(note);
+				CountActivated++;
 				gm.GetComponent<GameManagerMusic>().AddStreak();
 				AddScore();
 				
