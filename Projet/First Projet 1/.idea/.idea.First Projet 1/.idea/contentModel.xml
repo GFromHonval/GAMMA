@@ -289,8 +289,6 @@
         <e p="Cartoon Temple Building Kit" t="Include">
           <e p="readme.txt" t="Include" />
         </e>
-        <e p="MessageMusique.cs" t="Include" />
-        <e p="OnMoveTakeAll.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="ActivatorScript.cs" t="Include" />
           <e p="AIBehave.cs" t="Include" />
@@ -312,12 +310,15 @@
           </e>
           <e p="HealthPoints.cs" t="Include" />
           <e p="MenuActions.cs" t="Include" />
+          <e p="MessageMusique.cs" t="Include" />
           <e p="Note.cs" t="Include" />
+          <e p="OnMoveTakeAll.cs" t="Include" />
           <e p="PlateformeAuto.cs" t="Include" />
           <e p="PlateformeFall.cs" t="Include" />
           <e p="PlayerClass.cs" t="Include" />
           <e p="PPTex.cs" t="Include" />
           <e p="RespawnQuandOnTombe.cs" t="Include" />
+          <e p="RockMove.cs" t="Include" />
           <e p="RotationPlayer.cs" t="Include" />
           <e p="ScoreMaster.cs" t="Include" />
           <e p="Teleport" t="Include">
