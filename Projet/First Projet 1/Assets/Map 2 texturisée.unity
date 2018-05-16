@@ -1551,11 +1551,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e935c9ed6bcda949a5b1c92cde7d8b5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -70.52381
+      value: -69.3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e935c9ed6bcda949a5b1c92cde7d8b5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 20.4401
+      value: 20.44
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e935c9ed6bcda949a5b1c92cde7d8b5, type: 3}
       propertyPath: m_LocalRotation.x
@@ -7398,7 +7398,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 862976177}
   serializedVersion: 2
-  m_Mass: 2
+  m_Mass: 1000
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -7420,8 +7420,8 @@ MonoBehaviour:
   m_PositionModel:
     SynchronizeEnabled: 1
     TeleportEnabled: 1
-    TeleportIfDistanceGreaterThan: 3
-    InterpolateOption: 2
+    TeleportIfDistanceGreaterThan: 10
+    InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 1
     InterpolateMoveTowardsAcceleration: 2
@@ -7460,7 +7460,7 @@ MonoBehaviour:
     ExtrapolateSpeed: 1
     ExtrapolateIncludingRoundTripTime: 1
     ExtrapolateNumberOfStoredPositions: 1
-    DrawErrorGizmo: 1
+    DrawErrorGizmo: 0
   m_RotationModel:
     SynchronizeEnabled: 0
     InterpolateOption: 1
@@ -7511,6 +7511,19 @@ MonoBehaviour:
   instantiationId: 1
   currentMasterID: -1
   isRuntimeInstantiated: 0
+--- !u!114 &862976183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 862976177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90667a7e8ae82cb4ca0b7952a9bc71b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnlyGirl: 0
+  OnlyBoy: 1
 --- !u!1001 &864249677
 Prefab:
   m_ObjectHideFlags: 0
@@ -14828,8 +14841,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.5, z: 1}
-  m_Center: {x: 0, y: 2.2, z: 0}
+  m_Size: {x: 1.6489105, y: 0.4999999, z: 2.104332}
+  m_Center: {x: -0.06825256, y: 2.1999977, z: 0.01392772}
 --- !u!114 &1595179450
 MonoBehaviour:
   m_ObjectHideFlags: 0
