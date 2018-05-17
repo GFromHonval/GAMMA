@@ -3,13 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.SymbolStore;
 using ExitGames.Demos.DemoAnimator;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class MenuActions : Photon.MonoBehaviour {
 
-    public Dropdown LvlChoice;
+    public TMP_Dropdown LvlChoice;
     private List<int> ScenesBuild;
     [SerializeField] private Toggle IsABoy;
     private int Choice;
