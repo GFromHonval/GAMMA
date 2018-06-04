@@ -10,10 +10,12 @@ public class Bullet : MonoBehaviour {
 
         if (hit != null && hit.CompareTag("Player"))
         {
-            if (hit.GetComponent<RotationPlayer>().GetLife < GameObject.Find("GameParameters").GetComponent<GameParameters>().DamageAttackedThisLevel)
-                hit.GetComponent<RotationPlayer>().GetLife = 0;
+            if (GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().GetLife < GameObject
+                    .Find("GameParameters").GetComponent<GameParameters>().DamageAttackedThisLevel)
+                GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().GetLife = 0;
             else
-                hit.GetComponent<RotationPlayer>().GetLife -= GameObject.Find("GameParameters").GetComponent<GameParameters>().DamageAttackedThisLevel;
+                GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().GetLife -= GameObject.Find("GameParameters")
+                    .GetComponent<GameParameters>().DamageAttackedThisLevel;
         }
         
         Destroy(gameObject);

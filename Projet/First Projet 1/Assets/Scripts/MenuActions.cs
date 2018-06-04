@@ -32,11 +32,10 @@ public class MenuActions : Photon.MonoBehaviour {
             if (player.IsMasterClient)
             {
                 if (IsABoy.isOn)
-                {
-                    player.NickName += "Boy";
-                }
+                    player.NickName = "FirstPlayerBoy";
+
                 else
-                    player.NickName += "Girl";
+                    player.NickName = "FirstPlayerGirl";
             }
         }
         
@@ -48,7 +47,6 @@ public class MenuActions : Photon.MonoBehaviour {
     
     public void DoQuit()
     {
-        Debug.Log("sdfjdsbfls sdkf ");
         Application.Quit();
     }
 }

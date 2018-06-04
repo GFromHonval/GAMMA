@@ -652,8 +652,7 @@ MonoBehaviour:
   LePlusBas: {fileID: 1997127726}
   RespawnPoint1: {fileID: 432398990}
   RespawnPoint2: {fileID: 1589335143}
-  GameOver: {fileID: 943379208}
-  LifeInThisLevel: 100
+  LifeInThisLevel: 30
   DamageFallOfThisLevel: 10
   DamageAttackedThisLevel: 0
 --- !u!4 &26788922
@@ -29006,6 +29005,8 @@ MonoBehaviour:
   Plateformes: []
   StayPressedButton: 1
   EvaporingButton: 0
+  OnlyGirl: 0
+  OnlyBoy: 0
 --- !u!4 &1755331853 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000010908994246, guid: c92c2aca1ed8a484490ad5b376619e03,

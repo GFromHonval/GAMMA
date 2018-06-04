@@ -3505,7 +3505,7 @@ MonoBehaviour:
   RespawnPoint1: {fileID: 1163163206}
   RespawnPoint2: {fileID: 1647794215}
   LifeInThisLevel: 30
-  DamageFallOfThisLevel: 0
+  DamageFallOfThisLevel: 10
   DamageAttackedThisLevel: 0
 --- !u!1001 &496964090
 Prefab:
