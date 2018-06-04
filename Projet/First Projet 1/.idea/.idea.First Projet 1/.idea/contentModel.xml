@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\rom99\.Rider2017.3\system\resharper-host\local\Transient\ReSharperHost\v11\SolutionCaches\_First Projet 1.-680809472.00" t="ExcludeRecursive" />
-    <e p="C:\Users\rom99\Documents\GitHub\GAMMA\GAMMA\Projet\First Projet 1" t="IncludeRecursive">
+    <e p="C:\Users\louis\.Rider2017.2\system\resharper-host\local\Transient\ReSharperHost\v10\SolutionCaches\_First Projet 1.-2074959773.00" t="ExcludeRecursive" />
+    <e p="C:\Users\louis\Desktop\GAMMA\GAMMA\Projet\First Projet 1" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
@@ -289,6 +289,7 @@
         <e p="Cartoon Temple Building Kit" t="Include">
           <e p="readme.txt" t="Include" />
         </e>
+        <e p="Life.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="ActivatorScript.cs" t="Include" />
           <e p="AIBehave.cs" t="Include" />
@@ -308,7 +309,6 @@
           <e p="GoldBAr" t="Include">
             <e p="GoldPickUp.cs" t="Include" />
           </e>
-          <e p="HealthPoints.cs" t="Include" />
           <e p="MenuActions.cs" t="Include" />
           <e p="MessageMusique.cs" t="Include" />
           <e p="Note.cs" t="Include" />

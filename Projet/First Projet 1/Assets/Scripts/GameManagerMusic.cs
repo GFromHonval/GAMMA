@@ -93,8 +93,6 @@ public class GameManagerMusic : MonoBehaviour
 	public void Win()
 	{
 		CanvasWin.enabled = true;
-		//Console.WriteLine("ca marche");
-		//SceneManager.GetSceneByName("WinMusic");
 	}
 
 	public void Lose()
