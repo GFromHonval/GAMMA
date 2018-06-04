@@ -8,6 +8,8 @@ TagManager:
   - PlayerBoy
   - Portail1
   - Portail2
+  - Note
+  - NoteFinale
   layers:
   - Default
   - TransparentFX
