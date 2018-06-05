@@ -154,9 +154,9 @@ public class RotationPlayer : Photon.MonoBehaviour
 			print(Life1);
 			print(Life2);
 
-			if (Math.Abs(Life1 - Life2) <= Damage && Math.Abs(Life1 - Life2) > 0)
+			if (Math.Abs(Life1 - Life2) <= Damage)
 			{
-				
+				Life = Math.Min(Life1, Life2);
 			}
 		}
 		

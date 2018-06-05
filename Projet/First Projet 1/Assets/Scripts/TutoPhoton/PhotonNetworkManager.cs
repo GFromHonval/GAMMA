@@ -185,24 +185,15 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 	
 	void Update()
 	{
-		if (PhotonNetwork.playerList.Length == 2)
-		{
-			GameObject PlayerBoy = GameObject.FindGameObjectWithTag("PlayerBoy");
-			GameObject PlayerGirl = GameObject.FindGameObjectWithTag("PlayerGirl");
-			float Life1 = PlayerBoy.GetComponent<RotationPlayer>().LifePerso;
-			float Life2 = PlayerGirl.GetComponent<RotationPlayer>().LifePerso;
-			print(Life1);
-			print(Life2);
-		}
-		
-		if (GameOverCanvas.GetComponent<Canvas>().enabled && PhotonNetwork.isMasterClient)
+		if (GameOverCanvas.GetComponent<Canvas>().enabled)
 		{
 			Timer -= Time.deltaTime;
 			if (Timer <= 0)
 			{
 				GameOverCanvas.GetComponent<Canvas>().enabled = false;
 				Timer = 2f;
-				PhotonNetwork.LoadLevel("Menu without logic");
+				if (PhotonNetwork.isMasterClient)
+					PhotonNetwork.LoadLevel("Menu without logic");
 			}
 		}
 	}
