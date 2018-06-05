@@ -54,7 +54,7 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 	{
 		GameOverCanvas = GameObject.Find("GameLogic/GameOverCanvas");
 		EscapeCanvas = GameObject.Find("GameLogic/EscapeCanvas");
-		Timer = 2f;
+		Timer = 3f;
 		DamageLevel = GameObject.Find("GameParameters").GetComponent<GameParameters>().DamageFallOfThisLevel;
 		
 		PhotonNetwork.automaticallySyncScene = true;
@@ -75,6 +75,8 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 		SpawnPoint2 = gameParameters.RespawnPoint2;
 		LobbyCamera = GameObject.Find("LobbyCamera");
 		Life = gameParameters.LifeInThisLevel;
+		
+		GameOverCanvas.GetComponent<Canvas>().enabled = false;
 		
 		string MasterName = "";
 		foreach (PhotonPlayer player in PhotonNetwork.playerList)
@@ -190,8 +192,7 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 			Timer -= Time.deltaTime;
 			if (Timer <= 0)
 			{
-				GameOverCanvas.GetComponent<Canvas>().enabled = false;
-				Timer = 2f;
+				Timer = 3f;
 				if (PhotonNetwork.isMasterClient)
 					PhotonNetwork.LoadLevel("Menu without logic");
 			}
