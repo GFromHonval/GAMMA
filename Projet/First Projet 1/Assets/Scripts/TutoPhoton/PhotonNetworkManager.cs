@@ -30,6 +30,7 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 	//Game Parameters
 	private float Life;
 	private float Timer;
+	private float DamageLevel;
 
 	public float GetLife
 	{
@@ -54,6 +55,7 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 		GameOverCanvas = GameObject.Find("GameLogic/GameOverCanvas");
 		EscapeCanvas = GameObject.Find("GameLogic/EscapeCanvas");
 		Timer = 2f;
+		DamageLevel = GameObject.Find("GameParameters").GetComponent<GameParameters>().DamageFallOfThisLevel;
 		
 		PhotonNetwork.automaticallySyncScene = true;
 
@@ -177,7 +179,6 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 
 			GUILayout.Label(PhotonNetwork.player.isMasterClient.ToString());
 
-			GUILayout.Label(Life.ToString());
 		}
 	}
 
@@ -190,7 +191,8 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 			GameObject PlayerGirl = GameObject.FindGameObjectWithTag("PlayerGirl");
 			float Life1 = PlayerBoy.GetComponent<RotationPlayer>().LifePerso;
 			float Life2 = PlayerGirl.GetComponent<RotationPlayer>().LifePerso;
-			Life = Math.Min(Life1, Life2);
+			print(Life1);
+			print(Life2);
 		}
 		
 		if (GameOverCanvas.GetComponent<Canvas>().enabled && PhotonNetwork.isMasterClient)
@@ -204,4 +206,6 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 			}
 		}
 	}
+	
+	
 }

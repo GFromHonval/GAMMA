@@ -62,8 +62,9 @@ public class RotationPlayer : Photon.MonoBehaviour
 		GameParameters gameParameters = GameObject.Find("GameParameters").GetComponent<GameParameters>();
 		LePlusB = gameParameters.LePlusBas;
 		Damage = gameParameters.DamageFallOfThisLevel;
+		Life = gameParameters.LifeInThisLevel;
 		
-		if (photonView.name == "SecondPlayerGirl" || photonView.name == "SecondPlayerBoy" || photonView.name == "SecondPlayer")
+		if (PhotonNetwork.player.NickName == "SecondPlayerGirl" || PhotonNetwork.player.NickName == "SecondPlayerBoy" || PhotonNetwork.player.NickName == "SecondPlayer")
 			RespawnP = gameParameters.RespawnPoint2;
 		else
 			RespawnP = gameParameters.RespawnPoint1;
@@ -88,16 +89,16 @@ public class RotationPlayer : Photon.MonoBehaviour
 			else
 			{
 				EscapeCanvas.enabled = false;
-				if (photonNetworkManager.GetLife <= 0 || this.transform.position.y < LePlusB.transform.position.y)
+				if (Life <= 0 || this.transform.position.y < LePlusB.transform.position.y)
 				{
-					if (photonNetworkManager.GetLife <= Damage)
+					if (Life <= Damage)
 					{
 						GameOverCanvas.enabled = true;
 						this.transform.position = RespawnP.transform.position;
 						this.transform.rotation = RespawnP.transform.rotation;
 						GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
 						GetComponent<Rigidbody>().velocity = Vector3.zero;
-						photonNetworkManager.GetLife = 0;
+						Life = 0;
 					}
 					else
 					{
@@ -105,7 +106,7 @@ public class RotationPlayer : Photon.MonoBehaviour
 						this.transform.rotation = RespawnP.transform.rotation;
 						GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
 						GetComponent<Rigidbody>().velocity = Vector3.zero;
-						photonNetworkManager.GetLife -= Damage;
+						Life -= Damage;
 					}
 				}
 
@@ -137,15 +138,41 @@ public class RotationPlayer : Photon.MonoBehaviour
 					}
 					else
 					{
-						
 						Vector3 extraGravity = (Physics.gravity * GravityMultiplier) - Physics.gravity;
 						ThisRigidbody.AddForce(extraGravity);
 					}
 				}
 			}
 		}
+		
+		if (PhotonNetwork.playerList.Length == 2)
+		{
+			GameObject PlayerBoy = GameObject.FindGameObjectWithTag("PlayerBoy");
+			GameObject PlayerGirl = GameObject.FindGameObjectWithTag("PlayerGirl");
+			float Life1 = PlayerBoy.GetComponent<RotationPlayer>().LifePerso;
+			float Life2 = PlayerGirl.GetComponent<RotationPlayer>().LifePerso;
+			print(Life1);
+			print(Life2);
 
-		Life = photonNetworkManager.GetLife;
+			if (Math.Abs(Life1 - Life2) <= Damage && Math.Abs(Life1 - Life2) > 0)
+			{
+				
+			}
+		}
+		
+		photonNetworkManager.GetLife = Life;
+	}
+
+	public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+	{
+		if (stream.isWriting)
+		{
+			stream.SendNext(Life);
+		}
+		else
+		{
+			Life = (float) stream.ReceiveNext();
+		}
 	}
 
 	private void CheckGroundStatue()
