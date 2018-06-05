@@ -11,7 +11,7 @@ public class GameManagerMusic : MonoBehaviour
 	public int valuetogetstreak1;
 	public int valuetogetstreak2;
 	public int valuetogetstreak3;
-	public int nombredenotes;
+	public int notetotales;
 
 	private int Notes;
 	private Canvas CanvasWin;
@@ -45,9 +45,9 @@ public class GameManagerMusic : MonoBehaviour
 		Notes = GameObject.Find("Destroyer").GetComponent<Destroy>().GetCountDestroyed + NotesValided;
 
 		
-		if (Notes == 83)
+		if (Notes == notetotales)
 		{
-			if (NotesValided >= 50)
+			if (NotesValided >= 60)
 				Win();
 			else
 				Lose();
