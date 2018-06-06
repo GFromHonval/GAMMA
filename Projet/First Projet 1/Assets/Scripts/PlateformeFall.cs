@@ -1,23 +1,30 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Security.AccessControl;
 using UnityEngine;
 
 public class PlateformeFall : MonoBehaviour
 {
 
 	public float TimeStaying;
+	public float TimeFall;
 
 	private bool AsTouched;
-	private float TimeFall = 2;
+	private Vector3 StartPosition;
+	private float _timeStaying;
+	private float _timeFall;
 
 	private void Start()
 	{
+		_timeFall = TimeFall;
+		_timeStaying = TimeStaying;
+		StartPosition = transform.position;
 		GetComponent<Rigidbody>().useGravity = true;
 		GetComponent<Rigidbody>().isKinematic = true;
 	}
 
-	private void OnCollisionEnter(Collision other)
+	private void OnTriggerEnter(Collider other)
 	{
 		AsTouched = true;
 	}
@@ -25,13 +32,20 @@ public class PlateformeFall : MonoBehaviour
 	private void Update()
 	{
 		if (AsTouched)
-			TimeStaying -= Time.deltaTime;
-		if (TimeStaying <= 0)
+			_timeStaying -= Time.deltaTime;
+		if (_timeStaying<= 0)
 		{
-			TimeFall -= Time.deltaTime;
+			_timeFall -= Time.deltaTime;
 			GetComponent<Rigidbody>().isKinematic = false;
 		}
-		if (TimeFall <= 0)
-			Destroy(this);
+
+		if (_timeFall <= 0)
+		{
+			AsTouched = false;
+			_timeStaying = TimeStaying;
+			_timeFall = TimeFall;
+			GetComponent<Rigidbody>().isKinematic = true;
+			transform.position = StartPosition;
+		}
 	}
 }

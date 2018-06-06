@@ -2107,6 +2107,9 @@ GameObject:
   - component: {fileID: 364071123}
   - component: {fileID: 364071122}
   - component: {fileID: 364071121}
+  - component: {fileID: 364071124}
+  - component: {fileID: 364071125}
+  - component: {fileID: 364071126}
   m_Layer: 0
   m_Name: Cube (59)
   m_TagString: Untagged
@@ -2184,6 +2187,46 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 364071119}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &364071124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 364071119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6401d7669be6e214983d72ed191f256a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimeStaying: 2
+  TimeFall: 10
+--- !u!54 &364071125
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 364071119}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &364071126
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 364071119}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8959045, y: 1.0000001, z: 0.8678864}
+  m_Center: {x: -0.001990398, y: 1, z: 0.002493441}
 --- !u!1 &404335992
 GameObject:
   m_ObjectHideFlags: 0
