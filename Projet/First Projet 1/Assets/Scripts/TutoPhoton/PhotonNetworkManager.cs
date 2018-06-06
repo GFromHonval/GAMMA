@@ -193,8 +193,8 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 			if (Timer <= 0)
 			{
 				Timer = 3f;
-				if (PhotonNetwork.isMasterClient)
-					PhotonNetwork.LoadLevel("Menu without logic");
+				Animator animator = GameObject.Find("FadeTransition").GetComponent<Animator>();
+				animator.SetTrigger("FadeOut");
 			}
 		}
 	}

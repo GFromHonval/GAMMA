@@ -14,7 +14,17 @@ public class MenuActions : Photon.MonoBehaviour {
     private List<int> ScenesBuild;
     [SerializeField] private Toggle IsABoy;
     private int Choice;
-	
+    private Animator animator;
+    private Fading FadingScript;
+    private float Waiting;
+    
+    private void Start()
+    {
+        Waiting = 2f;
+        FadingScript = GameObject.Find("FadeTransition").GetComponent<Fading>();
+        animator = GameObject.Find("FadeTransition").GetComponent<Animator>();
+    }
+
     public void GotoLvL()
     {
         ScenesBuild = new List<int>();
@@ -41,8 +51,13 @@ public class MenuActions : Photon.MonoBehaviour {
         
         if (ScenesBuild.Contains(Choice))
         {
-           PhotonNetwork.LoadLevel(Choice);
+            animator.SetTrigger("FadeOut");
         }
+    }
+
+    public void  ChangeLevel()
+    {
+        PhotonNetwork.LoadLevel(Choice);
     }
     
     public void DoQuit()
