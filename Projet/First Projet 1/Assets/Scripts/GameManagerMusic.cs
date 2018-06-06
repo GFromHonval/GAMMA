@@ -12,6 +12,7 @@ public class GameManagerMusic : MonoBehaviour
 	public int valuetogetstreak2;
 	public int valuetogetstreak3;
 	public int notetotales;
+	public int notestowin;
 
 	private int Notes;
 	private Canvas CanvasWin;
@@ -47,7 +48,7 @@ public class GameManagerMusic : MonoBehaviour
 		
 		if (Notes == notetotales)
 		{
-			if (NotesValided >= 60)
+			if (NotesValided >= notestowin)
 				Win();
 			else
 				Lose();

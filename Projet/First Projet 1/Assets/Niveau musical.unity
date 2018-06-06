@@ -1458,7 +1458,8 @@ MonoBehaviour:
   valuetogetstreak1: 3
   valuetogetstreak2: 5
   valuetogetstreak3: 8
-  notetotales: 2
+  notetotales: 84
+  notestowin: 50
 --- !u!61 &123196326
 BoxCollider2D:
   m_ObjectHideFlags: 0
