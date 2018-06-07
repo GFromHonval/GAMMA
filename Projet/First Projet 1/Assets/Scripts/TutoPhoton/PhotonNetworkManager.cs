@@ -7,6 +7,7 @@ using System.Runtime.Remoting.Lifetime;
 using System.Runtime.Serialization.Formatters;
 using UnityEngine;
 using UnityEngine.Analytics;
+using UnityEngine.Experimental.Rendering;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngineInternal;
@@ -26,6 +27,7 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 	//Canvas
 	private GameObject GameOverCanvas;
 	private GameObject EscapeCanvas;
+	private List<Canvas> HealthBar;
 	
 	//Game Parameters
 	private float Life;
@@ -87,7 +89,21 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 		{
 			PhotonNetwork.ConnectUsingSettings("0.1");
 		}
-
+	
+		HealthBar = new List<Canvas>();
+		HealthBar.Add(GameObject.Find("GameLogic/HealthBar/Health 0").GetComponent<Canvas>());
+		HealthBar.Add(GameObject.Find("GameLogic/HealthBar/Health 0.5").GetComponent<Canvas>());
+		HealthBar.Add(GameObject.Find("GameLogic/HealthBar/Health 1").GetComponent<Canvas>());
+		HealthBar.Add(GameObject.Find("GameLogic/HealthBar/Health 1.5").GetComponent<Canvas>());
+		HealthBar.Add(GameObject.Find("GameLogic/HealthBar/Health 2").GetComponent<Canvas>());
+		HealthBar.Add(GameObject.Find("GameLogic/HealthBar/Health 2.5").GetComponent<Canvas>());
+		HealthBar.Add(GameObject.Find("GameLogic/HealthBar/Health 3").GetComponent<Canvas>());
+		HealthBar.Add(GameObject.Find("GameLogic/HealthBar/Health 3.5").GetComponent<Canvas>());
+		HealthBar.Add(GameObject.Find("GameLogic/HealthBar/Health 4").GetComponent<Canvas>());
+		HealthBar.Add(GameObject.Find("GameLogic/HealthBar/Health 4.5").GetComponent<Canvas>());
+		HealthBar.Add(GameObject.Find("GameLogic/HealthBar/Health 5").GetComponent<Canvas>());
+		//length = 11
+		
 		SceneManager.activeSceneChanged += OnLoadScene;
 	}
 	
@@ -208,9 +224,10 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 		}
 	}
 
-	
+
 	void Update()
 	{
+		HealthGov();
 		if (GameOverCanvas.GetComponent<Canvas>().enabled)
 		{
 			Over = true;
@@ -224,5 +241,95 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 		}
 	}
 	
-	
+	private void HealthGov()
+	{
+		if (Life > 100)
+		{
+			HealthBar[0].enabled = false;
+		}
+		else
+		{
+			if (Life <= 0)
+			{
+				HealthBar[1].enabled = false;
+			}
+			else
+			{
+				HealthBar[0].enabled = true;
+				if (Life > 90)
+				{
+					HealthBar[10].enabled = true;
+				}
+				else
+				{
+					if (Life > 80)
+					{
+						HealthBar[9].enabled = true;
+						HealthBar[10].enabled = false;
+					}
+					else
+					{
+						if (Life > 70)
+						{
+							HealthBar[8].enabled = true;
+							HealthBar[9].enabled = false;
+						}
+						else
+						{
+							if (Life > 60)
+							{
+								HealthBar[7].enabled = true;
+								HealthBar[8].enabled = false;
+							}
+							else
+							{
+								if (Life > 50)
+								{
+									HealthBar[6].enabled = true;
+									HealthBar[7].enabled = false;
+								}
+								else
+								{
+									if (Life > 40)
+									{
+										HealthBar[5].enabled = true;
+										HealthBar[6].enabled = false;
+									}
+									else
+									{
+										if (Life > 30)
+										{
+											HealthBar[4].enabled = true;
+											HealthBar[5].enabled = false;
+										}
+										else
+										{
+											if (Life > 20)
+											{
+												HealthBar[3].enabled = true;
+												HealthBar[4].enabled = false;
+											}
+											else
+											{
+												if (Life > 10)
+												{
+													HealthBar[2].enabled = true;
+													HealthBar[3].enabled = false;
+												}
+												else
+												{
+													HealthBar[1].enabled = true;
+													HealthBar[2].enabled = false;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

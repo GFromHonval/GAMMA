@@ -3516,7 +3516,7 @@ MonoBehaviour:
   LePlusBas: {fileID: 267836399}
   RespawnPoint1: {fileID: 1163163206}
   RespawnPoint2: {fileID: 1647794215}
-  LifeInThisLevel: 30
+  LifeInThisLevel: 100
   DamageFallOfThisLevel: 10
   DamageAttackedThisLevel: 0
 --- !u!1001 &496964090
