@@ -14,5 +14,6 @@ public class PPTex : MonoBehaviour
 	void Update ()
 	{
 		GetComponent<Text>().text = PlayerPrefs.GetInt(name) + "";
+		
 	}
 }
