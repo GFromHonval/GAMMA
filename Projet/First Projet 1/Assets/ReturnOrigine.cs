@@ -25,7 +25,6 @@ public class ReturnOrigine : MonoBehaviour
 
 		if (!Return && Old - transform.position == Vector3.zero)
 		{
-			print("return");
 			Return = true;
 		}
 		else
