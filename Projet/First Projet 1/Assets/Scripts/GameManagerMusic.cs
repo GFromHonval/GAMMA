@@ -24,7 +24,6 @@ public class GameManagerMusic : MonoBehaviour
 		PlayerPrefs.SetInt("Streak", 0);
 		PlayerPrefs.SetInt("Mult", 1);
 		PlayerPrefs.SetInt("Note Touch", 0);
-		PlayerPrefs.SetInt("RockMeter", 30);
 
 		CanvasWin = GameObject.Find("MessageFin").GetComponent<MessageMusique>().Win;
 		CanvasLose = GameObject.Find("MessageFin").GetComponent<MessageMusique>().Lose;
@@ -71,15 +70,17 @@ public class GameManagerMusic : MonoBehaviour
 
 	public void AddStreak()
 	{
-		//if (PlayerPrefs.GetInt("Note Touch") == 1)
-			//Win();
+
 		streak++;
 		if (streak >= valuetogetstreak1)
 			multiplier = 2;
+			PlayerPrefs.SetInt("Mult", 2);
 		if (streak >= valuetogetstreak2)
 			multiplier = 4;
+			PlayerPrefs.SetInt("Mult", 4);
 		if (streak >= valuetogetstreak3)
 			multiplier = 8;
+			PlayerPrefs.SetInt("Mult", 8);
 		
 		PlayerPrefs.SetInt("Note Touch", PlayerPrefs.GetInt("Note Touch")+1);
 		UptadeGUI();
@@ -87,11 +88,10 @@ public class GameManagerMusic : MonoBehaviour
 
 	public void ResetStreak()
 	{
-		PlayerPrefs.SetInt("RockMeter", PlayerPrefs.GetInt("RockMeter" )-2);
-		//if ( PlayerPrefs.GetInt("RockMeter" )< 0)
-			//Lose();
+
 		streak = 0;
 		multiplier = 1;
+		PlayerPrefs.SetInt("Mult", 1);
 		UptadeGUI();
 	}
 
@@ -121,7 +121,7 @@ public class GameManagerMusic : MonoBehaviour
 	{
 		PlayerPrefs.SetInt("Streak", streak);
 		PlayerPrefs.SetInt("Mult", multiplier);
-		PlayerPrefs.SetInt("Mult", 1);
+		
 		
 	}
 	
