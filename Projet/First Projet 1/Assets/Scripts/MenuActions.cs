@@ -11,18 +11,22 @@ using UnityEngine.SceneManagement;
 public class MenuActions : Photon.MonoBehaviour {
 
     public TMP_Dropdown LvlChoice;
-    private List<int> ScenesBuild;
     [SerializeField] private Toggle IsABoy;
+    public GameObject WrongChoice;
+    
+    private List<int> ScenesBuild;
     private int Choice;
     private Animator animator;
     private Fading FadingScript;
     private float Waiting;
+    private TextMeshProUGUI wrongChoice;
     
     private void Start()
     {
         Waiting = 2f;
         FadingScript = GameObject.Find("FadeTransition").GetComponent<Fading>();
         animator = GameObject.Find("FadeTransition").GetComponent<Animator>();
+        wrongChoice = WrongChoice.GetComponent<TextMeshProUGUI>();
     }
 
     public void GotoLvL()
@@ -49,9 +53,13 @@ public class MenuActions : Photon.MonoBehaviour {
             }
         }
         
-        if (ScenesBuild.Contains(Choice))
+        if (ScenesBuild.Contains(Choice) && Choice <= GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().GetLevelSuceeded)
         {
             animator.SetTrigger("FadeOut");
+        }
+        else
+        {
+            wrongChoice.enabled = true;
         }
     }
 

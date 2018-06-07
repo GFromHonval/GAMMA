@@ -17,7 +17,6 @@ public class GameManagerMusic : MonoBehaviour
 	private int Notes;
 	private Canvas CanvasWin;
 	private Canvas CanvasLose;
-	
 
 	// Use this for initialization
 	void Start () {
@@ -29,11 +28,15 @@ public class GameManagerMusic : MonoBehaviour
 
 		CanvasWin = GameObject.Find("MessageFin").GetComponent<MessageMusique>().Win;
 		CanvasLose = GameObject.Find("MessageFin").GetComponent<MessageMusique>().Lose;
+
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
+		//GameObject.Find("GarconFixed(Clone)/Camera").SetActive(false);
+		GameObject.Find("FilleFixed(Clone)/Camera").GetComponent<Camera>().enabled = false;
+		
 		ActivatorScript[] Childrens = GameObject.Find("Active").GetComponentsInChildren<ActivatorScript>();
 		int NotesValided = 0;
 		
@@ -42,12 +45,13 @@ public class GameManagerMusic : MonoBehaviour
 			NotesValided += c.GetCountActivated;
 		}
 
-		print(NotesValided);
 		Notes = GameObject.Find("Destroyer").GetComponent<Destroy>().GetCountDestroyed + NotesValided;
+		print(Notes);
 
 		
 		if (Notes == notetotales)
 		{
+			GameObject.Find("Musique").GetComponent<AudioSource>().mute = true;
 			if (NotesValided >= notestowin)
 				Win();
 			else
@@ -67,7 +71,7 @@ public class GameManagerMusic : MonoBehaviour
 
 	public void AddStreak()
 	{
-		if (PlayerPrefs.GetInt("Note Touch") == 1)
+		//if (PlayerPrefs.GetInt("Note Touch") == 1)
 			//Win();
 		streak++;
 		if (streak >= valuetogetstreak1)
@@ -84,7 +88,7 @@ public class GameManagerMusic : MonoBehaviour
 	public void ResetStreak()
 	{
 		PlayerPrefs.SetInt("RockMeter", PlayerPrefs.GetInt("RockMeter" )-2);
-		if ( PlayerPrefs.GetInt("RockMeter" )< 0)
+		//if ( PlayerPrefs.GetInt("RockMeter" )< 0)
 			//Lose();
 		streak = 0;
 		multiplier = 1;
@@ -93,12 +97,24 @@ public class GameManagerMusic : MonoBehaviour
 
 	public void Win()
 	{
+		print("win");
 		CanvasWin.enabled = true;
+		GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().GetLevelSuceeded += 1;
+		GetBackToMenu();
 	}
 
 	public void Lose()
 	{
+		print("lose");
 		CanvasLose.enabled = true;
+		GetBackToMenu();
+	}
+
+	private void GetBackToMenu()
+	{
+		GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().IsOver = true;
+		Animator animator = GameObject.Find("FadeTransition").GetComponent<Animator>();
+		animator.SetTrigger("FadeOut");
 	}
 
 	void UptadeGUI()

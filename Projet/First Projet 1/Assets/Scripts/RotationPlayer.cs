@@ -82,7 +82,7 @@ public class RotationPlayer : Photon.MonoBehaviour
 	{
 		if (photonView.isMine)
 		{
-			if (SceneManager.GetActiveScene().buildIndex != 0 && Input.GetKey(KeyCode.Escape))
+			if (SceneManager.GetActiveScene().buildIndex != 0 && SceneManager.GetActiveScene().name != "Menu without logic" && Input.GetKey(KeyCode.Escape))
 			{
 				EscapeCanvas.enabled = true;
 			}

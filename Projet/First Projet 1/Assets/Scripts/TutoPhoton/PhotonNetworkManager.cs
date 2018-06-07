@@ -31,7 +31,30 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 	private float Life;
 	private float Timer;
 	private float DamageLevel;
+	private int LevelSuceeded;
+	
+	//Hidden
+	private bool Over;
+	private int MusiqueLevel;
 
+	public int GetLevelSuceeded
+	{
+		get { return LevelSuceeded; }
+		set { LevelSuceeded = value; }
+	}
+	
+	public int GetMusiqueLevel
+	{
+		get { return MusiqueLevel; }
+		set { MusiqueLevel = value; }
+	}
+	
+	public bool IsOver
+	{
+		get { return Over; }
+		set { Over = value; }
+	}
+	
 	public float GetLife
 	{
 		get { return Life; }
@@ -56,6 +79,7 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 		EscapeCanvas = GameObject.Find("GameLogic/EscapeCanvas");
 		Timer = 3f;
 		DamageLevel = GameObject.Find("GameParameters").GetComponent<GameParameters>().DamageFallOfThisLevel;
+		LevelSuceeded = 1;
 		
 		PhotonNetwork.automaticallySyncScene = true;
 
@@ -189,6 +213,7 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 	{
 		if (GameOverCanvas.GetComponent<Canvas>().enabled)
 		{
+			Over = true;
 			Timer -= Time.deltaTime;
 			if (Timer <= 0)
 			{

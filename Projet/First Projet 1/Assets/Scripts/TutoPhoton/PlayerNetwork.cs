@@ -11,6 +11,11 @@ public class PlayerNetwork : Photon.MonoBehaviour
     
     private PhotonView PhotonView;
 
+    public GameObject Camera
+    {
+        get { return PlayerCamera; }
+    }
+    
     private void Start()
     {
         PhotonView = GetComponent<PhotonView>();

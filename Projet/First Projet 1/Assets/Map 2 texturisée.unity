@@ -3310,6 +3310,18 @@ GameObject:
   m_PrefabParentObject: {fileID: 1000011684465984, guid: 1a8872f226bbcca4c88f54810a8de19d,
     type: 2}
   m_PrefabInternal: {fileID: 541551733}
+--- !u!114 &470387473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 470387472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7644f8e063b9e4e4c826632cf7d3bb02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MusiqueLevel: 2
 --- !u!64 &470387476
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4386,7 +4398,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000011684465984, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_Name
-      value: Ground Path T (1)
+      value: 'Plateforme Load Boss '
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_LocalScale.y

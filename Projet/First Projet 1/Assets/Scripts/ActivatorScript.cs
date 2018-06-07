@@ -42,8 +42,6 @@ public class ActivatorScript : MonoBehaviour
 		}
 		else
 		{
-
-
 			if (Input.GetKeyDown(key))
 				StartCoroutine(Pressed());
 			if (Input.GetKeyDown(key) && active)
