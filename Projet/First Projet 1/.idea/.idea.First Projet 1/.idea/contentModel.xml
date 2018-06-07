@@ -292,6 +292,7 @@
         <e p="Fading.cs" t="Include" />
         <e p="Life.cs" t="Include" />
         <e p="LoadBossLevel.cs" t="Include" />
+        <e p="ReturnOrigine.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="ActivatorScript.cs" t="Include" />
           <e p="AIBehave.cs" t="Include" />
