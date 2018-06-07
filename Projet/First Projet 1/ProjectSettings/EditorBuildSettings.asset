@@ -17,10 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Map 3 texturis\xE9e.unity"
     guid: 11545a61f96f68042ab68f21db46f0f8
-  - enabled: 1
+  - enabled: 0
     path: Assets/MAP 4 TEXTURISE.unity
     guid: cb0a2300b4825954d970b4704a846278
-  - enabled: 0
+  - enabled: 1
     path: Assets/Menu without logic.unity
     guid: 6c6e207751c654a46b8278011affbab5
   - enabled: 1
