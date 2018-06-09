@@ -16368,7 +16368,7 @@ MonoBehaviour:
   RespawnPoint1: {fileID: 1099142131}
   RespawnPoint2: {fileID: 532751966}
   LifeInThisLevel: 100
-  DamageFallOfThisLevel: 10
+  DamageFallOfThisLevel: 20
   DamageAttackedThisLevel: 0
 --- !u!4 &739321814
 Transform:
