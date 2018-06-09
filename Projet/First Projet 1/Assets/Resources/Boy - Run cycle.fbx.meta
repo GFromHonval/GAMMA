@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 48362a5a73b05754aa8557377b89ecde
-timeCreated: 1528561762
+guid: 37263a5c28d86bb488ad7eb597fd5f69
+timeCreated: 1528582355
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Armature
-    100004: Bone.002
+    100000: Armature
+    100002: Bone.002
+    100004: //RootNode
     100006: BUST
     100008: corps
     100010: FINGERS1.L
@@ -52,9 +52,9 @@ ModelImporter:
     100088: UPPERARM.R
     100090: UPPERLEG.L
     100092: UPPERLEG.R
-    400000: //RootNode
-    400002: Armature
-    400004: Bone.002
+    400000: Armature
+    400002: Bone.002
+    400004: //RootNode
     400006: BUST
     400008: corps
     400010: FINGERS1.L
