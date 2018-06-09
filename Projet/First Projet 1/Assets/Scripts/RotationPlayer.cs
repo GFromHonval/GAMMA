@@ -113,8 +113,11 @@ public class RotationPlayer : Photon.MonoBehaviour
 				if (photonNetworkManager.GetLife > 0)
 				{
 					if (Input.GetKey(KeyCode.UpArrow))
+					{
+						print("forward");
 						this.transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime * CoeffPuissance);
-						
+					}
+					
 					if (Input.GetKey(KeyCode.DownArrow))
 						this.transform.Translate(-Vector3.forward * moveSpeed * Time.deltaTime * CoeffPuissance);
 
