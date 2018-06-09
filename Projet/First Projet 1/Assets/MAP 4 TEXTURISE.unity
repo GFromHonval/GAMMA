@@ -211,11 +211,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 248
-=======
-      value: 249
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -277,11 +273,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 195
-=======
-      value: 196
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -348,11 +340,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 275
-=======
-      value: 276
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -414,11 +402,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 2
-=======
-      value: 3
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -504,11 +488,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011451925786, guid: 91208c66245501846b020d736ff40d00, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 3
-=======
-      value: 4
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012170896278, guid: 91208c66245501846b020d736ff40d00, type: 2}
       propertyPath: m_Name
@@ -559,11 +539,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011099523136, guid: d0b7208907c12d0488e2066b68fb39bc, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 126
-=======
-      value: 127
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012878430364, guid: d0b7208907c12d0488e2066b68fb39bc, type: 2}
       propertyPath: m_Name
@@ -708,11 +684,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 272
-=======
-      value: 273
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -896,11 +868,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 271
-=======
-      value: 272
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -962,11 +930,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 270
-=======
-      value: 271
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -1028,11 +992,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 269
-=======
-      value: 270
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -1310,11 +1270,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010908994246, guid: c92c2aca1ed8a484490ad5b376619e03, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 169
-=======
-      value: 170
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000010908994246, guid: c92c2aca1ed8a484490ad5b376619e03, type: 2}
       propertyPath: m_LocalScale.y
@@ -1449,11 +1405,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 332
-=======
-      value: 333
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -1515,11 +1467,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010908994246, guid: c92c2aca1ed8a484490ad5b376619e03, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 17
-=======
-      value: 18
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000010908994246, guid: c92c2aca1ed8a484490ad5b376619e03, type: 2}
       propertyPath: m_LocalScale.y
@@ -1706,11 +1654,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 264
-=======
-      value: 265
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -1814,11 +1758,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 46
-=======
-      value: 47
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012789541266, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_Name
@@ -1944,11 +1884,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 312
-=======
-      value: 313
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -2104,11 +2040,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 91
-=======
-      value: 92
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_LocalScale.x
@@ -2254,11 +2186,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013043140886, guid: c78107076ebd98c47a45887e83d188c9, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 116
-=======
-      value: 117
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000013506888524, guid: c78107076ebd98c47a45887e83d188c9, type: 2}
       propertyPath: m_Name
@@ -2340,11 +2268,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 79
-=======
-      value: 80
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012789541266, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_Name
@@ -2799,11 +2723,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 197
-=======
-      value: 198
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -3030,11 +2950,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014266237372, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 193
-=======
-      value: 194
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000010926352826, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_Name
@@ -3313,11 +3229,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 171
-=======
-      value: 172
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -3384,11 +3296,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 66
-=======
-      value: 67
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_LocalScale.x
@@ -3641,13 +3549,8 @@ Transform:
   m_LocalPosition: {x: 190.14, y: 59.700108, z: 30.509785}
   m_LocalScale: {x: 400.00024, y: 250, z: 400.00024}
   m_Children: []
-<<<<<<< HEAD
   m_Father: {fileID: 371536921}
   m_RootOrder: 341
-=======
-  m_Father: {fileID: 0}
-  m_RootOrder: 342
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &138012483
 Prefab:
@@ -3686,11 +3589,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 254
-=======
-      value: 255
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -3810,7 +3709,6 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 139142672}
-<<<<<<< HEAD
   m_LocalRotation: {x: -0.0000012798599, y: 0.7071068, z: -0.0000012798599, w: 0.7071068}
   m_LocalPosition: {x: 32.11, y: 26.440016, z: 4.5099044}
   m_LocalScale: {x: 7.1674814, y: 16.242455, z: 2.8998816}
@@ -3818,15 +3716,6 @@ Transform:
   - {fileID: 1330101658}
   m_Father: {fileID: 371536921}
   m_RootOrder: 348
-=======
-  m_LocalRotation: {x: 0, y: 0.70710677, z: 0, w: 0.70710677}
-  m_LocalPosition: {x: 20.97, y: 36.44, z: 0}
-  m_LocalScale: {x: 7.167482, y: 16.242455, z: 2.899882}
-  m_Children:
-  - {fileID: 1330101658}
-  m_Father: {fileID: 0}
-  m_RootOrder: 349
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &143670103 stripped
 GameObject:
@@ -3884,11 +3773,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 42
-=======
-      value: 43
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012789541266, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_Name
@@ -4099,11 +3984,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 44
-=======
-      value: 45
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012789541266, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_Name
@@ -4276,11 +4157,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 301
-=======
-      value: 302
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -4455,11 +4332,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 308
-=======
-      value: 309
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -4601,11 +4474,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 1
-=======
-      value: 2
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012789541266, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_Name
@@ -4689,11 +4558,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 237
-=======
-      value: 238
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -4980,11 +4845,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 60
-=======
-      value: 61
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_LocalScale.x
@@ -5055,11 +4916,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 120
-=======
-      value: 121
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -5145,11 +5002,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 315
-=======
-      value: 316
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -5211,11 +5064,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 173
-=======
-      value: 174
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -5282,11 +5131,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 252
-=======
-      value: 253
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -5348,11 +5193,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014266237372, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 147
-=======
-      value: 148
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000010926352826, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_Name
@@ -5602,11 +5443,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 235
-=======
-      value: 236
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -5668,11 +5505,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014115894284, guid: eab0075fe70674445a3927fe54cb1a6b, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 9
-=======
-      value: 10
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000014115894284, guid: eab0075fe70674445a3927fe54cb1a6b, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -5750,11 +5583,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 222
-=======
-      value: 223
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -5840,11 +5669,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 298
-=======
-      value: 299
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -5948,11 +5773,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010908994246, guid: c92c2aca1ed8a484490ad5b376619e03, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 111
-=======
-      value: 112
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000010908994246, guid: c92c2aca1ed8a484490ad5b376619e03, type: 2}
       propertyPath: m_LocalScale.y
@@ -6045,11 +5866,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 221
-=======
-      value: 222
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -6116,11 +5933,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014266237372, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 207
-=======
-      value: 208
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000010926352826, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_Name
@@ -6216,11 +6029,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 309
-=======
-      value: 310
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -6489,11 +6298,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 225
-=======
-      value: 226
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -6715,11 +6520,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 107
-=======
-      value: 108
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_LocalScale.x
@@ -6790,11 +6591,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 164
-=======
-      value: 165
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -6936,11 +6733,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 253
-=======
-      value: 254
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -7030,11 +6823,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 236
-=======
-      value: 237
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -7096,11 +6885,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012079268450, guid: 789c66d21a2b0e44a8aec2dc4b18cf03, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 15
-=======
-      value: 16
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 789c66d21a2b0e44a8aec2dc4b18cf03, type: 2}
@@ -7222,11 +7007,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014266237372, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 144
-=======
-      value: 145
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000010926352826, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_Name
@@ -7369,11 +7150,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 292
-=======
-      value: 293
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -7492,11 +7269,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 318
-=======
-      value: 319
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -7558,11 +7331,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 291
-=======
-      value: 292
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -7624,11 +7393,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 192
-=======
-      value: 193
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_LocalScale.x
@@ -7699,11 +7464,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011099523136, guid: d0b7208907c12d0488e2066b68fb39bc, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 131
-=======
-      value: 132
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012878430364, guid: d0b7208907c12d0488e2066b68fb39bc, type: 2}
       propertyPath: m_Name
@@ -7762,11 +7523,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 209
-=======
-      value: 210
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -7833,11 +7590,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010908994246, guid: c92c2aca1ed8a484490ad5b376619e03, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 51
-=======
-      value: 52
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000010908994246, guid: c92c2aca1ed8a484490ad5b376619e03, type: 2}
       propertyPath: m_LocalScale.y
@@ -7930,11 +7683,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 181
-=======
-      value: 182
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -8218,11 +7967,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 29
-=======
-      value: 30
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012789541266, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_Name
@@ -8320,11 +8065,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 72
-=======
-      value: 73
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -8454,13 +8195,8 @@ Transform:
   m_LocalScale: {x: 7.1674814, y: 16.242455, z: 2.8998816}
   m_Children:
   - {fileID: 1837451714}
-<<<<<<< HEAD
   m_Father: {fileID: 371536921}
   m_RootOrder: 350
-=======
-  m_Father: {fileID: 0}
-  m_RootOrder: 351
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &344806296
 Prefab:
@@ -8583,11 +8319,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 233
-=======
-      value: 234
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -8649,11 +8381,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 157
-=======
-      value: 158
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -8992,11 +8720,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 20
-=======
-      value: 21
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_LocalScale.x
@@ -9446,11 +9170,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 247
-=======
-      value: 248
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -9615,11 +9335,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 274
-=======
-      value: 275
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -9766,11 +9482,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 297
-=======
-      value: 298
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -9916,11 +9628,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 268
-=======
-      value: 269
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -9982,11 +9690,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 52
-=======
-      value: 53
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012823727576, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_Name
@@ -10218,11 +9922,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 226
-=======
-      value: 227
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -10289,11 +9989,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 65
-=======
-      value: 66
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -10318,14 +10014,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
   m_IsPrefabParent: 0
-<<<<<<< HEAD
 --- !u!4 &407551601 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df,
     type: 2}
   m_PrefabInternal: {fileID: 407551600}
-=======
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
 --- !u!1001 &413784830
 Prefab:
   m_ObjectHideFlags: 0
@@ -10363,11 +10056,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014266237372, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 201
-=======
-      value: 202
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000010926352826, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_Name
@@ -10524,11 +10213,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 38
-=======
-      value: 39
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012789541266, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_Name
@@ -10626,11 +10311,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 0
-=======
-      value: 1
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012789541266, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_Name
@@ -10714,11 +10395,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 283
-=======
-      value: 284
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -10780,11 +10457,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 282
-=======
-      value: 283
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -10884,11 +10557,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 280
-=======
-      value: 281
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -10992,11 +10661,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014266237372, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 148
-=======
-      value: 149
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000010926352826, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_Name
@@ -11181,11 +10846,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014266237372, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 149
-=======
-      value: 150
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000010926352826, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_Name
@@ -11309,11 +10970,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014115894284, guid: eab0075fe70674445a3927fe54cb1a6b, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 87
-=======
-      value: 88
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000014115894284, guid: eab0075fe70674445a3927fe54cb1a6b, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -11451,11 +11108,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 19
-=======
-      value: 20
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -11522,11 +11175,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 96
-=======
-      value: 97
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -11654,11 +11303,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 194
-=======
-      value: 195
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -11819,11 +11464,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 123
-=======
-      value: 124
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -11890,11 +11531,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 95
-=======
-      value: 96
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -11961,11 +11598,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 230
-=======
-      value: 231
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -12079,11 +11712,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 18
-=======
-      value: 19
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -12150,11 +11779,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014266237372, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 184
-=======
-      value: 185
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000010926352826, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_Name
@@ -12250,11 +11875,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 50
-=======
-      value: 51
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012789541266, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_Name
@@ -12446,11 +12067,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014266237372, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 185
-=======
-      value: 186
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000010926352826, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_Name
@@ -12546,11 +12163,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 49
-=======
-      value: 50
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012789541266, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_Name
@@ -12723,11 +12336,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 328
-=======
-      value: 329
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -12789,11 +12398,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 302
-=======
-      value: 303
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -12855,11 +12460,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014266237372, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 186
-=======
-      value: 187
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000010926352826, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_Name
@@ -12955,11 +12556,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 55
-=======
-      value: 56
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -13073,11 +12670,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 238
-=======
-      value: 239
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -13139,11 +12732,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 198
-=======
-      value: 199
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -13210,11 +12799,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012274991244, guid: 03b0ed4871f8e8d46aab17cd9b867655, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 208
-=======
-      value: 209
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000012274991244, guid: 03b0ed4871f8e8d46aab17cd9b867655, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -13391,11 +12976,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 156
-=======
-      value: 157
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -13462,11 +13043,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 255
-=======
-      value: 256
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -13603,11 +13180,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012274991244, guid: 03b0ed4871f8e8d46aab17cd9b867655, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 102
-=======
-      value: 103
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000012274991244, guid: 03b0ed4871f8e8d46aab17cd9b867655, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -13802,11 +13375,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 288
-=======
-      value: 289
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -14130,11 +13699,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 290
-=======
-      value: 291
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -14196,11 +13761,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 220
-=======
-      value: 221
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -14260,13 +13821,8 @@ Transform:
   m_LocalScale: {x: 7.1674814, y: 16.242455, z: 2.8998816}
   m_Children:
   - {fileID: 382871105}
-<<<<<<< HEAD
   m_Father: {fileID: 371536921}
   m_RootOrder: 347
-=======
-  m_Father: {fileID: 0}
-  m_RootOrder: 348
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &609808986
 MonoBehaviour:
@@ -14488,11 +14044,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 140
-=======
-      value: 141
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -14653,11 +14205,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 316
-=======
-      value: 317
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -14719,11 +14267,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 223
-=======
-      value: 224
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -14790,11 +14334,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 204
-=======
-      value: 205
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -14861,11 +14401,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 187
-=======
-      value: 188
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -15068,11 +14604,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 251
-=======
-      value: 252
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -15238,11 +14770,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 45
-=======
-      value: 46
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012789541266, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_Name
@@ -15359,11 +14887,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014266237372, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 100
-=======
-      value: 101
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000010926352826, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_Name
@@ -15478,11 +15002,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014115894284, guid: eab0075fe70674445a3927fe54cb1a6b, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 139
-=======
-      value: 140
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000014115894284, guid: eab0075fe70674445a3927fe54cb1a6b, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -15564,11 +15084,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010908994246, guid: c92c2aca1ed8a484490ad5b376619e03, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 232
-=======
-      value: 233
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000010908994246, guid: c92c2aca1ed8a484490ad5b376619e03, type: 2}
       propertyPath: m_LocalScale.y
@@ -15680,11 +15196,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 262
-=======
-      value: 263
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -15821,11 +15333,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 167
-=======
-      value: 168
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -15953,11 +15461,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 260
-=======
-      value: 261
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -16038,11 +15542,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013043140886, guid: c78107076ebd98c47a45887e83d188c9, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 124
-=======
-      value: 125
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000013506888524, guid: c78107076ebd98c47a45887e83d188c9, type: 2}
       propertyPath: m_Name
@@ -16105,11 +15605,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012274991244, guid: 03b0ed4871f8e8d46aab17cd9b867655, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 132
-=======
-      value: 133
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000012274991244, guid: 03b0ed4871f8e8d46aab17cd9b867655, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -16301,11 +15797,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013043140886, guid: c78107076ebd98c47a45887e83d188c9, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 122
-=======
-      value: 123
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000013506888524, guid: c78107076ebd98c47a45887e83d188c9, type: 2}
       propertyPath: m_Name
@@ -16457,11 +15949,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 243
-=======
-      value: 244
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -16523,11 +16011,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 32
-=======
-      value: 33
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012789541266, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_Name
@@ -16794,11 +16278,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 36
-=======
-      value: 37
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012789541266, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_Name
@@ -16957,11 +16437,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014115894284, guid: eab0075fe70674445a3927fe54cb1a6b, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 6
-=======
-      value: 7
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000014155928884, guid: eab0075fe70674445a3927fe54cb1a6b, type: 2}
       propertyPath: m_Name
@@ -17016,11 +16492,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 287
-=======
-      value: 288
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -17170,13 +16642,8 @@ Transform:
   m_LocalPosition: {x: 190.14, y: 59.700108, z: 30.509785}
   m_LocalScale: {x: 400.00024, y: 250, z: 400.00024}
   m_Children: []
-<<<<<<< HEAD
   m_Father: {fileID: 371536921}
   m_RootOrder: 340
-=======
-  m_Father: {fileID: 0}
-  m_RootOrder: 341
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &785459127
 Prefab:
@@ -17215,11 +16682,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 285
-=======
-      value: 286
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -17375,11 +16838,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 216
-=======
-      value: 217
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -17521,11 +16980,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 165
-=======
-      value: 166
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_LocalScale.x
@@ -17596,11 +17051,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 284
-=======
-      value: 285
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -17662,11 +17113,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 136
-=======
-      value: 137
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -17808,11 +17255,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 41
-=======
-      value: 42
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012789541266, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_Name
@@ -18023,11 +17466,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 244
-=======
-      value: 245
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -18150,11 +17589,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 306
-=======
-      value: 307
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -18216,11 +17651,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 190
-=======
-      value: 191
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -18287,11 +17718,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 311
-=======
-      value: 312
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -18400,11 +17827,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 323
-=======
-      value: 324
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -18466,11 +17889,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 278
-=======
-      value: 279
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -18532,11 +17951,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 174
-=======
-      value: 175
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -18753,11 +18168,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010908994246, guid: c92c2aca1ed8a484490ad5b376619e03, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 206
-=======
-      value: 207
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000010908994246, guid: c92c2aca1ed8a484490ad5b376619e03, type: 2}
       propertyPath: m_LocalScale.y
@@ -19019,11 +18430,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 154
-=======
-      value: 155
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -19090,11 +18497,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 82
-=======
-      value: 83
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -19236,11 +18639,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 90
-=======
-      value: 91
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -19349,11 +18748,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 229
-=======
-      value: 230
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -19495,11 +18890,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011099523136, guid: d0b7208907c12d0488e2066b68fb39bc, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 83
-=======
-      value: 84
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012878430364, guid: d0b7208907c12d0488e2066b68fb39bc, type: 2}
       propertyPath: m_Name
@@ -19569,11 +18960,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014266237372, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 138
-=======
-      value: 139
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000010926352826, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_Name
@@ -19810,11 +19197,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014266237372, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 101
-=======
-      value: 102
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000010926352826, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_Name
@@ -19910,11 +19293,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 89
-=======
-      value: 90
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -19981,11 +19360,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012274991244, guid: 03b0ed4871f8e8d46aab17cd9b867655, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 127
-=======
-      value: 128
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000012274991244, guid: 03b0ed4871f8e8d46aab17cd9b867655, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -20101,11 +19476,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 240
-=======
-      value: 241
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -20303,11 +19674,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011099523136, guid: d0b7208907c12d0488e2066b68fb39bc, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 84
-=======
-      value: 85
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012878430364, guid: d0b7208907c12d0488e2066b68fb39bc, type: 2}
       propertyPath: m_Name
@@ -20358,11 +19725,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011099523136, guid: d0b7208907c12d0488e2066b68fb39bc, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 85
-=======
-      value: 86
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012878430364, guid: d0b7208907c12d0488e2066b68fb39bc, type: 2}
       propertyPath: m_Name
@@ -20432,11 +19795,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 325
-=======
-      value: 326
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -20545,11 +19904,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 337
-=======
-      value: 338
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -20611,11 +19966,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 76
-=======
-      value: 77
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -20729,11 +20080,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013793550202, guid: 51b582f3200ef414ea0adb7a26c74324, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 56
-=======
-      value: 57
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000013793550202, guid: 51b582f3200ef414ea0adb7a26c74324, type: 2}
       propertyPath: m_LocalScale.x
@@ -20936,11 +20283,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 250
-=======
-      value: 251
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -21002,11 +20345,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011099523136, guid: d0b7208907c12d0488e2066b68fb39bc, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 231
-=======
-      value: 232
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012878430364, guid: d0b7208907c12d0488e2066b68fb39bc, type: 2}
       propertyPath: m_Name
@@ -21146,11 +20485,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 47
-=======
-      value: 48
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012789541266, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_Name
@@ -21365,11 +20700,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014266237372, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 134
-=======
-      value: 135
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000010926352826, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_Name
@@ -21681,11 +21012,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 295
-=======
-      value: 296
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -21766,11 +21093,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 26
-=======
-      value: 27
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_LocalScale.x
@@ -21991,11 +21314,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012274991244, guid: 03b0ed4871f8e8d46aab17cd9b867655, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 212
-=======
-      value: 213
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000012274991244, guid: 03b0ed4871f8e8d46aab17cd9b867655, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -22096,11 +21415,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 35
-=======
-      value: 36
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012789541266, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_Name
@@ -22198,11 +21513,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 310
-=======
-      value: 311
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -22311,11 +21622,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 267
-=======
-      value: 268
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -22377,11 +21684,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 188
-=======
-      value: 189
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -22467,11 +21770,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 205
-=======
-      value: 206
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -22538,11 +21837,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 266
-=======
-      value: 267
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -22604,11 +21899,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013793550202, guid: 51b582f3200ef414ea0adb7a26c74324, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 21
-=======
-      value: 22
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000013793550202, guid: 51b582f3200ef414ea0adb7a26c74324, type: 2}
       propertyPath: m_LocalScale.x
@@ -22675,11 +21966,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 177
-=======
-      value: 178
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -22746,11 +22033,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 304
-=======
-      value: 305
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -22854,11 +22137,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013793550202, guid: 51b582f3200ef414ea0adb7a26c74324, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 57
-=======
-      value: 58
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000013793550202, guid: 51b582f3200ef414ea0adb7a26c74324, type: 2}
       propertyPath: m_LocalScale.x
@@ -22963,11 +22242,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 28
-=======
-      value: 29
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -23155,7 +22430,6 @@ Transform:
   m_LocalPosition: {x: 11.14, y: 60.700455, z: 126.50978}
   m_LocalScale: {x: 400, y: 250, z: 400}
   m_Children: []
-<<<<<<< HEAD
   m_Father: {fileID: 371536921}
   m_RootOrder: 338
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -23186,10 +22460,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 739321814}
   m_RootOrder: 1
-=======
-  m_Father: {fileID: 0}
-  m_RootOrder: 339
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1104607656 stripped
 GameObject:
@@ -23247,11 +22517,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011451925786, guid: 91208c66245501846b020d736ff40d00, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 168
-=======
-      value: 169
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012170896278, guid: 91208c66245501846b020d736ff40d00, type: 2}
       propertyPath: m_Name
@@ -23321,11 +22587,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 74
-=======
-      value: 75
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -23685,11 +22947,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 265
-=======
-      value: 266
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -23751,11 +23009,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 324
-=======
-      value: 325
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -23981,11 +23235,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013043140886, guid: c78107076ebd98c47a45887e83d188c9, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 7
-=======
-      value: 8
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c78107076ebd98c47a45887e83d188c9, type: 2}
@@ -24107,11 +23357,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 203
-=======
-      value: 204
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_LocalScale.x
@@ -24276,11 +23522,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014266237372, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 151
-=======
-      value: 152
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000010926352826, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_Name
@@ -24451,11 +23693,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 64
-=======
-      value: 65
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -24588,11 +23826,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 296
-=======
-      value: 297
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -24654,11 +23888,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 106
-=======
-      value: 107
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -24773,13 +24003,8 @@ Transform:
   m_LocalScale: {x: 7.1674814, y: 16.242455, z: 2.8998816}
   m_Children:
   - {fileID: 605629686}
-<<<<<<< HEAD
   m_Father: {fileID: 371536921}
   m_RootOrder: 345
-=======
-  m_Father: {fileID: 0}
-  m_RootOrder: 346
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1182332315
 MonoBehaviour:
@@ -24833,11 +24058,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 183
-=======
-      value: 184
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -24904,11 +24125,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 259
-=======
-      value: 260
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -25045,11 +24262,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 152
-=======
-      value: 153
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -25116,11 +24329,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 334
-=======
-      value: 335
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -25257,11 +24466,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 166
-=======
-      value: 167
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -25328,11 +24533,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 258
-=======
-      value: 259
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -25436,11 +24637,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 218
-=======
-      value: 219
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -25681,11 +24878,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 239
-=======
-      value: 240
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -25747,11 +24940,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 217
-=======
-      value: 218
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_LocalScale.x
@@ -25822,11 +25011,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 78
-=======
-      value: 79
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012789541266, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_Name
@@ -25924,11 +25109,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 75
-=======
-      value: 76
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -25995,11 +25176,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 80
-=======
-      value: 81
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012789541266, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_Name
@@ -26097,11 +25274,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 155
-=======
-      value: 156
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -26168,11 +25341,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 128
-=======
-      value: 129
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -26239,11 +25408,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010908994246, guid: c92c2aca1ed8a484490ad5b376619e03, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 200
-=======
-      value: 201
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000010908994246, guid: c92c2aca1ed8a484490ad5b376619e03, type: 2}
       propertyPath: m_LocalScale.y
@@ -26336,11 +25501,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 73
-=======
-      value: 74
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -26426,11 +25587,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 176
-=======
-      value: 177
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -26689,11 +25846,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 336
-=======
-      value: 337
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -26755,11 +25908,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014266237372, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 105
-=======
-      value: 106
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000010926352826, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_Name
@@ -26855,11 +26004,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 34
-=======
-      value: 35
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012789541266, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_Name
@@ -27004,11 +26149,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 224
-=======
-      value: 225
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -27136,11 +26277,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014266237372, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 153
-=======
-      value: 154
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000010926352826, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_Name
@@ -27302,11 +26439,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 67
-=======
-      value: 68
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012789541266, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_Name
@@ -27479,11 +26612,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 228
-=======
-      value: 229
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -27799,11 +26928,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013043140886, guid: c78107076ebd98c47a45887e83d188c9, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 119
-=======
-      value: 120
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000013506888524, guid: c78107076ebd98c47a45887e83d188c9, type: 2}
       propertyPath: m_Name
@@ -27866,11 +26991,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 294
-=======
-      value: 295
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -27932,11 +27053,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 150
-=======
-      value: 151
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_LocalScale.x
@@ -28026,11 +27143,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010908994246, guid: c92c2aca1ed8a484490ad5b376619e03, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 110
-=======
-      value: 111
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000010908994246, guid: c92c2aca1ed8a484490ad5b376619e03, type: 2}
       propertyPath: m_LocalScale.y
@@ -28235,11 +27348,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 114
-=======
-      value: 115
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -28306,11 +27415,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 39
-=======
-      value: 40
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012789541266, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_Name
@@ -28427,11 +27532,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 31
-=======
-      value: 32
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012789541266, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_Name
@@ -28529,11 +27630,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 162
-=======
-      value: 163
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -28600,11 +27697,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 305
-=======
-      value: 306
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -28666,11 +27759,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 43
-=======
-      value: 44
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012789541266, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_Name
@@ -28862,11 +27951,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014266237372, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 146
-=======
-      value: 147
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000010926352826, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_Name
@@ -28990,11 +28075,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013793550202, guid: 51b582f3200ef414ea0adb7a26c74324, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 22
-=======
-      value: 23
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000013793550202, guid: 51b582f3200ef414ea0adb7a26c74324, type: 2}
       propertyPath: m_LocalScale.x
@@ -29061,11 +28142,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 234
-=======
-      value: 235
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -29202,11 +28279,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014266237372, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 142
-=======
-      value: 143
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000010926352826, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_Name
@@ -29330,11 +28403,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014266237372, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 145
-=======
-      value: 146
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000010926352826, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_Name
@@ -29477,11 +28546,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 182
-=======
-      value: 183
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -29548,11 +28613,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012079268450, guid: 789c66d21a2b0e44a8aec2dc4b18cf03, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 16
-=======
-      value: 17
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000010485907634, guid: 789c66d21a2b0e44a8aec2dc4b18cf03, type: 2}
       propertyPath: m_Name
@@ -29735,11 +28796,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 54
-=======
-      value: 55
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -29872,11 +28929,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 178
-=======
-      value: 179
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -30094,11 +29147,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 303
-=======
-      value: 304
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -30254,11 +29303,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 246
-=======
-      value: 247
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -30414,11 +29459,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 314
-=======
-      value: 315
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -30480,11 +29521,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 133
-=======
-      value: 134
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -30551,11 +29588,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 158
-=======
-      value: 159
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -30622,11 +29655,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010908994246, guid: c92c2aca1ed8a484490ad5b376619e03, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 112
-=======
-      value: 113
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000010908994246, guid: c92c2aca1ed8a484490ad5b376619e03, type: 2}
       propertyPath: m_LocalScale.y
@@ -30766,11 +29795,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 329
-=======
-      value: 330
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -30832,11 +29857,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 327
-=======
-      value: 328
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -30898,11 +29919,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 27
-=======
-      value: 28
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -30969,11 +29986,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 245
-=======
-      value: 246
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -31035,11 +30048,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 103
-=======
-      value: 104
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -31064,14 +30073,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
   m_IsPrefabParent: 0
-<<<<<<< HEAD
 --- !u!4 &1472398996 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df,
     type: 2}
   m_PrefabInternal: {fileID: 1472398995}
-=======
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
 --- !u!1 &1474680063 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000012823727576, guid: 607314d96864be34ab86da1f60d6a2df,
@@ -31263,11 +30269,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012274991244, guid: 03b0ed4871f8e8d46aab17cd9b867655, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 98
-=======
-      value: 99
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000012274991244, guid: 03b0ed4871f8e8d46aab17cd9b867655, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -31571,11 +30573,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 335
-=======
-      value: 336
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -31637,11 +30635,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 321
-=======
-      value: 322
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -31745,11 +30739,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010908994246, guid: c92c2aca1ed8a484490ad5b376619e03, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 170
-=======
-      value: 171
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000010908994246, guid: c92c2aca1ed8a484490ad5b376619e03, type: 2}
       propertyPath: m_LocalScale.y
@@ -31936,11 +30926,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 69
-=======
-      value: 70
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012789541266, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_Name
@@ -32038,11 +31024,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 48
-=======
-      value: 49
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012789541266, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_Name
@@ -32140,11 +31122,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 99
-=======
-      value: 100
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -32384,11 +31362,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 317
-=======
-      value: 318
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -32469,11 +31443,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 289
-=======
-      value: 290
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -32582,11 +31552,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011451925786, guid: 91208c66245501846b020d736ff40d00, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 109
-=======
-      value: 110
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012170896278, guid: 91208c66245501846b020d736ff40d00, type: 2}
       propertyPath: m_Name
@@ -32712,11 +31678,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 300
-=======
-      value: 301
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -32926,13 +31888,8 @@ Transform:
   m_LocalScale: {x: 7.1674814, y: 16.242455, z: 2.8998816}
   m_Children:
   - {fileID: 75212528}
-<<<<<<< HEAD
   m_Father: {fileID: 371536921}
   m_RootOrder: 349
-=======
-  m_Father: {fileID: 0}
-  m_RootOrder: 350
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1582145214
 MonoBehaviour:
@@ -33060,11 +32017,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 172
-=======
-      value: 173
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_LocalScale.x
@@ -33177,11 +32130,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 37
-=======
-      value: 38
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012789541266, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_Name
@@ -33448,11 +32397,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011451925786, guid: 91208c66245501846b020d736ff40d00, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 8
-=======
-      value: 9
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 91208c66245501846b020d736ff40d00, type: 2}
@@ -33518,11 +32463,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 62
-=======
-      value: 63
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -33589,11 +32530,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 25
-=======
-      value: 26
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -33942,11 +32879,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013793550202, guid: 51b582f3200ef414ea0adb7a26c74324, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 14
-=======
-      value: 15
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000013793550202, guid: 51b582f3200ef414ea0adb7a26c74324, type: 2}
       propertyPath: m_LocalScale.x
@@ -34028,11 +32961,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010908994246, guid: c92c2aca1ed8a484490ad5b376619e03, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 113
-=======
-      value: 114
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000010908994246, guid: c92c2aca1ed8a484490ad5b376619e03, type: 2}
       propertyPath: m_LocalScale.y
@@ -34167,11 +33096,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 88
-=======
-      value: 89
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -34351,11 +33276,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014266237372, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 210
-=======
-      value: 211
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000010926352826, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_Name
@@ -34470,11 +33391,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 331
-=======
-      value: 332
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -34536,11 +33453,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 71
-=======
-      value: 72
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -34776,11 +33689,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 53
-=======
-      value: 54
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_LocalScale.x
@@ -34922,11 +33831,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 313
-=======
-      value: 314
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -34988,11 +33893,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 13
-=======
-      value: 14
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_LocalScale.x
@@ -35219,11 +34120,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011099523136, guid: d0b7208907c12d0488e2066b68fb39bc, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 125
-=======
-      value: 126
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012878430364, guid: d0b7208907c12d0488e2066b68fb39bc, type: 2}
       propertyPath: m_Name
@@ -35395,13 +34292,8 @@ Transform:
   m_LocalPosition: {x: 44.14, y: 144.10011, z: 30.50948}
   m_LocalScale: {x: 400, y: 400, z: 400}
   m_Children: []
-<<<<<<< HEAD
   m_Father: {fileID: 371536921}
   m_RootOrder: 344
-=======
-  m_Father: {fileID: 0}
-  m_RootOrder: 345
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
   m_LocalEulerAnglesHint: {x: -90, y: 90, z: 0}
 --- !u!1 &1697466056
 GameObject:
@@ -35614,11 +34506,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013793550202, guid: 51b582f3200ef414ea0adb7a26c74324, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 58
-=======
-      value: 59
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000013793550202, guid: 51b582f3200ef414ea0adb7a26c74324, type: 2}
       propertyPath: m_LocalScale.x
@@ -35685,11 +34573,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 320
-=======
-      value: 321
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -35751,11 +34635,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014266237372, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 129
-=======
-      value: 130
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000010926352826, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_Name
@@ -35851,11 +34731,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 33
-=======
-      value: 34
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012789541266, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_Name
@@ -35953,11 +34829,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 93
-=======
-      value: 94
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -36024,11 +34896,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 175
-=======
-      value: 176
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -36170,11 +35038,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 24
-=======
-      value: 25
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -36241,11 +35105,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 299
-=======
-      value: 300
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -36396,11 +35256,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 326
-=======
-      value: 327
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -36462,11 +35318,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 202
-=======
-      value: 203
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_LocalScale.x
@@ -36537,11 +35389,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 277
-=======
-      value: 278
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -36603,11 +35451,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 307
-=======
-      value: 308
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -36688,11 +35532,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014266237372, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 215
-=======
-      value: 216
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000010926352826, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_Name
@@ -36788,11 +35628,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014115894284, guid: eab0075fe70674445a3927fe54cb1a6b, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 5
-=======
-      value: 6
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000014155928884, guid: eab0075fe70674445a3927fe54cb1a6b, type: 2}
       propertyPath: m_Name
@@ -36874,11 +35710,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 4
-=======
-      value: 5
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -36945,11 +35777,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 263
-=======
-      value: 264
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -37011,11 +35839,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011099523136, guid: d0b7208907c12d0488e2066b68fb39bc, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 115
-=======
-      value: 116
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012878430364, guid: d0b7208907c12d0488e2066b68fb39bc, type: 2}
       propertyPath: m_Name
@@ -37066,11 +35890,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 63
-=======
-      value: 64
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -37226,11 +36046,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 196
-=======
-      value: 197
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_LocalScale.x
@@ -37301,11 +36117,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 11
-=======
-      value: 12
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012823727576, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_Name
@@ -37368,11 +36180,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 189
-=======
-      value: 190
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -37439,11 +36247,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 213
-=======
-      value: 214
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -37510,11 +36314,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 257
-=======
-      value: 258
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -37698,11 +36498,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 333
-=======
-      value: 334
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -37839,11 +36635,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011099523136, guid: d0b7208907c12d0488e2066b68fb39bc, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 117
-=======
-      value: 118
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012878430364, guid: d0b7208907c12d0488e2066b68fb39bc, type: 2}
       propertyPath: m_Name
@@ -37894,11 +36686,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 180
-=======
-      value: 181
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_LocalScale.x
@@ -37988,11 +36776,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 68
-=======
-      value: 69
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012789541266, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_Name
@@ -38090,11 +36874,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 160
-=======
-      value: 161
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -38207,13 +36987,8 @@ Transform:
   m_LocalPosition: {x: -105.86, y: 59.700108, z: 30.509785}
   m_LocalScale: {x: 400.00024, y: 250, z: 400.00024}
   m_Children: []
-<<<<<<< HEAD
   m_Father: {fileID: 371536921}
   m_RootOrder: 342
-=======
-  m_Father: {fileID: 0}
-  m_RootOrder: 343
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &1837451713
 GameObject:
@@ -38280,11 +37055,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 40
-=======
-      value: 41
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012789541266, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_Name
@@ -38382,11 +37153,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 77
-=======
-      value: 78
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012789541266, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_Name
@@ -38503,11 +37270,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 108
-=======
-      value: 109
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -38710,11 +37473,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 241
-=======
-      value: 242
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -38776,11 +37535,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 30
-=======
-      value: 31
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012789541266, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_Name
@@ -38878,11 +37633,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014266237372, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 141
-=======
-      value: 142
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000010926352826, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_Name
@@ -39052,13 +37803,8 @@ Transform:
   m_LocalPosition: {x: 44.14, y: -38.19989, z: 30.51014}
   m_LocalScale: {x: 400, y: 400, z: 400}
   m_Children: []
-<<<<<<< HEAD
   m_Father: {fileID: 371536921}
   m_RootOrder: 343
-=======
-  m_Father: {fileID: 0}
-  m_RootOrder: 344
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
 --- !u!1001 &1859290931
 Prefab:
@@ -39205,11 +37951,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 143
-=======
-      value: 144
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_LocalScale.x
@@ -39346,11 +38088,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 94
-=======
-      value: 95
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -39417,11 +38155,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 279
-=======
-      value: 280
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -39525,11 +38259,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 261
-=======
-      value: 262
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -39591,11 +38321,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 92
-=======
-      value: 93
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -39662,11 +38388,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014266237372, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 211
-=======
-      value: 212
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000010926352826, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_Name
@@ -39781,11 +38503,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 319
-=======
-      value: 320
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -39922,11 +38640,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 118
-=======
-      value: 119
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -39993,11 +38707,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 242
-=======
-      value: 243
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -40059,11 +38769,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 70
-=======
-      value: 71
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012789541266, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 2}
       propertyPath: m_Name
@@ -40161,11 +38867,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 322
-=======
-      value: 323
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -40227,11 +38929,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 61
-=======
-      value: 62
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -40298,11 +38996,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 281
-=======
-      value: 282
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -40425,11 +39119,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011099523136, guid: d0b7208907c12d0488e2066b68fb39bc, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 10
-=======
-      value: 11
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d0b7208907c12d0488e2066b68fb39bc, type: 2}
@@ -40476,11 +39166,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013793550202, guid: 51b582f3200ef414ea0adb7a26c74324, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 59
-=======
-      value: 60
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000013793550202, guid: 51b582f3200ef414ea0adb7a26c74324, type: 2}
       propertyPath: m_LocalScale.x
@@ -40566,11 +39252,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014266237372, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 130
-=======
-      value: 131
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000010926352826, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_Name
@@ -40666,11 +39348,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 97
-=======
-      value: 98
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000010571533072, guid: 8cf38f1e7b316994ab7d58551e900441, type: 2}
       propertyPath: m_LocalScale.x
@@ -40741,11 +39419,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 256
-=======
-      value: 257
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -40845,11 +39519,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 81
-=======
-      value: 82
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -40916,11 +39586,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 286
-=======
-      value: 287
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -41001,11 +39667,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 227
-=======
-      value: 228
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -41072,11 +39734,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 23
-=======
-      value: 24
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -41143,11 +39801,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 137
-=======
-      value: 138
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -41214,11 +39868,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011099523136, guid: d0b7208907c12d0488e2066b68fb39bc, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 86
-=======
-      value: 87
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012878430364, guid: d0b7208907c12d0488e2066b68fb39bc, type: 2}
       propertyPath: m_Name
@@ -41227,14 +39877,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d0b7208907c12d0488e2066b68fb39bc, type: 2}
   m_IsPrefabParent: 0
-<<<<<<< HEAD
 --- !u!4 &1995818838 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000011099523136, guid: d0b7208907c12d0488e2066b68fb39bc,
     type: 2}
   m_PrefabInternal: {fileID: 1995818837}
-=======
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
 --- !u!1001 &1999073213
 Prefab:
   m_ObjectHideFlags: 0
@@ -41413,11 +40060,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014266237372, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 214
-=======
-      value: 215
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000010926352826, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_Name
@@ -41513,11 +40156,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 12
-=======
-      value: 13
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -41580,11 +40219,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 179
-=======
-      value: 180
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -41651,11 +40286,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 293
-=======
-      value: 294
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -41763,13 +40394,8 @@ Transform:
   m_LocalPosition: {x: 11.14, y: 59.699715, z: -77.49021}
   m_LocalScale: {x: 400, y: 250, z: 400}
   m_Children: []
-<<<<<<< HEAD
   m_Father: {fileID: 371536921}
   m_RootOrder: 339
-=======
-  m_Father: {fileID: 0}
-  m_RootOrder: 340
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &2025009579 stripped
 GameObject:
@@ -41890,13 +40516,8 @@ Transform:
   m_LocalScale: {x: 7.1674814, y: 16.242455, z: 2.8998816}
   m_Children:
   - {fileID: 291112885}
-<<<<<<< HEAD
   m_Father: {fileID: 371536921}
   m_RootOrder: 346
-=======
-  m_Father: {fileID: 0}
-  m_RootOrder: 347
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2037232345 stripped
 GameObject:
@@ -42062,11 +40683,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 249
-=======
-      value: 250
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -42128,11 +40745,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 159
-=======
-      value: 160
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -42199,11 +40812,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 191
-=======
-      value: 192
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -42448,11 +41057,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 161
-=======
-      value: 162
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -42519,11 +41124,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011099523136, guid: d0b7208907c12d0488e2066b68fb39bc, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 121
-=======
-      value: 122
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000012878430364, guid: d0b7208907c12d0488e2066b68fb39bc, type: 2}
       propertyPath: m_Name
@@ -42574,11 +41175,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 273
-=======
-      value: 274
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -42809,11 +41406,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 163
-=======
-      value: 164
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -42880,11 +41473,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 276
-=======
-      value: 277
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -43153,11 +41742,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 219
-=======
-      value: 220
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
@@ -43224,11 +41809,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014266237372, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 104
-=======
-      value: 105
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000010926352826, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_Name
@@ -43343,11 +41924,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014266237372, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 135
-=======
-      value: 136
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 1000010926352826, guid: fd6337a6e30116f46be72ad71a1e3ab3, type: 2}
       propertyPath: m_Name
@@ -43443,11 +42020,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 330
-=======
-      value: 331
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7db35a564e30b86469132b02fa7b192d, type: 3}
       propertyPath: m_LocalScale.x
@@ -43551,11 +42124,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 199
-=======
-      value: 200
->>>>>>> parent of 419f4b9... lumiere et plein de trucs wala
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.x
