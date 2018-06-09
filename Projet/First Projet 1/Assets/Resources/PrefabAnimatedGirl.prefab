@@ -1510,7 +1510,7 @@ Animator:
   m_GameObject: {fileID: 1931848624534894}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: f988757b647ebfd4cb4ab652bed42a2a, type: 3}
-  m_Controller: {fileID: 9100000, guid: 217ef66eadd331745b6a2216b763869b, type: 2}
+  m_Controller: {fileID: 9100000, guid: acd755e36c57c6d46ba3ab3ff76cbc84, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1541,8 +1541,8 @@ MonoBehaviour:
   - {fileID: 114409549885306220}
   - {fileID: 114065670727283336}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 2
-  instantiationId: 2
+  viewIdField: 0
+  instantiationId: -1
   currentMasterID: -1
   isRuntimeInstantiated: 0
 --- !u!114 &114065670727283336

@@ -39,6 +39,9 @@ public class RotationPlayer : Photon.MonoBehaviour
 	private Canvas EscapeCanvas;
 	private Canvas GameOverCanvas;
 	
+	//Animation
+	private Animator Animator;
+	
 	public bool GetDestroy
 	{
 		get { return Destroy; }
@@ -54,6 +57,8 @@ public class RotationPlayer : Photon.MonoBehaviour
 	{
 		GroundDistanceReference = (transform.position - CharacterBaseObject.transform.position).y + 0.1f;
 		ThisRigidbody = GetComponent<Rigidbody>();
+
+		Animator = GetComponent<Animator>();
 		
 		photonNetworkManager = GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>();
 		GameOverCanvas = photonNetworkManager.GetGameOverCanvas.GetComponent<Canvas>();
@@ -113,7 +118,13 @@ public class RotationPlayer : Photon.MonoBehaviour
 				if (photonNetworkManager.GetLife > 0)
 				{
 					if (Input.GetKey(KeyCode.UpArrow))
+					{
+						Animator.SetBool("Running", true);
 						this.transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime * CoeffPuissance);
+					}
+					else
+						Animator.SetBool("Running", false);
+						
 					
 					if (Input.GetKey(KeyCode.DownArrow))
 						this.transform.Translate(-Vector3.forward * moveSpeed * Time.deltaTime * CoeffPuissance);
