@@ -28,6 +28,7 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 	private GameObject GameOverCanvas;
 	private GameObject EscapeCanvas;
 	private List<Canvas> HealthBar;
+	private int[] EnabledHealth;
 	
 	//Game Parameters
 	private float Life;
@@ -90,6 +91,9 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 			PhotonNetwork.ConnectUsingSettings("0.1");
 		}
 	
+		EnabledHealth = new int[2];
+		EnabledHealth[0] = -1;
+		EnabledHealth[1] = -1;
 		HealthBar = new List<Canvas>();
 		HealthBar.Add(GameObject.Find("GameLogic/HealthBar/Health 0").GetComponent<Canvas>());
 		HealthBar.Add(GameObject.Find("GameLogic/HealthBar/Health 0.5").GetComponent<Canvas>());
@@ -240,96 +244,54 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 			}
 		}
 	}
-	
+
 	private void HealthGov()
 	{
 		if (Life > 100)
 		{
-			HealthBar[0].enabled = false;
+			EnabledHealth[0] = -1;
 		}
 		else
 		{
+			EnabledHealth[0] = 0;
 			if (Life <= 0)
 			{
-				HealthBar[1].enabled = false;
+				EnabledHealth[1] = -1;
 			}
+			if (Life > 0)
+				EnabledHealth[1] = 1;
+			if (Life > 10)
+				EnabledHealth[1] = 2;
+			if (Life > 20)
+				EnabledHealth[1] = 3;
+			if (Life > 30)
+				EnabledHealth[1] = 4;
+			if (Life > 40)
+				EnabledHealth[1] = 5;
+			if (Life > 50)
+				EnabledHealth[1] = 6;
+			if (Life > 60)
+				EnabledHealth[1] = 7;
+			if (Life > 70)
+				EnabledHealth[1] = 8;
+			if (Life > 80)
+				EnabledHealth[1] = 9;
+			if (Life > 90)
+				EnabledHealth[1] = 10;
+		}
+
+		if (EnabledHealth[0] == -1)
+			HealthBar[0].enabled = false;
+		else
+			HealthBar[0].enabled = true;
+		int j = 1;
+		while (j < HealthBar.Count)
+		{
+			if (j == EnabledHealth[1])
+				HealthBar[j].enabled = true;
 			else
-			{
-				HealthBar[0].enabled = true;
-				if (Life > 90)
-				{
-					HealthBar[10].enabled = true;
-				}
-				else
-				{
-					if (Life > 80)
-					{
-						HealthBar[9].enabled = true;
-						HealthBar[10].enabled = false;
-					}
-					else
-					{
-						if (Life > 70)
-						{
-							HealthBar[8].enabled = true;
-							HealthBar[9].enabled = false;
-						}
-						else
-						{
-							if (Life > 60)
-							{
-								HealthBar[7].enabled = true;
-								HealthBar[8].enabled = false;
-							}
-							else
-							{
-								if (Life > 50)
-								{
-									HealthBar[6].enabled = true;
-									HealthBar[7].enabled = false;
-								}
-								else
-								{
-									if (Life > 40)
-									{
-										HealthBar[5].enabled = true;
-										HealthBar[6].enabled = false;
-									}
-									else
-									{
-										if (Life > 30)
-										{
-											HealthBar[4].enabled = true;
-											HealthBar[5].enabled = false;
-										}
-										else
-										{
-											if (Life > 20)
-											{
-												HealthBar[3].enabled = true;
-												HealthBar[4].enabled = false;
-											}
-											else
-											{
-												if (Life > 10)
-												{
-													HealthBar[2].enabled = true;
-													HealthBar[3].enabled = false;
-												}
-												else
-												{
-													HealthBar[1].enabled = true;
-													HealthBar[2].enabled = false;
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
+				HealthBar[j].enabled = false;
+			j++;
 		}
 	}
 }
