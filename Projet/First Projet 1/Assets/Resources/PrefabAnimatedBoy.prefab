@@ -1272,7 +1272,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1492207588796360}
   m_LocalRotation: {x: 0.091950245, y: -0, z: -0, w: 0.9957636}
-  m_LocalPosition: {x: 0, y: 13.94, z: -19.09}
+  m_LocalPosition: {x: 0, y: 17.12, z: -22.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4400921966550420}
@@ -1533,7 +1533,6 @@ MonoBehaviour:
   moveSpeed: 20
   turnSpeed: 100
   jumpPower: 40
-  TimeOnAir: 0
   GravityMultiplier: 10
   CharacterBaseObject: {fileID: 1803775665418346}
 --- !u!114 &114281706814122574
