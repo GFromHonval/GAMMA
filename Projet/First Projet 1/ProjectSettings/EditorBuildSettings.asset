@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Menu principal.unity
     guid: d287802a516dded4baa6bf4000818e5c
   - enabled: 0
@@ -17,18 +17,18 @@ EditorBuildSettings:
   - enabled: 0
     path: "Assets/Map 3 texturis\xE9e.unity"
     guid: 11545a61f96f68042ab68f21db46f0f8
-  - enabled: 1
+  - enabled: 0
     path: Assets/MAP 4 TEXTURISE.unity
     guid: cb0a2300b4825954d970b4704a846278
-  - enabled: 1
+  - enabled: 0
     path: Assets/Menu without logic.unity
     guid: 6c6e207751c654a46b8278011affbab5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Niveau musical 2.unity
     guid: 8b2b2706652753d4eb466baacb1a03d0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Niveau musical 1.unity
     guid: d818f743167b55b4986766d6d13e79cb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Niveau musical 3.unity
     guid: 2b6f68cb7c900994d801da3cf42862ce
