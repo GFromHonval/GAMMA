@@ -35,11 +35,30 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 	private float Timer;
 	private float DamageLevel;
 	private int LevelSuceeded;
+	public bool PlayingLocal;
+	private Dictionary<string, KeyCode> DictionaryFirst;
+	private Dictionary<string, KeyCode> DictionarySecond;
 	
 	//Hidden
 	private bool Over;
 	private int MusiqueLevel;
 
+	public Dictionary<string, KeyCode> GetDictionaryFirst
+	{
+		get { return DictionaryFirst; }
+	}
+
+	public Dictionary<string, KeyCode> GetDictionarySecond
+	{
+		get { return DictionarySecond; }
+	}
+	
+	public bool IsPlayingLocal
+	{
+		get { return PlayingLocal; }
+		set { PlayingLocal = value; }
+	}
+	
 	public int GetLevelSuceeded
 	{
 		get { return LevelSuceeded; }
@@ -107,6 +126,20 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 		HealthBar.Add(GameObject.Find("GameLogic/HealthBar/Health 4.5").GetComponent<Canvas>());
 		HealthBar.Add(GameObject.Find("GameLogic/HealthBar/Health 5").GetComponent<Canvas>());
 		//length = 11
+		
+		DictionaryFirst = new Dictionary<string, KeyCode>();
+		DictionaryFirst.Add("Up", KeyCode.UpArrow);
+		DictionaryFirst.Add("Down", KeyCode.DownArrow);
+		DictionaryFirst.Add("Left", KeyCode.LeftArrow);
+		DictionaryFirst.Add("Right", KeyCode.RightArrow);
+		DictionaryFirst.Add("Jump", KeyCode.RightControl);
+		
+		DictionarySecond = new Dictionary<string, KeyCode>();
+		DictionarySecond.Add("Jump", KeyCode.Space);
+		DictionarySecond.Add("Up", KeyCode.Z);
+		DictionarySecond.Add("Left", KeyCode.Q);
+		DictionarySecond.Add("Right", KeyCode.D);
+		DictionarySecond.Add("Down", KeyCode.S);
 		
 		SceneManager.activeSceneChanged += OnLoadScene;
 	}

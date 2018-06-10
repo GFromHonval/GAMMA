@@ -6,6 +6,7 @@ using System.Text.RegularExpressions;
 using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityStandardAssets.CrossPlatformInput;
 using Debug = UnityEngine.Debug;
 
 public class RotationPlayer : Photon.MonoBehaviour
@@ -20,6 +21,7 @@ public class RotationPlayer : Photon.MonoBehaviour
 	private float Damage;
 	private bool Destroy;
 	private float Life;
+	private Dictionary<string, KeyCode> Controls;
 	
 	//Physics Variables
 	private GameObject LePlusB;
@@ -63,6 +65,15 @@ public class RotationPlayer : Photon.MonoBehaviour
 		photonNetworkManager = GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>();
 		GameOverCanvas = photonNetworkManager.GetGameOverCanvas.GetComponent<Canvas>();
 		EscapeCanvas = photonNetworkManager.GetEscapeCanvas.GetComponent<Canvas>();
+		if (!photonNetworkManager.IsPlayingLocal)
+			Controls = photonNetworkManager.GetDictionaryFirst;
+		else
+		{
+			if (tag == "PlayerBoy")
+				Controls = photonNetworkManager.GetDictionaryFirst;
+			else
+				Controls = photonNetworkManager.GetDictionarySecond;
+		}
 		
 		GameParameters gameParameters = GameObject.Find("GameParameters").GetComponent<GameParameters>();
 		LePlusB = gameParameters.LePlusBas;
@@ -120,7 +131,7 @@ public class RotationPlayer : Photon.MonoBehaviour
 
 				if (photonNetworkManager.GetLife > 0)
 				{
-					if (Input.GetKey(KeyCode.UpArrow) && TimeBeforeJumping == 0.483f)
+					if (Input.GetKey(Controls["Up"]) && TimeBeforeJumping == 0.483f)
 					{
 						if (!IsJumping)
 							Animator.SetBool("Running", true);
@@ -130,7 +141,7 @@ public class RotationPlayer : Photon.MonoBehaviour
 						Animator.SetBool("Running", false);
 
 
-					if (Input.GetKey(KeyCode.DownArrow) && TimeBeforeJumping == 0.483f)
+					if (Input.GetKey(Controls["Down"]) && TimeBeforeJumping == 0.483f)
 					{
 						Animator.SetBool("RunningBack", true);
 						this.transform.Translate(-Vector3.forward * moveSpeed * Time.deltaTime * CoeffPuissance);
@@ -138,10 +149,10 @@ public class RotationPlayer : Photon.MonoBehaviour
 					else
 						Animator.SetBool("RunningBack", false);
 
-					if (Input.GetKey(KeyCode.LeftArrow) && TimeBeforeJumping == 0.483f)
+					if (Input.GetKey(Controls["Left"]) && TimeBeforeJumping == 0.483f)
 						this.transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime);
 
-					if (Input.GetKey(KeyCode.RightArrow) && TimeBeforeJumping == 0.483f)
+					if (Input.GetKey(Controls["Right"]) && TimeBeforeJumping == 0.483f)
 						this.transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
 
 					CheckGroundStatue();
@@ -149,7 +160,7 @@ public class RotationPlayer : Photon.MonoBehaviour
 					if (!IsJumping || TimeBeforeJumping < 0.483)
 					{
 						CoeffPuissance = 1f;
-						if (Input.GetKeyDown(KeyCode.Space) || TimeBeforeJumping < 0.483)
+						if (Input.GetKeyDown(Controls["Jump"]) || TimeBeforeJumping < 0.483)
 						{
 							IsJumping = true;
 							Animator.SetBool("Jumping", true);
