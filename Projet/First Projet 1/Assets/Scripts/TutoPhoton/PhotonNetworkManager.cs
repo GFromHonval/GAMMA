@@ -31,11 +31,11 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 	private int[] EnabledHealth;
 	
 	//Game Parameters
+	private bool PlayingLocal;
 	private float Life;
 	private float Timer;
 	private float DamageLevel;
 	private int LevelSuceeded;
-	public bool PlayingLocal;
 	private Dictionary<string, KeyCode> DictionaryFirst;
 	private Dictionary<string, KeyCode> DictionarySecond;
 	
@@ -170,43 +170,14 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 		GameObject ToDestroy2 = GameObject.FindGameObjectWithTag("PlayerGirl");
 		if (ToDestroy2 != null)
 			PhotonNetwork.Destroy(ToDestroy2);
-		
-		if (PhotonNetwork.player.IsMasterClient)
+
+		if (PlayingLocal)
 		{
-			if (PhotonNetwork.player.NickName == "FirstPlayerGirl")
+			
+			if (newScene.name == "Menu without logic")
 			{
 				PhotonNetwork.Instantiate(PrefabGirl.name, SpawnPoint1.position, SpawnPoint1.rotation, 0);
-			}
-			else
-			{
-				if (PhotonNetwork.player.NickName == "FirstPlayerBoy")
-				{
-					PhotonNetwork.Instantiate(PrefabBoy.name, SpawnPoint1.position, SpawnPoint1.rotation, 0);
-				}
-			}
-		}
-		else
-		{
-			if (MasterName == "FirstPlayerGirl")
-			{
-				PhotonNetwork.Instantiate(PrefabBoy.name, SpawnPoint2.position, SpawnPoint2.rotation, 0);
-				PhotonNetwork.player.NickName = "SecondPlayerBoy";
-			}
-			else
-			{
-				if (MasterName == "FirstPlayerBoy")
-				{
-					PhotonNetwork.Instantiate(PrefabGirl.name, SpawnPoint2.position, SpawnPoint2.rotation, 0);
-					PhotonNetwork.player.NickName = "SecondPlayerGirl";
-				}
-			}
-		}
-		
-		if (newScene.name == "Menu without logic")
-		{
-			GameObject[] G = newScene.GetRootGameObjects();
-			if (PhotonNetwork.player.NickName == "FirstPlayerGirl" || PhotonNetwork.player.NickName == "FirstPlayerBoy")
-			{
+				GameObject[] G = newScene.GetRootGameObjects();
 				foreach (GameObject g in G)
 				{
 					if (g.name == "CanvasFirstPlayer")
@@ -215,10 +186,62 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 			}
 			else
 			{
-				foreach (GameObject g in G)
+				PhotonNetwork.Instantiate(PrefabGirl.name, SpawnPoint1.position, SpawnPoint1.rotation, 0);
+				PhotonNetwork.Instantiate(PrefabBoy.name, SpawnPoint2.position, SpawnPoint1.rotation, 0);
+			}
+		}
+		else
+		{
+			if (PhotonNetwork.player.IsMasterClient)
+			{
+				if (PhotonNetwork.player.NickName == "FirstPlayerGirl")
 				{
-					if (g.name == "CanvasSecondPlayer")
-						g.GetComponent<Canvas>().enabled = true;
+					PhotonNetwork.Instantiate(PrefabGirl.name, SpawnPoint1.position, SpawnPoint1.rotation, 0);
+				}
+				else
+				{
+					if (PhotonNetwork.player.NickName == "FirstPlayerBoy")
+					{
+						PhotonNetwork.Instantiate(PrefabBoy.name, SpawnPoint1.position, SpawnPoint1.rotation, 0);
+					}
+				}
+			}
+			else
+			{
+				if (MasterName == "FirstPlayerGirl")
+				{
+					PhotonNetwork.Instantiate(PrefabBoy.name, SpawnPoint2.position, SpawnPoint2.rotation, 0);
+					PhotonNetwork.player.NickName = "SecondPlayerBoy";
+				}
+				else
+				{
+					if (MasterName == "FirstPlayerBoy")
+					{
+						PhotonNetwork.Instantiate(PrefabGirl.name, SpawnPoint2.position, SpawnPoint2.rotation, 0);
+						PhotonNetwork.player.NickName = "SecondPlayerGirl";
+					}
+				}
+			}
+
+
+			if (newScene.name == "Menu without logic")
+			{
+				GameObject[] G = newScene.GetRootGameObjects();
+				if (PhotonNetwork.player.NickName == "FirstPlayerGirl" || PhotonNetwork.player.NickName == "FirstPlayerBoy")
+				{
+					foreach (GameObject g in G)
+					{
+						if (g.name == "CanvasFirstPlayer")
+							g.GetComponent<Canvas>().enabled = true;
+					}
+				}
+				else
+				{
+					foreach (GameObject g in G)
+					{
+						if (g.name == "CanvasSecondPlayer")
+							g.GetComponent<Canvas>().enabled = true;
+					}
 				}
 			}
 		}
@@ -249,19 +272,6 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 		LobbyCamera.SetActive(false);
 	}
 
-	[PunRPC]
-	private void OnGUI()
-	{
-		if (PhotonNetwork.connected)
-		{
-			GUILayout.Label(PhotonNetwork.playerName);
-
-			GUILayout.Label(PhotonNetwork.player.isMasterClient.ToString());
-
-		}
-	}
-
-
 	void Update()
 	{
 		HealthGov();
@@ -276,6 +286,15 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 				animator.SetTrigger("FadeOut");
 			}
 		}
+		if (SceneManager.GetActiveScene().name == "Menu principal" || SceneManager.GetActiveScene().name == "Menu without logic")
+			PlayingLocal = GameObject.Find("CanvasFirstPlayer/Background/PlayingLocal").GetComponent<Toggle>().isOn;
+		else
+		{
+			if (PlayingLocal)
+				GameObject.Find(PrefabGirl.name + "(Clone)/Camera").GetComponent<Camera>().rect = new Rect(0.5f, 0, 0.5f, 1);
+				GameObject.Find(PrefabBoy.name + "(Clone)/Camera").GetComponent<Camera>().rect = new Rect(0, 0, 0.5f, 1);
+		}
+
 	}
 	
 	private void HealthGov()

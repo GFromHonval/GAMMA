@@ -70,21 +70,32 @@ public class RotationPlayer : Photon.MonoBehaviour
 		else
 		{
 			if (tag == "PlayerBoy")
-				Controls = photonNetworkManager.GetDictionaryFirst;
-			else
 				Controls = photonNetworkManager.GetDictionarySecond;
+			else
+				Controls = photonNetworkManager.GetDictionaryFirst;
 		}
 		
 		GameParameters gameParameters = GameObject.Find("GameParameters").GetComponent<GameParameters>();
 		LePlusB = gameParameters.LePlusBas;
 		Damage = gameParameters.DamageFallOfThisLevel;
 		Life = gameParameters.LifeInThisLevel;
-		
-		if (PhotonNetwork.player.NickName == "SecondPlayerGirl" || PhotonNetwork.player.NickName == "SecondPlayerBoy" || PhotonNetwork.player.NickName == "SecondPlayer")
-			RespawnP = gameParameters.RespawnPoint2;
+
+		if (photonNetworkManager.IsPlayingLocal)
+		{
+			if (tag == "PlayerBoy")
+				RespawnP = gameParameters.RespawnPoint2;
+			else
+				RespawnP = gameParameters.RespawnPoint1;
+		}
 		else
-			RespawnP = gameParameters.RespawnPoint1;
-		
+		{
+			if (PhotonNetwork.player.NickName == "SecondPlayerGirl" || PhotonNetwork.player.NickName == "SecondPlayerBoy" ||
+			    PhotonNetwork.player.NickName == "SecondPlayer")
+				RespawnP = gameParameters.RespawnPoint2;
+			else
+				RespawnP = gameParameters.RespawnPoint1;
+		}
+
 		SceneManager.activeSceneChanged += OnLoadScenePlayer;
 	}
 
@@ -185,15 +196,13 @@ public class RotationPlayer : Photon.MonoBehaviour
 			}
 		}
 		
-		if (PhotonNetwork.playerList.Length == 2)
+		if (PhotonNetwork.playerList.Length == 2 || SceneManager.GetActiveScene().buildIndex != 0 && SceneManager.GetActiveScene().name != "Menu without logic")
 		{
 			GameObject PlayerBoy = GameObject.FindGameObjectWithTag("PlayerBoy");
 			GameObject PlayerGirl = GameObject.FindGameObjectWithTag("PlayerGirl");
 			float Life1 = PlayerBoy.GetComponent<RotationPlayer>().LifePerso;
 			float Life2 = PlayerGirl.GetComponent<RotationPlayer>().LifePerso;
-			print(Life1);
-			print(Life2);
-
+			
 			if (Math.Abs(Life1 - Life2) <= Damage)
 			{
 				Life = Math.Min(Life1, Life2);

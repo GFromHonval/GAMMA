@@ -6665,7 +6665,7 @@ GameObject:
   - component: {fileID: 870349198}
   - component: {fileID: 870349199}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: PlayingLocal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7461,7 +7461,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabGirl: {fileID: 1931848624534894, guid: e95e5ab8d65a2ea40b244b200179ce93, type: 2}
   PrefabBoy: {fileID: 1001018037135496, guid: e791fb36169168944b6daa0433899e85, type: 2}
-  PlayingLocal: 0
 --- !u!4 &1060025235
 Transform:
   m_ObjectHideFlags: 0
