@@ -706,6 +706,7 @@ GameObject:
   - component: {fileID: 114065670727283336}
   - component: {fileID: 136175097464398916}
   - component: {fileID: 114266326039170240}
+  - component: {fileID: 114935994037099568}
   m_Layer: 0
   m_Name: PrefabAnimatedGirl
   m_TagString: PlayerGirl
@@ -1540,6 +1541,7 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114409549885306220}
   - {fileID: 114065670727283336}
+  - {fileID: 114935994037099568}
   ObservedComponentsFoldoutOpen: 1
   viewIdField: 0
   instantiationId: -1
@@ -1650,6 +1652,32 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &114935994037099568
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1931848624534894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowLayerWeightsInspector: 1
+  ShowParameterInspector: 1
+  m_SynchronizeParameters:
+  - Type: 4
+    SynchronizeType: 2
+    Name: Running
+  - Type: 4
+    SynchronizeType: 1
+    Name: Jumping
+  - Type: 4
+    SynchronizeType: 2
+    Name: RunningBack
+  m_SynchronizeLayers:
+  - SynchronizeType: 0
+    LayerIndex: 0
 --- !u!124 &124765864357117552
 Behaviour:
   m_ObjectHideFlags: 1
