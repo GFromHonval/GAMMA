@@ -14,7 +14,6 @@ public class RotationPlayer : Photon.MonoBehaviour
 	public float moveSpeed = 10f;
 	public float turnSpeed = 50f;
 	public float jumpPower;
-	public float TimeOnAir;
 	public float GravityMultiplier;
 	
 	//Hidden Variables
@@ -30,6 +29,7 @@ public class RotationPlayer : Photon.MonoBehaviour
 	private float GroundDistanceReference;
 	private Rigidbody ThisRigidbody;
 	private float CoeffPuissance;
+	private float TimeBeforeJumping = 0.483f;
 	
 	//Physics Objects\
 	public GameObject CharacterBaseObject;
@@ -96,6 +96,9 @@ public class RotationPlayer : Photon.MonoBehaviour
 				EscapeCanvas.enabled = false;
 				if (Life <= 0 || this.transform.position.y < LePlusB.transform.position.y)
 				{
+					Animator.SetBool("Running", false);
+					Animator.SetBool("RunningBack", false);
+					Animator.SetBool("Jumping", false);
 					if (Life <= Damage)
 					{
 						GameOverCanvas.enabled = true;
@@ -117,35 +120,50 @@ public class RotationPlayer : Photon.MonoBehaviour
 
 				if (photonNetworkManager.GetLife > 0)
 				{
-					if (Input.GetKey(KeyCode.UpArrow))
+					if (Input.GetKey(KeyCode.UpArrow) && TimeBeforeJumping == 0.483f)
 					{
-						Animator.SetBool("Running", true);
+						if (!IsJumping)
+							Animator.SetBool("Running", true);
 						this.transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime * CoeffPuissance);
 					}
 					else
 						Animator.SetBool("Running", false);
-						
-					
-					if (Input.GetKey(KeyCode.DownArrow))
-						this.transform.Translate(-Vector3.forward * moveSpeed * Time.deltaTime * CoeffPuissance);
 
-					if (Input.GetKey(KeyCode.LeftArrow))
+
+					if (Input.GetKey(KeyCode.DownArrow) && TimeBeforeJumping == 0.483f)
+					{
+						Animator.SetBool("RunningBack", true);
+						this.transform.Translate(-Vector3.forward * moveSpeed * Time.deltaTime * CoeffPuissance);
+					}
+					else
+						Animator.SetBool("RunningBack", false);
+
+					if (Input.GetKey(KeyCode.LeftArrow) && TimeBeforeJumping == 0.483f)
 						this.transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime);
 
-					if (Input.GetKey(KeyCode.RightArrow))
+					if (Input.GetKey(KeyCode.RightArrow) && TimeBeforeJumping == 0.483f)
 						this.transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
 
 					CheckGroundStatue();
 					
-					if (!IsJumping)
+					if (!IsJumping || TimeBeforeJumping < 0.483)
 					{
 						CoeffPuissance = 1f;
-						if (Input.GetKeyDown(KeyCode.Space))
+						if (Input.GetKeyDown(KeyCode.Space) || TimeBeforeJumping < 0.483)
 						{
 							IsJumping = true;
-							ThisRigidbody.velocity = new Vector3(ThisRigidbody.velocity.x, jumpPower, ThisRigidbody.velocity.z);
-							CoeffPuissance = 0.5f;
+							Animator.SetBool("Jumping", true);
+							if (TimeBeforeJumping <= 0f)
+							{
+								ThisRigidbody.velocity = new Vector3(ThisRigidbody.velocity.x, jumpPower, ThisRigidbody.velocity.z);
+								TimeBeforeJumping = 0.483f;
+								CoeffPuissance = 0.5f;
+							}
+							else
+								TimeBeforeJumping -= Time.deltaTime;
 						}
+						else
+							Animator.SetBool("Jumping", false);
 					}
 					else
 					{

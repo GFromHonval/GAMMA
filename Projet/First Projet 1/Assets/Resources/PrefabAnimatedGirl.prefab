@@ -1559,7 +1559,6 @@ MonoBehaviour:
   moveSpeed: 20
   turnSpeed: 100
   jumpPower: 40
-  TimeOnAir: 0
   GravityMultiplier: 10
   CharacterBaseObject: {fileID: 1986312464132950}
 --- !u!114 &114266326039170240
@@ -1667,10 +1666,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 4.6719933
+  m_Radius: 3.8413334
   m_Height: 16.85519
   m_Direction: 1
-  m_Center: {x: 0, y: 8.312502, z: -0.13678741}
+  m_Center: {x: 0, y: 8.312502, z: 0.93533516}
 --- !u!137 &137422403123588690
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
