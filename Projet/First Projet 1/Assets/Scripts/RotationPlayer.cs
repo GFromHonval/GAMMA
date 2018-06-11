@@ -205,7 +205,7 @@ public class RotationPlayer : Photon.MonoBehaviour
 			}
 		}
 		
-		if (PhotonNetwork.playerList.Length == 2 || SceneManager.GetActiveScene().buildIndex != 0 && SceneManager.GetActiveScene().name != "Menu without logic")
+		if (PhotonNetwork.playerList.Length == 2 || SceneManager.GetActiveScene().buildIndex != 0 && SceneManager.GetActiveScene().name != "Menu without logic" && photonNetworkManager.IsPlayingLocal)
 		{
 			GameObject PlayerBoy = GameObject.FindGameObjectWithTag("PlayerBoy");
 			GameObject PlayerGirl = GameObject.FindGameObjectWithTag("PlayerGirl");

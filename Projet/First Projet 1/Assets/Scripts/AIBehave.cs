@@ -17,7 +17,7 @@ public class AIBehave : Photon.MonoBehaviour {
 	private float rotSpeed = 10f;
 	private float speed = 1.5f;
 	private float accuracyWP = 0.5f;
-	private GameObject[] players;
+	private List<GameObject> players;
 	private string State;
 	private float SpeedBullet = 2f;
 	private float Timer;
@@ -31,7 +31,12 @@ public class AIBehave : Photon.MonoBehaviour {
 
 	private void FixedUpdate()
 	{
-		players = GameObject.FindGameObjectsWithTag("Player");
+		players = new List<GameObject>();
+
+		if (!Equals(GameObject.FindWithTag("PlayerGirl"), null) )
+			players.Add(GameObject.FindWithTag("PlayerGirl"));
+		if (!Equals(GameObject.FindWithTag("PlayerBoy"), null))
+			players.Add(GameObject.FindWithTag("PlayerBoy"));
 	}
 
 	// Update is called once per frame
