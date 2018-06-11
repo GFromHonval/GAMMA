@@ -66,13 +66,22 @@ public class RotationPlayer : Photon.MonoBehaviour
 		GameOverCanvas = photonNetworkManager.GetGameOverCanvas.GetComponent<Canvas>();
 		EscapeCanvas = photonNetworkManager.GetEscapeCanvas.GetComponent<Canvas>();
 		if (!photonNetworkManager.IsPlayingLocal)
-			Controls = photonNetworkManager.GetDictionaryFirst;
+			Controls = photonNetworkManager.GetDictionaryOne;
 		else
 		{
-			if (tag == "PlayerBoy")
-				Controls = photonNetworkManager.GetDictionarySecond;
-			else
-				Controls = photonNetworkManager.GetDictionaryFirst;
+			if (SceneManager.GetActiveScene().name != "Menu without logic")
+			{
+				if (tag == "PlayerBoy")
+				{
+					Controls = photonNetworkManager.GetDictionarySecond;
+					GetComponentInChildren<Camera>().rect = new Rect(0, 0, 0.5f, 1);
+				}
+				else
+				{
+					Controls = photonNetworkManager.GetDictionaryFirst;
+					GetComponentInChildren<Camera>().rect = new Rect(0.5f, 0, 0.5f, 1);
+				}
+			}
 		}
 		
 		GameParameters gameParameters = GameObject.Find("GameParameters").GetComponent<GameParameters>();

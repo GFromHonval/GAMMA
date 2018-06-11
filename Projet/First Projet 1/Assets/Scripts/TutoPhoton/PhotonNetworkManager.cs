@@ -38,10 +38,16 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 	private int LevelSuceeded;
 	private Dictionary<string, KeyCode> DictionaryFirst;
 	private Dictionary<string, KeyCode> DictionarySecond;
+	private Dictionary<string, KeyCode> DictionaryOne;
 	
 	//Hidden
 	private bool Over;
 	private int MusiqueLevel;
+
+	public Dictionary<string, KeyCode> GetDictionaryOne
+	{
+		get { return DictionaryOne; }
+	}
 
 	public Dictionary<string, KeyCode> GetDictionaryFirst
 	{
@@ -140,6 +146,13 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 		DictionarySecond.Add("Left", KeyCode.Q);
 		DictionarySecond.Add("Right", KeyCode.D);
 		DictionarySecond.Add("Down", KeyCode.S);
+		
+		DictionaryOne = new Dictionary<string, KeyCode>();
+		DictionaryOne.Add("Jump", KeyCode.Space);
+		DictionaryOne.Add("Up", KeyCode.UpArrow);
+		DictionaryOne.Add("Left", KeyCode.LeftArrow);
+		DictionaryOne.Add("Right", KeyCode.RightArrow);
+		DictionaryOne.Add("Down", KeyCode.DownArrow);
 		
 		SceneManager.activeSceneChanged += OnLoadScene;
 	}
@@ -290,9 +303,7 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 			PlayingLocal = GameObject.Find("CanvasFirstPlayer/Background/PlayingLocal").GetComponent<Toggle>().isOn;
 		else
 		{
-			if (PlayingLocal)
-				GameObject.Find(PrefabGirl.name + "(Clone)/Camera").GetComponent<Camera>().rect = new Rect(0.5f, 0, 0.5f, 1);
-				GameObject.Find(PrefabBoy.name + "(Clone)/Camera").GetComponent<Camera>().rect = new Rect(0, 0, 0.5f, 1);
+			
 		}
 
 	}
