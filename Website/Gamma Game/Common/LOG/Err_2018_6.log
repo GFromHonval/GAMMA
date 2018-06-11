@@ -1,0 +1,67 @@
+6/11/2018 12:35:51 AM | 
+6/11/2018 12:35:51 AM | 
+Message : Impossible de trouver une partie du chemin d'accès 'C:\Users\Le Louoïgat\AppData\Local\Temp\openElement\83066371-7f4d-4449-8e4f-d39304c0eedf\Image\backlit-dark-light NB.jpg'.
+6/11/2018 12:35:51 AM | 
+LastTrace : openElement.OEIO.File.Copy(String sourcePath, String destPath, Boolean overwrite, Boolean showError, Boolean logError)
+6/11/2018 12:35:51 AM | 
+Params : 
+6/11/2018 12:35:51 AM | 
+MethodeName : Void WinIOError(Int32, System.String)
+6/11/2018 12:35:51 AM | 
+Stamp : 6/11/2018 12:35:51 AM
+6/11/2018 12:35:51 AM | 
+OSFullName : Microsoft Windows 10 Home
+6/11/2018 12:35:51 AM | 
+AvailablePhysicalMemory : 3.23 Go 
+6/11/2018 12:35:51 AM | 
+TotalPhysicalMemory : 7.93 Go 
+6/11/2018 12:35:51 AM | 
+AvailableVirtualMemory : 2.71 Go 
+6/11/2018 12:35:51 AM | 
+TotalVirtualMemory : 4 Go 
+6/11/2018 12:35:51 AM | 
+WorkingSet : 440.13 Mo 
+6/11/2018 12:35:51 AM | 
+PagedMemorySize : 597.97 Mo 
+6/11/2018 12:35:51 AM | 
+TotalMemory : 85.38 Mo 
+6/11/2018 12:35:51 AM | 
+
+6/11/2018 12:35:51 AM | 
+ExTrace : 
+6/11/2018 12:35:51 AM | 
+à openElement.OEIO.File.Copy(String sourcePath, String destPath, Boolean overwrite, Boolean showError, Boolean logError) dans C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Class\Common\OEIO.vb:ligne 85
+6/11/2018 12:35:51 AM | 
+
+6/11/2018 12:35:51 AM | 
+OETrace : 
+6/11/2018 12:35:51 AM | 
+à openElement.OEIO.File.Copy(String sourcePath, String destPath, Boolean overwrite, Boolean showError, Boolean logError) dans C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Class\Common\OEIO.vb:ligne 98
+6/11/2018 12:35:51 AM | 
+à openElement.FrmOptimizeImage._MakeResult(ActionArg`2 actionArg) dans C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Form\FilesManager\FrmOptimizeImage.vb:ligne 310
+6/11/2018 12:35:51 AM | 
+à openElement.FrmOptimizeImage._Lambda$__R228-2(ActionArg a0)
+6/11/2018 12:35:51 AM | 
+à openElement.Wait.RunAction(ActionWait action, ActionArg param, String text1, String text2, WaitIconType iconType) dans C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Class\Common\Wait.vb:ligne 229
+6/11/2018 12:35:51 AM | 
+à openElement.FrmOptimizeImage.MakeResult(SourceInfo infoSource, ResultInfo infoResult) dans C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Form\FilesManager\FrmOptimizeImage.vb:ligne 289
+6/11/2018 12:35:51 AM | 
+à openElement.FrmOptimizeImage._IniImages(ActionArg`1 actionArg) dans C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Form\FilesManager\FrmOptimizeImage.vb:ligne 251
+6/11/2018 12:35:51 AM | 
+à openElement.FrmOptimizeImage._Lambda$__R225-1(ActionArg a0)
+6/11/2018 12:35:51 AM | 
+à openElement.Wait.RunFunction[TResult](FuncWait`1 action, ActionArg param, String text1, String text2, WaitIconType iconType) dans C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Class\Common\Wait.vb:ligne 199
+6/11/2018 12:35:51 AM | 
+à openElement.FrmOptimizeImage.IniImages(String[] imagesFile) dans C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Form\FilesManager\FrmOptimizeImage.vb:ligne 184
+6/11/2018 12:35:51 AM | 
+à openElement.FrmOptimizeImage.EditFiles(String[] imagesFile) dans C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Form\FilesManager\FrmOptimizeImage.vb:ligne 154
+6/11/2018 12:35:51 AM | 
+à openElement.Forms.FrmLibrary.BBI_OptimizeImage_ItemClick(Object sender, ItemClickEventArgs e) dans C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Form\FilesManager\FrmLibrary.vb:ligne 1152
+6/11/2018 12:35:51 AM | 
+à openElement.Controls.CtlImage.SBUpdate_Click(Object sender, EventArgs e) dans C:\Users\Win7Dev64\Source\Workspaces\openElement\App\openElement\Control\CtlImage.vb:ligne 75
+6/11/2018 12:35:51 AM | 
+à openElement.My.MyApplication.Main(String[] Args) dans :ligne 82
+6/11/2018 12:35:51 AM | 
+
+6/11/2018 12:35:51 AM | 
+------------------
