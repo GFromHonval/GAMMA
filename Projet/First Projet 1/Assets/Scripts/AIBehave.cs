@@ -77,7 +77,6 @@ public class AIBehave : Photon.MonoBehaviour {
 				{
 					transform.position = StartPos.position;
 					transform.rotation = StartPos.rotation;
-					Head.GetComponent<Renderer>().material = ColorInnofensif;
 				}
 			}
 		}

@@ -296,6 +296,7 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 			{
 				Timer = 3f;
 				Animator animator = GameObject.Find("FadeTransition").GetComponent<Animator>();
+				PlayingLocal = false;
 				animator.SetTrigger("FadeOut");
 			}
 		}
@@ -313,7 +314,8 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
     		if (Life > 100)
     		{
     			EnabledHealth[0] = -1;
-    		}
+			    EnabledHealth[1] = -1;
+		    }
     		else
     		{
     			EnabledHealth[0] = 0;
@@ -321,27 +323,30 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
     			{
     				EnabledHealth[1] = -1;
     			}
-    			if (Life > 0)
-    				EnabledHealth[1] = 1;
-    			if (Life > 10)
-    				EnabledHealth[1] = 2;
-    			if (Life > 20)
-    				EnabledHealth[1] = 3;
-    			if (Life > 30)
-    				EnabledHealth[1] = 4;
-    			if (Life > 40)
-    				EnabledHealth[1] = 5;
-    			if (Life > 50)
-    				EnabledHealth[1] = 6;
-    			if (Life > 60)
-    				EnabledHealth[1] = 7;
-    			if (Life > 70)
-    				EnabledHealth[1] = 8;
-    			if (Life > 80)
-    				EnabledHealth[1] = 9;
-    			if (Life > 90)
-    				EnabledHealth[1] = 10;
-    		}
+			    else
+			    {
+				    if (Life > 0)
+					    EnabledHealth[1] = 1;
+				    if (Life > 10)
+					    EnabledHealth[1] = 2;
+				    if (Life > 20)
+					    EnabledHealth[1] = 3;
+				    if (Life > 30)
+					    EnabledHealth[1] = 4;
+				    if (Life > 40)
+					    EnabledHealth[1] = 5;
+				    if (Life > 50)
+					    EnabledHealth[1] = 6;
+				    if (Life > 60)
+					    EnabledHealth[1] = 7;
+				    if (Life > 70)
+					    EnabledHealth[1] = 8;
+				    if (Life > 80)
+					    EnabledHealth[1] = 9;
+				    if (Life > 90)
+					    EnabledHealth[1] = 10;
+			    }
+		    }
     
     		if (EnabledHealth[0] == -1)
     			HealthBar[0].enabled = false;

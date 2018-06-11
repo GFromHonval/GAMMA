@@ -11,7 +11,7 @@ public class Bullet : MonoBehaviour {
         if (hit != null && hit.CompareTag("PlayerGirl") || hit.CompareTag("PlayerBoy"))
         {
             if (hit.GetComponent<RotationPlayer>().LifePerso < GameObject.Find("GameParameters").GetComponent<GameParameters>().DamageAttackedThisLevel)
-                GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().GetLife = 0;
+                hit.GetComponent<RotationPlayer>().LifePerso = 0;
             else
                 hit.GetComponent<RotationPlayer>().LifePerso -= GameObject.Find("GameParameters").GetComponent<GameParameters>().DamageAttackedThisLevel;
         }
