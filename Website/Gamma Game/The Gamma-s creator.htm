@@ -7,19 +7,16 @@
   <link id="siteFonts" rel="stylesheet" type="text/css" href="Files/Fonts/Fonts.css?v=63658268962" />
   <link id="OETemplate1" rel="stylesheet" type="text/css" href="Templates/Base_Scripts.css?v=63664241983" />
   <link id="OETemplate2" rel="stylesheet" type="text/css" href="Templates/Menu_retractable%20english%20versions.css?v=63664274831" />
-  <link id="OEBase" rel="stylesheet" type="text/css" href="Page%20Accueil%20ENglish%20Version.css?v=50491126800" />
+  <link id="OEBase" rel="stylesheet" type="text/css" href="The%20Gamma-s%20creator.css?v=50491126800" />
   <!--[if lte IE 7]>
   <link rel="stylesheet" type="text/css" href="WEFiles/Css/ie7.css?v=63614056866" />
   <![endif]-->
   <script type="text/javascript">
-   var WEInfoPage = {"PHPVersion":"phpOK","OEVersion":"1-57-9","PagePath":"Page Accueil ENglish Version","Culture":"DEFAULT","LanguageCode":"FR","RelativePath":"","RenderMode":"Export","PageAssociatePath":"Page Accueil ENglish Version","EditorTexts":null};
+   var WEInfoPage = {"PHPVersion":"phpOK","OEVersion":"1-57-9","PagePath":"The Gamma-s creator","Culture":"DEFAULT","LanguageCode":"FR","RelativePath":"","RenderMode":"Export","PageAssociatePath":"The Gamma-s creator","EditorTexts":null};
   </script>
   <script type="text/javascript" src="WEFiles/Client/jQuery/1.10.2.js?v=63614056866"></script>
   <script type="text/javascript" src="WEFiles/Client/jQuery/migrate.js?v=63614056866"></script>
   <script type="text/javascript" src="WEFiles/Client/Common/oe.min.js?v=63629943594"></script>
-  <script type="text/javascript" src="Page%20Accueil%20ENglish%20Version(var).js?v=50491126800"></script>
-  <script type="text/javascript" src="WEFiles/Client/WEXBodyAutoHeight-v22.js?v=63629943604"></script>
-  <script type="text/javascript" src="WEFiles/Client/WEVideo-v21.js?v=63629943604"></script>
   <style id="OEScriptManager" type="text/css">
    .responsiveSection,.respSectContent{position:relative!important;left:auto!important;top:auto!important}
    .responsiveSection{height:auto!important;display:block!important;margin-left:auto;margin-right:auto}
@@ -40,7 +37,7 @@
    $(function(){WECB_Cent01_General.Init();WECB_Cent01_TopContainer.Init()});var WECB_Cent01_General={Init:function(){this.fixIFramOE();this.findElements();this.fixAndRedimension()},_IEVers:function(){var e=navigator.userAgent.toLowerCase();return e.indexOf("msie")!=-1?parseInt(e.split("msie")[1]):false},fixIFramOE:function(){var e=$("iframe").filter(function(){var e=$(this),t=e.attr("src");return t&&t.indexOf("headerModels.htm")>0});if(e.length){if(e.position().top===0&&$(".panelTopSub").length){$("<div>").css("height",parseInt($(".panelTopSub").height())+"px").insertBefore(e)}}},findElements:function(){this.$allSections=$(".responsiveSection");this.InitOk=true},fixAndRedimension:function(){$(".height_minus8").each(function(){$(this).height(parseInt($(this).height())-8)});$(".top_minus8").each(function(){$(this).css("top",parseInt($(this).css("top"))-8+"px")});$(".top_plus40").each(function(){$(this).css("top",parseInt($(this).css("top"))+40+"px")});$(".leftAuto").each(function(){$(this).css("left","auto")});this.anchorMinY=1e6;this.anchorMaxY=-100;this.$anchorFirst=null;this.$anchorLast=null;var e=0;this.$anchors=$("a").filter(function(){var t=$(this);var n=t.attr("href"),r=t.attr("id"),i=t.attr("name");if(!n&&r&&r===i){var s=t.offset().top;if(s<WECB_Cent01_General.anchorMinY){WECB_Cent01_General.anchorMinY=s;WECB_Cent01_General.$anchorFirst=t}if(s>WECB_Cent01_General.anchorMaxY){WECB_Cent01_General.anchorMaxY=s;WECB_Cent01_General.$anchorLast=t}e++;if(i>="a1"&&(i<="a99"||i==="ax")){t.attr("id","a"+e).attr("name","a"+e)}return true}else return false});var t=this._IEVers();if(t&&t<=9){$(".textShadowIE").find(".ContentBox").css("filter","progid:DXImageTransform.Microsoft.Shadow(Color=#000000,Direction=135,Strength=2)")}},updateAnchorsMinMaxY:function(){if(this.$anchorFirst!==null){this.anchorMinY=this.$anchorFirst.offset().top;this.anchorMaxY=this.$anchorLast.offset().top}},resizeSectionContainers:function(){var e=this.displayHeight;this.$allSections.each(function(){var t=this;if(!t.sub){t.sub=$(t).find(".respSectContent");t.sub.margin1=parseInt(t.sub.css("margin-top"));t.sub.margin2=parseInt(t.sub.css("margin-bottom"))}if(!t.sub.length)return true;var n=parseInt(t.sub.height());var r=(e-n)/2|0;t.sub.css({"margin-top":(r>t.sub.margin1?r:t.sub.margin1)+"px","margin-bottom":(r>t.sub.margin2?r:t.sub.margin2)+"px"})})},smoothScrollTo:function(e){$("html, body").animate({scrollTop:e},500)},changeVisibility:function(e,t,n){if(t!=n){e.toggle(n)}return n}};var WECB_Cent01_TopContainer={Init:function(){this.findElements();this.fixAndRedimension();this.topMenuInit();this.eventHandlers();this.buttons()},findElements:function(){this.$panelTopMain=$(".topMainContainer");this.$panelTopSub=$(".panelTopSub");this.$topMenuSubContainer=$(".topMenuSub");this.$topMenuLinks=$(".topMenuLink");this.$btRetract=$(".btRetract");this.$logoBig=$(".logoBig");this.$logoSmall=$(".logoSmall");this.$miniMenuButton=$(".miniMenuButton");this.$navArrowUp=$(".navigArrow.naUp");this.$navArrowDown=$(".navigArrow.naDown");this.$navArrowUpCent=$(".navigArrow2.naUp");this.$navArrowDownCent=$(".navigArrow2.naDown");this.navArrowUpVisible=false;this.navArrowDownVisible=false;this.navArrowUpCentVisible=false;this.navArrowDownCentVisible=false;this.$autoMenu=$(".autoMenu");this.autoMenuVisible=false;this.autoMenuHeight=0;this.$allSections=WECB_Cent01_General.$allSections;this.alwaysMinimizeMenu=this.$panelTopSub.hasClass("topMinimize");this.topMenuAlignRight=this.$topMenuSubContainer.hasClass("modeAlignRight");this.InitOk=true},fixAndRedimension:function(){var e=!!this.$btRetract.length;this.panelTopSubHeight=parseInt(this.$panelTopSub.height());this.retractButtonY=e?parseInt(this.$btRetract.css("top")):this.panelTopSubHeight;this.topMenuWidth=parseInt(this.$topMenuSubContainer.width());this.logoSmallWidth=this.$logoSmall.length?parseInt(this.$logoSmall.offset().left)+parseInt(this.$logoSmall.width()):0;this.miniMenuButton_origX=parseInt(this.$miniMenuButton.css("left"));this.topMenuY=this.$topMenuSubContainer.length?this.$topMenuSubContainer.position().top:0;this.panelTopMain_Minimized=this.alwaysMinimizeMenu;if(this.alwaysMinimizeMenu){this.retractContainer(true,false,true)}},topMenuInit:function(){this.$autoMenu.find(".BaseDiv").attr("onclick","");var e=this.$autoMenu.find(".BaseDiv.OEWELink").children("div");if(e.length===1){var t=e.attr("id"),n=0;this.$topMenuLinks.find("a").each(function(){n+=1;var t=$(this).attr("href"),r=$(this).html();var i=e.clone();i.css("white-space","nowrap").find("a").attr("href",t).html(r);i.appendTo(e.parent());i.hover(function(){$(this).addClass("OE_Over")},function(){$(this).removeClass("OE_Over")})});e.remove()}this.autoMenuHeight=this.$autoMenu.height()},eventHandlers:function(){$(window).bind("load resize",function(){WECB_Cent01_TopContainer.onResizeWindow()}).trigger("resize");this.smallLogoVisibility();this.onScrollWindow();$(window).scroll(function(){WECB_Cent01_TopContainer.onScrollWindow()});$("a").click(function(){if(WECB_Cent01_TopContainer.autoMenuVisible){WECB_Cent01_TopContainer.openAutoMenu(false)}var e=$(this).attr("href");if(e&&e.indexOf("#")===0&&e.length>=2&&$(e).length){WECB_Cent01_General.smoothScrollTo($(e).offset().top);return false}})},buttons:function(){if(this.$btRetract.length){this.$btRetract.find("a").attr("href","").css("display","none");this.$btRetract.click(function(){if(WECB_Cent01_TopContainer.autoMenuVisible)WECB_Cent01_TopContainer.openAutoMenu(false);else WECB_Cent01_TopContainer.retractContainer(!WECB_Cent01_TopContainer.panelTopMain_Minimized)})}this.$miniMenuButton.click(function(){if(!WECB_Cent01_TopContainer.autoMenuVisible)WECB_Cent01_TopContainer.openAutoMenu(true);return false});$(".closeMenu").click(function(){if(WECB_Cent01_TopContainer.autoMenuVisible)WECB_Cent01_TopContainer.openAutoMenu(false);return false});$(".navigArrow, .navigArrow2").click(function(){var e=parseInt($(document).scrollTop());var t=$(this).hasClass("naUp");var n=e;WECB_Cent01_General.$anchors.each(function(){var r=$(this).offset().top;if(!t){if(r>e+40&&(n===e||n>r)){n=r}}else{if(r<e&&(n===e||n<r)){n=r}}});if(n!=e)WECB_Cent01_General.smoothScrollTo(n)})},openAutoMenu:function(e){var t=this.$autoMenu;var n=this.$panelTopMain;if(e!==true){t.hide(500);this.autoMenuVisible=false}else{t.show(500);this.autoMenuVisible=true}this.retractContainer();this.menuModeControl()},retractContainer:function(e,t,n){if(e===undefined)e=this.panelTopMain_Minimized;if(this.alwaysMinimizeMenu)e=true;if(t===undefined)t=this.autoMenuVisible;var r=this.$panelTopMain;var i=e?-this.topMenuY:0;var s=parseInt(r.css("top"));if(!this.alwaysMinimizeMenu){var o=e&&!t?"center bottom":"center top";this.$btRetract.css("background-position",o)}if(!t){if(s>0){r.stop().css("top",0)}}else{var u=this.$autoMenu;var a=this.autoMenuHeight?this.autoMenuHeight:parseInt(u.height());var f=this.retractButtonY-a;u.css("top",f+"px");i=-f}this.panelTopMain_Minimized=e;r.stop().animate({top:i},n?0:500,function(){WECB_Cent01_TopContainer.smallLogoVisibility()});if(!e)this.smallLogoVisibility()},smallLogoVisibility:function(){if(!this.InitOk)return;this.$logoSmall.toggle(this.panelTopMain_Minimized);this.$logoBig.toggle(!this.panelTopMain_Minimized&&!this.autoMenuVisible);this.menuModeControl()},menuModeControl:function(){if(this.autoMenuVisible){this.$topMenuSubContainer.hide();this.$miniMenuButton.hide();return}var e=parseInt(this.$panelTopMain.width());if(this.panelTopMain_Minimized)e-=this.logoSmallWidth*(this.topMenuAlignRight?1:2);var t=e<this.topMenuWidth+8;if(t){this.$topMenuSubContainer.hide();this.$miniMenuButton.show()}else{this.$topMenuSubContainer.show();this.$miniMenuButton.hide()}},onScrollWindow:function(){if(!this.InitOk)return;var e=parseInt($(document).scrollTop());var t=e>0;var n=this.panelTopMain_Minimized;if(t!==n){this.retractContainer(!n)}var r=e-40<WECB_Cent01_General.anchorMinY||WECB_Cent01_General.anchorMaxY<0;var i=e-80+WECB_Cent01_General.displayHeight>WECB_Cent01_General.anchorMaxY||WECB_Cent01_General.anchorMaxY<0;this.navArrowUpCentVisible=WECB_Cent01_General.changeVisibility(this.$navArrowUpCent,this.navArrowUpCentVisible,!r&&!this.disableCenterArrows);this.navArrowUpVisible=WECB_Cent01_General.changeVisibility(this.$navArrowUp,this.navArrowUpVisible,!r);this.navArrowDownCentVisible=WECB_Cent01_General.changeVisibility(this.$navArrowDownCent,this.navArrowDownCentVisible,!i&&!this.disableCenterArrows);this.navArrowDownVisible=WECB_Cent01_General.changeVisibility(this.$navArrowDown,this.navArrowDownVisible,!i)},onResizeWindow:function(){WECB_Cent01_General.displayHeight=$(window).height();if(!this.InitOk)return;this.disableCenterArrows=WECB_Cent01_General.displayHeight<640;this.menuModeControl();var e=parseInt($(document).scrollTop());var t=$(document).height();WECB_Cent01_General.resizeSectionContainers();var n=parseInt($(document).scrollTop());if(n==e){var r=$(document).height();if(t&&r&&r!=t){var i=r/t;n=parseInt(n+n/r*(r-t)*40)}}WECB_Cent01_General.updateAnchorsMinMaxY();this.onScrollWindow()}};
   </script>
  </head>
- <body class="" data-gl="{&quot;KeywordsHomeNotInherits&quot;:false}">
+ <body class="RWAuto" data-gl="{&quot;KeywordsHomeNotInherits&quot;:false}">
   <form id="XForm" method="post" action="#"></form>
   <div id="XBody" class="BaseDiv RWidth OEPageXbody OESK_XBody_Default" style="z-index:2000">
    <div class="OESZ OESZ_DivContent OESZG_XBody">
@@ -126,9 +123,9 @@
                 <a class="OESZ OESZ_Link OESZG_WEf2d05a84d2 ContentBox" data-cd="PageLink" href="The%20Story%20of%20gamma.htm">The story of Gamma<br /></a>
                </div>
               </div>
-              <div id="WE455283e3ae" class="BaseDiv RWidth OEWELink OESK_WELink_Default  topMenuLink" style="z-index:1002" onclick="return OE.Navigate.open(event,'The%20Gamma-s%20creator.htm',1)">
-               <div class="OESZ OESZ_DivContent OESZG_WE455283e3ae">
-                <a class="OESZ OESZ_Link OESZG_WE455283e3ae ContentBox" data-cd="PageLink" href="The%20Gamma-s%20creator.htm">The Gamma's creators<br /></a>
+              <div id="WE455283e3ae" class="BaseDiv RWidth OEWELink OESK_WELink_Default OE_ActiveLink  topMenuLink" style="z-index:1002" onclick="return OE.Navigate.open(event,'The%20Gamma-s%20creator.htm',1)">
+               <div class="OESZ OESZ_DivContent OESZG_WE455283e3ae OE_ActiveLink">
+                <a class="OESZ OESZ_Link OESZG_WE455283e3ae OE_ActiveLink ContentBox" data-cd="PageLink" href="The%20Gamma-s%20creator.htm">The Gamma's creators<br /></a>
                </div>
               </div>
               <div id="WEb6cf1b8694" class="BaseDiv RWidth OEWELink OESK_WELink_Default  topMenuLink" style="z-index:1003" onclick="return OE.Navigate.open(event,'Espace%20des%20gammarois.htm',1)">
@@ -165,26 +162,9 @@
        </div>
       </div>
      </div>
-     <div id="WEf4846aac89" class="BaseDiv RNone OEWEVideo OESK_WEVideoHTML5_Default" style="z-index:2002">
-      <div class="OESZ OESZ_DivContent OESZG_WEf4846aac89">
-       <div class="ContainerVideoHTML5" style="width:100%; height:100%;">
-        <video preload="none" class="TagVideoHTML5" style="width:100%; height:100%;" src="Files/Video/Fire_Embers_15___24s___4k_res.mp4" autoplay="autoplay" loop="loop" muted="muted" data-swfplayer="WEFiles/Client/gddflvplayer-v21.swf">
-         <table style="width:100%; height:100%;">
-          <tr>
-           <td style="text-align:center; vertical-align:middle; background-color: black; color: #FF8800; font-size:10px;">
-            <div class="NoPluginMsgVideoHTML5" style="width:100%; height:100%; display:none;">Pour regarder cette vidéo, il faut télécharger ou activer:<br/><a href='http://get.adobe.com/flashplayer/' target='_blank'><u style='color:#FF0000;'><b>Flash</b> (télécharger)</u></a>
-<span class='VidHTML5NotIE' data-note='This span will be hidden in IE'> ou 
-<a href='http://www.apple.com/quicktime/download/' target='_blank'><u style='color:#FF0000;'><b>QuickTime</b> (télécharger)</u></a></span></div>
-           </td>
-          </tr>
-         </table>
-        </video>
-       </div>
-      </div>
-     </div>
-     <div id="WE375c5276ba" class="BaseDiv RWidth OEWELabel OESK_WELabel_Default OECenterAH" style="z-index:2001">
-      <div class="OESZ OESZ_DivContent OESZG_WE375c5276ba">
-       <span class="OESZ OESZ_Text OESZG_WE375c5276ba ContentBox"><span style="color:rgb(0, 112, 192);font-size:80px;font-family:GeosansLight;"><b>WELCOME</b></span></span>
+     <div id="WE2c69723040" class="BaseDiv RWidth OEWELabel OESK_WELabel_e1662b56 OECenterAH" style="z-index:2001">
+      <div class="OESZ OESZ_DivContent OESZG_WE2c69723040">
+       <span class="OESZ OESZ_Text OESZG_WE2c69723040 ContentBox">the creators of gamma</span>
       </div>
      </div>
      <div id="WEc123102cd1" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterAH" style="z-index:1008">
@@ -192,14 +172,34 @@
        <span class="ContentBox">Pour modifier l'affichage, éditez les styles des éléments correspondants (normalement la Zone "Cadre Principale"). <br /><br />Pour modifier les liens du menu, éditez, copiez-collez ou supprimez les éléments-liens dedans.<br /><br />Pour cacher un élément sans le supprimer, utilisez sa propriété <span style="font-style:italic;">Visible</span>.<br /></span>
       </div>
      </div>
-     <div id="WEe330aa967e" class="BaseDiv RWidth OEWELabel OESK_WELabel_Default OECenterAH" style="z-index:2003">
-      <div class="OESZ OESZ_DivContent OESZG_WEe330aa967e">
-       <span class="OESZ OESZ_Text OESZG_WEe330aa967e ContentBox"><span style="color:rgb(0, 112, 192);font-size:80px;font-family:GeosansLight;"><b>ARE YOU&nbsp;READY</b></span></span>
+     <div id="WE923fa2bb2a" class="BaseDiv RWidth OEWELabel OESK_WELabel_Default OECenterAH" style="z-index:2002">
+      <div class="OESZ OESZ_DivContent OESZG_WE923fa2bb2a">
+       <span class="OESZ OESZ_Text OESZG_WE923fa2bb2a ContentBox"><span style="font-size:24px;color:rgb(31, 73, 125);"><b>Laure, alias TOMBELUNE</b></span></span>
       </div>
      </div>
-     <div id="WE3d0268ddf4" class="BaseDiv RWidth OEWELabel OESK_WELabel_Default OECenterAH" style="z-index:2004">
-      <div class="OESZ OESZ_DivContent OESZG_WE3d0268ddf4">
-       <span class="OESZ OESZ_Text OESZG_WE3d0268ddf4 ContentBox"><span style="color:rgb(0, 112, 192);font-size:80px;font-family:GeosansLight;"><b>TO&nbsp;LIVE AN&nbsp;AMAZING</b></span></span>
+     <div id="WE30142cafe0" class="BaseDiv RWidth OEWELabel OESK_WELabel_Default OECenterAH" style="z-index:2004">
+      <div class="OESZ OESZ_DivContent OESZG_WE30142cafe0">
+       <span class="OESZ OESZ_Text OESZG_WE30142cafe0 ContentBox"><span style="font-size:24px;color:rgb(31, 73, 125);"><b>Louis alias JETSPEPITO</b></span></span>
+      </div>
+     </div>
+     <div id="WE3ff3983421" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterAH" style="z-index:2003">
+      <div class="OESZ OESZ_DivContent OESZG_WE3ff3983421">
+       <span class="ContentBox"><span style="color:rgb(191, 191, 191);">&nbsp; &nbsp; Je suis le chef de ce projet. et j'essaye tant bien que mal de le mener à bien.&nbsp;</span><br /></span>
+      </div>
+     </div>
+     <div id="WE9269933f72" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterAH" style="z-index:2005">
+      <div class="OESZ OESZ_DivContent OESZG_WE9269933f72">
+       <span class="ContentBox"><span style="color:rgb(191, 191, 191);">&nbsp; &nbsp; Je suis....</span><br /></span>
+      </div>
+     </div>
+     <div id="WE99fce20ea7" class="BaseDiv RWidth OEWELabel OESK_WELabel_Default OECenterAH" style="z-index:2006">
+      <div class="OESZ OESZ_DivContent OESZG_WE99fce20ea7">
+       <span class="OESZ OESZ_Text OESZG_WE99fce20ea7 ContentBox"><span style="font-size:24px;color:rgb(31, 73, 125);"><b>Romain alias KAZORIAH&nbsp;</b></span></span>
+      </div>
+     </div>
+     <div id="WE0021a7f8c7" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterAH" style="z-index:2007">
+      <div class="OESZ OESZ_DivContent OESZG_WE0021a7f8c7">
+       <span class="ContentBox"><span style="color:rgb(191, 191, 191);">&nbsp; &nbsp; Je suis....</span><br /></span>
       </div>
      </div>
      <div id="WE80f85cb714" class="BaseDiv RBoth OEWELink OESK_WELink_Default OEGo OECenterAH navigArrow2 naUp" style="z-index:1006">
@@ -207,19 +207,19 @@
        <a class="OESZ OESZ_Link OESZG_WE80f85cb714 ContentBox" data-cd="PageLink"><br /></a>
       </div>
      </div>
+     <div id="WE293b785fc5" class="BaseDiv RWidth OEWELabel OESK_WELabel_Default OECenterAH" style="z-index:2008">
+      <div class="OESZ OESZ_DivContent OESZG_WE293b785fc5">
+       <span class="OESZ OESZ_Text OESZG_WE293b785fc5 ContentBox"><span style="font-size:24px;color:rgb(31, 73, 125);"><b>Gaël alias &nbsp;G.</b></span></span>
+      </div>
+     </div>
+     <div id="WE70c2475218" class="BaseDiv RWidth OEWEText OESK_WEText_Default OECenterAH" style="z-index:2009">
+      <div class="OESZ OESZ_DivContent OESZG_WE70c2475218">
+       <span class="ContentBox"><span style="color:rgb(191, 191, 191);">&nbsp; &nbsp; Je suis l'ermite du groupe.</span><br /></span>
+      </div>
+     </div>
      <div id="WEc4ca130a02" class="BaseDiv RWidth OEWELabel OESK_WELabel_Default OECenterAH" style="z-index:1007">
       <div class="OESZ OESZ_DivContent OESZG_WEc4ca130a02">
        <span class="OESZ OESZ_Text OESZG_WEc4ca130a02 ContentBox"><span style="font-weight:normal;">Pour "activer" l'affichage d'une flèche, utilisez sa propriété "Visible"<br /></span></span>
-      </div>
-     </div>
-     <div id="WEec95b80de6" class="BaseDiv RWidth OEWELabel OESK_WELabel_Default OECenterAH" style="z-index:2005">
-      <div class="OESZ OESZ_DivContent OESZG_WEec95b80de6">
-       <span class="OESZ OESZ_Text OESZG_WEec95b80de6 ContentBox"><span style="color:rgb(0, 112, 192);font-size:80px;font-family:GeosansLight;"><b>ADVENTURE&nbsp;</b></span></span>
-      </div>
-     </div>
-     <div id="WE7bf3405d85" class="BaseDiv RWidth OEWELabel OESK_WELabel_Default OECenterAH" style="z-index:2006">
-      <div class="OESZ OESZ_DivContent OESZG_WE7bf3405d85">
-       <span class="OESZ OESZ_Text OESZG_WE7bf3405d85 ContentBox"><span style="color:rgb(0, 112, 192);font-family:GeosansLight;font-size:80px;font-weight:bold;line-height:96px;">?<br /></span></span>
       </div>
      </div>
     </div>
@@ -239,7 +239,6 @@
    </div>
   </div>
   <script type="text/javascript">
-   var WEXBodyAutoHeightTree = {"WEadb8bc1aa5":{"B":15,"H":15,"I":"WEf4846aac89"},"WEc123102cd1":{"B":304,"H":60,"I":"WEe330aa967e"},"WE375c5276ba":{"B":336,"H":96,"I":"WEe330aa967e"},"WEe330aa967e":{"B":496,"H":96,"I":"WE3d0268ddf4"},"WE3d0268ddf4":{"B":666,"H":96,"I":"WEc4ca130a02"},"WEc4ca130a02":{"B":711,"H":15,"I":"WEec95b80de6"},"WEe2d2d04f40":{"B":747,"H":19,"I":"WE7bf3405d85"},"WE61425265ff":{"B":787,"H":19,"I":"WE7bf3405d85"},"WEec95b80de6":{"B":836,"H":96,"I":"WE7bf3405d85"},"WEf4846aac89":{"B":1173,"H":1033,"I":""},"WE7bf3405d85":{"B":976,"H":96,"I":""}};
    $(["Files/Image/barre%20menu.png","WEFiles/Image/Skin/0db815a6.png","WEFiles/Image/Skin/962e1fc1.png","WEFiles/Image/Skin/00bff3bd.png","WEFiles/Image/Skin/1ccc25ab.png"]).preloadImg();
   </script>
  </body>
