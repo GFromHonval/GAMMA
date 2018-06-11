@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.Text.RegularExpressions;
 using JetBrains.Annotations;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 using UnityStandardAssets.CrossPlatformInput;
 using Debug = UnityEngine.Debug;
@@ -48,6 +49,7 @@ public class RotationPlayer : Photon.MonoBehaviour
 	private AudioSource audioSource;
 	private float Steps = 0.3f;
 	private int StepsIndex = 0;
+	private bool Jumped;
 	
 	public bool GetDestroy
 	{
@@ -124,6 +126,7 @@ public class RotationPlayer : Photon.MonoBehaviour
 	{
 		if (photonView.isMine)
 		{
+			
 			if (Animator.GetBool("Running") || Animator.GetBool("RunningBack"))
 			{
 				if (Steps == 0.3f)
@@ -144,6 +147,7 @@ public class RotationPlayer : Photon.MonoBehaviour
 						Steps -= Time.deltaTime;
 				}
 			}
+			
 			
 			if (SceneManager.GetActiveScene().buildIndex != 0 && SceneManager.GetActiveScene().name != "Menu without logic" && Input.GetKey(KeyCode.Escape))
 			{
@@ -213,9 +217,12 @@ public class RotationPlayer : Photon.MonoBehaviour
 							Animator.SetBool("Jumping", true);
 							if (TimeBeforeJumping <= 0f)
 							{
+								audioSource.clip = FootSteps[2];
+								audioSource.PlayOneShot(audioSource.clip);
 								ThisRigidbody.velocity = new Vector3(ThisRigidbody.velocity.x, jumpPower, ThisRigidbody.velocity.z);
 								TimeBeforeJumping = 0.483f;
 								CoeffPuissance = 0.5f;
+								Jumped = true;
 							}
 							else
 								TimeBeforeJumping -= Time.deltaTime;
@@ -227,6 +234,13 @@ public class RotationPlayer : Photon.MonoBehaviour
 					{
 						Vector3 extraGravity = (Physics.gravity * GravityMultiplier) - Physics.gravity;
 						ThisRigidbody.AddForce(extraGravity);
+					}
+
+					if (Jumped && !IsJumping)
+					{
+						audioSource.clip = FootSteps[3];
+						audioSource.PlayOneShot(audioSource.clip);
+						Jumped = false;
 					}
 				}
 			}
