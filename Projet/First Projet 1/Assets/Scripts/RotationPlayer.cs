@@ -8,6 +8,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityStandardAssets.CrossPlatformInput;
 using Debug = UnityEngine.Debug;
+using Random = UnityEngine.Random;
 
 public class RotationPlayer : Photon.MonoBehaviour
 {
@@ -33,7 +34,7 @@ public class RotationPlayer : Photon.MonoBehaviour
 	private float CoeffPuissance;
 	private float TimeBeforeJumping = 0.483f;
 	
-	//Physics Objects\
+	//Physics Objects
 	public GameObject CharacterBaseObject;
 	private PhotonNetworkManager photonNetworkManager;
 	
@@ -43,6 +44,10 @@ public class RotationPlayer : Photon.MonoBehaviour
 	
 	//Animation
 	private Animator Animator;
+	public AudioClip[] FootSteps;
+	private AudioSource audioSource;
+	private float Steps = 0.3f;
+	private int StepsIndex = 0;
 	
 	public bool GetDestroy
 	{
@@ -61,7 +66,8 @@ public class RotationPlayer : Photon.MonoBehaviour
 		ThisRigidbody = GetComponent<Rigidbody>();
 
 		Animator = GetComponent<Animator>();
-		
+		audioSource = GetComponent<AudioSource>(); 
+		 
 		photonNetworkManager = GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>();
 		GameOverCanvas = photonNetworkManager.GetGameOverCanvas.GetComponent<Canvas>();
 		EscapeCanvas = photonNetworkManager.GetEscapeCanvas.GetComponent<Canvas>();
@@ -118,6 +124,27 @@ public class RotationPlayer : Photon.MonoBehaviour
 	{
 		if (photonView.isMine)
 		{
+			if (Animator.GetBool("Running") || Animator.GetBool("RunningBack"))
+			{
+				if (Steps == 0.3f)
+				{
+					audioSource.clip = FootSteps[StepsIndex];
+					audioSource.PlayOneShot(audioSource.clip);
+					Steps -= Time.deltaTime;
+					if (StepsIndex == 1)
+						StepsIndex = 0;
+					else
+						StepsIndex = 1;
+				}
+				else
+				{
+					if (Steps <= 0)
+						Steps = 0.3f;
+					else
+						Steps -= Time.deltaTime;
+				}
+			}
+			
 			if (SceneManager.GetActiveScene().buildIndex != 0 && SceneManager.GetActiveScene().name != "Menu without logic" && Input.GetKey(KeyCode.Escape))
 			{
 				EscapeCanvas.enabled = true;

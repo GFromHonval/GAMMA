@@ -21,9 +21,7 @@ GameObject:
   - component: {fileID: 4773549855201084}
   - component: {fileID: 33307372988782952}
   - component: {fileID: 136059626308028754}
-  - component: {fileID: 114752681879739924}
   - component: {fileID: 23251006496356742}
-  - component: {fileID: 114136636177133746}
   - component: {fileID: 114541011851295706}
   - component: {fileID: 114663664660104640}
   - component: {fileID: 114222073410251794}
@@ -401,20 +399,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114136636177133746
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1152800524455162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36b74c4619f6e674189c12e45c3d66b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CurrentHealth: 100
-  HealthBar: {fileID: 224194798617293004}
-  DestroyOnDeath: 0
 --- !u!114 &114222073410251794
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -578,38 +562,6 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
---- !u!114 &114752681879739924
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1152800524455162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 54
-    i1: 69
-    i2: 20
-    i3: 217
-    i4: 67
-    i5: 252
-    i6: 43
-    i7: 68
-    i8: 155
-    i9: 119
-    i10: 212
-    i11: 231
-    i12: 243
-    i13: 93
-    i14: 95
-    i15: 249
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 1
 --- !u!114 &114936528262693018
 MonoBehaviour:
   m_ObjectHideFlags: 1
