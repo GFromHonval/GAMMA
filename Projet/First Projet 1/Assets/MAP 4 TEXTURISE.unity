@@ -753,6 +753,10 @@ Prefab:
       propertyPath: m_Name
       value: spider (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 5313d92d24052f94595f3ffd79405215, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 56101f6be3317ef4daceef6b04410b40, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5313d92d24052f94595f3ffd79405215, type: 3}
   m_IsPrefabParent: 0
@@ -16827,7 +16831,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400138, guid: 5313d92d24052f94595f3ffd79405215, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.9
+      value: 12.06
       objectReference: {fileID: 0}
     - target: {fileID: 400138, guid: 5313d92d24052f94595f3ffd79405215, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16857,6 +16861,10 @@ Prefab:
       propertyPath: m_Name
       value: spider (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 5313d92d24052f94595f3ffd79405215, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 56101f6be3317ef4daceef6b04410b40, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5313d92d24052f94595f3ffd79405215, type: 3}
   m_IsPrefabParent: 0
@@ -16874,7 +16882,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 745945609}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -26444,6 +26452,10 @@ Prefab:
       propertyPath: m_Name
       value: spider (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 5313d92d24052f94595f3ffd79405215, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 56101f6be3317ef4daceef6b04410b40, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5313d92d24052f94595f3ffd79405215, type: 3}
   m_IsPrefabParent: 0
@@ -47880,6 +47892,10 @@ Prefab:
       propertyPath: m_Name
       value: spider (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 5313d92d24052f94595f3ffd79405215, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 56101f6be3317ef4daceef6b04410b40, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5313d92d24052f94595f3ffd79405215, type: 3}
   m_IsPrefabParent: 0
