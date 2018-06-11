@@ -480,8 +480,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DistanceDeDetection: 5
-  BulletPrefab: {fileID: 0}
-  BulletSpawn: {fileID: 0}
+  BulletPrefab: {fileID: 1484554471338062, guid: 047474830ed67324e803e7bde26c8df8,
+    type: 2}
+  BulletSpawn: {fileID: 4011259674284294}
   Head: {fileID: 1760971322740584}
   ColorInnofensif: {fileID: 2100000, guid: f587df1dfb192cb4d94fa5643763d600, type: 2}
   ColorAttack: {fileID: 2100000, guid: 527fd1a30bedb4249b5b50f0b05ba5c2, type: 2}
