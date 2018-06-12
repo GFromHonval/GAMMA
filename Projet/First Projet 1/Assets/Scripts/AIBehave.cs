@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Resources;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -27,7 +29,7 @@ public class AIBehave : Photon.MonoBehaviour {
 	void Start ()
 	{
 		StartPos = transform;
-		
+		State = "";
 		if (Waypoints.Length == 0)
 		{
 			Animator.SetBool("Running", false);
@@ -38,34 +40,37 @@ public class AIBehave : Photon.MonoBehaviour {
 			Animator.SetBool("Running", true);
 			Animator.SetBool("Standing", false);
 		}
-		
 	}
 
 	private void FixedUpdate()
 	{
-		players = new List<GameObject>();
-
-		if (!Equals(GameObject.FindWithTag("PlayerGirl"), null) )
-			players.Add(GameObject.FindWithTag("PlayerGirl"));
-		if (!Equals(GameObject.FindWithTag("PlayerBoy"), null))
-			players.Add(GameObject.FindWithTag("PlayerBoy"));
 	}
 
 	// Update is called once per frame
 	void Update ()
 	{
-		
-		foreach (GameObject P in players)
+		players = new List<GameObject>();
+		GameObject P;
+
+		if (!Equals(GameObject.FindWithTag("PlayerGirl"), null) )
+			players.Add(GameObject.FindWithTag("PlayerGirl"));
+		if (!Equals(GameObject.FindWithTag("PlayerBoy"), null))
+			players.Add(GameObject.FindWithTag("PlayerBoy"));
+
+		if (players.Count >= 1 && State == "AttackingGirl" || players.Count >= 1 &&  State == "")
 		{
+			P = players[0];
 			Vector3 direction = P.transform.position - transform.position;
 			direction.y = 0;
-			
+	
 			if (Vector3.Distance(P.transform.position, this.transform.position) < DistanceDeDetection)
 			{
 				Attack(direction);
+				State = "AttackingGirl";
 			}
 			else
 			{
+				State = "";
 				Animator.SetBool("Attacking", false);
 				AnimatorTimer = 2f;
 				if (Waypoints.Length > 0)
@@ -79,10 +84,52 @@ public class AIBehave : Photon.MonoBehaviour {
 							currentWP = 0;
 						}
 					}
-		
+
 					direction = Waypoints[currentWP].transform.position - transform.position;
-					transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction),rotSpeed*Time.deltaTime);
-					transform.Translate(0,0,Time.deltaTime * speed);
+					transform.rotation =
+						Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), rotSpeed * Time.deltaTime);
+					transform.Translate(0, 0, Time.deltaTime * speed);
+				}
+				else
+				{
+					transform.position = StartPos.position;
+					transform.rotation = StartPos.rotation;
+				}
+			}
+		}
+		
+		if (players.Count > 1 && State == "AttackingBoy" || players.Count > 1 && State == "")
+		{
+			P = players[1];
+			Vector3 direction = P.transform.position - transform.position;
+			direction.y = 0;
+	
+			if (Vector3.Distance(P.transform.position, this.transform.position) < DistanceDeDetection)
+			{
+				Attack(direction);
+				State = "AttackingBoy";
+			}
+			else
+			{
+				State = "";
+				Animator.SetBool("Attacking", false);
+				AnimatorTimer = 2f;
+				if (Waypoints.Length > 0)
+				{
+					Animator.SetBool("Running", true);
+					if (Vector3.Distance(Waypoints[currentWP].transform.position, transform.position) < accuracyWP)
+					{
+						currentWP++;
+						if (currentWP >= Waypoints.Length)
+						{
+							currentWP = 0;
+						}
+					}
+
+					direction = Waypoints[currentWP].transform.position - transform.position;
+					transform.rotation =
+						Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), rotSpeed * Time.deltaTime);
+					transform.Translate(0, 0, Time.deltaTime * speed);
 				}
 				else
 				{
@@ -108,6 +155,7 @@ public class AIBehave : Photon.MonoBehaviour {
 				AnimatorTimer = 2f;
 				Animator.SetBool("Attacking", false);
 				Shot = false;
+				State = "";
 			}
 			else
 			{

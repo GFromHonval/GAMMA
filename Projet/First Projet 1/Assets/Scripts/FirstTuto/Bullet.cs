@@ -2,18 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour {
+public class Bullet : MonoBehaviour
+{
+
+    private float Damage;
     
+    private void Start()
+    {
+        Damage = GameObject.Find("GameParameters").GetComponent<GameParameters>().DamageAttackedThisLevel;
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         GameObject hit = collision.gameObject; //Creer l'objet hit qui refere a l'objet touche
 
-        if (hit != null && hit.CompareTag("PlayerGirl") || hit.CompareTag("PlayerBoy"))
+        if (hit != null && hit.CompareTag("PlayerGirl") || hit != null && hit.CompareTag("PlayerBoy"))
         {
-            if (hit.GetComponent<RotationPlayer>().LifePerso < GameObject.Find("GameParameters").GetComponent<GameParameters>().DamageAttackedThisLevel)
-                hit.GetComponent<RotationPlayer>().LifePerso = 0;
-            else
-                hit.GetComponent<RotationPlayer>().LifePerso -= GameObject.Find("GameParameters").GetComponent<GameParameters>().DamageAttackedThisLevel;
+            //if (hit.GetComponent<RotationPlayer>().LifePerso < Damage)
+            //    hit.GetComponent<RotationPlayer>().LifePerso = 0;
+            //else
+                hit.GetComponent<RotationPlayer>().LifePerso -= Damage;
         }
         
         Destroy(gameObject);

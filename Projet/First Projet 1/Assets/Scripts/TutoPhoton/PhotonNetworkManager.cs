@@ -287,6 +287,7 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 
 	void Update()
 	{
+		print(Life);
 		HealthGov();
 		if (GameOverCanvas.GetComponent<Canvas>().enabled)
 		{
@@ -302,11 +303,6 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 		}
 		if (SceneManager.GetActiveScene().name == "Menu principal" || SceneManager.GetActiveScene().name == "Menu without logic")
 			PlayingLocal = GameObject.Find("CanvasFirstPlayer/Background/PlayingLocal").GetComponent<Toggle>().isOn;
-		else
-		{
-			
-		}
-
 	}
 	
 	private void HealthGov()

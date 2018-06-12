@@ -21,6 +21,7 @@ public class RotationPlayer : Photon.MonoBehaviour
 	
 	//Hidden Variables
 	private float Damage;
+	private float DamageAttacked;
 	private bool Destroy;
 	private float Life;
 	private Dictionary<string, KeyCode> Controls;
@@ -95,6 +96,7 @@ public class RotationPlayer : Photon.MonoBehaviour
 		GameParameters gameParameters = GameObject.Find("GameParameters").GetComponent<GameParameters>();
 		LePlusB = gameParameters.LePlusBas;
 		Damage = gameParameters.DamageFallOfThisLevel;
+		DamageAttacked = gameParameters.DamageAttackedThisLevel;
 		Life = gameParameters.LifeInThisLevel;
 
 		if (photonNetworkManager.IsPlayingLocal)
@@ -246,19 +248,29 @@ public class RotationPlayer : Photon.MonoBehaviour
 			}
 		}
 		
-		if (PhotonNetwork.playerList.Length == 2 || SceneManager.GetActiveScene().buildIndex != 0 && SceneManager.GetActiveScene().name != "Menu without logic"&& photonNetworkManager.IsPlayingLocal )
+		if (PhotonNetwork.playerList.Length == 2 || SceneManager.GetActiveScene().buildIndex != 0 && SceneManager.GetActiveScene().name != "Menu without logic")
 		{
 			GameObject PlayerBoy = GameObject.FindGameObjectWithTag("PlayerBoy");
-			GameObject PlayerGirl = GameObject.FindGameObjectWithTag("PlayerGirl");
-			float Life1 = PlayerBoy.GetComponent<RotationPlayer>().LifePerso;
-			float Life2 = PlayerGirl.GetComponent<RotationPlayer>().LifePerso;
+			float Life1;
+			if (PlayerBoy != null)
+				Life1 = PlayerBoy.GetComponent<RotationPlayer>().LifePerso;
+			else
+				Life1 = -1;
 			
-			if (Math.Abs(Life1 - Life2) <= Damage)
+			GameObject PlayerGirl = GameObject.FindGameObjectWithTag("PlayerGirl");
+			float Life2;
+			if (PlayerGirl != null)
+				Life2 = PlayerGirl.GetComponent<RotationPlayer>().LifePerso;
+			else
+				Life2 = -1;
+			
+			if (Life1 != -1 && Life2 != -1 && Math.Abs(Life1 - Life2) <= Damage || Math.Abs(Life1 - Life2) <= DamageAttacked )
 			{
 				Life = Math.Min(Life1, Life2);
 			}
 		}
-		
+
+		print(Life);
 		photonNetworkManager.GetLife = Life;
 	}
 
