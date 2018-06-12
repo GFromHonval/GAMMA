@@ -16581,7 +16581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MusiqueLevel: 1
-  NotesToCollect: 3
+  NotesToCollect: 0
 --- !u!1 &909073745
 GameObject:
   m_ObjectHideFlags: 0
