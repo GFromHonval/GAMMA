@@ -298,7 +298,6 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 
 	void Update()
 	{
-		print(NameRoom);
 		HealthGov();
 		if (GameOverCanvas.GetComponent<Canvas>().enabled)
 		{
