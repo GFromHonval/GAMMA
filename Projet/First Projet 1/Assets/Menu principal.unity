@@ -7046,7 +7046,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 426079476}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17, y: 4.5, z: 0}
+  m_LocalPosition: {x: 17, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1726024027}
@@ -9582,7 +9582,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 605017648}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.7, y: 4.5, z: 0}
+  m_LocalPosition: {x: -14.7, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1726024027}
@@ -17004,7 +17004,6 @@ Transform:
   - {fileID: 62658727}
   - {fileID: 2031096740}
   - {fileID: 1178947972}
-  - {fileID: 1662146498}
   - {fileID: 1359309416}
   - {fileID: 1491923163}
   - {fileID: 1001642041}
@@ -17019,6 +17018,7 @@ Transform:
   - {fileID: 861990367}
   - {fileID: 1350809849}
   - {fileID: 1389253075}
+  - {fileID: 1662146498}
   - {fileID: 117566784}
   - {fileID: 968578917}
   - {fileID: 1290392787}
@@ -26471,8 +26471,6 @@ GameObject:
   - component: {fileID: 1648686623}
   - component: {fileID: 1648686622}
   - component: {fileID: 1648686625}
-  - component: {fileID: 1648686627}
-  - component: {fileID: 1648686626}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -26561,34 +26559,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &1648686626
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1648686620}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!64 &1648686627
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1648686620}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1649645242
 Prefab:
   m_ObjectHideFlags: 0
