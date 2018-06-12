@@ -51,7 +51,8 @@ public class PlateformeClass : MonoBehaviour
 		
 		foreach (GameObject player in ToMove)
 		{
-			player.transform.position += ToAdd;
+			if (Plateforme.transform != EndPlateforme)
+				player.transform.position += ToAdd;
 		}
 		
 		if (!Unidirectionnel && Plateforme.transform.position == EndPlateforme.transform.position)
@@ -71,7 +72,8 @@ public class PlateformeClass : MonoBehaviour
 		
 		foreach (GameObject player in ToMove)
 		{
-			player.transform.position += ToAdd;
+			if (Plateforme.transform != EndPlateforme)
+				player.transform.position += ToAdd;
 		}
 		if (!Unidirectionnel && Plateforme.transform.position == VStartPlateforme)
 		{

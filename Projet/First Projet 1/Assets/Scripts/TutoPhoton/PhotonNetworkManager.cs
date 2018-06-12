@@ -200,7 +200,7 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 			else
 			{
 				PhotonNetwork.Instantiate(PrefabGirl.name, SpawnPoint1.position, SpawnPoint1.rotation, 0);
-				PhotonNetwork.Instantiate(PrefabBoy.name, SpawnPoint2.position, SpawnPoint1.rotation, 0);
+				PhotonNetwork.Instantiate(PrefabBoy.name, SpawnPoint2.position, SpawnPoint2.rotation, 0);
 			}
 		}
 		else
@@ -215,7 +215,7 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 				{
 					if (PhotonNetwork.player.NickName == "FirstPlayerBoy")
 					{
-						PhotonNetwork.Instantiate(PrefabBoy.name, SpawnPoint1.position, SpawnPoint1.rotation, 0);
+						PhotonNetwork.Instantiate(PrefabBoy.name, SpawnPoint2.position, SpawnPoint2.rotation, 0);
 					}
 				}
 			}
@@ -230,7 +230,7 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 				{
 					if (MasterName == "FirstPlayerBoy")
 					{
-						PhotonNetwork.Instantiate(PrefabGirl.name, SpawnPoint2.position, SpawnPoint2.rotation, 0);
+						PhotonNetwork.Instantiate(PrefabGirl.name, SpawnPoint1.position, SpawnPoint1.rotation, 0);
 						PhotonNetwork.player.NickName = "SecondPlayerGirl";
 					}
 				}
@@ -287,7 +287,6 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 
 	void Update()
 	{
-		print(Life);
 		HealthGov();
 		if (GameOverCanvas.GetComponent<Canvas>().enabled)
 		{

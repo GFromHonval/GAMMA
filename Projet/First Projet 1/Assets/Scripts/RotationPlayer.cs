@@ -108,9 +108,10 @@ public class RotationPlayer : Photon.MonoBehaviour
 		}
 		else
 		{
-			if (PhotonNetwork.player.NickName == "SecondPlayerGirl" || PhotonNetwork.player.NickName == "SecondPlayerBoy" ||
-			    PhotonNetwork.player.NickName == "SecondPlayer")
+			if (tag == "PlayerBoy")
+			{
 				RespawnP = gameParameters.RespawnPoint2;
+			}
 			else
 				RespawnP = gameParameters.RespawnPoint1;
 		}
@@ -270,7 +271,6 @@ public class RotationPlayer : Photon.MonoBehaviour
 			}
 		}
 
-		print(Life);
 		photonNetworkManager.GetLife = Life;
 	}
 
