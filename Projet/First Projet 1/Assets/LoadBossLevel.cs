@@ -12,12 +12,13 @@ public class LoadBossLevel : MonoBehaviour
 
 	private void Start()
 	{
-		GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().GetMusiqueLevel = MusiqueLevel;
+		if (!Equals(GameObject.Find("GameLogic"), null))
+			GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().GetMusiqueLevel = MusiqueLevel;
 	}
 
 	private void Update()
 	{
-		if (GirlIn)// && BoyIn)
+		if (GirlIn && BoyIn)
 		{
 			if (PhotonNetwork.isMasterClient)
 			{

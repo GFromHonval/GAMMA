@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 0
     path: "Assets/MAP 1 Texturis\xE9.unity"
     guid: 9dd9a7f032ed1954f8633e9427607010
-  - enabled: 1
+  - enabled: 0
     path: "Assets/Map 2 texturis\xE9e.unity"
     guid: 6c41f1b00d1b1694ab788ce9ae2405f9
   - enabled: 1
