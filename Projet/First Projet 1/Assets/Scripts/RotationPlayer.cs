@@ -152,7 +152,7 @@ public class RotationPlayer : Photon.MonoBehaviour
 			}
 			
 			
-			if (SceneManager.GetActiveScene().buildIndex != 0 && SceneManager.GetActiveScene().name != "Menu without logic" && Input.GetKey(KeyCode.Escape))
+			if (SceneManager.GetActiveScene().name != "Menu principal" && SceneManager.GetActiveScene().name != "Menu without logic" && Input.GetKey(KeyCode.Escape))
 			{
 				EscapeCanvas.enabled = true;
 			}
@@ -249,7 +249,7 @@ public class RotationPlayer : Photon.MonoBehaviour
 			}
 		}
 		
-		if (PhotonNetwork.playerList.Length == 2 || SceneManager.GetActiveScene().buildIndex != 0 && SceneManager.GetActiveScene().name != "Menu without logic")
+		if (PhotonNetwork.playerList.Length == 2 || SceneManager.GetActiveScene().name != "Menu principal" && SceneManager.GetActiveScene().name != "Menu without logic")
 		{
 			GameObject PlayerBoy = GameObject.FindGameObjectWithTag("PlayerBoy");
 			float Life1;
