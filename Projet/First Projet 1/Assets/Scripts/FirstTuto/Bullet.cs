@@ -19,9 +19,9 @@ public class Bullet : MonoBehaviour
 
         if (hit != null && hit.CompareTag("PlayerGirl") || hit != null && hit.CompareTag("PlayerBoy"))
         {
-            //if (hit.GetComponent<RotationPlayer>().LifePerso < Damage)
-            //    hit.GetComponent<RotationPlayer>().LifePerso = 0;
-            //else
+            if (hit.GetComponent<RotationPlayer>().LifePerso < Damage)
+                hit.GetComponent<RotationPlayer>().LifePerso = 0;
+            else
                 hit.GetComponent<RotationPlayer>().LifePerso -= Damage;
         }
         
