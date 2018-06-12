@@ -111,6 +111,9 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 	
 	public void Awake()
 	{
+		NameRoom = GameObject.Find("RoomName").GetComponent<RoomName>().GetNomRoom;
+		
+		
 		GameOverCanvas = GameObject.Find("GameLogic/GameOverCanvas");
 		EscapeCanvas = GameObject.Find("GameLogic/EscapeCanvas");
 		Timer = 3f;
@@ -295,6 +298,7 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 
 	void Update()
 	{
+		print(NameRoom);
 		HealthGov();
 		if (GameOverCanvas.GetComponent<Canvas>().enabled)
 		{
