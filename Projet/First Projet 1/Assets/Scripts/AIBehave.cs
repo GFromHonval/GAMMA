@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class AIBehave : Photon.MonoBehaviour {
 
@@ -8,25 +9,36 @@ public class AIBehave : Photon.MonoBehaviour {
 	public int DistanceDeDetection;
 	public GameObject BulletPrefab;
 	public Transform BulletSpawn;
-	public GameObject Head;
-	public Material ColorInnofensif;
-	public Material ColorAttack;
+	public Animator Animator;
+	public GameObject[] Waypoints;
+	public float speed = 1.5f;
+	public float rotSpeed = 6f;
+	public float SpeedBullet = 50f;
+	
 	private Transform StartPos;
-	public GameObject[] waypoints;
 	private int currentWP;
-	private float rotSpeed = 10f;
-	private float speed = 1.5f;
 	private float accuracyWP = 0.5f;
 	private List<GameObject> players;
 	private string State;
-	private float SpeedBullet = 2f;
-	private float Timer;
+	private bool Shot;
+	private float AnimatorTimer = 2f;
 	
 	// Use this for initialization
 	void Start ()
 	{
 		StartPos = transform;
-		Timer = 1f;
+		
+		if (Waypoints.Length == 0)
+		{
+			Animator.SetBool("Running", false);
+			Animator.SetBool("Standing", true);
+		}
+		else
+		{
+			Animator.SetBool("Running", true);
+			Animator.SetBool("Standing", false);
+		}
+		
 	}
 
 	private void FixedUpdate()
@@ -50,26 +62,25 @@ public class AIBehave : Photon.MonoBehaviour {
 			
 			if (Vector3.Distance(P.transform.position, this.transform.position) < DistanceDeDetection)
 			{
-				//Head.GetComponent<Renderer>().material = ColorAttack;
-				State = "Attack";
 				Attack(direction);
 			}
 			else
 			{
-				if (waypoints.Length > 0)
+				Animator.SetBool("Attacking", false);
+				AnimatorTimer = 2f;
+				if (Waypoints.Length > 0)
 				{
-					State = "Patrol";
-					//Head.GetComponent<Renderer>().material = ColorInnofensif;
-					if (Vector3.Distance(waypoints[currentWP].transform.position, transform.position) < accuracyWP)
+					Animator.SetBool("Running", true);
+					if (Vector3.Distance(Waypoints[currentWP].transform.position, transform.position) < accuracyWP)
 					{
 						currentWP++;
-						if (currentWP >= waypoints.Length)
+						if (currentWP >= Waypoints.Length)
 						{
 							currentWP = 0;
 						}
 					}
 		
-					direction = waypoints[currentWP].transform.position - transform.position;
+					direction = Waypoints[currentWP].transform.position - transform.position;
 					transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction),rotSpeed*Time.deltaTime);
 					transform.Translate(0,0,Time.deltaTime * speed);
 				}
@@ -85,19 +96,36 @@ public class AIBehave : Photon.MonoBehaviour {
 	void Attack(Vector3 direction)
 	{
 		transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), 0.1f);
-		Timer -= Time.deltaTime;
-		if (Timer <= 0)
+		if (AnimatorTimer == 2f)
 		{
-			//Creer la balle
-			GameObject bullet = PhotonNetwork.Instantiate(BulletPrefab.name, BulletSpawn.position, BulletSpawn.rotation, 0);
-
-			//Fait bouger la balle
-			bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * SpeedBullet;
-
-			//Detruit la balle apres 2 sec
-			Destroy(bullet, 2);
-			Timer = 1f;
+			Animator.SetBool("Attacking", true);
+			AnimatorTimer -= Time.deltaTime;
 		}
-		
+		else
+		{
+			if (AnimatorTimer <= 0)
+			{
+				AnimatorTimer = 2f;
+				Animator.SetBool("Attacking", false);
+				Shot = false;
+			}
+			else
+			{
+				AnimatorTimer -= Time.deltaTime;
+				if (AnimatorTimer <= 0.5f && !Shot)
+				{
+					//Creer la balle
+					GameObject bullet = PhotonNetwork.Instantiate(BulletPrefab.name, BulletSpawn.position, BulletSpawn.rotation, 0);
+
+					//Fait bouger la balle
+					bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * SpeedBullet;
+
+					//Detruit la balle apres 2 sec
+					Destroy(bullet, 5);
+
+					Shot = true;
+				}
+			}
+		}
 	}
 }

@@ -40,7 +40,6 @@ public class RockMove : MonoBehaviour
 		if (AllPlayers && other.gameObject.tag == "PlayerBoy" || AllPlayers && other.gameObject.tag == "PlayerGirl"
 		   || OnlyBoy && other.gameObject.tag == "PlayerBoy"  || OnlyGirl && other.gameObject.tag == "PlayerGirl")
 		{
-			print("zkdfdf ");
 			transform.position = Vector3.MoveTowards(transform.position, transform.position + Push, Time.deltaTime * 5);
 			//Rock.AddForce(x * Force, 0, 0, ForceMode.Impulse);
 			//Rock.AddForce(0, 0, z * Force, ForceMode.Impulse);

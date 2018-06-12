@@ -947,9 +947,6 @@ MonoBehaviour:
   BulletPrefab: {fileID: 1484554471338062, guid: 047474830ed67324e803e7bde26c8df8,
     type: 2}
   BulletSpawn: {fileID: 21307115}
-  Head: {fileID: 0}
-  ColorInnofensif: {fileID: 0}
-  ColorAttack: {fileID: 0}
   waypoints: []
 --- !u!1 &23241201
 GameObject:
@@ -3734,9 +3731,6 @@ MonoBehaviour:
   BulletPrefab: {fileID: 1484554471338062, guid: 047474830ed67324e803e7bde26c8df8,
     type: 2}
   BulletSpawn: {fileID: 135357080}
-  Head: {fileID: 0}
-  ColorInnofensif: {fileID: 0}
-  ColorAttack: {fileID: 0}
   waypoints: []
 --- !u!1001 &136080730
 Prefab:
@@ -13869,9 +13863,6 @@ MonoBehaviour:
   BulletPrefab: {fileID: 1484554471338062, guid: 047474830ed67324e803e7bde26c8df8,
     type: 2}
   BulletSpawn: {fileID: 562726701}
-  Head: {fileID: 0}
-  ColorInnofensif: {fileID: 0}
-  ColorAttack: {fileID: 0}
   waypoints: []
 --- !u!1001 &576680325
 Prefab:
@@ -15972,9 +15963,6 @@ MonoBehaviour:
   BulletPrefab: {fileID: 1484554471338062, guid: 047474830ed67324e803e7bde26c8df8,
     type: 2}
   BulletSpawn: {fileID: 693722420}
-  Head: {fileID: 0}
-  ColorInnofensif: {fileID: 0}
-  ColorAttack: {fileID: 0}
   waypoints: []
 --- !u!1 &701201629 stripped
 GameObject:
@@ -17055,9 +17043,6 @@ MonoBehaviour:
   BulletPrefab: {fileID: 1484554471338062, guid: 047474830ed67324e803e7bde26c8df8,
     type: 2}
   BulletSpawn: {fileID: 0}
-  Head: {fileID: 0}
-  ColorInnofensif: {fileID: 0}
-  ColorAttack: {fileID: 0}
   waypoints: []
 --- !u!1001 &747776102
 Prefab:
@@ -22800,9 +22785,6 @@ MonoBehaviour:
   BulletPrefab: {fileID: 1484554471338062, guid: 047474830ed67324e803e7bde26c8df8,
     type: 2}
   BulletSpawn: {fileID: 1018257258}
-  Head: {fileID: 0}
-  ColorInnofensif: {fileID: 0}
-  ColorAttack: {fileID: 0}
   waypoints: []
 --- !u!1001 &1019900055
 Prefab:
@@ -26646,9 +26628,6 @@ MonoBehaviour:
   BulletPrefab: {fileID: 1484554471338062, guid: 047474830ed67324e803e7bde26c8df8,
     type: 2}
   BulletSpawn: {fileID: 1022600014}
-  Head: {fileID: 0}
-  ColorInnofensif: {fileID: 0}
-  ColorAttack: {fileID: 0}
   waypoints: []
 --- !u!1001 &1025220334
 Prefab:
@@ -47922,9 +47901,6 @@ MonoBehaviour:
   BulletPrefab: {fileID: 1484554471338062, guid: 047474830ed67324e803e7bde26c8df8,
     type: 2}
   BulletSpawn: {fileID: 1600070874}
-  Head: {fileID: 0}
-  ColorInnofensif: {fileID: 0}
-  ColorAttack: {fileID: 0}
   waypoints: []
 --- !u!114 &1600070876
 MonoBehaviour:
@@ -48319,9 +48295,6 @@ MonoBehaviour:
   BulletPrefab: {fileID: 1484554471338062, guid: 047474830ed67324e803e7bde26c8df8,
     type: 2}
   BulletSpawn: {fileID: 1600271619}
-  Head: {fileID: 0}
-  ColorInnofensif: {fileID: 0}
-  ColorAttack: {fileID: 0}
   waypoints: []
 --- !u!1001 &1603517944
 Prefab:

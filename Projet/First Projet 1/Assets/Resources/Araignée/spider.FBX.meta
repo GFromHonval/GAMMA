@@ -258,8 +258,11 @@ ModelImporter:
     4300068: Box38
     4300070: Box27
     4300072: Box30
-    7400000: Take 001
-    7400002: Take 001 (1)
+    7400000: Run
+    7400002: All Cycle
+    7400004: Standing
+    7400006: Attackddd
+    7400008: Attack
     9500000: //RootNode
     13700000: Spider01
   externalObjects: {}
@@ -290,10 +293,38 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Take 001
+      name: Run
       takeName: Take 001
       firstFrame: 0
-      lastFrame: 40
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 100
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 20
+    - serializedVersion: 16
+      name: All Cycle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 370
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -318,10 +349,38 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Take 001 (1)
+      name: Standing
       takeName: Take 001
-      firstFrame: 0
-      lastFrame: 370
+      firstFrame: 107
+      lastFrame: 135
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Attack
+      takeName: Take 001
+      firstFrame: 108
+      lastFrame: 170
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
