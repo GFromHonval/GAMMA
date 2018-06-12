@@ -6,6 +6,7 @@ using System.Globalization;
 using System.Runtime.Remoting.Lifetime;
 using System.Runtime.Serialization.Formatters;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.Analytics;
 using UnityEngine.Experimental.Rendering;
 using UnityEngine.UI;
@@ -43,6 +44,13 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 	//Hidden
 	private bool Over;
 	private int MusiqueLevel;
+	private string NameRoom;
+
+	public string GetNameRoom
+	{
+		get { return NameRoom; }
+		set { NameRoom = value; }
+	}
 
 	public Dictionary<string, KeyCode> GetDictionaryOne
 	{
@@ -264,7 +272,7 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 	{
 		RoomOptions roomOptions = new RoomOptions();
 		roomOptions.MaxPlayers = 2;
-		PhotonNetwork.JoinOrCreateRoom("Gamma", roomOptions, null);
+		PhotonNetwork.JoinOrCreateRoom(NameRoom, roomOptions, null);
 	}
 
 	public virtual void OnJoinedRoom()
