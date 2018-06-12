@@ -10,6 +10,7 @@ public class Bullet : MonoBehaviour
     private void Start()
     {
         Damage = GameObject.Find("GameParameters").GetComponent<GameParameters>().DamageAttackedThisLevel;
+        print(Damage);
     }
 
     private void OnCollisionEnter(Collision collision)
