@@ -10,7 +10,7 @@ public class Fading : MonoBehaviour
 
 	public void ChangeBoolValue()
 	{
-		if (SceneManager.GetActiveScene().buildIndex == 0 || SceneManager.GetActiveScene().name == "Menu without logic")
+		if (SceneManager.GetActiveScene().name == "Menu principal" || SceneManager.GetActiveScene().name == "Menu without logic")
 		{
 			GameObject.Find("CanvasFirstPlayer/Background").GetComponent<MenuActions>().ChangeLevel();
 		}

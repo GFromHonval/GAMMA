@@ -40,7 +40,7 @@ public class MenuActions : Photon.MonoBehaviour {
             ScenesBuild.Add(i);
         }
         
-        Choice = LvlChoice.value + 1;
+        Choice = LvlChoice.value + 2;
         foreach (PhotonPlayer player in PhotonNetwork.playerList)
         {
             if (player.IsMasterClient)

@@ -33,8 +33,10 @@ public class GameManagerMusic : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		//GameObject.Find("GarconFixed(Clone)/Camera").SetActive(false);
-		GameObject.Find("FilleFixed(Clone)/Camera").GetComponent<Camera>().enabled = false;
+		if (GameObject.Find("PrefabAnimatedBoy(Clone)/Camera") != null)
+			GameObject.Find("PrefabAnimatedBoy(Clone)/Camera").SetActive(false);
+		if (GameObject.Find("PrefabAnimatedGirl(Clone)/Camera") != null)
+			GameObject.Find("PrefabAnimatedGirl(Clone)/Camera").GetComponent<Camera>().enabled = false;
 		
 		ActivatorScript[] Childrens = GameObject.Find("Active").GetComponentsInChildren<ActivatorScript>();
 		int NotesValided = 0;
@@ -45,7 +47,6 @@ public class GameManagerMusic : MonoBehaviour
 		}
 
 		Notes = GameObject.Find("Destroyer").GetComponent<Destroy>().GetCountDestroyed + NotesValided;
-		print(Notes);
 
 		
 		if (Notes == notetotales)

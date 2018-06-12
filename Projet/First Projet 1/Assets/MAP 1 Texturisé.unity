@@ -2001,6 +2001,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 381024c736b42e145bab490519f90f6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!136 &77109439
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 77109437}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 3.2818596
+  m_Height: 3.555974
+  m_Direction: 1
+  m_Center: {x: 0.0048065186, y: 0.56851965, z: 2.2035847}
 --- !u!1001 &81856093
 Prefab:
   m_ObjectHideFlags: 0
@@ -16581,7 +16594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MusiqueLevel: 1
-  NotesToCollect: 0
+  NotesToCollect: 3
 --- !u!1 &909073745
 GameObject:
   m_ObjectHideFlags: 0
@@ -30894,6 +30907,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 381024c736b42e145bab490519f90f6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!136 &1628764328
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1628764326}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 3.2818596
+  m_Height: 3.555974
+  m_Direction: 1
+  m_Center: {x: 0.0048065186, y: 0.56851965, z: 2.2035847}
 --- !u!1001 &1634249489
 Prefab:
   m_ObjectHideFlags: 0
@@ -38434,6 +38460,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 381024c736b42e145bab490519f90f6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!136 &2092993769
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2092993767}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 3.2818596
+  m_Height: 3.555974
+  m_Direction: 1
+  m_Center: {x: 0.0048065186, y: 0.56851965, z: 2.2035847}
 --- !u!1001 &2099430462
 Prefab:
   m_ObjectHideFlags: 0
