@@ -35,7 +35,7 @@ public class GameManagerMusic : MonoBehaviour
 	{
 		if (GameObject.Find("PrefabAnimatedBoy(Clone)/Camera") != null)
 			GameObject.Find("PrefabAnimatedBoy(Clone)/Camera").SetActive(false);
-		if (GameObject.Find("PrefabAnimatedBoy(Clone)/Camera") != null)
+		if (GameObject.Find("PrefabAnimatedGirl(Clone)/Camera") != null)
 			GameObject.Find("PrefabAnimatedGirl(Clone)/Camera").GetComponent<Camera>().enabled = false;
 		
 		ActivatorScript[] Childrens = GameObject.Find("Active").GetComponentsInChildren<ActivatorScript>();
