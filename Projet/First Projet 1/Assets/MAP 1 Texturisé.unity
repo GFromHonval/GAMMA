@@ -31678,7 +31678,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_AreaSize: {x: 8.806189, y: 8.843765}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
