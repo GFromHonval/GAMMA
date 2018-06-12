@@ -3799,6 +3799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MusiqueLevel: 2
+  NotesToCollect: 0
 --- !u!64 &470387476
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4959,7 +4960,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000011684465984, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_Name
-      value: 'Plateforme Load Boss '
+      value: PlateformeLoad
       objectReference: {fileID: 0}
     - target: {fileID: 4000013425836716, guid: 1a8872f226bbcca4c88f54810a8de19d, type: 2}
       propertyPath: m_LocalScale.y
