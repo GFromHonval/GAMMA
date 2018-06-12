@@ -1,0 +1,1 @@
+var OEConfWEVideo = {"WE5cdd60ac79":{"ExportValues":"Ce lecteur Flash fonctionnera après <b>LA MISE EN LIGNE du site</b><br/><b><u>(les vidéos locales</u></b> ne se chargent pas Flash)##ERREUR: PAS DE VIDEO SOUTENUE","Links":[{"Target":null,"Links":{"Items":{"DEFAULT":"Files/Video/579928435.mp4"}}},null,null]}}
