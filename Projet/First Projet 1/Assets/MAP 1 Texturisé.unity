@@ -792,6 +792,7 @@ MonoBehaviour:
   LifeInThisLevel: 100
   DamageFallOfThisLevel: 10
   DamageAttackedThisLevel: 0
+  Timer: 300
 --- !u!4 &26788922
 Transform:
   m_ObjectHideFlags: 0
@@ -35555,7 +35556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bed89ab4bfaf81441a9564ac1d2f4b84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Vitesse: 1
+  Vitesse: 7
   Origine: {fileID: 770706774}
 --- !u!114 &1938182703
 MonoBehaviour:

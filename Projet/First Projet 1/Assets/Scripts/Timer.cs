@@ -1,30 +1,53 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
-    [SerializeField] private float timer = 180.0f;
+    [SerializeField] private float Time = 180.0f;
     private bool HasEnded = false;
-    [SerializeField] private GameObject GameOver;
-    
+    private Canvas GameOver;
+
+    public float GetTime
+    {
+        get { return Time; }
+        set { Time = value; }
+    }
+
+    private void Start()
+    {
+        GameOver = GameObject.Find("GameLogic/GameOverCanvas").GetComponent<Canvas>();
+    }
 
     private void Update ()
     {
-        timer -= Time.deltaTime; //-1 à chaque seconde
-        if (timer <= 0)
+        Time -= UnityEngine.Time.deltaTime; 
+        if (Time <= 0)
         {
-            timer = 0;
-            GameOver.SetActive(true);
-            //GetComponent<PlayerController>().enabled = false;
-            End_Restart.EndGame();
+            Time = 0;
+            if (SceneManager.GetActiveScene().name != "Menu principal" &&
+                SceneManager.GetActiveScene().name != "Menu without logic")
+            {
+                GameOver.enabled = true;
+                if (GameObject.FindGameObjectWithTag("PlayerBoy") != null)
+                    GameObject.FindGameObjectWithTag("PlayerBoy").GetComponent<RotationPlayer>().LifePerso = 0;
+                if (GameObject.FindGameObjectWithTag("PlayerGirl") != null)
+                    GameObject.FindGameObjectWithTag("PlayerGirl").GetComponent<RotationPlayer>().LifePerso = 0;
+            }
         }
 
+        SceneManager.activeSceneChanged += ReloadTimer;
     }
 
-    private void OnGUI()
+    private void ReloadTimer(Scene prevscene, Scene nextScene)
     {
-        GUI.Box(new Rect(10, 10, 40, 20), timer.ToString("0"));
+        if (nextScene.name != "Menu principal" &&
+            nextScene.name != "Menu without logic")
+        {
+            Time = GameObject.Find("GameParameters").GetComponent<GameParameters>().Timer;
+        }
     }
-
+    
+    
 }

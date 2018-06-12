@@ -10,6 +10,7 @@ public class GameParameters : MonoBehaviour
 	public float LifeInThisLevel;
 	public float DamageFallOfThisLevel;
 	public float DamageAttackedThisLevel;
+	public float Timer;
 	
 	private void Start()
 	{

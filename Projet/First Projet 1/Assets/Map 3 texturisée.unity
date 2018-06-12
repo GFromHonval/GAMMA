@@ -19691,6 +19691,7 @@ MonoBehaviour:
   LifeInThisLevel: 100
   DamageFallOfThisLevel: 10
   DamageAttackedThisLevel: 20
+  Timer: 400
 --- !u!4 &1179438297
 Transform:
   m_ObjectHideFlags: 0

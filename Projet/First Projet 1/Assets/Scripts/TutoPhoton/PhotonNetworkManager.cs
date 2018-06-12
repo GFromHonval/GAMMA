@@ -323,8 +323,12 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 			    EnabledHealth[1] = -1;
 		    }
     		else
-    		{
-    			EnabledHealth[0] = 0;
+		    {
+			    if (SceneManager.GetActiveScene().name != "Menu principal" &&
+			        SceneManager.GetActiveScene().name != "Menu without logic")
+				    EnabledHealth[0] = 0;
+			    else
+				    return;
     			if (Life <= 0)
     			{
     				EnabledHealth[1] = -1;
