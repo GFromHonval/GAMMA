@@ -32721,7 +32721,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000012823727576, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_Name
-      value: Ground Path One (60)
+      value: PlateformeLoad
       objectReference: {fileID: 0}
     - target: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df, type: 2}
       propertyPath: m_LocalScale.y

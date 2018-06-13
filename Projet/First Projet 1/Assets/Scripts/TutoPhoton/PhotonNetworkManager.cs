@@ -118,7 +118,7 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 		EscapeCanvas = GameObject.Find("GameLogic/EscapeCanvas");
 		Timer = 3f;
 		DamageLevel = GameObject.Find("GameParameters").GetComponent<GameParameters>().DamageFallOfThisLevel;
-		LevelSuceeded = 2;
+		LevelSuceeded = 5;
 		
 		PhotonNetwork.automaticallySyncScene = true;
 
@@ -177,9 +177,9 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 		LobbyCamera = GameObject.Find("LobbyCamera");
 		Life = gameParameters.LifeInThisLevel;
 
-		if (newScene.name == "Menu principal" || newScene.name == "Menu without logic")
+		//if (newScene.name == "Menu principal" || newScene.name == "Menu without logic")
 		{
-			IsPlayingLocal = false;
+		//	IsPlayingLocal = false;
 		}
 		
 		GameOverCanvas.GetComponent<Canvas>().enabled = false;
@@ -303,7 +303,6 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 
 	void Update()
 	{
-		print(MusiqueLevel);
 		HealthGov();
 		if (GameOverCanvas.GetComponent<Canvas>().enabled)
 		{
@@ -317,6 +316,7 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 				animator.SetTrigger("FadeOut");
 			}
 		}
+		
 		if (SceneManager.GetActiveScene().name == "Menu principal" || SceneManager.GetActiveScene().name == "Menu without logic")
 			PlayingLocal = GameObject.Find("CanvasFirstPlayer/Background/PlayingLocal").GetComponent<Toggle>().isOn;
 	}
@@ -331,10 +331,13 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
     		else
 		    {
 			    if (SceneManager.GetActiveScene().name != "Menu principal" &&
-			        SceneManager.GetActiveScene().name != "Menu without logic" && SceneManager.GetActiveScene().buildIndex != 7 
+			        SceneManager.GetActiveScene().name != "Menu without logic" && SceneManager.GetActiveScene().buildIndex != 7
 			        && SceneManager.GetActiveScene().buildIndex != 8 && SceneManager.GetActiveScene().buildIndex != 9
 			        && SceneManager.GetActiveScene().buildIndex != 10)
+			    {
 				    EnabledHealth[0] = 0;
+				    print("HB enlevee");
+			    }
 			    else
 				    return;
     			if (Life <= 0)

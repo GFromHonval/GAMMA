@@ -111,6 +111,7 @@ public class GameManagerMusic : MonoBehaviour
 	private void GetBackToMenu()
 	{
 		GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().IsOver = true;
+		GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().IsPlayingLocal = false;
 		Animator animator = GameObject.Find("FadeTransition").GetComponent<Animator>();
 		animator.SetTrigger("FadeOut");
 	}
