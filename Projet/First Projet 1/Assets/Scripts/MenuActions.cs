@@ -34,9 +34,6 @@ public class MenuActions : Photon.MonoBehaviour {
         ScenesBuild = new List<int>();
         for (int i = 1; i < SceneManager.sceneCountInBuildSettings; i++)
         {
-            //Pour plus tard maybe quand on mettra le nom des scenes au lieu de leur numero dans le build 
-            //string scenePath = SceneUtility.GetScenePathByBuildIndex(i);
-            //int lastSlash = scenePath.LastIndexOf("/");
             ScenesBuild.Add(i);
         }
         
