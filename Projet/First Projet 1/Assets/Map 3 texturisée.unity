@@ -16872,7 +16872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MusiqueLevel: 3
-  NotesToCollect: 0
+  NotesToCollect: 3
 --- !u!65 &1038517889
 BoxCollider:
   m_ObjectHideFlags: 0
