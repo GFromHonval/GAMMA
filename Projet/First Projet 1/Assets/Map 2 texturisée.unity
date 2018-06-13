@@ -2023,7 +2023,7 @@ Transform:
   m_LocalScale: {x: 1.3000004, y: 2.5368347, z: 1.0000005}
   m_Children: []
   m_Father: {fileID: 1929868572}
-  m_RootOrder: 185
+  m_RootOrder: 182
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &274702862
 Prefab:
@@ -3939,7 +3939,7 @@ MonoBehaviour:
   LifeInThisLevel: 100
   DamageFallOfThisLevel: 10
   DamageAttackedThisLevel: 0
-  Timer: 250
+  Timer: 900
 --- !u!1001 &491171524
 Prefab:
   m_ObjectHideFlags: 0
@@ -11902,7 +11902,7 @@ Transform:
   m_LocalScale: {x: 1.3000009, y: 2.5368347, z: 1}
   m_Children: []
   m_Father: {fileID: 1929868572}
-  m_RootOrder: 183
+  m_RootOrder: 181
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1148618774
 Prefab:
@@ -14374,7 +14374,7 @@ Transform:
   m_LocalScale: {x: 250.00012, y: 634.2087, z: 300.00012}
   m_Children: []
   m_Father: {fileID: 1929868572}
-  m_RootOrder: 174
+  m_RootOrder: 161
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &1443064365 stripped
 GameObject:
@@ -15344,7 +15344,7 @@ Transform:
   - {fileID: 1119237900}
   - {fileID: 596527857}
   m_Father: {fileID: 1929868572}
-  m_RootOrder: 181
+  m_RootOrder: 180
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1505401454
 MeshCollider:
@@ -19529,6 +19529,7 @@ Transform:
   - {fileID: 128525039}
   - {fileID: 1624178787}
   - {fileID: 1632530267}
+  - {fileID: 1436189368}
   - {fileID: 584118736}
   - {fileID: 1032200524}
   - {fileID: 1700833288}
@@ -19542,18 +19543,17 @@ Transform:
   - {fileID: 1552990436}
   - {fileID: 1767447779}
   - {fileID: 74933040}
-  - {fileID: 1436189368}
   - {fileID: 480003130}
   - {fileID: 2002080508}
   - {fileID: 1948015788}
   - {fileID: 2002764899}
   - {fileID: 699125903}
-  - {fileID: 1511926875}
   - {fileID: 1505401453}
-  - {fileID: 987521497}
   - {fileID: 1140041558}
-  - {fileID: 335519653}
   - {fileID: 269778559}
+  - {fileID: 1511926875}
+  - {fileID: 987521497}
+  - {fileID: 335519653}
   - {fileID: 1021609074}
   m_Father: {fileID: 0}
   m_RootOrder: 9

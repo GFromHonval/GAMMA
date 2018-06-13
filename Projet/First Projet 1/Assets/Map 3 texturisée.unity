@@ -9743,16 +9743,16 @@ Transform:
   - {fileID: 1390428075}
   - {fileID: 1149674546}
   - {fileID: 2135944390}
-  - {fileID: 10531347}
   - {fileID: 1021523837}
+  - {fileID: 10531347}
   - {fileID: 1886255850}
   - {fileID: 1920316668}
   - {fileID: 1925185550}
+  - {fileID: 1564682219}
   - {fileID: 1976399971}
   - {fileID: 973207854}
   - {fileID: 1182256250}
   - {fileID: 319746009}
-  - {fileID: 1564682219}
   - {fileID: 467807397}
   - {fileID: 451429654}
   - {fileID: 1341715668}
@@ -9830,6 +9830,7 @@ Transform:
   - {fileID: 39653492}
   - {fileID: 728053813}
   - {fileID: 4840114}
+  - {fileID: 1370750001}
   - {fileID: 719416629}
   - {fileID: 1956309932}
   - {fileID: 1950767133}
@@ -9839,6 +9840,7 @@ Transform:
   - {fileID: 1739652993}
   - {fileID: 480734077}
   - {fileID: 1540506914}
+  - {fileID: 2081644931}
   - {fileID: 1728127389}
   - {fileID: 413677169}
   - {fileID: 365810149}
@@ -9847,8 +9849,6 @@ Transform:
   - {fileID: 1511019200}
   - {fileID: 60594243}
   - {fileID: 1837543542}
-  - {fileID: 1370750001}
-  - {fileID: 2081644931}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17035,7 +17035,7 @@ Transform:
   m_LocalScale: {x: 0.80000013, y: 0.8, z: 0.8000001}
   m_Children: []
   m_Father: {fileID: 562069199}
-  m_RootOrder: 202
+  m_RootOrder: 201
   m_LocalEulerAnglesHint: {x: 37.941, y: 19.142, z: 35.407}
 --- !u!1001 &1038016397
 Prefab:
@@ -19514,7 +19514,7 @@ MonoBehaviour:
   LifeInThisLevel: 100
   DamageFallOfThisLevel: 10
   DamageAttackedThisLevel: 20
-  Timer: 400
+  Timer: 900
 --- !u!4 &1179438297
 Transform:
   m_ObjectHideFlags: 0
@@ -22855,7 +22855,7 @@ Transform:
   m_Children:
   - {fileID: 687025068}
   m_Father: {fileID: 562069199}
-  m_RootOrder: 305
+  m_RootOrder: 288
   m_LocalEulerAnglesHint: {x: 0, y: -90.828, z: 0}
 --- !u!114 &1370750002
 MonoBehaviour:
@@ -26223,7 +26223,7 @@ Transform:
   m_Children:
   - {fileID: 60359286}
   m_Father: {fileID: 562069199}
-  m_RootOrder: 210
+  m_RootOrder: 206
   m_LocalEulerAnglesHint: {x: 0, y: -90.828, z: 0}
 --- !u!1001 &1567430309
 Prefab:
@@ -34011,7 +34011,7 @@ Transform:
   m_Children:
   - {fileID: 137543202}
   m_Father: {fileID: 562069199}
-  m_RootOrder: 306
+  m_RootOrder: 298
   m_LocalEulerAnglesHint: {x: 0, y: -90.828, z: 0}
 --- !u!1001 &2082734346
 Prefab:
