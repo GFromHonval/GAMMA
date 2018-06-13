@@ -17,5 +17,11 @@ public class VolumeChangerEscape : MonoBehaviour {
 			Musique = GameObject.Find("GameLogic").GetComponentInChildren<AudioSource>();
 			Musique.volume = GetComponent<Scrollbar>().value * 0.2f;
 		}
+		else
+		{
+			if (GameObject.Find("CanvasFirstPlayer").GetComponent<Canvas>().enabled)
+				GetComponent<Scrollbar>().value =
+					GameObject.Find("CanvasFirstPlayer").GetComponentInChildren<Scrollbar>().value;
+		}
 	}
 }
