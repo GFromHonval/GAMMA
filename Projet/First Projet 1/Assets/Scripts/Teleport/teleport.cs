@@ -34,10 +34,6 @@ public class teleport : MonoBehaviour
 					Teleportation(col);
 			}
 		}
-		
-		/*Je pense plus nécessaire, en tout cas tant qu'il n'y a pas d'animations
-			col.transform.position = destination - Vector3.forward ;
-		*/
 	}
 
 	private void Teleportation(Collision col)

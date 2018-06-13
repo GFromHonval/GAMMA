@@ -2024,7 +2024,7 @@ GameObject:
   - component: {fileID: 75212528}
   m_Layer: 0
   m_Name: spawn1 (2)
-  m_TagString: Untagged
+  m_TagString: Portail1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3752,7 +3752,7 @@ GameObject:
   - component: {fileID: 139142673}
   m_Layer: 0
   m_Name: portail 1 (1)
-  m_TagString: Untagged
+  m_TagString: Portail1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8570,7 +8570,7 @@ GameObject:
   - component: {fileID: 340284167}
   m_Layer: 0
   m_Name: portail 2 (2)
-  m_TagString: Untagged
+  m_TagString: Portail2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13489,6 +13489,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013296790728, guid: 03b0ed4871f8e8d46aab17cd9b867655, type: 2}
+      propertyPath: m_TagString
+      value: Portail1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03b0ed4871f8e8d46aab17cd9b867655, type: 2}
   m_IsPrefabParent: 0
@@ -13505,7 +13509,7 @@ MeshCollider:
   m_GameObject: {fileID: 535670975}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 14
@@ -13517,13 +13521,13 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 535670975}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b9c49b82aa4f86d4f9bb4e9f7e83635b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VersPortail1: {fileID: 535670975}
-  VersPortail2: {fileID: 1017848595}
+  VersPortail1: {fileID: 0}
+  VersPortail2: {fileID: 0}
   OnlyBoy: 0
   OnlyGirl: 0
 --- !u!4 &535670978 stripped
@@ -13539,7 +13543,7 @@ MeshCollider:
   m_GameObject: {fileID: 535670975}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
@@ -14509,7 +14513,7 @@ GameObject:
   - component: {fileID: 609808986}
   m_Layer: 0
   m_Name: portail 2 (1)
-  m_TagString: Untagged
+  m_TagString: Portail2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16539,6 +16543,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013296790728, guid: 03b0ed4871f8e8d46aab17cd9b867655, type: 2}
+      propertyPath: m_TagString
+      value: Portail1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03b0ed4871f8e8d46aab17cd9b867655, type: 2}
   m_IsPrefabParent: 0
@@ -16555,7 +16563,7 @@ MeshCollider:
   m_GameObject: {fileID: 735967755}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 14
@@ -16574,7 +16582,7 @@ MeshCollider:
   m_GameObject: {fileID: 735967755}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
@@ -22575,6 +22583,10 @@ Prefab:
     - target: {fileID: 4000012274991244, guid: 03b0ed4871f8e8d46aab17cd9b867655, type: 2}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013296790728, guid: 03b0ed4871f8e8d46aab17cd9b867655, type: 2}
+      propertyPath: m_TagString
+      value: Portail2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03b0ed4871f8e8d46aab17cd9b867655, type: 2}
@@ -32107,7 +32119,7 @@ GameObject:
   - component: {fileID: 1182332315}
   m_Layer: 0
   m_Name: portail 1
-  m_TagString: Untagged
+  m_TagString: Portail1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47354,7 +47366,7 @@ GameObject:
   - component: {fileID: 1582145214}
   m_Layer: 0
   m_Name: portail 1 (2)
-  m_TagString: Untagged
+  m_TagString: Portail1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47384,8 +47396,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c49b82aa4f86d4f9bb4e9f7e83635b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VersPortail1: {fileID: 1837451713}
-  VersPortail2: {fileID: 75212527}
+  VersPortail1: {fileID: 75212527}
+  VersPortail2: {fileID: 1837451713}
   OnlyBoy: 0
   OnlyGirl: 1
 --- !u!23 &1582145215
@@ -55675,7 +55687,7 @@ GameObject:
   - component: {fileID: 2028365844}
   m_Layer: 0
   m_Name: portail 2
-  m_TagString: Untagged
+  m_TagString: Portail2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
