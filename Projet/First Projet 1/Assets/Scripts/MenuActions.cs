@@ -55,6 +55,8 @@ public class MenuActions : Photon.MonoBehaviour {
         
         if (ScenesBuild.Contains(Choice) && Choice <= GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().GetLevelSuceeded)
         {
+            if (PhotonNetwork.playerList.Length == 2 && !GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().IsPlayingLocal
+                || PhotonNetwork.playerList.Length == 1 && GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().IsPlayingLocal)
             animator.SetTrigger("FadeOut");
         }
         else
