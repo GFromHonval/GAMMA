@@ -22,6 +22,7 @@ public class Fading : MonoBehaviour
 			{
 				if (photonNetworkManager.IsOver)
 				{
+					photonNetworkManager.IsPlayingLocal = false;
 					photonNetworkManager.IsOver = false;
 					PhotonNetwork.LoadLevel("Menu without logic");
 				}

@@ -34,9 +34,9 @@ public class GameManagerMusic : MonoBehaviour
 	void Update ()
 	{
 		if (GameObject.Find("PrefabAnimatedBoy(Clone)/Camera") != null)
-			GameObject.Find("PrefabAnimatedBoy(Clone)/Camera").SetActive(false);
+			Destroy(GameObject.Find("PrefabAnimatedBoy(Clone)"));
 		if (GameObject.Find("PrefabAnimatedGirl(Clone)/Camera") != null)
-			GameObject.Find("PrefabAnimatedGirl(Clone)/Camera").GetComponent<Camera>().enabled = false;
+			Destroy(GameObject.Find("PrefabAnimatedGirl(Clone)"));
 		
 		ActivatorScript[] Childrens = GameObject.Find("Active").GetComponentsInChildren<ActivatorScript>();
 		int NotesValided = 0;
@@ -89,7 +89,6 @@ public class GameManagerMusic : MonoBehaviour
 
 	public void ResetStreak()
 	{
-
 		streak = 0;
 		multiplier = 1;
 		PlayerPrefs.SetInt("Mult", 1);
@@ -98,7 +97,6 @@ public class GameManagerMusic : MonoBehaviour
 
 	public void Win()
 	{
-		print("win");
 		CanvasWin.enabled = true;
 		GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().GetLevelSuceeded = GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().GetMusiqueLevel + 1;
 		GetBackToMenu();
@@ -106,7 +104,6 @@ public class GameManagerMusic : MonoBehaviour
 
 	public void Lose()
 	{
-		print("lose");
 		CanvasLose.enabled = true;
 		GetBackToMenu();
 	}
@@ -122,8 +119,6 @@ public class GameManagerMusic : MonoBehaviour
 	{
 		PlayerPrefs.SetInt("Streak", streak);
 		PlayerPrefs.SetInt("Mult", multiplier);
-		
-		
 	}
 	
 }
