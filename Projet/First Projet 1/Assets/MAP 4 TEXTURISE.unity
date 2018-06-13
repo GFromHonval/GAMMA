@@ -6682,7 +6682,7 @@ Prefab:
     - target: {fileID: 114583390474210902, guid: 8591bd00b5c039f48a5f93dc7b65d9ff,
         type: 2}
       propertyPath: DistanceDeDetection
-      value: 30
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 114583390474210902, guid: 8591bd00b5c039f48a5f93dc7b65d9ff,
         type: 2}
@@ -6693,7 +6693,7 @@ Prefab:
     - target: {fileID: 114583390474210902, guid: 8591bd00b5c039f48a5f93dc7b65d9ff,
         type: 2}
       propertyPath: SpeedBullet
-      value: 35
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8591bd00b5c039f48a5f93dc7b65d9ff, type: 2}
@@ -10649,7 +10649,7 @@ Prefab:
     - target: {fileID: 114583390474210902, guid: 8591bd00b5c039f48a5f93dc7b65d9ff,
         type: 2}
       propertyPath: DistanceDeDetection
-      value: 30
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 114583390474210902, guid: 8591bd00b5c039f48a5f93dc7b65d9ff,
         type: 2}
@@ -10660,7 +10660,7 @@ Prefab:
     - target: {fileID: 114583390474210902, guid: 8591bd00b5c039f48a5f93dc7b65d9ff,
         type: 2}
       propertyPath: SpeedBullet
-      value: 35
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8591bd00b5c039f48a5f93dc7b65d9ff, type: 2}
@@ -15927,20 +15927,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1000010619226596, guid: c92c2aca1ed8a484490ad5b376619e03,
     type: 2}
   m_PrefabInternal: {fileID: 706835086}
---- !u!64 &706835088
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 706835087}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 122089aa6f199db4e970a0a3f2d624a1, type: 3}
 --- !u!4 &706835089 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000010908994246, guid: c92c2aca1ed8a484490ad5b376619e03,
@@ -15979,8 +15965,8 @@ MonoBehaviour:
   - {fileID: 706835090}
   StayPressedButton: 0
   EvaporingButton: 0
-  OnlyGirl: 1
-  OnlyBoy: 0
+  OnlyGirl: 0
+  OnlyBoy: 1
 --- !u!64 &706835092
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16063,7 +16049,7 @@ Prefab:
     - target: {fileID: 114583390474210902, guid: 8591bd00b5c039f48a5f93dc7b65d9ff,
         type: 2}
       propertyPath: DistanceDeDetection
-      value: 30
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 114583390474210902, guid: 8591bd00b5c039f48a5f93dc7b65d9ff,
         type: 2}
@@ -16074,7 +16060,7 @@ Prefab:
     - target: {fileID: 114583390474210902, guid: 8591bd00b5c039f48a5f93dc7b65d9ff,
         type: 2}
       propertyPath: SpeedBullet
-      value: 35
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8591bd00b5c039f48a5f93dc7b65d9ff, type: 2}
@@ -27185,7 +27171,7 @@ Prefab:
     - target: {fileID: 114583390474210902, guid: 8591bd00b5c039f48a5f93dc7b65d9ff,
         type: 2}
       propertyPath: DistanceDeDetection
-      value: 30
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 114583390474210902, guid: 8591bd00b5c039f48a5f93dc7b65d9ff,
         type: 2}
@@ -27196,7 +27182,7 @@ Prefab:
     - target: {fileID: 114583390474210902, guid: 8591bd00b5c039f48a5f93dc7b65d9ff,
         type: 2}
       propertyPath: SpeedBullet
-      value: 35
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8591bd00b5c039f48a5f93dc7b65d9ff, type: 2}
@@ -46308,20 +46294,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1000010619226596, guid: c92c2aca1ed8a484490ad5b376619e03,
     type: 2}
   m_PrefabInternal: {fileID: 1507396352}
---- !u!64 &1507396354
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1507396353}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 122089aa6f199db4e970a0a3f2d624a1, type: 3}
 --- !u!4 &1507396355 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000010908994246, guid: c92c2aca1ed8a484490ad5b376619e03,
@@ -46360,8 +46332,8 @@ MonoBehaviour:
   - {fileID: 1507396356}
   StayPressedButton: 0
   EvaporingButton: 0
-  OnlyGirl: 1
-  OnlyBoy: 0
+  OnlyGirl: 0
+  OnlyBoy: 1
 --- !u!64 &1507396358
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -56532,7 +56504,7 @@ Prefab:
     - target: {fileID: 114583390474210902, guid: 8591bd00b5c039f48a5f93dc7b65d9ff,
         type: 2}
       propertyPath: SpeedBullet
-      value: 40
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8591bd00b5c039f48a5f93dc7b65d9ff, type: 2}
