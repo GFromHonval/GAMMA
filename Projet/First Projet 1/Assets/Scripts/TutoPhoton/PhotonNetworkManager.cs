@@ -118,7 +118,7 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 		EscapeCanvas = GameObject.Find("GameLogic/EscapeCanvas");
 		Timer = 3f;
 		DamageLevel = GameObject.Find("GameParameters").GetComponent<GameParameters>().DamageFallOfThisLevel;
-		LevelSuceeded = 1;
+		LevelSuceeded = 2;
 		
 		PhotonNetwork.automaticallySyncScene = true;
 
