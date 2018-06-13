@@ -124,7 +124,7 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 
 		if (!PhotonNetwork.connected)
 		{
-			PhotonNetwork.ConnectUsingSettings("0.1");
+			PhotonNetwork.ConnectUsingSettings(NameRoom);
 		}
 		
 		EnabledHealth = new int[2];
