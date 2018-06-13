@@ -15265,7 +15265,7 @@ MonoBehaviour:
   valuetogetstreak1: 5
   valuetogetstreak2: 8
   valuetogetstreak3: 12
-  notetotales: 83
+  notetotales: 107
   notestowin: 50
 --- !u!61 &1283082957
 BoxCollider2D:
@@ -17359,7 +17359,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 46a0c23ac9665314e84b527b44040f6d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a0928309fd62b164183d064cf3127c24, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.33
   m_Pitch: 1
@@ -17417,7 +17417,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:

@@ -28,7 +28,7 @@ public class Fading : MonoBehaviour
 				}
 				else
 				{
-					PhotonNetwork.LoadLevel("Niveau musical " + photonNetworkManager.GetMusiqueLevel);
+					PhotonNetwork.LoadLevel(6 + photonNetworkManager.GetMusiqueLevel);
 				}
 			}
 		}

@@ -32,9 +32,9 @@ public class Timer : MonoBehaviour
         {
             Time = 0;
             if (SceneManager.GetActiveScene().name != "Menu principal" &&
-                SceneManager.GetActiveScene().name != "Menu without logic" && SceneManager.GetActiveScene().name != "Niveau musical 1" 
-                && SceneManager.GetActiveScene().name != "Niveau musical 2" && SceneManager.GetActiveScene().name != "Niveau musical 3"
-                && SceneManager.GetActiveScene().name != "Niveau musical 4")
+                SceneManager.GetActiveScene().name != "Menu without logic" && SceneManager.GetActiveScene().buildIndex != 7 
+                && SceneManager.GetActiveScene().buildIndex != 8 && SceneManager.GetActiveScene().buildIndex != 9 
+                && SceneManager.GetActiveScene().buildIndex != 10)
             {
                 GameOver.enabled = true;
                 if (GameObject.FindGameObjectWithTag("PlayerBoy") != null)
