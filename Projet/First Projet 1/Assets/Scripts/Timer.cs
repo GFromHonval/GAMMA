@@ -9,6 +9,11 @@ public class Timer : MonoBehaviour
     private bool HasEnded = false;
     private Canvas GameOver;
 
+    /*private string g = "Niveau musical 1";
+    private string g = "Niveau musical 2";
+    private string g = "Niveau musical 3";
+    private string g = "Niveau musical 4";*/
+    
     public float GetTime
     {
         get { return Time; }

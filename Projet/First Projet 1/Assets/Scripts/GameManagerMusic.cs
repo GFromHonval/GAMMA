@@ -98,7 +98,7 @@ public class GameManagerMusic : MonoBehaviour
 	public void Win()
 	{
 		CanvasWin.enabled = true;
-		GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().GetLevelSuceeded++;
+		GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().GetLevelSuceeded = GameObject.Find("GameLogic").GetComponent<PhotonNetworkManager>().GetMusiqueLevel + 2;
 		GetBackToMenu();
 	}
 

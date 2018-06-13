@@ -18,7 +18,7 @@ public class LoadBossLevel : MonoBehaviour
 		set { NotesCollected = value; }
 	}
 	
-	private void Start()
+	private void Awake()
 	{
 		NotesCollected = 0;
 		if (!Equals(GameObject.Find("GameLogic"), null))

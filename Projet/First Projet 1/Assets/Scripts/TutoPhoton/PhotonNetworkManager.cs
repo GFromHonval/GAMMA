@@ -112,8 +112,8 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 	public void Awake()
 	{
 		NameRoom = GameObject.Find("RoomName").GetComponent<RoomName>().GetNomRoom;
-		
-		
+		Over = false;
+		MusiqueLevel = 1;
 		GameOverCanvas = GameObject.Find("GameLogic/GameOverCanvas");
 		EscapeCanvas = GameObject.Find("GameLogic/EscapeCanvas");
 		Timer = 3f;
@@ -176,6 +176,11 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 		SpawnPoint2 = gameParameters.RespawnPoint2;
 		LobbyCamera = GameObject.Find("LobbyCamera");
 		Life = gameParameters.LifeInThisLevel;
+
+		if (newScene.name == "Menu principal" || newScene.name == "Menu without logic")
+		{
+			IsPlayingLocal = false;
+		}
 		
 		GameOverCanvas.GetComponent<Canvas>().enabled = false;
 		
@@ -298,6 +303,7 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
 
 	void Update()
 	{
+		print(MusiqueLevel);
 		HealthGov();
 		if (GameOverCanvas.GetComponent<Canvas>().enabled)
 		{
@@ -325,7 +331,9 @@ public class PhotonNetworkManager : Photon.MonoBehaviour
     		else
 		    {
 			    if (SceneManager.GetActiveScene().name != "Menu principal" &&
-			        SceneManager.GetActiveScene().name != "Menu without logic")
+			        SceneManager.GetActiveScene().name != "Menu without logic" && SceneManager.GetActiveScene().name != "Niveau musical 1" 
+			        && SceneManager.GetActiveScene().name != "Niveau musical 2" && SceneManager.GetActiveScene().name != "Niveau musical 3"
+			        && SceneManager.GetActiveScene().name != "Niveau musical 4")
 				    EnabledHealth[0] = 0;
 			    else
 				    return;
