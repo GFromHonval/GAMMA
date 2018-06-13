@@ -5013,9 +5013,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcefe4a1fd6be87469497f75aebb371d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Plateforme: {fileID: 0}
-  EndPlateforme: {fileID: 0}
-  StartPlateforme: {fileID: 0}
+  Plateforme: {fileID: 1961212524}
+  EndPlateforme: {fileID: 1961212524}
+  StartPlateforme: {fileID: 1961212524}
   Unidirectionnel: 0
   VaADroite: 0
   Vitesse: 1
@@ -31883,6 +31883,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1957917367}
   m_Mesh: {fileID: 4300000, guid: c2c7c3ba6b230de44871a6b2938fe9d0, type: 3}
+--- !u!1 &1961212524 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1068707902248472, guid: 8591bd00b5c039f48a5f93dc7b65d9ff,
+    type: 2}
+  m_PrefabInternal: {fileID: 1636126598}
 --- !u!1001 &1962032480
 Prefab:
   m_ObjectHideFlags: 0
