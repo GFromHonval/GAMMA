@@ -5768,7 +5768,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4796467332802200, guid: 8591bd00b5c039f48a5f93dc7b65d9ff, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 44.89
+      value: 43.49
       objectReference: {fileID: 0}
     - target: {fileID: 4796467332802200, guid: 8591bd00b5c039f48a5f93dc7b65d9ff, type: 2}
       propertyPath: m_LocalPosition.y
@@ -5825,12 +5825,12 @@ Prefab:
     - target: {fileID: 114583390474210902, guid: 8591bd00b5c039f48a5f93dc7b65d9ff,
         type: 2}
       propertyPath: DistanceDeDetection
-      value: 28
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 114583390474210902, guid: 8591bd00b5c039f48a5f93dc7b65d9ff,
         type: 2}
       propertyPath: SpeedBullet
-      value: 35
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 4327510934438366, guid: 8591bd00b5c039f48a5f93dc7b65d9ff, type: 2}
       propertyPath: m_LocalPosition.x
@@ -10006,7 +10006,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4796467332802200, guid: 8591bd00b5c039f48a5f93dc7b65d9ff, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 44.89
+      value: 43.68
       objectReference: {fileID: 0}
     - target: {fileID: 4796467332802200, guid: 8591bd00b5c039f48a5f93dc7b65d9ff, type: 2}
       propertyPath: m_LocalPosition.y
@@ -10063,12 +10063,12 @@ Prefab:
     - target: {fileID: 114583390474210902, guid: 8591bd00b5c039f48a5f93dc7b65d9ff,
         type: 2}
       propertyPath: DistanceDeDetection
-      value: 28
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 114583390474210902, guid: 8591bd00b5c039f48a5f93dc7b65d9ff,
         type: 2}
       propertyPath: SpeedBullet
-      value: 35
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8591bd00b5c039f48a5f93dc7b65d9ff, type: 2}
