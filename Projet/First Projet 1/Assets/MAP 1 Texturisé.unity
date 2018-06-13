@@ -6462,6 +6462,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0acc18d5c10e8d54685a1703d92fcef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &312977732
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 312977729}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.999999, y: 2.472755, z: 8.000006}
+  m_Center: {x: 0.0000011003934, y: 1.2363627, z: -0.000002861023}
 --- !u!1 &316006906
 GameObject:
   m_ObjectHideFlags: 0
@@ -35149,8 +35161,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 8.000001, y: 2.0000308, z: 8.000008}
-  m_Center: {x: 0, y: -1.0000001, z: 0.000004053116}
+  m_Size: {x: 8.000001, y: 2.1243947, z: 8.000008}
+  m_Center: {x: 0, y: -0.93781817, z: 0.0000038146973}
 --- !u!1 &1940749779 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000013091236122, guid: 2abee158e30f38b41856c4521230c308,
