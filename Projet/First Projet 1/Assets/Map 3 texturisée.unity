@@ -32811,7 +32811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EndPlateforme: {fileID: 235901530}
-  Vitesse: 3
+  Vitesse: 4.5
 --- !u!4 &2028837708 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000011600306652, guid: 607314d96864be34ab86da1f60d6a2df,
