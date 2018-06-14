@@ -290,10 +290,12 @@
         <e p="Cartoon Temple Building Kit" t="Include">
           <e p="readme.txt" t="Include" />
         </e>
+        <e p="DesMusicGame.cs" t="Include" />
         <e p="Fading.cs" t="Include" />
         <e p="Life.cs" t="Include" />
         <e p="LoadBossLevel.cs" t="Include" />
         <e p="LoadGame.cs" t="Include" />
+        <e p="MuteMusicGame.cs" t="Include" />
         <e p="ReturnOrigine.cs" t="Include" />
         <e p="RoomName.cs" t="Include" />
         <e p="Scripts" t="Include">
